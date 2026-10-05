@@ -32,6 +32,7 @@ interface Settings {
   variety: number;
   auto: boolean;
   sound: boolean;
+  music: boolean;
   volume: number;
 }
 const SETTINGS_KEY = "cdc-settings";
@@ -44,6 +45,7 @@ const settings: Settings = {
   variety: 0.5,
   auto: false,
   sound: true,
+  music: true,
   volume: 0.8,
 };
 try {
@@ -93,6 +95,7 @@ let speed = 1;
 
 const sound = new Sound();
 sound.enabled = settings.sound;
+sound.music = settings.music;
 sound.volume = settings.volume;
 
 const $ = <T extends HTMLElement = HTMLElement>(sel: string, root: ParentNode = document) =>
@@ -888,15 +891,23 @@ $("#rp-takeover").addEventListener("click", () => {
 
 // 音效設定
 const soundOn = $<HTMLInputElement>("#opt-sound");
+const musicOn = $<HTMLInputElement>("#opt-music");
 const volume = $<HTMLInputElement>("#opt-volume");
 soundOn.checked = settings.sound;
+musicOn.checked = settings.music;
 volume.value = String(settings.volume);
-volume.disabled = !settings.sound;
+const syncVolume = () => (volume.disabled = !settings.sound && !settings.music);
+syncVolume();
 soundOn.addEventListener("change", () => {
   settings.sound = sound.enabled = soundOn.checked;
-  volume.disabled = !soundOn.checked;
+  syncVolume();
   saveSettings();
   sound.select();
+});
+musicOn.addEventListener("change", () => {
+  settings.music = sound.music = musicOn.checked;
+  syncVolume();
+  saveSettings();
 });
 volume.addEventListener("input", () => {
   settings.volume = sound.volume = Number(volume.value);

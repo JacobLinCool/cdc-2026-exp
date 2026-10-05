@@ -5,8 +5,14 @@
 //   最後低通讓音色溫潤。每一下的音高、力度、衰減都有細微隨機，避免機械感。
 // - 依棋子所在欄位左右聲像定位；程序產生的房間殘響讓聲音有空間感。
 // - 終局樂句用 Karplus–Strong 撥弦合成，五聲音階，接近古箏的音色。
+// - 背景音樂是唯一的音檔（Opus/WebM），第一次開啟時才整檔下載，循環播放。
 
 export type Outcome = "win" | "lose" | "draw";
+
+/** 背景音樂（相對於 public/） */
+const BGM_URL = "./audio/hidden-tactics.webm";
+/** 背景音樂相對音效的音量 */
+const BGM_LEVEL = 0.32;
 
 const rand = (a: number, b: number) => a + Math.random() * (b - a);
 
@@ -30,6 +36,9 @@ export class Sound {
   private reverb!: ConvolverNode;
   private master!: GainNode;
   private strings = new Map<string, AudioBuffer>();
+  private musicOn = false;
+  private bgm: HTMLAudioElement | null = null;
+  private bgmGain: GainNode | null = null;
 
   constructor() {
     // 瀏覽器規定音訊要在使用者互動後才能開始
@@ -42,6 +51,13 @@ export class Sound {
     };
     addEventListener("pointerdown", unlock, true);
     addEventListener("keydown", unlock, true);
+    // 切到背景時暫停音樂，回來再接著播
+    document.addEventListener("visibilitychange", () => this.syncMusic());
+  }
+
+  set music(on: boolean) {
+    this.musicOn = on;
+    this.syncMusic();
   }
 
   set volume(v: number) {
@@ -81,8 +97,52 @@ export class Sound {
       this.reverb.connect(wet).connect(shelf);
       shelf.connect(comp);
       comp.connect(this.master).connect(ctx.destination);
+      ctx.addEventListener("statechange", () => this.syncMusic());
     }
     if (this.ctx.state === "suspended") void this.ctx.resume();
+  }
+
+  /** 依開關、頁面可見度與 context 狀態，淡入或淡出背景音樂 */
+  private syncMusic() {
+    const ctx = this.ctx;
+    if (!ctx) return;
+    const play = this.musicOn && ctx.state === "running" && !document.hidden;
+    if (play && !this.bgm) this.loadMusic(ctx);
+    const el = this.bgm;
+    if (!el || !this.bgmGain) return;
+    const g = this.bgmGain.gain;
+    g.cancelScheduledValues(ctx.currentTime);
+    g.setValueAtTime(g.value, ctx.currentTime);
+    if (play) {
+      if (el.paused) el.play().catch(() => {});
+      g.linearRampToValueAtTime(BGM_LEVEL, ctx.currentTime + 1.2);
+    } else {
+      g.linearRampToValueAtTime(0, ctx.currentTime + 0.4);
+      setTimeout(() => {
+        if (!this.musicOn || document.hidden || ctx.state !== "running") el.pause();
+      }, 450);
+    }
+  }
+
+  /** 整檔抓下來再播：避免 Range 請求，也讓 service worker 能快取供離線使用 */
+  private loadMusic(ctx: AudioContext) {
+    const el = new Audio();
+    el.loop = true;
+    this.bgm = el;
+    this.bgmGain = ctx.createGain();
+    this.bgmGain.gain.value = 0;
+    // 經由 Web Audio 輸出，音量滑桿才能控制（iOS 會忽略 audio.volume）
+    ctx.createMediaElementSource(el).connect(this.bgmGain).connect(this.master);
+    fetch(BGM_URL)
+      .then((r) => (r.ok ? r.blob() : Promise.reject(new Error(r.statusText))))
+      .then((b) => {
+        el.src = URL.createObjectURL(b);
+        this.syncMusic();
+      })
+      .catch(() => {
+        // 下次開啟時重試
+        this.bgm = null;
+      });
   }
 
   private play(ctx: AudioContext, buf: AudioBuffer, v: Voice, rate = 1) {
