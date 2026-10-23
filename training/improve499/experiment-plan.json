@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "purpose": "Improve playing strength while retaining the user's chosen 499-parameter evaluator architecture. Freeze a baseline, relabel its existing training roots with deeper search, compare six training variants, then independently test one selected candidate.",
+  "baseline": "training/scaling-joint/data4x-capacity500-89.cxe",
+  "baseline_sha256": "a9ba34e95d15afe1b72b2996e47a5a453bec28f24a12617c011dca0b29208308",
+  "baseline_selection": "Lowest common validation value loss among the three pre-existing 499-parameter models; no new match results are used to select the baseline.",
+  "data": {
+    "source_train": "training/scaling/train.bin",
+    "source_validation": "training/scaling/validation.bin",
+    "training_rows": 9269,
+    "validation_rows": 1104,
+    "selection": "Exactly the quiet training roots used by the baseline, sorted by seed and ply; quiet validation roots with valid original 640 ms labels. Preserve the original game split. All six variants use the same roots with valid new teacher labels.",
+    "teacher_nodes": 2097152,
+    "teacher_tt_bits": 18,
+    "teacher_flip_min_depth": 5,
+    "teacher_root_margin": 600,
+    "teacher_tablebases": false,
+    "teacher": "Frozen 499 baseline with a cold transposition table and reset history for every root; fixed nodes make labeling repeatable independent of worker scheduling.",
+    "valid_label": "Completed search depth at least 3 and absolute score below 5000. Retain all raw label records and explicitly mask invalid labels in every variant; never substitute a different teacher for missing labels.",
+    "preferences": "At most three pairs per root among exact searched non-flip moves with quiet legal nonrepeating successors. Root-side score gaps must be 10..600. Child-side scalar targets negate teacher root-side move scores. Pair records inherit the parent's training/validation split."
+  },
+  "training": {
+    "seeds": [53, 71, 89],
+    "epochs": 80,
+    "batch_size": 256,
+    "learning_rate": 0.01,
+    "parameters": 499,
+    "initialization": "All fits start from the exact frozen 499 baseline, including its existing nonzero composition corrections. No architecture or engine search changes.",
+    "checkpoint": "Choose the lowest common validation BCE against the new deeper teacher at temperature 600; epoch zero is eligible. Training objectives may differ, but all checkpoints use this same criterion.",
+    "variants": [
+      {"name": "continue-old", "teacher": "old", "bound": 1, "weight_penalty": 0.002, "drift": 0.02, "temperature": 600, "focus": false, "rank_weight": 0},
+      {"name": "deep-value", "teacher": "new", "bound": 1, "weight_penalty": 0.002, "drift": 0.02, "temperature": 600, "focus": false, "rank_weight": 0},
+      {"name": "deep-loose", "teacher": "new", "bound": 4, "weight_penalty": 0.0005, "drift": 0.005, "temperature": 600, "focus": false, "rank_weight": 0},
+      {"name": "deep-close", "teacher": "new", "bound": 1, "weight_penalty": 0.002, "drift": 0.02, "temperature": 400, "focus": true, "rank_weight": 0},
+      {"name": "deep-rank-half", "teacher": "new", "bound": 1, "weight_penalty": 0.002, "drift": 0.02, "temperature": 600, "focus": false, "rank_weight": 0.5},
+      {"name": "deep-rank", "teacher": "new", "bound": 1, "weight_penalty": 0.002, "drift": 0.02, "temperature": 600, "focus": false, "rank_weight": 1.5}
+    ],
+    "rank_objective": "Add weighted teacher-preference BCE at temperature 200 plus 0.1 child-value BCE at temperature 600 and drift stabilization on successor scores. Use 128 random training pairs per root minibatch; do not sample validation pairs for training.",
+    "close_objective": "Root BCE at temperature 400, weighted by 1/(1+(teacher_score/600)^2), normalized within the batch, to emphasize close decisions. All validation checkpoint losses still use temperature 600."
+  },
+  "evaluation": {
+    "opponent": "Frozen 499 baseline",
+    "development_ms": 40,
+    "development_games_per_fit": 64,
+    "development_first_seed": 40000000,
+    "development_pairing": "Three training seeds get disjoint 32-deal blocks, shared across all six conditions; play both seating orders. Each condition aggregates 192 games.",
+    "selection": "Choose the condition with highest aggregate development score; ties use lower mean common validation loss then lexical name. Select its fit by lowest common validation loss, then training seed. Advance only if the condition's aggregate score exceeds 50%.",
+    "primary_holdout_games": 1200,
+    "primary_holdout_ms": 40,
+    "primary_holdout_first_seed": 41000000,
+    "secondary_holdout_games": 400,
+    "secondary_holdout_ms": 160,
+    "secondary_holdout_first_seed": 42000000,
+    "search": "Both sides use the same unchanged engine and production search defaults, including tablebases and the default time-dependent flip threshold. Thus fmd=5 at 40 ms and fmd=6 at 160 ms. The latter tests a second deployment budget, not a pure fixed-algorithm scaling slope.",
+    "success": "Primary 40 ms fresh-holdout paired 95% score interval entirely above 50%. Also report wins/draws/losses and the separate 160 ms result. Secondary comparison is exploratory and pointwise; no blanket all-budget superiority claim.",
+    "statistics": "20000 whole-deal bootstrap replicates. Development condition summaries stratify within fixed training-seed blocks. Final tests contain one frozen selected model and resample whole two-game deals. Score is wins plus half draws; raw win and loss rates also reported."
+  },
+  "compute": {"label_workers": 12, "training_workers": 4, "development_batches": 6, "threads_per_development_batch": 2, "final_batches": 2, "threads_per_final_batch": 6, "gpu": "No allocation unless measured fitting cost warrants it; native search labeling and matches run on CPU."},
+  "stopping": "Exactly 18 fits and 1152 development games, then at most 1600 final games if the declared advancement condition is met. Finish the predetermined final games without optional stopping. Do not tune models after looking at final outcomes. A failed improvement is retained and the frozen 499 baseline stays recommended."
+}

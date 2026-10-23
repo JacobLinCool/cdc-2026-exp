@@ -1,0 +1,88 @@
+{
+  "completed_at_utc": "2026-10-23T13:29:03.130492+00:00",
+  "candidate": "training/ranking/value.cse",
+  "model_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+  "objective": "value",
+  "model_bytes": 1360,
+  "stored_parameters": 169,
+  "trainable_parameters": 139,
+  "frozen_executable_and_sources_verified": true,
+  "rust_tests_passed": 19,
+  "wasm_library_check_passed": true,
+  "total_holdout_games": 1600,
+  "holdout_results": {
+    "baseline": {
+      "purpose": "holdout",
+      "model": "training/ranking/value.cse",
+      "model_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+      "model_scale": 1.0,
+      "opponent": {
+        "kind": "baseline"
+      },
+      "time_ms_per_move": 25.0,
+      "csv_sha256": "2a5842f310bdbbee08cfaf02f37662b024620535a467f83c75dc6a31e15b8000",
+      "first_seed": 12000000,
+      "last_seed": 12000399,
+      "games": 800,
+      "independent_deals": 400,
+      "wins": 307,
+      "draws": 242,
+      "losses": 251,
+      "score": 0.535,
+      "paired_bootstrap_95_ci": [
+        0.509375,
+        0.560625
+      ],
+      "elo": 24.360331652509824,
+      "exceeds_50_percent_at_95_confidence": true,
+      "model_ms_per_move": 21.900270248004805,
+      "opponent_ms_per_move": 21.912000137350848
+    },
+    "previous": {
+      "purpose": "holdout",
+      "model": "training/ranking/value.cse",
+      "model_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+      "model_scale": 1.0,
+      "opponent": {
+        "kind": "learned",
+        "model": "training/strong-teacher.nn",
+        "model_sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+        "model_scale": 0.5
+      },
+      "time_ms_per_move": 25.0,
+      "csv_sha256": "40e2c81fded0aa49f1fd471a7e5eec3578d754a952e20adaa3c3038bc5c84662",
+      "first_seed": 12000000,
+      "last_seed": 12000399,
+      "games": 800,
+      "independent_deals": 400,
+      "wins": 280,
+      "draws": 253,
+      "losses": 267,
+      "score": 0.508125,
+      "paired_bootstrap_95_ci": [
+        0.4825,
+        0.53375
+      ],
+      "elo": 5.646325294001462,
+      "exceeds_50_percent_at_95_confidence": false,
+      "model_ms_per_move": 21.95179821330059,
+      "opponent_ms_per_move": 21.936645830366047
+    }
+  },
+  "benchmark": {
+    "model": "training/ranking/value.cse",
+    "model_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+    "benchmark_binary_sha256": "87d1c1921e1ff1f074defcfe61dd5dc36bb7bcb1b663ead2fb0a7b3a070ef2e8",
+    "positions": 1881,
+    "median_nanoseconds": {
+      "baseline": 859.7,
+      "structured": 852.0,
+      "structured_features": 1425.8,
+      "residual": 1391.9
+    },
+    "same_model_latency_reduction": 0.40244073502595035,
+    "relative_to_previous_model_latency_reduction": 0.3878870608520727,
+    "method": "Median of seven runs of 100 corpus passes after all arena and training work stopped. Assertions verify direct/feature predictions match. Native, machine-dependent timing."
+  },
+  "conclusion": "The selected value-fitting model beats the original engine at 25 ms/move. Superiority or equivalence to the previous residual model is not established. Preference fitting did not win development selection. Default evaluator unchanged."
+}

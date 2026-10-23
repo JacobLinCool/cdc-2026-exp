@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "rr-structured139-vs-expanded1948-t1600-s7",
+    "family": "rr",
+    "a_id": "structured139",
+    "b_id": "expanded1948",
+    "time_ms": 1600,
+    "b_time_ms": 1600,
+    "block": 6,
+    "first_seed": 50000110,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+    "cell_name": "rr-structured139-vs-expanded1948-t1600",
+    "shard": 7
+  },
+  "started_utc": "2026-10-23T20:35:49.391990+00:00",
+  "csv_sha256": "84c9ddc25d96f5d6e4daae08bcba49d6d500644a38539a8d77a45025ce57ba4c",
+  "completed_utc": "2026-10-23T20:41:10.207234+00:00",
+  "elapsed_seconds": 320.8136971676722
+}

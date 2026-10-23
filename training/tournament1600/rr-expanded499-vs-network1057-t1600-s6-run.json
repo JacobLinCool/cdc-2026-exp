@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "rr-expanded499-vs-network1057-t1600-s6",
+    "family": "rr",
+    "a_id": "expanded499",
+    "b_id": "network1057",
+    "time_ms": 1600,
+    "b_time_ms": 1600,
+    "block": 7,
+    "first_seed": 50000124,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+    "cell_name": "rr-expanded499-vs-network1057-t1600",
+    "shard": 6
+  },
+  "started_utc": "2026-10-23T20:31:55.918703+00:00",
+  "csv_sha256": "8ae660fb97238a1dcf9abd44e822831b83245af9904ee3ad8b7de06066673651",
+  "completed_utc": "2026-10-23T20:38:21.350295+00:00",
+  "elapsed_seconds": 385.4299525413662
+}

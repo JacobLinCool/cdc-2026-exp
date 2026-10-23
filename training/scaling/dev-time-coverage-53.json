@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-coverage-53.csv"
+  ],
+  "games": 80,
+  "independent_deals": 40,
+  "first_seed": 16000000,
+  "last_seed": 16000039,
+  "wins": 29,
+  "draws": 24,
+  "losses": 27,
+  "score": 0.5125,
+  "paired_bootstrap_95_ci": [
+    0.44375,
+    0.58125
+  ],
+  "elo": 8.687699877294486,
+  "a_ms_per_move": 21.93727018524991,
+  "a_nodes_per_move": 85766.42327857393,
+  "a_nodes_per_second": 3909621.5050604236,
+  "a_mean_completed_depth": 8.664802516602586,
+  "b_ms_per_move": 22.000759139408782,
+  "b_nodes_per_move": 86225.81546265524,
+  "b_nodes_per_second": 3919220.0103769857,
+  "b_mean_completed_depth": 8.631624978135386
+}

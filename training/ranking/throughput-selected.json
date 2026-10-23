@@ -1,0 +1,15 @@
+{
+  "model": "training/ranking/value.cse",
+  "model_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+  "benchmark_binary_sha256": "87d1c1921e1ff1f074defcfe61dd5dc36bb7bcb1b663ead2fb0a7b3a070ef2e8",
+  "positions": 1881,
+  "median_nanoseconds": {
+    "baseline": 859.7,
+    "structured": 852.0,
+    "structured_features": 1425.8,
+    "residual": 1391.9
+  },
+  "same_model_latency_reduction": 0.40244073502595035,
+  "relative_to_previous_model_latency_reduction": 0.3878870608520727,
+  "method": "Median of seven runs of 100 corpus passes after all arena and training work stopped. Assertions verify direct/feature predictions match. Native, machine-dependent timing."
+}

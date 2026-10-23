@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-small-53.csv"
+  ],
+  "games": 80,
+  "independent_deals": 40,
+  "first_seed": 16000000,
+  "last_seed": 16000039,
+  "wins": 26,
+  "draws": 28,
+  "losses": 26,
+  "score": 0.5,
+  "paired_bootstrap_95_ci": [
+    0.43125,
+    0.56875
+  ],
+  "elo": 0.0,
+  "a_ms_per_move": 21.858399756775537,
+  "a_nodes_per_move": 80493.13968033357,
+  "a_nodes_per_second": 3682480.903268446,
+  "a_mean_completed_depth": 8.849722029186935,
+  "b_ms_per_move": 21.810096628432394,
+  "b_nodes_per_move": 80405.21324296141,
+  "b_nodes_per_second": 3686605.089962894,
+  "b_mean_completed_depth": 8.847410497045534
+}

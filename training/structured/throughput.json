@@ -1,0 +1,21 @@
+{
+  "initial": {
+    "positions": 1881,
+    "median_nanoseconds": {
+      "baseline": 907.4,
+      "structured": 1436.8,
+      "residual": 1399.6
+    },
+    "structured_model": "selfplay.initial.cse"
+  },
+  "cached": {
+    "positions": 1881,
+    "median_nanoseconds": {
+      "baseline": 898.1,
+      "structured": 1506.0,
+      "residual": 1455.8
+    },
+    "structured_model": "interactions.cse"
+  },
+  "note": "Local microbenchmarks during development; not isolated hardware measurements or a claim that phase caching improves throughput."
+}

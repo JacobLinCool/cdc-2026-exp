@@ -1,0 +1,17 @@
+{
+  "completed_utc": "2026-10-23T14:36:10.955723+00:00",
+  "elapsed_seconds": 8.241999416612089,
+  "config": {
+    "model": "training/scaling/data4x-71.cxe",
+    "model_sha256": "a5410245c09779c3bb306327c68e22e3dfa0de97a3987307d3305c8009cbfca1",
+    "opponent": "structured=training/ranking/value.cse",
+    "opponent_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+    "games": 40,
+    "first_seed": 17000020,
+    "time_ms": 25,
+    "threads": 2,
+    "node_limit": 8192,
+    "arena_sha256": "80e451ebde9cedeb9ce3847659de3b9906acb55feed69023f4e2f2026406f2aa"
+  },
+  "csv_sha256": "01cbdfac29b8b7483befa43fc97c57006e1fe633a0545db8f094a4f1d3382771"
+}

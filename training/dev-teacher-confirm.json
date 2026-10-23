@@ -1,0 +1,24 @@
+{
+  "purpose": "development",
+  "model": "training/teacher.nn",
+  "model_sha256": "000ee8077f95a35721a2451385c6be0d942686dd850517655bfa710707bda19e",
+  "model_scale": 0.5,
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "46d205b8900b68d612a533645eaa3772ceec2a29204059398a1ddb210bef7f2e",
+  "first_seed": 3100000,
+  "last_seed": 3100199,
+  "games": 400,
+  "independent_deals": 200,
+  "wins": 155,
+  "draws": 97,
+  "losses": 148,
+  "score": 0.50875,
+  "paired_bootstrap_95_ci": [
+    0.47621875,
+    0.5425
+  ],
+  "elo": 6.08074353991737,
+  "exceeds_50_percent_at_95_confidence": false,
+  "model_ms_per_move": 21.961204925864326,
+  "baseline_ms_per_move": 22.028946476581293
+}

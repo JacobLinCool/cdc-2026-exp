@@ -1,0 +1,6 @@
+*.bin
+*.npz
+*.log
+__pycache__/
+target/
+!*.csv

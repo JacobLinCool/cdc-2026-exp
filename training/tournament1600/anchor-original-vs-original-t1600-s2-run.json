@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "anchor-original-vs-original-t1600-s2",
+    "family": "anchor",
+    "a_id": "original",
+    "b_id": "original",
+    "time_ms": 1600,
+    "b_time_ms": 25,
+    "block": 10,
+    "first_seed": 51000004,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.015625",
+    "cell_name": "anchor-original-vs-original-t1600",
+    "shard": 2
+  },
+  "started_utc": "2026-10-23T19:31:07.796193+00:00",
+  "csv_sha256": "aba148a12fdcc890ab38fe522b12514fbe6efe84f37f83eb085effd430c9e611",
+  "completed_utc": "2026-10-23T19:35:37.769636+00:00",
+  "elapsed_seconds": 269.96965374983847
+}

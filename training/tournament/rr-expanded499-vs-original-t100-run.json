@@ -1,0 +1,20 @@
+{
+  "config": {
+    "name": "rr-expanded499-vs-original-t100",
+    "family": "rr",
+    "a_id": "expanded499",
+    "b_id": "original",
+    "time_ms": 100,
+    "b_time_ms": 100,
+    "block": 1,
+    "first_seed": 50000016,
+    "games": 32,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+  },
+  "started_utc": "2026-10-23T18:01:09.196692+00:00",
+  "csv_sha256": "6bad0f1b1e4d60c3cb32b26a479da8d28b7b4d61ae9ea62e61ab63d744e53a2c",
+  "completed_utc": "2026-10-23T18:04:12.517715+00:00",
+  "elapsed_seconds": 183.32230379153043
+}

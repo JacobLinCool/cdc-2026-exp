@@ -1,0 +1,26 @@
+positions=1881
+baseline: median_ns=878.7 checksum=4942600
+structured: median_ns=820.7 checksum=4841200
+structured_features: median_ns=1406.0 checksum=4841200
+residual: median_ns=1335.9 checksum=18684500
+training/scaling/bound4x-53.cxe: median_ns=818.7 checksum=4738100
+training/scaling/bound4x-71.cxe: median_ns=841.7 checksum=4746800
+training/scaling/bound4x-89.cxe: median_ns=818.0 checksum=4659000
+training/scaling/capacity2000-53.cxe: median_ns=885.4 checksum=4778400
+training/scaling/capacity2000-71.cxe: median_ns=898.4 checksum=4816300
+training/scaling/capacity2000-89.cxe: median_ns=923.2 checksum=4810300
+training/scaling/capacity500-53.cxe: median_ns=896.3 checksum=4768900
+training/scaling/capacity500-71.cxe: median_ns=878.0 checksum=4767000
+training/scaling/capacity500-89.cxe: median_ns=859.2 checksum=4761800
+training/scaling/coverage-53.cxe: median_ns=829.0 checksum=4863400
+training/scaling/coverage-71.cxe: median_ns=820.9 checksum=4889500
+training/scaling/coverage-89.cxe: median_ns=822.0 checksum=4863900
+training/scaling/data4x-53.cxe: median_ns=821.6 checksum=4995000
+training/scaling/data4x-71.cxe: median_ns=828.0 checksum=4935500
+training/scaling/data4x-89.cxe: median_ns=823.3 checksum=4952900
+training/scaling/small-53.cxe: median_ns=824.4 checksum=4790400
+training/scaling/small-71.cxe: median_ns=827.4 checksum=4743100
+training/scaling/small-89.cxe: median_ns=828.4 checksum=4803900
+training/scaling/teacher640-53.cxe: median_ns=823.0 checksum=4769600
+training/scaling/teacher640-71.cxe: median_ns=833.6 checksum=4755500
+training/scaling/teacher640-89.cxe: median_ns=818.8 checksum=4813100

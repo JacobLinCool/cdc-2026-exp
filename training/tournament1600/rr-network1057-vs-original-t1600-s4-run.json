@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "rr-network1057-vs-original-t1600-s4",
+    "family": "rr",
+    "a_id": "network1057",
+    "b_id": "original",
+    "time_ms": 1600,
+    "b_time_ms": 1600,
+    "block": 2,
+    "first_seed": 50000040,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65",
+    "cell_name": "rr-network1057-vs-original-t1600",
+    "shard": 4
+  },
+  "started_utc": "2026-10-23T20:16:34.672702+00:00",
+  "csv_sha256": "6f15c4dbebc24c6976aea238a1f15f0d6179b9e15dce170093df9f57a3d641a4",
+  "completed_utc": "2026-10-23T20:27:57.071083+00:00",
+  "elapsed_seconds": 682.4147059591487
+}

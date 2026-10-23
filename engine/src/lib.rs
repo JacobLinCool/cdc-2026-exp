@@ -7,3 +7,8 @@ pub mod tb;
 
 #[cfg(feature = "wasm")]
 pub mod wasm;
+
+pub mod neural;
+
+pub mod structured;
+pub mod expanded;

@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "purpose": "Supplementary data-by-capacity interaction check, declared after the one-axis development sweep and while its frozen holdout was running; not part of the original seven-condition registration.",
+  "initial_model": "training/ranking/value.cse",
+  "teacher": "training/strong-teacher.nn",
+  "teacher_scale": 0.5,
+  "data": {
+    "training_games": 2048,
+    "small_training_games": 512,
+    "training_first_seed": 14000000,
+    "validation_games": 256,
+    "validation_first_seed": 15000000,
+    "actor_ms": 25,
+    "label_ms": 160,
+    "deep_label_ms": 640,
+    "deep_training_games": 512,
+    "sample_every_plies": 6,
+    "maximum_samples_per_game": 24,
+    "sampling": "Uniform reservoir of public roots, independent of labels; completed games only; no repetitions or positions with five or fewer live pieces",
+    "teacher_comparison": "Identical quiet roots with valid labels at both budgets; cold transposition tables and identical search configuration except time",
+    "validation": "Separate fixed game seeds; quiet validation for checkpoint selection; all-phase metrics also reported",
+    "validation_target": "640ms labels on the same valid quiet validation roots for every condition; full-distribution 160ms phase diagnostics do not select checkpoints"
+  },
+  "training": {
+    "seeds": [
+      53,
+      71,
+      89
+    ],
+    "epochs": 80,
+    "batch_size": 256,
+    "objective": "Scalar sigmoid value cross entropy plus drift and weight regularization",
+    "variants": [
+      {
+        "name": "data4x-capacity500",
+        "games": 2048,
+        "coverage": "quiet",
+        "tier": 1,
+        "bound": 1,
+        "teacher_ms": 160
+      },
+      {
+        "name": "data4x-capacity2000",
+        "games": 2048,
+        "coverage": "quiet",
+        "tier": 2,
+        "bound": 1,
+        "teacher_ms": 160
+      }
+    ],
+    "coverage_comparison": "Match the small condition's row count without replacement; allocate as evenly as available across 0, 1-7, and 8+ hidden pieces; permit tactical roots and roots whose searched best move is a flip",
+    "capacity": "Zero-initialized additive public piece-composition lookup tables; same initial integer scores at every tier",
+    "selection": "For each condition select its seed by lowest common quiet validation value loss; initial checkpoint remains eligible",
+    "matched_quiet_rows": "The small, capacity, bound, and teacher conditions use identical quiet roots with valid labels at both budgets. Data4x contains these rows plus quiet roots from the additional 1536 games.",
+    "capacity_trainable_parameters": [
+      139,
+      499,
+      1948
+    ],
+    "capacity_layout": "Medium: 8 hidden-count phases and 45 feasible predator-count cells across seven piece types. Large adds 5 hidden-count phases with revealed/hidden piece-versus-enemy-count tables; the impossible fully-revealed/hidden-piece group is omitted."
+  },
+  "evaluation": {
+    "development_first_seed": 16000000,
+    "development_time_ms": 25,
+    "development_opponent": "training/ranking/value.cse",
+    "fixed_nodes_games_per_selected_condition": 120,
+    "fixed_nodes_first_seed": 17000000,
+    "fixed_nodes_per_move": 8192,
+    "fixed_nodes_flip_min_depth": 5,
+    "winner": "Highest time-budget development score; then lower validation value loss; then lexical condition name",
+    "holdout_games": 800,
+    "holdout_first_seed": 18000000,
+    "holdout_time_ms": 25,
+    "holdout_opponents": [
+      "original",
+      "training/ranking/value.cse",
+      "training/strong-teacher.nn"
+    ],
+    "long_time_games": 400,
+    "long_time_first_seed": 19000000,
+    "long_time_ms": 100,
+    "long_time_opponent": "training/ranking/value.cse",
+    "paired_seats": true,
+    "interval": "20000 whole-deal bootstrap samples, 95%",
+    "claims": "Development comparisons are exploratory; final frozen-candidate superiority claims use fresh deals and report all predetermined tests without optional stopping",
+    "development_games_per_selected_condition": 240,
+    "development_games_per_training_seed": 80,
+    "fixed_nodes_games_per_training_seed": 40,
+    "seed_blocks": "Training seeds receive disjoint consecutive deal blocks, shared across conditions; aggregate each condition over all three seeds. Final seed selected only by validation loss.",
+    "primary_endpoint": "Frozen selected model versus current structured model at 25ms; other final comparisons secondary with pointwise intervals"
+  },
+  "compute": {
+    "local_workers_max": 12,
+    "colab": "Conditional on measured training cost; L4 only, at most one owned runtime, at most 90 minutes allocated; no automatic alternative GPU",
+    "queue": "6 fits, 6 time-budget development matches, 6 node-budget matches, and at most 2 frozen final matches"
+  },
+  "created_utc": "2026-10-23T14:51:37.802901+00:00",
+  "supplement": {
+    "development_reference": "training/scaling/development-results.json",
+    "reference_sha256": "b5a9bc0ba74382066ec6de6cb3c5f0a2f56005b186474d71310b52136192ad88",
+    "initial_holdout_results_not_used_for_selection": true,
+    "advance_rule": "Only if a new condition strictly exceeds the original small condition aggregate 25ms development score; tie retains the original selection. Choose its training seed by common validation loss only.",
+    "conditional_holdout_games": 800,
+    "conditional_holdout_first_seed": 21000000,
+    "conditional_holdout_time_ms": 25,
+    "conditional_opponents": [
+      "training/ranking/value.cse",
+      "training/scaling/small-53.cxe"
+    ],
+    "stopping_rule": "Exactly two new conditions, three training seeds each, 720 development games. At most two 800-game fresh holdouts. No optional stopping or additional hyperparameter tuning."
+  }
+}

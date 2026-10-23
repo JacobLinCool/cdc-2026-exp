@@ -2,14 +2,18 @@ import "./style.css";
 import { Sound } from "./audio";
 import { Engine } from "./engine";
 import { decodeRecord, type GameRecord, recordUrl, THINK_TIMES } from "./replay";
-import { type Coord, registerWebMcp } from "./webmcp";
+import { type Coord, type NewGameOptions, registerWebMcp } from "./webmcp";
 import {
   type Analysis,
   COLOR_NAMES,
   colorOf,
   EMPTY,
+  ENGINE_NAMES,
+  type EngineModel,
+  type EngineModels,
   FACE_DOWN,
   type HistoryEntry,
+  isEngineModel,
   notate,
   notateMove,
   PIECE_CHARS,
@@ -29,6 +33,9 @@ interface Settings {
   time: number;
   timeA: number;
   timeB: number;
+  model: EngineModel;
+  modelA: EngineModel;
+  modelB: EngineModel;
   variety: number;
   auto: boolean;
   sound: boolean;
@@ -42,6 +49,9 @@ const settings: Settings = {
   time: 2000,
   timeA: 2000,
   timeB: 2000,
+  model: "light",
+  modelA: "light",
+  modelB: "lightning",
   variety: 0.5,
   auto: false,
   sound: true,
@@ -49,7 +59,10 @@ const settings: Settings = {
   volume: 0.8,
 };
 try {
-  Object.assign(settings, JSON.parse(localStorage.getItem(SETTINGS_KEY) ?? "{}"));
+  const saved = JSON.parse(localStorage.getItem(SETTINGS_KEY) ?? "{}") as Partial<Settings>;
+  for (const key of ["model", "modelA", "modelB"] as const)
+    if (saved[key] !== undefined && !isEngineModel(saved[key])) delete saved[key];
+  Object.assign(settings, saved);
 } catch {
   /* storage unavailable */
 }
@@ -70,6 +83,7 @@ let engine = new Engine();
 let game = 0; // generation counter; stale replies are dropped
 let state: Snapshot | null = null;
 let mode: Mode = settings.mode; // 本局的模式（設定改變時立即開新局）
+let models: EngineModels = [settings.model, settings.model]; // 本局固定的搜尋模型
 let firstSeat: Seat = 0;
 let thinking = false;
 let busy = false; // a human move is in flight
@@ -113,6 +127,7 @@ const isHumanPly = (ply: number) => mode === "human" && seatOfPly(ply) === 0;
 
 /** 座位名稱（回放時人機對弈的玩家不稱「你」） */
 const seatName = (seat: Seat) => (mode === "ai" ? (seat ? "電腦 B" : "電腦 A") : seat ? "電腦" : replay ? "玩家" : "你");
+const seatModel = (seat: Seat): EngineModel | null => mode === "ai" ? models[seat] : seat === 1 ? models[0] : null;
 
 function seatColor(s: Snapshot, seat: Seat): number | null {
   if (!s.assigned || s.history.length === 0) return null;
@@ -240,6 +255,10 @@ function setBar(bar: HTMLElement, seat: Seat, color: number | null, s: Snapshot,
   avatar.textContent = mode === "ai" ? (seat ? "B" : "A") : seat ? "機" : "人";
   avatar.classList.toggle("me", seat === 0);
   $("[data-role=name]", bar).textContent = seatName(seat);
+  const model = seatModel(seat);
+  const modelLabel = $("[data-role=model]", bar);
+  modelLabel.textContent = model ? ENGINE_NAMES[model] : "";
+  modelLabel.hidden = model === null;
   const tag = $("[data-role=color]", bar);
   tag.textContent = color === null ? "未定" : `${human ? "你是" : "執"}${COLOR_NAMES[color]}`;
   tag.className = `tag ${color === null ? "" : color ? "black" : "red"}`;
@@ -356,6 +375,7 @@ function renderAnalysis(s: Snapshot) {
   const maxW = Math.max(...a.experts.map((e) => e.weight), 1e-9);
 
   root.innerHTML = `
+    <p class="analysis-model muted">${me} · ${ENGINE_NAMES[a.model]}</p>
     <div class="eval">
       <div class="eval-head"><span>${me}${sp}勝率 <b>${(p * 100).toFixed(0)}%</b></span><span class="muted">評分 ${scoreText}</span></div>
       <div class="eval-bar"><span class="${aiC}" style="width:${p * 100}%"></span><span class="${oppC}"></span></div>
@@ -459,7 +479,10 @@ function apply(next: Snapshot, animate: boolean) {
   if (mode === "ai" && settings.auto && ended) {
     const gen = game;
     setTimeout(() => gen === game && settings.auto && !paused && void newGame(), 2500);
-  } else setTimeout(() => showOver(next), 550);
+  } else {
+    const gen = game;
+    setTimeout(() => gen === game && showOver(next), 550);
+  }
 }
 
 function moveSound(s: Snapshot) {
@@ -492,10 +515,19 @@ function reset(): number {
 }
 
 /** 開新局；from 用於從回放的某一步接手（人機對弈，玩家執輪到走的一方） */
-async function newGame(from?: { seed: number; moves: number[] }) {
+async function newGame(from?: { seed: number; moves: number[]; model: EngineModel }) {
   const gen = reset();
   if (location.search) history.replaceState(null, "", location.pathname);
+  if (from) {
+    settings.mode = "human";
+    settings.model = from.model;
+    syncRadio("mode", settings.mode);
+    syncRadio("model", settings.model);
+    relabelFirst();
+    saveSettings();
+  }
   mode = from ? "human" : settings.mode;
+  models = mode === "ai" ? [settings.modelA, settings.modelB] : [settings.model, settings.model];
   document.body.dataset.mode = mode;
   $("#subtitle").textContent = mode === "ai" ? "電腦對戰" : "與電腦對弈";
   firstSeat = from
@@ -508,12 +540,21 @@ async function newGame(from?: { seed: number; moves: number[] }) {
         ? 0
         : 1;
   seed = from ? from.seed : crypto.getRandomValues(new Uint32Array(1))[0];
-  const { state: s } = await engine.call(from ? { type: "load", seed, moves: from.moves } : { type: "new", seed });
-  if (gen !== game) return;
   state = null; // 新局不計入上一局的終局
-  apply(s, false);
-  if (!from) sound.shuffle();
-  maybeAiMove();
+  statusEl.textContent = "正在開局…";
+  statusEl.classList.remove("error");
+  try {
+    const { state: s } = await engine.call(from ? { type: "load", seed, moves: from.moves, models } : { type: "new", seed, models });
+    if (gen !== game) return;
+    apply(s, false);
+    if (!from) sound.shuffle();
+    maybeAiMove();
+  } catch (e) {
+    if (gen !== game) return;
+    error = `引擎錯誤：${(e as Error).message}`;
+    statusEl.textContent = error;
+    statusEl.classList.add("error");
+  }
 }
 
 // ───────────────────────── replay ─────────────────────────
@@ -527,13 +568,14 @@ function stopReplay() {
 async function startReplay(record: GameRecord, autoplay: boolean) {
   const gen = reset();
   mode = record.mode;
+  models = record.models;
   firstSeat = record.firstSeat;
   seed = record.seed;
   document.body.dataset.mode = "replay";
   $("#subtitle").textContent = "棋局回放";
   let final: Snapshot;
   try {
-    final = (await engine.call({ type: "load", seed, moves: record.moves })).state;
+    final = (await engine.call({ type: "load", seed, moves: record.moves, models })).state;
   } catch (e) {
     if (gen !== game) return;
     toast(`回放連結無效：${(e as Error).message}`);
@@ -557,7 +599,7 @@ async function seek(k: number) {
   r.ply = k;
   const seq = ++seekSeq;
   const gen = game;
-  const { state: s } = await engine.call({ type: "load", seed: r.record.seed, moves: r.record.moves.slice(0, k) });
+  const { state: s } = await engine.call({ type: "load", seed: r.record.seed, moves: r.record.moves.slice(0, k), models: r.record.models });
   if (gen !== game || seq !== seekSeq || replay !== r) return;
   apply(s, step);
 }
@@ -596,7 +638,9 @@ function renderReplay(s: Snapshot) {
   $("#rp-speed").textContent = `${speed}×`;
   ($("#rp-takeover") as HTMLButtonElement).disabled = s.outcome !== -1;
   const t = (ms: number) => `${ms / 1000}s`;
-  const who = r.record.mode === "ai" ? `電腦對戰（A ${t(r.record.timeA)}・B ${t(r.record.timeB)}）` : `人機對弈（電腦 ${t(r.record.timeA)}）`;
+  const who = r.record.mode === "ai"
+    ? `電腦對戰（A ${ENGINE_NAMES[models[0]]} ${t(r.record.timeA)}・B ${ENGINE_NAMES[models[1]]} ${t(r.record.timeB)}）`
+    : `人機對弈（${ENGINE_NAMES[models[0]]} ${t(r.record.timeA)}）`;
   const o = r.final.outcome;
   const result = o === -1 ? "未下完" : o === 2 ? "和局" : `${COLOR_NAMES[o]}方勝`;
   $("#replay-meta").textContent = `${who}・共 ${n} 步・${result}`;
@@ -612,6 +656,7 @@ function currentRecord(): GameRecord | null {
     firstSeat,
     timeA: mode === "ai" ? settings.timeA : settings.time,
     timeB: settings.timeB,
+    models,
     seed,
     moves: state.history.map((h) => h.from | (h.to << 5)),
   };
@@ -809,6 +854,14 @@ for (const key of ["time", "timeA", "timeB"] as const)
     settings[key] = Number(v);
     saveSettings();
   });
+for (const key of ["model", "modelA", "modelB"] as const)
+  bindRadios(key, settings[key], (v) => {
+    if (!isEngineModel(v)) return;
+    settings[key] = v;
+    score.a = score.b = score.draw = 0;
+    saveSettings();
+    void newGame();
+  });
 const auto = $<HTMLInputElement>("#opt-auto");
 auto.checked = settings.auto;
 auto.addEventListener("change", () => {
@@ -886,7 +939,8 @@ $("#rp-speed").addEventListener("click", () => {
 $("#rp-exit").addEventListener("click", () => void newGame());
 $("#rp-takeover").addEventListener("click", () => {
   if (!replay || !state || state.outcome !== -1) return;
-  void newGame({ seed: replay.record.seed, moves: replay.record.moves.slice(0, replay.ply) });
+  const model = models[mode === "ai" ? 1 - seatOfPly(replay.ply) : 0];
+  void newGame({ seed: replay.record.seed, moves: replay.record.moves.slice(0, replay.ply), model });
 });
 
 // 音效設定
@@ -973,7 +1027,7 @@ function describeState() {
   }
   const players = ([0, 1] as Seat[]).map((seat) => {
     const c = seatColor(s, seat);
-    return { name: seatName(seat), color: c === null ? "not yet decided (first flip decides)" : c ? "black 黑" : "red 紅" };
+    return { name: seatName(seat), model: seatModel(seat), color: c === null ? "not yet decided (first flip decides)" : c ? "black 黑" : "red 紅" };
   });
   const yourTurn = !replay && mode === "human" && s.outcome === -1 && isHumanPly(s.ply) && !thinking;
   const moves = s.legal.map(decode);
@@ -1044,6 +1098,7 @@ const agentApi = {
     const { analysis: a } = await engine.call({ type: "suggest", timeMs });
     if (gen !== game || !a) throw new Error("The game changed while thinking.");
     return {
+      model: a.model,
       bestMove: moveText(a.move, s.cells),
       evaluation: `${a.score > 0 ? "+" : ""}${(a.score / 100).toFixed(2)} (pawn ≈ 1.00, from your side)`,
       winProbability: `${Math.round(winProb(a.score) * 100)}%`,
@@ -1052,7 +1107,18 @@ const agentApi = {
       alternatives: a.candidates.map((c) => ({ move: moveText(c.move, s.cells), score: c.score })),
     };
   },
-  async newGame(o: { mode?: "human" | "ai"; first?: "you" | "engine" | "random"; thinkTimeMs?: number }) {
+  async newGame(o: NewGameOptions) {
+    for (const key of ["model", "modelA", "modelB"] as const) {
+      const value = o[key];
+      if (value !== undefined && !isEngineModel(value)) throw new Error(`Unknown engine model: ${value}`);
+    }
+    for (const key of ["model", "modelA", "modelB"] as const) {
+      const value = o[key];
+      if (value !== undefined && value !== settings[key]) {
+        settings[key] = value;
+        score.a = score.b = score.draw = 0;
+      }
+    }
     if (o.mode) settings.mode = o.mode;
     if (o.first) settings.first = o.first === "you" ? "human" : o.first === "engine" ? "ai" : "random";
     if (o.thinkTimeMs !== undefined) {
@@ -1063,6 +1129,7 @@ const agentApi = {
     syncRadio("mode", settings.mode);
     syncRadio("first", settings.first);
     for (const k of ["time", "timeA", "timeB"] as const) syncRadio(k, String(settings[k]));
+    for (const k of ["model", "modelA", "modelB"] as const) syncRadio(k, settings[k]);
     relabelFirst();
     await newGame();
     // 電腦先手時等它走完第一步

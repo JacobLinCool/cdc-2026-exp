@@ -1,0 +1,11 @@
+positions=1881
+baseline: median_ns=839.3 checksum=4942600
+structured: median_ns=822.6 checksum=4841200
+structured_features: median_ns=1415.8 checksum=4841200
+residual: median_ns=1348.6 checksum=18684500
+training/scaling-joint/data4x-capacity2000-53.cxe: median_ns=899.1 checksum=4989900
+training/scaling-joint/data4x-capacity2000-71.cxe: median_ns=891.2 checksum=4922800
+training/scaling-joint/data4x-capacity2000-89.cxe: median_ns=888.6 checksum=4947400
+training/scaling-joint/data4x-capacity500-53.cxe: median_ns=862.5 checksum=4932100
+training/scaling-joint/data4x-capacity500-71.cxe: median_ns=883.5 checksum=4960300
+training/scaling-joint/data4x-capacity500-89.cxe: median_ns=862.0 checksum=4900500

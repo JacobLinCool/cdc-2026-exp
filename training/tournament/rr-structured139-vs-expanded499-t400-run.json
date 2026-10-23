@@ -1,0 +1,20 @@
+{
+  "config": {
+    "name": "rr-structured139-vs-expanded499-t400",
+    "family": "rr",
+    "a_id": "structured139",
+    "b_id": "expanded499",
+    "time_ms": 400,
+    "b_time_ms": 400,
+    "block": 4,
+    "first_seed": 50000064,
+    "games": 32,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe"
+  },
+  "started_utc": "2026-10-23T18:05:20.251021+00:00",
+  "csv_sha256": "9c0af15bf9e09aed6af48f4bbadff0673d169b0e0556b0fe13a4d48792519342",
+  "completed_utc": "2026-10-23T18:18:22.384710+00:00",
+  "elapsed_seconds": 782.1366383330896
+}

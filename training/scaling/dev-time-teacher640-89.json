@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-teacher640-89.csv"
+  ],
+  "games": 80,
+  "independent_deals": 40,
+  "first_seed": 16000080,
+  "last_seed": 16000119,
+  "wins": 24,
+  "draws": 25,
+  "losses": 31,
+  "score": 0.45625,
+  "paired_bootstrap_95_ci": [
+    0.38125,
+    0.53125
+  ],
+  "elo": -30.478556999265034,
+  "a_ms_per_move": 22.044433702193746,
+  "a_nodes_per_move": 86195.987186954,
+  "a_nodes_per_second": 3910102.130606159,
+  "a_mean_completed_depth": 8.369636963696369,
+  "b_ms_per_move": 21.951859138533177,
+  "b_nodes_per_move": 86291.56422196352,
+  "b_nodes_per_second": 3930945.6059004907,
+  "b_mean_completed_depth": 8.382809468374079
+}

@@ -1,0 +1,61 @@
+{
+  "recorded_at_utc": "2026-10-23T13:00:38.404713+00:00",
+  "teacher": {
+    "model": "training/strong-teacher.nn",
+    "model_scale": 0.5,
+    "model_sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+    "play_ms": 25,
+    "label_ms": 160,
+    "root_margin": 600,
+    "flip_min_depth": 5,
+    "minimum_depth": 3
+  },
+  "data": {
+    "games_requested": 512,
+    "first_seed": 10000000,
+    "last_seed": 10000511,
+    "threads": 8,
+    "sample_every_plies": 6,
+    "pairs_per_position_at_most": 3,
+    "score_gap_range": [
+      10,
+      600
+    ],
+    "criteria": "Only exact teacher scores, non-flip candidates, no immediate capture for either side, no already-seen successor hash, nocap below 50, and more than five live pieces at parent. Incomplete games discarded."
+  },
+  "candidates": [
+    "value",
+    "rank",
+    "rank-half",
+    "control"
+  ],
+  "control": "Unchanged previous structured interactions weights with the new direct inference implementation.",
+  "training": {
+    "epochs": 80,
+    "seed": 53,
+    "rank_value_mix": 0.1,
+    "rank_temperature": 200,
+    "value_temperature": 600,
+    "normalized_update_bound": 1
+  },
+  "development": {
+    "first_seed": 11000000,
+    "games_per_candidate": 160,
+    "time_ms": 25,
+    "opponent": "training/strong-teacher.nn",
+    "opponent_scale": 0.5,
+    "selection": "Highest score; ties prefer rank-half, rank, value, then control."
+  },
+  "holdout": {
+    "first_seed": 12000000,
+    "games_per_opponent": 800,
+    "time_ms": 25,
+    "opponents": [
+      "original engine",
+      "training/strong-teacher.nn at scale 0.5"
+    ],
+    "criterion": "Frozen candidate and executable before play; complete both predetermined samples. Superiority requires each opponent comparison score interval above 50%."
+  },
+  "collector_sha256": "c7192b04765f3d7cb3fa951d129b2ecfe321f32c274b484386ad93453afc9ab8",
+  "collector_source_sha256": "8baac5305ef6c0f2b8880d18b25ae0580f64f60ae2cd23665114fe5fb5380ab2"
+}

@@ -1,0 +1,24 @@
+{
+  "purpose": "holdout",
+  "model": "training/strong-teacher.nn",
+  "model_sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+  "model_scale": 0.5,
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "631b9e15d78cfcb1ad35c7bfafc0688116f61d17e1e297a756ca17e9fbaedcf5",
+  "first_seed": 4000000,
+  "last_seed": 4000399,
+  "games": 800,
+  "independent_deals": 400,
+  "wins": 312,
+  "draws": 236,
+  "losses": 252,
+  "score": 0.5375,
+  "paired_bootstrap_95_ci": [
+    0.51125,
+    0.56375
+  ],
+  "elo": 26.106692605036596,
+  "exceeds_50_percent_at_95_confidence": true,
+  "model_ms_per_move": 21.88593983529453,
+  "baseline_ms_per_move": 21.97532256541206
+}

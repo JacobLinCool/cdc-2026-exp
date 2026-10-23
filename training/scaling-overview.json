@@ -1,0 +1,2092 @@
+{
+  "conditions": {
+    "small": {
+      "training_positions": 2262,
+      "trainable_parameters": 139,
+      "observed_nonzero_extra_features": 0,
+      "training_phase_counts": [
+        1023,
+        560,
+        679
+      ],
+      "model_bytes": 1372,
+      "selected_seed": 53,
+      "validation_loss_mean": 0.518013969894819,
+      "validation_loss_std": 4.3131347924877794e-06,
+      "baseline_validation_loss": 0.5186092518858603,
+      "median_eval_ns": 827.4,
+      "total_fitting_seconds": 11.740163456648588,
+      "time": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-small-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-small-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-small-89.csv"
+        ],
+        "games": 240,
+        "independent_deals": 120,
+        "first_seed": 16000000,
+        "last_seed": 16000119,
+        "wins": 94,
+        "draws": 73,
+        "losses": 73,
+        "score": 0.54375,
+        "paired_bootstrap_95_ci": [
+          0.5020833333333333,
+          0.5854166666666667
+        ],
+        "elo": 30.478556999265034,
+        "a_ms_per_move": 21.919952273536744,
+        "a_nodes_per_move": 80598.42936008549,
+        "a_nodes_per_second": 3676943.651806641,
+        "a_mean_completed_depth": 8.861332066959516,
+        "b_ms_per_move": 21.94284180824522,
+        "b_nodes_per_move": 80942.60288701438,
+        "b_nodes_per_second": 3688793.074040185,
+        "b_mean_completed_depth": 8.879291909231318,
+        "contrast_to_small": {
+          "score_difference": 0.0,
+          "paired_bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-small-53.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000000,
+            "last_seed": 16000039,
+            "wins": 26,
+            "draws": 28,
+            "losses": 26,
+            "score": 0.5,
+            "paired_bootstrap_95_ci": [
+              0.43125,
+              0.56875
+            ],
+            "elo": 0.0,
+            "a_ms_per_move": 21.858399756775537,
+            "a_nodes_per_move": 80493.13968033357,
+            "a_nodes_per_second": 3682480.903268446,
+            "a_mean_completed_depth": 8.849722029186935,
+            "b_ms_per_move": 21.810096628432394,
+            "b_nodes_per_move": 80405.21324296141,
+            "b_nodes_per_second": 3686605.089962894,
+            "b_mean_completed_depth": 8.847410497045534
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-small-71.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000040,
+            "last_seed": 16000079,
+            "wins": 38,
+            "draws": 20,
+            "losses": 22,
+            "score": 0.6,
+            "paired_bootstrap_95_ci": [
+              0.53125,
+              0.66875
+            ],
+            "elo": 70.43650362227247,
+            "a_ms_per_move": 21.733410134888807,
+            "a_nodes_per_move": 79397.15092963909,
+            "a_nodes_per_second": 3653230.231098535,
+            "a_mean_completed_depth": 9.170980678089682,
+            "b_ms_per_move": 21.88852537422417,
+            "b_nodes_per_move": 80053.52610441767,
+            "b_nodes_per_second": 3657328.4282863727,
+            "b_mean_completed_depth": 9.212121212121213
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-small-89.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000080,
+            "last_seed": 16000119,
+            "wins": 30,
+            "draws": 25,
+            "losses": 25,
+            "score": 0.53125,
+            "paired_bootstrap_95_ci": [
+              0.45625,
+              0.60625
+            ],
+            "elo": 21.74306492903707,
+            "a_ms_per_move": 22.165788543897214,
+            "a_nodes_per_move": 81882.55870806567,
+            "a_nodes_per_second": 3694096.3569107917,
+            "a_mean_completed_depth": 8.570128479657388,
+            "b_ms_per_move": 22.13230292752588,
+            "b_nodes_per_move": 82363.97072474116,
+            "b_nodes_per_second": 3721436.9871246126,
+            "b_mean_completed_depth": 8.586576222777579
+          }
+        }
+      },
+      "nodes": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-small-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-small-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-small-89.csv"
+        ],
+        "games": 120,
+        "independent_deals": 60,
+        "first_seed": 17000000,
+        "last_seed": 17000059,
+        "wins": 48,
+        "draws": 28,
+        "losses": 44,
+        "score": 0.5166666666666667,
+        "paired_bootstrap_95_ci": [
+          0.4583333333333333,
+          0.5791666666666667
+        ],
+        "elo": 11.585478374126659,
+        "a_ms_per_move": 2.8081678600774738,
+        "a_nodes_per_move": 7710.573189341472,
+        "a_nodes_per_second": 2745766.4831790887,
+        "a_mean_completed_depth": 6.403098955276441,
+        "b_ms_per_move": 2.7628878318064363,
+        "b_nodes_per_move": 7707.430467465351,
+        "b_nodes_per_second": 2789628.4383090804,
+        "b_mean_completed_depth": 6.422832980972516,
+        "contrast_to_small": {
+          "score_difference": 0.0,
+          "paired_bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-small-53.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000000,
+            "last_seed": 17000019,
+            "wins": 12,
+            "draws": 12,
+            "losses": 16,
+            "score": 0.45,
+            "paired_bootstrap_95_ci": [
+              0.3625,
+              0.525
+            ],
+            "elo": -34.86007028756008,
+            "a_ms_per_move": 2.8200913637879292,
+            "a_nodes_per_move": 7753.935645215071,
+            "a_nodes_per_second": 2749533.488446996,
+            "a_mean_completed_depth": 6.468822940980327,
+            "b_ms_per_move": 2.760298766255419,
+            "b_nodes_per_move": 7749.731577192398,
+            "b_nodes_per_second": 2807569.844225801,
+            "b_mean_completed_depth": 6.431143714571524
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-small-71.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000020,
+            "last_seed": 17000039,
+            "wins": 15,
+            "draws": 12,
+            "losses": 13,
+            "score": 0.525,
+            "paired_bootstrap_95_ci": [
+              0.425,
+              0.6375
+            ],
+            "elo": 17.386277512436138,
+            "a_ms_per_move": 2.792537313432836,
+            "a_nodes_per_move": 7742.416791044776,
+            "a_nodes_per_second": 2772538.3484767503,
+            "a_mean_completed_depth": 6.261567164179104,
+            "b_ms_per_move": 2.7872836879432623,
+            "b_nodes_per_move": 7732.832400149309,
+            "b_nodes_per_second": 2774325.567791547,
+            "b_mean_completed_depth": 6.296005972377753
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-small-89.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000040,
+            "last_seed": 17000059,
+            "wins": 21,
+            "draws": 4,
+            "losses": 15,
+            "score": 0.575,
+            "paired_bootstrap_95_ci": [
+              0.4625,
+              0.6875
+            ],
+            "elo": 52.51156585572756,
+            "a_ms_per_move": 2.8103267605633806,
+            "a_nodes_per_move": 7634.733450704225,
+            "a_nodes_per_second": 2716671.085313121,
+            "a_mean_completed_depth": 6.467253521126761,
+            "b_ms_per_move": 2.7425803949224257,
+            "b_nodes_per_move": 7638.7023977433,
+            "b_nodes_per_second": 2785224.6052241474,
+            "b_mean_completed_depth": 6.533850493653032
+          }
+        }
+      },
+      "validation_excess_cross_entropy": 0.009035579633285384,
+      "reducible_validation_error_reduction": 0.061809837402053286
+    },
+    "data4x": {
+      "training_positions": 9269,
+      "trainable_parameters": 139,
+      "observed_nonzero_extra_features": 0,
+      "training_phase_counts": [
+        4458,
+        2187,
+        2624
+      ],
+      "model_bytes": 1372,
+      "selected_seed": 89,
+      "validation_loss_mean": 0.5178085524734936,
+      "validation_loss_std": 5.07147857418215e-06,
+      "baseline_validation_loss": 0.5186092518858603,
+      "median_eval_ns": 823.3,
+      "total_fitting_seconds": 37.17261004075408,
+      "time": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-data4x-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-data4x-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-data4x-89.csv"
+        ],
+        "games": 240,
+        "independent_deals": 120,
+        "first_seed": 16000000,
+        "last_seed": 16000119,
+        "wins": 90,
+        "draws": 68,
+        "losses": 82,
+        "score": 0.5166666666666667,
+        "paired_bootstrap_95_ci": [
+          0.47291666666666665,
+          0.5604166666666667
+        ],
+        "elo": 11.585478374126659,
+        "a_ms_per_move": 22.034880657664417,
+        "a_nodes_per_move": 83363.0748312078,
+        "a_nodes_per_second": 3783232.4180168197,
+        "a_mean_completed_depth": 8.465616404101025,
+        "b_ms_per_move": 22.112821862094858,
+        "b_nodes_per_move": 83721.8946314604,
+        "b_nodes_per_second": 3786124.4102442656,
+        "b_mean_completed_depth": 8.441872106119384,
+        "contrast_to_small": {
+          "score_difference": -0.027083333333333334,
+          "paired_bootstrap_95_ci": [
+            -0.08541666666666667,
+            0.03333333333333333
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-data4x-53.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000000,
+            "last_seed": 16000039,
+            "wins": 31,
+            "draws": 23,
+            "losses": 26,
+            "score": 0.53125,
+            "paired_bootstrap_95_ci": [
+              0.4625,
+              0.6
+            ],
+            "elo": 21.74306492903707,
+            "a_ms_per_move": 22.087953879156238,
+            "a_nodes_per_move": 81427.73596710761,
+            "a_nodes_per_second": 3686522.3647514316,
+            "a_mean_completed_depth": 8.459599570968896,
+            "b_ms_per_move": 22.208498209169054,
+            "b_nodes_per_move": 81726.92800859599,
+            "b_nodes_per_second": 3679984.4473434053,
+            "b_mean_completed_depth": 8.351540114613181
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-data4x-71.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000040,
+            "last_seed": 16000079,
+            "wins": 33,
+            "draws": 18,
+            "losses": 29,
+            "score": 0.525,
+            "paired_bootstrap_95_ci": [
+              0.43125,
+              0.6125
+            ],
+            "elo": 17.386277512436138,
+            "a_ms_per_move": 22.059942823108994,
+            "a_nodes_per_move": 83790.71252729799,
+            "a_nodes_per_second": 3798319.569510518,
+            "a_mean_completed_depth": 7.9432201707365495,
+            "b_ms_per_move": 22.149805003971405,
+            "b_nodes_per_move": 84229.78772835583,
+            "b_nodes_per_second": 3802732.697342195,
+            "b_mean_completed_depth": 8.051429706115965
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-data4x-89.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000080,
+            "last_seed": 16000119,
+            "wins": 26,
+            "draws": 27,
+            "losses": 27,
+            "score": 0.49375,
+            "paired_bootstrap_95_ci": [
+              0.425,
+              0.5625
+            ],
+            "elo": -4.343171035283309,
+            "a_ms_per_move": 21.95601211556384,
+            "a_nodes_per_move": 84979.52861136998,
+            "a_nodes_per_second": 3870444.6036960874,
+            "a_mean_completed_depth": 8.962348555452003,
+            "b_ms_per_move": 21.978449645654607,
+            "b_nodes_per_move": 85322.44367773218,
+            "b_nodes_per_second": 3882095.64611403,
+            "b_mean_completed_depth": 8.902648265572548
+          }
+        }
+      },
+      "nodes": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-data4x-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-data4x-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-data4x-89.csv"
+        ],
+        "games": 120,
+        "independent_deals": 60,
+        "first_seed": 17000000,
+        "last_seed": 17000059,
+        "wins": 43,
+        "draws": 34,
+        "losses": 43,
+        "score": 0.5,
+        "paired_bootstrap_95_ci": [
+          0.4375,
+          0.5625
+        ],
+        "elo": 0.0,
+        "a_ms_per_move": 2.6912967320261436,
+        "a_nodes_per_move": 7732.107189542484,
+        "a_nodes_per_second": 2873004.3393324986,
+        "a_mean_completed_depth": 6.194295900178253,
+        "b_ms_per_move": 2.6889302353220823,
+        "b_nodes_per_move": 7739.4024245305445,
+        "b_nodes_per_second": 2878245.8997503566,
+        "b_mean_completed_depth": 6.2034704064654145,
+        "contrast_to_small": {
+          "score_difference": -0.016666666666666666,
+          "paired_bootstrap_95_ci": [
+            -0.0875,
+            0.05416666666666667
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-data4x-53.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000000,
+            "last_seed": 17000019,
+            "wins": 11,
+            "draws": 12,
+            "losses": 17,
+            "score": 0.425,
+            "paired_bootstrap_95_ci": [
+              0.3,
+              0.55
+            ],
+            "elo": -52.51156585572756,
+            "a_ms_per_move": 2.377316570188133,
+            "a_nodes_per_move": 7728.332127351664,
+            "a_nodes_per_second": 3250863.69407675,
+            "a_mean_completed_depth": 6.058610709117222,
+            "b_ms_per_move": 2.3735988435128297,
+            "b_nodes_per_move": 7731.073364654861,
+            "b_nodes_per_second": 3257110.351980618,
+            "b_mean_completed_depth": 5.992410552945429
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-data4x-71.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000020,
+            "last_seed": 17000039,
+            "wins": 14,
+            "draws": 13,
+            "losses": 13,
+            "score": 0.5125,
+            "paired_bootstrap_95_ci": [
+              0.4,
+              0.625
+            ],
+            "elo": 8.687699877294486,
+            "a_ms_per_move": 2.79565472972973,
+            "a_nodes_per_move": 7788.515878378378,
+            "a_nodes_per_second": 2785936.258706501,
+            "a_mean_completed_depth": 6.240878378378379,
+            "b_ms_per_move": 2.747551537681649,
+            "b_nodes_per_move": 7800.350118283204,
+            "b_nodes_per_second": 2839018.6721902383,
+            "b_mean_completed_depth": 6.2747549847921595
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-data4x-89.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000040,
+            "last_seed": 17000059,
+            "wins": 18,
+            "draws": 9,
+            "losses": 13,
+            "score": 0.5625,
+            "paired_bootstrap_95_ci": [
+              0.5,
+              0.6375
+            ],
+            "elo": 43.65778777002723,
+            "a_ms_per_move": 2.899004459308807,
+            "a_nodes_per_move": 7673.937198067633,
+            "a_nodes_per_second": 2647093.9613170815,
+            "a_mean_completed_depth": 6.282422891118543,
+            "b_ms_per_move": 2.9489977678571426,
+            "b_nodes_per_move": 7680.883928571428,
+            "b_nodes_per_second": 2604574.3446434205,
+            "b_mean_completed_depth": 6.342261904761905
+          }
+        }
+      },
+      "validation_excess_cross_entropy": 0.00883016221195998,
+      "reducible_validation_error_reduction": 0.08313891774171246
+    },
+    "coverage": {
+      "training_positions": 2262,
+      "trainable_parameters": 139,
+      "observed_nonzero_extra_features": 0,
+      "training_phase_counts": [
+        754,
+        754,
+        754
+      ],
+      "model_bytes": 1372,
+      "selected_seed": 71,
+      "validation_loss_mean": 0.5178695494764115,
+      "validation_loss_std": 4.763467396772954e-06,
+      "baseline_validation_loss": 0.5186092518858603,
+      "median_eval_ns": 822.0,
+      "total_fitting_seconds": 10.11282712686807,
+      "time": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-coverage-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-coverage-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-coverage-89.csv"
+        ],
+        "games": 240,
+        "independent_deals": 120,
+        "first_seed": 16000000,
+        "last_seed": 16000119,
+        "wins": 87,
+        "draws": 78,
+        "losses": 75,
+        "score": 0.525,
+        "paired_bootstrap_95_ci": [
+          0.48333333333333334,
+          0.5666666666666667
+        ],
+        "elo": 17.386277512436138,
+        "a_ms_per_move": 22.00687307993494,
+        "a_nodes_per_move": 84537.38582013131,
+        "a_nodes_per_second": 3841408.3415244212,
+        "a_mean_completed_depth": 8.513282332389615,
+        "b_ms_per_move": 21.984366534104606,
+        "b_nodes_per_move": 84476.32019763798,
+        "b_nodes_per_second": 3842563.308184881,
+        "b_mean_completed_depth": 8.535731501566643,
+        "contrast_to_small": {
+          "score_difference": -0.01875,
+          "paired_bootstrap_95_ci": [
+            -0.07708333333333334,
+            0.03958333333333333
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-coverage-53.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000000,
+            "last_seed": 16000039,
+            "wins": 29,
+            "draws": 24,
+            "losses": 27,
+            "score": 0.5125,
+            "paired_bootstrap_95_ci": [
+              0.44375,
+              0.58125
+            ],
+            "elo": 8.687699877294486,
+            "a_ms_per_move": 21.93727018524991,
+            "a_nodes_per_move": 85766.42327857393,
+            "a_nodes_per_second": 3909621.5050604236,
+            "a_mean_completed_depth": 8.664802516602586,
+            "b_ms_per_move": 22.000759139408782,
+            "b_nodes_per_move": 86225.81546265524,
+            "b_nodes_per_second": 3919220.0103769857,
+            "b_mean_completed_depth": 8.631624978135386
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-coverage-71.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000040,
+            "last_seed": 16000079,
+            "wins": 33,
+            "draws": 25,
+            "losses": 22,
+            "score": 0.56875,
+            "paired_bootstrap_95_ci": [
+              0.50625,
+              0.63125
+            ],
+            "elo": 48.076920633535295,
+            "a_ms_per_move": 21.951087349397593,
+            "a_nodes_per_move": 85720.13164422395,
+            "a_nodes_per_second": 3905051.7306868806,
+            "a_mean_completed_depth": 8.449326718639263,
+            "b_ms_per_move": 21.911768930661463,
+            "b_nodes_per_move": 85454.64195779394,
+            "b_nodes_per_second": 3899942.6394194937,
+            "b_mean_completed_depth": 8.469409469764143
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-coverage-89.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000080,
+            "last_seed": 16000119,
+            "wins": 25,
+            "draws": 29,
+            "losses": 26,
+            "score": 0.49375,
+            "paired_bootstrap_95_ci": [
+              0.41875,
+              0.575
+            ],
+            "elo": -4.343171035283309,
+            "a_ms_per_move": 22.14309512893983,
+            "a_nodes_per_move": 81918.86246418337,
+            "a_nodes_per_second": 3699521.7690737303,
+            "a_mean_completed_depth": 8.416618911174785,
+            "b_ms_per_move": 22.044607251908396,
+            "b_nodes_per_move": 81514.75133587787,
+            "b_nodes_per_second": 3697718.4671240244,
+            "b_mean_completed_depth": 8.502480916030533
+          }
+        }
+      },
+      "nodes": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-coverage-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-coverage-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-coverage-89.csv"
+        ],
+        "games": 120,
+        "independent_deals": 60,
+        "first_seed": 17000000,
+        "last_seed": 17000059,
+        "wins": 47,
+        "draws": 32,
+        "losses": 41,
+        "score": 0.525,
+        "paired_bootstrap_95_ci": [
+          0.45416666666666666,
+          0.5958333333333333
+        ],
+        "elo": 17.386277512436138,
+        "a_ms_per_move": 2.8030871698995092,
+        "a_nodes_per_move": 7794.4652956298205,
+        "a_nodes_per_second": 2780671.7462551305,
+        "a_mean_completed_depth": 5.842603412012152,
+        "b_ms_per_move": 2.8008321056939085,
+        "b_nodes_per_move": 7793.270314509529,
+        "b_nodes_per_second": 2782483.9263540003,
+        "b_mean_completed_depth": 5.882497369344089,
+        "contrast_to_small": {
+          "score_difference": 0.008333333333333333,
+          "paired_bootstrap_95_ci": [
+            -0.07916666666666666,
+            0.09583333333333334
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-coverage-53.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000000,
+            "last_seed": 17000019,
+            "wins": 18,
+            "draws": 10,
+            "losses": 12,
+            "score": 0.575,
+            "paired_bootstrap_95_ci": [
+              0.4375,
+              0.7125
+            ],
+            "elo": 52.51156585572756,
+            "a_ms_per_move": 2.788395889487871,
+            "a_nodes_per_move": 7802.042115902965,
+            "a_nodes_per_second": 2798039.598794532,
+            "a_mean_completed_depth": 5.859164420485175,
+            "b_ms_per_move": 2.7598016194331985,
+            "b_nodes_per_move": 7791.480431848853,
+            "b_nodes_per_second": 2823203.0798826218,
+            "b_mean_completed_depth": 5.961538461538462
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-coverage-71.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000020,
+            "last_seed": 17000039,
+            "wins": 14,
+            "draws": 14,
+            "losses": 12,
+            "score": 0.525,
+            "paired_bootstrap_95_ci": [
+              0.4,
+              0.6375
+            ],
+            "elo": 17.386277512436138,
+            "a_ms_per_move": 2.7524699901607086,
+            "a_nodes_per_move": 7854.446047884552,
+            "a_nodes_per_second": 2853599.1585601103,
+            "a_mean_completed_depth": 5.666120039357167,
+            "b_ms_per_move": 2.766597572974746,
+            "b_nodes_per_move": 7860.238438832404,
+            "b_nodes_per_second": 2841120.991218391,
+            "b_mean_completed_depth": 5.760249262053132
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-coverage-89.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000040,
+            "last_seed": 17000059,
+            "wins": 15,
+            "draws": 8,
+            "losses": 17,
+            "score": 0.475,
+            "paired_bootstrap_95_ci": [
+              0.375,
+              0.575
+            ],
+            "elo": -17.386277512436145,
+            "a_ms_per_move": 2.8809838646202284,
+            "a_nodes_per_move": 7713.643053915781,
+            "a_nodes_per_second": 2677433.6186477025,
+            "a_mean_completed_depth": 6.035025580480126,
+            "b_ms_per_move": 2.889806692913386,
+            "b_nodes_per_move": 7714.970866141733,
+            "b_nodes_per_second": 2669718.6649408066,
+            "b_mean_completed_depth": 5.937007874015748
+          }
+        }
+      },
+      "validation_excess_cross_entropy": 0.00889115921487793,
+      "reducible_validation_error_reduction": 0.07680542388651286
+    },
+    "capacity500": {
+      "training_positions": 2262,
+      "trainable_parameters": 499,
+      "observed_nonzero_extra_features": 272,
+      "training_phase_counts": [
+        1023,
+        560,
+        679
+      ],
+      "model_bytes": 4252,
+      "selected_seed": 89,
+      "validation_loss_mean": 0.5178227319391671,
+      "validation_loss_std": 2.2546719538688407e-06,
+      "baseline_validation_loss": 0.5186092518858603,
+      "median_eval_ns": 878.0,
+      "total_fitting_seconds": 10.661306831985712,
+      "time": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity500-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity500-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity500-89.csv"
+        ],
+        "games": 240,
+        "independent_deals": 120,
+        "first_seed": 16000000,
+        "last_seed": 16000119,
+        "wins": 89,
+        "draws": 71,
+        "losses": 80,
+        "score": 0.51875,
+        "paired_bootstrap_95_ci": [
+          0.475,
+          0.5625
+        ],
+        "elo": 13.034946881436854,
+        "a_ms_per_move": 21.996865651396508,
+        "a_nodes_per_move": 77331.77766816696,
+        "a_nodes_per_second": 3515581.6693937676,
+        "a_mean_completed_depth": 8.602194956532461,
+        "b_ms_per_move": 22.010511187819763,
+        "b_nodes_per_move": 80069.60771743821,
+        "b_nodes_per_second": 3637789.5558258253,
+        "b_mean_completed_depth": 8.758737594772853,
+        "contrast_to_small": {
+          "score_difference": -0.025,
+          "paired_bootstrap_95_ci": [
+            -0.08333333333333333,
+            0.03333333333333333
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity500-53.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000000,
+            "last_seed": 16000039,
+            "wins": 34,
+            "draws": 22,
+            "losses": 24,
+            "score": 0.5625,
+            "paired_bootstrap_95_ci": [
+              0.4875,
+              0.6375
+            ],
+            "elo": 43.65778777002723,
+            "a_ms_per_move": 22.06845499124343,
+            "a_nodes_per_move": 77318.05288966725,
+            "a_nodes_per_second": 3503555.320041497,
+            "a_mean_completed_depth": 8.348336252189142,
+            "b_ms_per_move": 22.09802435605397,
+            "b_nodes_per_move": 79761.32836867006,
+            "b_nodes_per_second": 3609432.5485173366,
+            "b_mean_completed_depth": 8.546521815314525
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity500-71.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000040,
+            "last_seed": 16000079,
+            "wins": 30,
+            "draws": 23,
+            "losses": 27,
+            "score": 0.51875,
+            "paired_bootstrap_95_ci": [
+              0.45,
+              0.5875
+            ],
+            "elo": 13.034946881436854,
+            "a_ms_per_move": 21.96212766768293,
+            "a_nodes_per_move": 77662.61833079268,
+            "a_nodes_per_second": 3536206.4871825934,
+            "a_mean_completed_depth": 8.21169969512195,
+            "b_ms_per_move": 21.908982282339494,
+            "b_nodes_per_move": 80525.13793103448,
+            "b_nodes_per_second": 3675439.4564436064,
+            "b_mean_completed_depth": 8.312821489807583
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity500-89.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000080,
+            "last_seed": 16000119,
+            "wins": 25,
+            "draws": 26,
+            "losses": 29,
+            "score": 0.475,
+            "paired_bootstrap_95_ci": [
+              0.3875,
+              0.5625
+            ],
+            "elo": -17.386277512436145,
+            "a_ms_per_move": 21.953818665652918,
+            "a_nodes_per_move": 77016.65063676107,
+            "a_nodes_per_second": 3508120.9246414513,
+            "a_mean_completed_depth": 9.267249572324653,
+            "b_ms_per_move": 22.01686918549459,
+            "b_nodes_per_move": 79949.66698310233,
+            "b_nodes_per_second": 3631291.366157351,
+            "b_mean_completed_depth": 9.433073856085057
+          }
+        }
+      },
+      "nodes": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity500-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity500-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity500-89.csv"
+        ],
+        "games": 120,
+        "independent_deals": 60,
+        "first_seed": 17000000,
+        "last_seed": 17000059,
+        "wins": 41,
+        "draws": 33,
+        "losses": 46,
+        "score": 0.4791666666666667,
+        "paired_bootstrap_95_ci": [
+          0.4125,
+          0.5458333333333333
+        ],
+        "elo": -14.484869061777864,
+        "a_ms_per_move": 2.911531823461092,
+        "a_nodes_per_move": 7719.719976771196,
+        "a_nodes_per_second": 2651429.022539193,
+        "a_mean_completed_depth": 6.582229965156794,
+        "b_ms_per_move": 2.8063645651921516,
+        "b_nodes_per_move": 7714.390456287008,
+        "b_nodes_per_second": 2748891.0571242208,
+        "b_mean_completed_depth": 6.555903866248694,
+        "contrast_to_small": {
+          "score_difference": -0.0375,
+          "paired_bootstrap_95_ci": [
+            -0.10416666666666667,
+            0.029166666666666667
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity500-53.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000000,
+            "last_seed": 17000019,
+            "wins": 12,
+            "draws": 11,
+            "losses": 17,
+            "score": 0.4375,
+            "paired_bootstrap_95_ci": [
+              0.3625,
+              0.525
+            ],
+            "elo": -43.65778777002721,
+            "a_ms_per_move": 2.9027039618488626,
+            "a_nodes_per_move": 7707.998165810712,
+            "a_nodes_per_second": 2655454.4545772905,
+            "a_mean_completed_depth": 6.624358033749083,
+            "b_ms_per_move": 2.7986871794871795,
+            "b_nodes_per_move": 7700.8824175824175,
+            "b_nodes_per_second": 2751605.27908428,
+            "b_mean_completed_depth": 6.5216117216117215
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity500-71.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000020,
+            "last_seed": 17000039,
+            "wins": 13,
+            "draws": 16,
+            "losses": 11,
+            "score": 0.525,
+            "paired_bootstrap_95_ci": [
+              0.4125,
+              0.65
+            ],
+            "elo": 17.386277512436138,
+            "a_ms_per_move": 3.0678918918918914,
+            "a_nodes_per_move": 7767.209797297297,
+            "a_nodes_per_second": 2531774.283776165,
+            "a_mean_completed_depth": 6.61722972972973,
+            "b_ms_per_move": 2.9765645706558486,
+            "b_nodes_per_move": 7761.865787694388,
+            "b_nodes_per_second": 2607659.1330199693,
+            "b_mean_completed_depth": 6.7014874915483436
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity500-89.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000040,
+            "last_seed": 17000059,
+            "wins": 16,
+            "draws": 6,
+            "losses": 18,
+            "score": 0.475,
+            "paired_bootstrap_95_ci": [
+              0.3375,
+              0.6125
+            ],
+            "elo": -17.386277512436145,
+            "a_ms_per_move": 2.7614767441860466,
+            "a_nodes_per_move": 7682.573529411765,
+            "a_nodes_per_second": 2782052.5903708907,
+            "a_mean_completed_depth": 6.507523939808482,
+            "b_ms_per_move": 2.6414099145299144,
+            "b_nodes_per_move": 7678.987008547008,
+            "b_nodes_per_second": 2907154.6094781808,
+            "b_mean_completed_depth": 6.44068376068376
+          }
+        }
+      },
+      "validation_excess_cross_entropy": 0.008844341677633483,
+      "reducible_validation_error_reduction": 0.08166662313022238
+    },
+    "capacity2000": {
+      "training_positions": 2262,
+      "trainable_parameters": 1948,
+      "observed_nonzero_extra_features": 1586,
+      "training_phase_counts": [
+        1023,
+        560,
+        679
+      ],
+      "model_bytes": 15844,
+      "selected_seed": 89,
+      "validation_loss_mean": 0.5178007704743967,
+      "validation_loss_std": 1.2311057085331368e-05,
+      "baseline_validation_loss": 0.5186092518858603,
+      "median_eval_ns": 898.4,
+      "total_fitting_seconds": 11.554747915826738,
+      "time": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity2000-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity2000-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity2000-89.csv"
+        ],
+        "games": 240,
+        "independent_deals": 120,
+        "first_seed": 16000000,
+        "last_seed": 16000119,
+        "wins": 93,
+        "draws": 61,
+        "losses": 86,
+        "score": 0.5145833333333333,
+        "paired_bootstrap_95_ci": [
+          0.46875,
+          0.5604166666666667
+        ],
+        "elo": 10.136412893458683,
+        "a_ms_per_move": 21.78823130728413,
+        "a_nodes_per_move": 76807.63506994693,
+        "a_nodes_per_second": 3525189.079678487,
+        "a_mean_completed_depth": 8.68958031837916,
+        "b_ms_per_move": 21.87005715663813,
+        "b_nodes_per_move": 83504.42367056553,
+        "b_nodes_per_second": 3818207.838803923,
+        "b_mean_completed_depth": 8.810321958278065,
+        "contrast_to_small": {
+          "score_difference": -0.029166666666666667,
+          "paired_bootstrap_95_ci": [
+            -0.08541666666666667,
+            0.02713541666666212
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity2000-53.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000000,
+            "last_seed": 16000039,
+            "wins": 33,
+            "draws": 22,
+            "losses": 25,
+            "score": 0.55,
+            "paired_bootstrap_95_ci": [
+              0.475,
+              0.625
+            ],
+            "elo": 34.86007028756011,
+            "a_ms_per_move": 21.858321922667614,
+            "a_nodes_per_move": 73761.63089748137,
+            "a_nodes_per_second": 3374533.102698463,
+            "a_mean_completed_depth": 8.424618659098972,
+            "b_ms_per_move": 21.949273598296664,
+            "b_nodes_per_move": 80434.60787792761,
+            "b_nodes_per_second": 3664568.101432277,
+            "b_mean_completed_depth": 8.581263307310149
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity2000-71.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000040,
+            "last_seed": 16000079,
+            "wins": 32,
+            "draws": 19,
+            "losses": 29,
+            "score": 0.51875,
+            "paired_bootstrap_95_ci": [
+              0.4375,
+              0.6
+            ],
+            "elo": 13.034946881436854,
+            "a_ms_per_move": 21.88661913166255,
+            "a_nodes_per_move": 75319.53882809743,
+            "a_nodes_per_second": 3441351.0088059003,
+            "a_mean_completed_depth": 8.399576420755382,
+            "b_ms_per_move": 22.002957627118647,
+            "b_nodes_per_move": 82131.36352401129,
+            "b_nodes_per_second": 3732741.975687141,
+            "b_mean_completed_depth": 8.533545197740112
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity2000-89.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000080,
+            "last_seed": 16000119,
+            "wins": 28,
+            "draws": 20,
+            "losses": 32,
+            "score": 0.475,
+            "paired_bootstrap_95_ci": [
+              0.39375,
+              0.55625
+            ],
+            "elo": -17.386277512436145,
+            "a_ms_per_move": 21.607807765151517,
+            "a_nodes_per_move": 81657.05265151516,
+            "a_nodes_per_second": 3779053.0876162928,
+            "a_mean_completed_depth": 9.28371212121212,
+            "b_ms_per_move": 21.64319144911086,
+            "b_nodes_per_move": 88248.74725690503,
+            "b_nodes_per_second": 4077436.8911536126,
+            "b_mean_completed_depth": 9.351116155883465
+          }
+        }
+      },
+      "nodes": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity2000-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity2000-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity2000-89.csv"
+        ],
+        "games": 120,
+        "independent_deals": 60,
+        "first_seed": 17000000,
+        "last_seed": 17000059,
+        "wins": 40,
+        "draws": 31,
+        "losses": 49,
+        "score": 0.4625,
+        "paired_bootstrap_95_ci": [
+          0.39166666666666666,
+          0.5333333333333333
+        ],
+        "elo": -26.106692605036596,
+        "a_ms_per_move": 2.965288402366864,
+        "a_nodes_per_move": 7710.068047337278,
+        "a_nodes_per_second": 2600107.308679715,
+        "a_mean_completed_depth": 6.5266272189349115,
+        "b_ms_per_move": 2.7774715687433504,
+        "b_nodes_per_move": 7703.526303345549,
+        "b_nodes_per_second": 2773575.214968253,
+        "b_mean_completed_depth": 6.4520628915947515,
+        "contrast_to_small": {
+          "score_difference": -0.05416666666666667,
+          "paired_bootstrap_95_ci": [
+            -0.13333333333333333,
+            0.025
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity2000-53.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000000,
+            "last_seed": 17000019,
+            "wins": 13,
+            "draws": 10,
+            "losses": 17,
+            "score": 0.45,
+            "paired_bootstrap_95_ci": [
+              0.3625,
+              0.55
+            ],
+            "elo": -34.86007028756008,
+            "a_ms_per_move": 3.069478544455887,
+            "a_nodes_per_move": 7700.898043254377,
+            "a_nodes_per_second": 2508861.9880284844,
+            "a_mean_completed_depth": 6.740473738414006,
+            "b_ms_per_move": 2.856331618655693,
+            "b_nodes_per_move": 7699.191015089164,
+            "b_nodes_per_second": 2695482.192894927,
+            "b_mean_completed_depth": 6.569615912208505
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity2000-71.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000020,
+            "last_seed": 17000039,
+            "wins": 14,
+            "draws": 11,
+            "losses": 15,
+            "score": 0.4875,
+            "paired_bootstrap_95_ci": [
+              0.3625,
+              0.6125
+            ],
+            "elo": -8.687699877294502,
+            "a_ms_per_move": 2.7019876630243216,
+            "a_nodes_per_move": 7768.687345787804,
+            "a_nodes_per_second": 2875174.9876949294,
+            "a_mean_completed_depth": 6.0528727529080015,
+            "b_ms_per_move": 2.536682506159803,
+            "b_nodes_per_move": 7764.04927842309,
+            "b_nodes_per_second": 3060709.9073572354,
+            "b_mean_completed_depth": 6.134107708553326
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity2000-89.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000040,
+            "last_seed": 17000059,
+            "wins": 13,
+            "draws": 10,
+            "losses": 17,
+            "score": 0.45,
+            "paired_bootstrap_95_ci": [
+              0.3125,
+              0.5875
+            ],
+            "elo": -34.86007028756008,
+            "a_ms_per_move": 3.1295396296296296,
+            "a_nodes_per_move": 7658.3677777777775,
+            "a_nodes_per_second": 2447122.7989159925,
+            "a_mean_completed_depth": 6.793703703703704,
+            "b_ms_per_move": 2.945541820873427,
+            "b_nodes_per_move": 7644.568467801629,
+            "b_nodes_per_second": 2595301.283325464,
+            "b_mean_completed_depth": 6.659511472982976
+          }
+        }
+      },
+      "validation_excess_cross_entropy": 0.008822380212863079,
+      "reducible_validation_error_reduction": 0.08394694503983542
+    },
+    "bound4x": {
+      "training_positions": 2262,
+      "trainable_parameters": 139,
+      "observed_nonzero_extra_features": 0,
+      "training_phase_counts": [
+        1023,
+        560,
+        679
+      ],
+      "model_bytes": 1372,
+      "selected_seed": 89,
+      "validation_loss_mean": 0.5178693500869406,
+      "validation_loss_std": 3.7913772907221416e-06,
+      "baseline_validation_loss": 0.5186092518858603,
+      "median_eval_ns": 818.7,
+      "total_fitting_seconds": 10.161359250545502,
+      "time": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-bound4x-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-bound4x-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-bound4x-89.csv"
+        ],
+        "games": 240,
+        "independent_deals": 120,
+        "first_seed": 16000000,
+        "last_seed": 16000119,
+        "wins": 81,
+        "draws": 69,
+        "losses": 90,
+        "score": 0.48125,
+        "paired_bootstrap_95_ci": [
+          0.4375,
+          0.5229166666666667
+        ],
+        "elo": -13.034946881436815,
+        "a_ms_per_move": 21.915422855729393,
+        "a_nodes_per_move": 85731.27728650052,
+        "a_nodes_per_second": 3911915.2685702173,
+        "a_mean_completed_depth": 9.085647146125782,
+        "b_ms_per_move": 21.929481078407125,
+        "b_nodes_per_move": 85950.02788770715,
+        "b_nodes_per_second": 3919382.6602827315,
+        "b_mean_completed_depth": 9.042233489982687,
+        "contrast_to_small": {
+          "score_difference": -0.0625,
+          "paired_bootstrap_95_ci": [
+            -0.11458333333333333,
+            -0.008333333333333333
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-bound4x-53.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000000,
+            "last_seed": 16000039,
+            "wins": 29,
+            "draws": 26,
+            "losses": 25,
+            "score": 0.525,
+            "paired_bootstrap_95_ci": [
+              0.45625,
+              0.59375
+            ],
+            "elo": 17.386277512436138,
+            "a_ms_per_move": 21.964341638981175,
+            "a_nodes_per_move": 88118.9265411591,
+            "a_nodes_per_second": 4011908.3917712425,
+            "a_mean_completed_depth": 8.632521225544481,
+            "b_ms_per_move": 21.916038205980065,
+            "b_nodes_per_move": 88163.21686969361,
+            "b_nodes_per_second": 4022771.6360540553,
+            "b_mean_completed_depth": 8.744001476559616
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-bound4x-71.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000040,
+            "last_seed": 16000079,
+            "wins": 27,
+            "draws": 19,
+            "losses": 34,
+            "score": 0.45625,
+            "paired_bootstrap_95_ci": [
+              0.3875,
+              0.51875
+            ],
+            "elo": -30.478556999265034,
+            "a_ms_per_move": 21.84551526717557,
+            "a_nodes_per_move": 85420.54543802254,
+            "a_nodes_per_second": 3910209.6880439776,
+            "a_mean_completed_depth": 9.46801163213377,
+            "b_ms_per_move": 21.832682049418604,
+            "b_nodes_per_move": 85609.02271075582,
+            "b_nodes_per_second": 3921140.9077903717,
+            "b_mean_completed_depth": 9.363008720930232
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-bound4x-89.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000080,
+            "last_seed": 16000119,
+            "wins": 25,
+            "draws": 24,
+            "losses": 31,
+            "score": 0.4625,
+            "paired_bootstrap_95_ci": [
+              0.38125,
+              0.54375
+            ],
+            "elo": -26.106692605036596,
+            "a_ms_per_move": 21.938197486193108,
+            "a_nodes_per_move": 83593.27747095791,
+            "a_nodes_per_second": 3810398.622018408,
+            "a_mean_completed_depth": 9.152542372881356,
+            "b_ms_per_move": 22.044836380952383,
+            "b_nodes_per_move": 84023.52019047619,
+            "b_nodes_per_second": 3811483.0492947483,
+            "b_mean_completed_depth": 9.013714285714286
+          }
+        }
+      },
+      "nodes": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-bound4x-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-bound4x-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-bound4x-89.csv"
+        ],
+        "games": 120,
+        "independent_deals": 60,
+        "first_seed": 17000000,
+        "last_seed": 17000059,
+        "wins": 47,
+        "draws": 32,
+        "losses": 41,
+        "score": 0.525,
+        "paired_bootstrap_95_ci": [
+          0.4625,
+          0.5875
+        ],
+        "elo": 17.386277512436138,
+        "a_ms_per_move": 2.7288084340148697,
+        "a_nodes_per_move": 7708.87000464684,
+        "a_nodes_per_second": 2824994.9349888414,
+        "a_mean_completed_depth": 6.4371514869888475,
+        "b_ms_per_move": 2.6929902382335853,
+        "b_nodes_per_move": 7706.836722835561,
+        "b_nodes_per_second": 2861813.8355713873,
+        "b_mean_completed_depth": 6.467170249854735,
+        "contrast_to_small": {
+          "score_difference": 0.008333333333333333,
+          "paired_bootstrap_95_ci": [
+            -0.07083333333333333,
+            0.0875
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-bound4x-53.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000000,
+            "last_seed": 17000019,
+            "wins": 15,
+            "draws": 15,
+            "losses": 10,
+            "score": 0.5625,
+            "paired_bootstrap_95_ci": [
+              0.45,
+              0.675
+            ],
+            "elo": 43.65778777002723,
+            "a_ms_per_move": 2.78092398250925,
+            "a_nodes_per_move": 7722.879919273461,
+            "a_nodes_per_second": 2777091.343685362,
+            "a_mean_completed_depth": 6.739656912209889,
+            "b_ms_per_move": 2.6252946127946126,
+            "b_nodes_per_move": 7721.90202020202,
+            "b_nodes_per_second": 2941346.8425862095,
+            "b_mean_completed_depth": 6.775757575757575
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-bound4x-71.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000020,
+            "last_seed": 17000039,
+            "wins": 15,
+            "draws": 9,
+            "losses": 16,
+            "score": 0.4875,
+            "paired_bootstrap_95_ci": [
+              0.3875,
+              0.5875
+            ],
+            "elo": -8.687699877294502,
+            "a_ms_per_move": 2.8159716066481995,
+            "a_nodes_per_move": 7626.620498614959,
+            "a_nodes_per_second": 2708344.2463018256,
+            "a_mean_completed_depth": 7.115997229916897,
+            "b_ms_per_move": 2.872479750778816,
+            "b_nodes_per_move": 7635.244029075805,
+            "b_nodes_per_second": 2658067.1376380147,
+            "b_mean_completed_depth": 7.211838006230529
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-bound4x-89.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000040,
+            "last_seed": 17000059,
+            "wins": 17,
+            "draws": 8,
+            "losses": 15,
+            "score": 0.525,
+            "paired_bootstrap_95_ci": [
+              0.4125,
+              0.6375
+            ],
+            "elo": 17.386277512436138,
+            "a_ms_per_move": 2.580768110666181,
+            "a_nodes_per_move": 7780.178740444121,
+            "a_nodes_per_second": 3014675.6340831416,
+            "a_mean_completed_depth": 5.396068438296323,
+            "b_ms_per_move": 2.5773714493809177,
+            "b_nodes_per_move": 7765.863437727604,
+            "b_nodes_per_second": 3013094.383269031,
+            "b_mean_completed_depth": 5.349963583394028
+          }
+        }
+      },
+      "validation_excess_cross_entropy": 0.008890959825406997,
+      "reducible_validation_error_reduction": 0.07682612706746507
+    },
+    "teacher640": {
+      "training_positions": 2262,
+      "trainable_parameters": 139,
+      "observed_nonzero_extra_features": 0,
+      "training_phase_counts": [
+        1023,
+        560,
+        679
+      ],
+      "model_bytes": 1372,
+      "selected_seed": 71,
+      "validation_loss_mean": 0.5178183885714801,
+      "validation_loss_std": 1.119716839184147e-05,
+      "baseline_validation_loss": 0.5186092518858603,
+      "median_eval_ns": 823.0,
+      "total_fitting_seconds": 9.524495874531567,
+      "time": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-teacher640-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-teacher640-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-teacher640-89.csv"
+        ],
+        "games": 240,
+        "independent_deals": 120,
+        "first_seed": 16000000,
+        "last_seed": 16000119,
+        "wins": 91,
+        "draws": 65,
+        "losses": 84,
+        "score": 0.5145833333333333,
+        "paired_bootstrap_95_ci": [
+          0.46875,
+          0.5583333333333333
+        ],
+        "elo": 10.136412893458683,
+        "a_ms_per_move": 21.878140534262485,
+        "a_nodes_per_move": 80876.66788923528,
+        "a_nodes_per_second": 3696688.3800100633,
+        "a_mean_completed_depth": 8.903172565560242,
+        "b_ms_per_move": 21.8997464840406,
+        "b_nodes_per_move": 81180.74305980188,
+        "b_nodes_per_second": 3706926.1563809514,
+        "b_mean_completed_depth": 8.903142961966491,
+        "contrast_to_small": {
+          "score_difference": -0.029166666666666667,
+          "paired_bootstrap_95_ci": [
+            -0.08333333333333333,
+            0.025
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-teacher640-53.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000000,
+            "last_seed": 16000039,
+            "wins": 35,
+            "draws": 16,
+            "losses": 29,
+            "score": 0.5375,
+            "paired_bootstrap_95_ci": [
+              0.44375,
+              0.625
+            ],
+            "elo": 26.106692605036596,
+            "a_ms_per_move": 21.86843252840909,
+            "a_nodes_per_move": 77772.75230823863,
+            "a_nodes_per_second": 3556393.5461402973,
+            "a_mean_completed_depth": 8.895241477272727,
+            "b_ms_per_move": 21.98663242090295,
+            "b_nodes_per_move": 78160.00231070032,
+            "b_nodes_per_second": 3554887.388593111,
+            "b_mean_completed_depth": 8.912371134020619
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-teacher640-71.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000040,
+            "last_seed": 16000079,
+            "wins": 32,
+            "draws": 24,
+            "losses": 24,
+            "score": 0.55,
+            "paired_bootstrap_95_ci": [
+              0.48125,
+              0.6125
+            ],
+            "elo": 34.86007028756011,
+            "a_ms_per_move": 21.734327654232427,
+            "a_nodes_per_move": 79097.87284791966,
+            "a_nodes_per_second": 3639306.175294388,
+            "a_mean_completed_depth": 9.404053084648494,
+            "b_ms_per_move": 21.763864011481882,
+            "b_nodes_per_move": 79503.94277000359,
+            "b_nodes_per_second": 3653025.1580353556,
+            "b_mean_completed_depth": 9.374955148905633
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-teacher640-89.csv"
+            ],
+            "games": 80,
+            "independent_deals": 40,
+            "first_seed": 16000080,
+            "last_seed": 16000119,
+            "wins": 24,
+            "draws": 25,
+            "losses": 31,
+            "score": 0.45625,
+            "paired_bootstrap_95_ci": [
+              0.38125,
+              0.53125
+            ],
+            "elo": -30.478556999265034,
+            "a_ms_per_move": 22.044433702193746,
+            "a_nodes_per_move": 86195.987186954,
+            "a_nodes_per_second": 3910102.130606159,
+            "a_mean_completed_depth": 8.369636963696369,
+            "b_ms_per_move": 21.951859138533177,
+            "b_nodes_per_move": 86291.56422196352,
+            "b_nodes_per_second": 3930945.6059004907,
+            "b_mean_completed_depth": 8.382809468374079
+          }
+        }
+      },
+      "nodes": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-teacher640-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-teacher640-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-teacher640-89.csv"
+        ],
+        "games": 120,
+        "independent_deals": 60,
+        "first_seed": 17000000,
+        "last_seed": 17000059,
+        "wins": 42,
+        "draws": 36,
+        "losses": 42,
+        "score": 0.5,
+        "paired_bootstrap_95_ci": [
+          0.43333333333333335,
+          0.5666666666666667
+        ],
+        "elo": 0.0,
+        "a_ms_per_move": 2.7430163934426233,
+        "a_nodes_per_move": 7748.3540752713,
+        "a_nodes_per_second": 2824756.7509236527,
+        "a_mean_completed_depth": 6.351766335719233,
+        "b_ms_per_move": 2.7271139854486663,
+        "b_nodes_per_move": 7748.459868345075,
+        "b_nodes_per_second": 2841267.3286446054,
+        "b_mean_completed_depth": 6.383878045963737,
+        "contrast_to_small": {
+          "score_difference": -0.016666666666666666,
+          "paired_bootstrap_95_ci": [
+            -0.09166666666666666,
+            0.058333333333333334
+          ],
+          "interpretation": "Exploratory difference against the small-data condition on matched deals, with the same training-seed blocks"
+        },
+        "training_seeds": {
+          "53": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-teacher640-53.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000000,
+            "last_seed": 17000019,
+            "wins": 10,
+            "draws": 13,
+            "losses": 17,
+            "score": 0.4125,
+            "paired_bootstrap_95_ci": [
+              0.3,
+              0.525
+            ],
+            "elo": -61.43356722313202,
+            "a_ms_per_move": 2.887175151299395,
+            "a_nodes_per_move": 7757.546457814169,
+            "a_nodes_per_second": 2686898.456549416,
+            "a_mean_completed_depth": 6.246351014595942,
+            "b_ms_per_move": 2.876915302491103,
+            "b_nodes_per_move": 7763.785053380783,
+            "b_nodes_per_second": 2698649.156149355,
+            "b_mean_completed_depth": 6.109608540925267
+          },
+          "71": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-teacher640-71.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000020,
+            "last_seed": 17000039,
+            "wins": 15,
+            "draws": 16,
+            "losses": 9,
+            "score": 0.575,
+            "paired_bootstrap_95_ci": [
+              0.475,
+              0.6875
+            ],
+            "elo": 52.51156585572756,
+            "a_ms_per_move": 2.6037199050525603,
+            "a_nodes_per_move": 7868.124448965751,
+            "a_nodes_per_second": 3021878.2111307476,
+            "a_mean_completed_depth": 5.787724652424551,
+            "b_ms_per_move": 2.5904728260869563,
+            "b_nodes_per_move": 7863.451426630435,
+            "b_nodes_per_second": 3035527.471063492,
+            "b_mean_completed_depth": 5.965692934782608
+          },
+          "89": {
+            "files": [
+              "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-teacher640-89.csv"
+            ],
+            "games": 40,
+            "independent_deals": 20,
+            "first_seed": 17000040,
+            "last_seed": 17000059,
+            "wins": 17,
+            "draws": 7,
+            "losses": 16,
+            "score": 0.5125,
+            "paired_bootstrap_95_ci": [
+              0.4,
+              0.625
+            ],
+            "elo": 8.687699877294486,
+            "a_ms_per_move": 2.7450285812672175,
+            "a_nodes_per_move": 7617.83608815427,
+            "a_nodes_per_second": 2775139.078747794,
+            "a_mean_completed_depth": 7.026515151515151,
+            "b_ms_per_move": 2.720687091222031,
+            "b_nodes_per_move": 7617.100516351119,
+            "b_nodes_per_second": 2799697.378256682,
+            "b_mean_completed_depth": 7.072977624784854
+          }
+        }
+      },
+      "validation_excess_cross_entropy": 0.008839998309946528,
+      "reducible_validation_error_reduction": 0.08211760746125911
+    },
+    "data4x-capacity500": {
+      "training_positions": 9269,
+      "trainable_parameters": 499,
+      "observed_nonzero_extra_features": 296,
+      "training_phase_counts": [
+        4458,
+        2187,
+        2624
+      ],
+      "model_bytes": 4252,
+      "selected_seed": 89,
+      "validation_loss_mean": 0.51759371197011,
+      "validation_loss_std": 9.153399650710556e-07,
+      "baseline_validation_loss": 0.5186092518858603,
+      "median_eval_ns": 862.5,
+      "total_fitting_seconds": 40.081103790551424,
+      "time": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-time-data4x-capacity500-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-time-data4x-capacity500-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-time-data4x-capacity500-89.csv"
+        ],
+        "games": 240,
+        "independent_deals": 120,
+        "first_seed": 16000000,
+        "last_seed": 16000119,
+        "wins": 92,
+        "draws": 68,
+        "losses": 80,
+        "score": 0.525,
+        "paired_bootstrap_95_ci": [
+          0.4791666666666667,
+          0.5708333333333333
+        ],
+        "elo": 17.386277512436138,
+        "a_ms_per_move": 21.879043662139622,
+        "a_nodes_per_move": 79093.80712413629,
+        "a_nodes_per_second": 3615048.6440594927,
+        "a_mean_completed_depth": 8.987133666904931,
+        "b_ms_per_move": 21.85917893544734,
+        "b_nodes_per_move": 81872.31608750075,
+        "b_nodes_per_second": 3745443.336608345,
+        "b_mean_completed_depth": 9.073791500268225,
+        "contrast_to_data4x": {
+          "score_difference": 0.008333333333333333,
+          "paired_bootstrap_95_ci": [
+            -0.05625,
+            0.07083333333333333
+          ],
+          "interpretation": "Exploratory matched-deal score difference versus 2048-game, 139-parameter training."
+        },
+        "contrast_to_same_capacity_small_data": {
+          "score_difference": 0.00625,
+          "paired_bootstrap_95_ci": [
+            -0.04791666666666667,
+            0.06041666666666667
+          ],
+          "interpretation": "Exploratory matched-deal score difference versus the same capacity trained on 512 games."
+        }
+      },
+      "nodes": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-nodes-data4x-capacity500-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-nodes-data4x-capacity500-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-nodes-data4x-capacity500-89.csv"
+        ],
+        "games": 120,
+        "independent_deals": 60,
+        "first_seed": 17000000,
+        "last_seed": 17000059,
+        "wins": 47,
+        "draws": 37,
+        "losses": 36,
+        "score": 0.5458333333333333,
+        "paired_bootstrap_95_ci": [
+          0.4791666666666667,
+          0.6125
+        ],
+        "elo": 31.937919086056205,
+        "a_ms_per_move": 2.5572523171987642,
+        "a_nodes_per_move": 7652.149216157455,
+        "a_nodes_per_second": 2992332.4987108367,
+        "a_mean_completed_depth": 7.165007437921959,
+        "b_ms_per_move": 2.449145294252347,
+        "b_nodes_per_move": 7643.604190519808,
+        "b_nodes_per_second": 3120927.21018137,
+        "b_mean_completed_depth": 7.200938859629036,
+        "contrast_to_data4x": {
+          "score_difference": 0.04583333333333333,
+          "paired_bootstrap_95_ci": [
+            -0.020833333333333332,
+            0.1125
+          ],
+          "interpretation": "Exploratory matched-deal score difference versus 2048-game, 139-parameter training."
+        },
+        "contrast_to_same_capacity_small_data": {
+          "score_difference": 0.06666666666666667,
+          "paired_bootstrap_95_ci": [
+            -0.025,
+            0.15833333333333333
+          ],
+          "interpretation": "Exploratory matched-deal score difference versus the same capacity trained on 512 games."
+        }
+      },
+      "validation_excess_cross_entropy": 0.008615321708576373,
+      "reducible_validation_error_reduction": 0.10544642373275886
+    },
+    "data4x-capacity2000": {
+      "training_positions": 9269,
+      "trainable_parameters": 1948,
+      "observed_nonzero_extra_features": 1685,
+      "training_phase_counts": [
+        4458,
+        2187,
+        2624
+      ],
+      "model_bytes": 15844,
+      "selected_seed": 89,
+      "validation_loss_mean": 0.5174797054685634,
+      "validation_loss_std": 5.957030593665272e-07,
+      "baseline_validation_loss": 0.5186092518858603,
+      "median_eval_ns": 891.2,
+      "total_fitting_seconds": 38.708935040049255,
+      "time": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-time-data4x-capacity2000-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-time-data4x-capacity2000-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-time-data4x-capacity2000-89.csv"
+        ],
+        "games": 240,
+        "independent_deals": 120,
+        "first_seed": 16000000,
+        "last_seed": 16000119,
+        "wins": 85,
+        "draws": 68,
+        "losses": 87,
+        "score": 0.49583333333333335,
+        "paired_bootstrap_95_ci": [
+          0.45208333333333334,
+          0.5416666666666666
+        ],
+        "elo": -2.8953635695677193,
+        "a_ms_per_move": 21.92152007441637,
+        "a_nodes_per_move": 77356.30474704436,
+        "a_nodes_per_second": 3528783.792567535,
+        "a_mean_completed_depth": 8.454539998799737,
+        "b_ms_per_move": 21.906448364836482,
+        "b_nodes_per_move": 84084.20750075007,
+        "b_nodes_per_second": 3838331.348851569,
+        "b_mean_completed_depth": 8.496069606960695,
+        "contrast_to_data4x": {
+          "score_difference": -0.020833333333333332,
+          "paired_bootstrap_95_ci": [
+            -0.07708333333333334,
+            0.0375
+          ],
+          "interpretation": "Exploratory matched-deal score difference versus 2048-game, 139-parameter training."
+        },
+        "contrast_to_same_capacity_small_data": {
+          "score_difference": -0.01875,
+          "paired_bootstrap_95_ci": [
+            -0.07708333333333334,
+            0.03958333333333333
+          ],
+          "interpretation": "Exploratory matched-deal score difference versus the same capacity trained on 512 games."
+        }
+      },
+      "nodes": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-nodes-data4x-capacity2000-53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-nodes-data4x-capacity2000-71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-nodes-data4x-capacity2000-89.csv"
+        ],
+        "games": 120,
+        "independent_deals": 60,
+        "first_seed": 17000000,
+        "last_seed": 17000059,
+        "wins": 44,
+        "draws": 38,
+        "losses": 38,
+        "score": 0.525,
+        "paired_bootstrap_95_ci": [
+          0.4666666666666667,
+          0.5875
+        ],
+        "elo": 17.386277512436138,
+        "a_ms_per_move": 2.8217395074575093,
+        "a_nodes_per_move": 7731.148572089259,
+        "a_nodes_per_second": 2739851.978418556,
+        "a_mean_completed_depth": 6.387096774193548,
+        "b_ms_per_move": 2.566516934458444,
+        "b_nodes_per_move": 7728.453357993296,
+        "b_nodes_per_second": 3011261.392523818,
+        "b_mean_completed_depth": 6.388509998844064,
+        "contrast_to_data4x": {
+          "score_difference": 0.025,
+          "paired_bootstrap_95_ci": [
+            -0.05,
+            0.1
+          ],
+          "interpretation": "Exploratory matched-deal score difference versus 2048-game, 139-parameter training."
+        },
+        "contrast_to_same_capacity_small_data": {
+          "score_difference": 0.0625,
+          "paired_bootstrap_95_ci": [
+            -0.029166666666666667,
+            0.15416666666666667
+          ],
+          "interpretation": "Exploratory matched-deal score difference versus the same capacity trained on 512 games."
+        }
+      },
+      "validation_excess_cross_entropy": 0.008501315207029791,
+      "reducible_validation_error_reduction": 0.11728404595117094
+    }
+  },
+  "condition_count": 9,
+  "training_fits": 27,
+  "development_games": 3240,
+  "final_games": 2800,
+  "main_candidate": "training/scaling/small-53.cxe",
+  "main_holdouts": {
+    "original": {
+      "files": [
+        "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/holdout-original.csv"
+      ],
+      "games": 800,
+      "independent_deals": 400,
+      "first_seed": 18000000,
+      "last_seed": 18000399,
+      "wins": 320,
+      "draws": 217,
+      "losses": 263,
+      "score": 0.535625,
+      "paired_bootstrap_95_ci": [
+        0.511875,
+        0.559375
+      ],
+      "elo": 24.79680326504917,
+      "a_ms_per_move": 21.893536291044512,
+      "a_nodes_per_move": 79976.60337666058,
+      "a_nodes_per_second": 3652977.861295746,
+      "a_mean_completed_depth": 8.967468757832922,
+      "b_ms_per_move": 21.932051175037618,
+      "b_nodes_per_move": 81548.78808124956,
+      "b_nodes_per_second": 3718247.209548091,
+      "b_mean_completed_depth": 8.993444149888944
+    },
+    "current": {
+      "files": [
+        "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/holdout-current.csv"
+      ],
+      "games": 800,
+      "independent_deals": 400,
+      "first_seed": 18000000,
+      "last_seed": 18000399,
+      "wins": 273,
+      "draws": 252,
+      "losses": 275,
+      "score": 0.49875,
+      "paired_bootstrap_95_ci": [
+        0.47375,
+        0.523125
+      ],
+      "elo": -0.8685907733736153,
+      "a_ms_per_move": 21.984723396695685,
+      "a_nodes_per_move": 80601.61657488008,
+      "a_nodes_per_second": 3666255.6594637237,
+      "a_mean_completed_depth": 8.987244626043703,
+      "b_ms_per_move": 22.003281681382912,
+      "b_nodes_per_move": 80720.32913461368,
+      "b_nodes_per_second": 3668558.6406372986,
+      "b_mean_completed_depth": 8.976228969389025
+    },
+    "residual": {
+      "files": [
+        "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/holdout-residual.csv"
+      ],
+      "games": 800,
+      "independent_deals": 400,
+      "first_seed": 18000000,
+      "last_seed": 18000399,
+      "wins": 291,
+      "draws": 212,
+      "losses": 297,
+      "score": 0.49625,
+      "paired_bootstrap_95_ci": [
+        0.47125,
+        0.5225
+      ],
+      "elo": -2.6058157511977194,
+      "a_ms_per_move": 21.890715568971164,
+      "a_nodes_per_move": 78514.60035640252,
+      "a_nodes_per_second": 3586662.122077566,
+      "a_mean_completed_depth": 8.978233989162455,
+      "b_ms_per_move": 21.845932645973125,
+      "b_nodes_per_move": 50283.17034895351,
+      "b_nodes_per_second": 2301717.7231031256,
+      "b_mean_completed_depth": 8.590238757660066
+    },
+    "current-100ms": {
+      "files": [
+        "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/holdout-current-100ms.csv"
+      ],
+      "games": 400,
+      "independent_deals": 200,
+      "first_seed": 19000000,
+      "last_seed": 19000199,
+      "wins": 151,
+      "draws": 107,
+      "losses": 142,
+      "score": 0.51125,
+      "paired_bootstrap_95_ci": [
+        0.47875,
+        0.54375
+      ],
+      "elo": 7.818620244589983,
+      "a_ms_per_move": 85.90801887873903,
+      "a_nodes_per_move": 298789.40247178933,
+      "a_nodes_per_second": 3478015.281594805,
+      "a_mean_completed_depth": 10.379007701952355,
+      "b_ms_per_move": 86.11261910563279,
+      "b_nodes_per_move": 300603.5457216569,
+      "b_nodes_per_second": 3490818.7539030947,
+      "b_mean_completed_depth": 10.407947541923463
+    }
+  },
+  "supplement_advanced_to_holdout": false,
+  "initial_validation_excess_cross_entropy": 0.009630861624326692,
+  "training_job_seconds_sum": 179.71754932776093,
+  "colab_gpu_allocated": false,
+  "interpretation": "Larger data and composition tables improve teacher-label fitting; this sweep establishes no reliable playing-strength gain over the preceding structured evaluator.",
+  "frozen_sources_reverified": true
+}

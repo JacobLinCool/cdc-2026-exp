@@ -1,0 +1,24 @@
+{
+  "purpose": "development",
+  "model": "training/quiet.nn",
+  "model_sha256": "44d65cabf5b851e9b4148d0611a52fb242bbf17cc07998bc4a3707c54d20875d",
+  "model_scale": 0.5,
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "0a5d333d93952e3ec48c3a15bd972fe91e3cbe87d4fee02040c4d6ff31c41706",
+  "first_seed": 3000000,
+  "last_seed": 3000059,
+  "games": 120,
+  "independent_deals": 60,
+  "wins": 42,
+  "draws": 35,
+  "losses": 43,
+  "score": 0.49583333333333335,
+  "paired_bootstrap_95_ci": [
+    0.43333333333333335,
+    0.5625
+  ],
+  "elo": -2.8953635695677193,
+  "exceeds_50_percent_at_95_confidence": false,
+  "model_ms_per_move": 22.107218230045817,
+  "baseline_ms_per_move": 22.20219746835443
+}

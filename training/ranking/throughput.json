@@ -1,0 +1,14 @@
+{
+  "positions": 1881,
+  "median_nanoseconds": {
+    "baseline": 834.2,
+    "structured": 819.1,
+    "structured_features": 1409.0,
+    "residual": 1332.7
+  },
+  "same_model_latency_reduction": 0.418665720369056,
+  "model": "training/ranking/rank.cse",
+  "model_sha256": "dec1f0785a787ee7fb18b405571387e66de9ca7b3123416247364caa131be17c",
+  "benchmark_binary_sha256": "87d1c1921e1ff1f074defcfe61dd5dc36bb7bcb1b663ead2fb0a7b3a070ef2e8",
+  "method": "Seven timings of 100 passes; median. Direct and feature paths assert equal predictions. No other training or arena process was running."
+}

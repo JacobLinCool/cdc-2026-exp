@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-data4x-53.csv"
+  ],
+  "games": 80,
+  "independent_deals": 40,
+  "first_seed": 16000000,
+  "last_seed": 16000039,
+  "wins": 31,
+  "draws": 23,
+  "losses": 26,
+  "score": 0.53125,
+  "paired_bootstrap_95_ci": [
+    0.4625,
+    0.6
+  ],
+  "elo": 21.74306492903707,
+  "a_ms_per_move": 22.087953879156238,
+  "a_nodes_per_move": 81427.73596710761,
+  "a_nodes_per_second": 3686522.3647514316,
+  "a_mean_completed_depth": 8.459599570968896,
+  "b_ms_per_move": 22.208498209169054,
+  "b_nodes_per_move": 81726.92800859599,
+  "b_nodes_per_second": 3679984.4473434053,
+  "b_mean_completed_depth": 8.351540114613181
+}

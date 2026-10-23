@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/holdout-current.csv"
+  ],
+  "games": 800,
+  "independent_deals": 400,
+  "first_seed": 18000000,
+  "last_seed": 18000399,
+  "wins": 273,
+  "draws": 252,
+  "losses": 275,
+  "score": 0.49875,
+  "paired_bootstrap_95_ci": [
+    0.47375,
+    0.523125
+  ],
+  "elo": -0.8685907733736153,
+  "a_ms_per_move": 21.984723396695685,
+  "a_nodes_per_move": 80601.61657488008,
+  "a_nodes_per_second": 3666255.6594637237,
+  "a_mean_completed_depth": 8.987244626043703,
+  "b_ms_per_move": 22.003281681382912,
+  "b_nodes_per_move": 80720.32913461368,
+  "b_nodes_per_second": 3668558.6406372986,
+  "b_mean_completed_depth": 8.976228969389025
+}

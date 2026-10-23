@@ -34,7 +34,7 @@ jobs:
       # 連結時可能拿到只有 bitcode 的那份而找不到符號（cargo#6313）
       - name: 規則與殘局庫測試
         working-directory: engine
-        run: cargo test
+        run: cargo test --features wasm
 
       - name: 建置 WASM
         working-directory: engine
@@ -49,6 +49,7 @@ jobs:
         working-directory: web
         run: |
           npm ci
+          npm test
           npm run build
 
       - uses: actions/upload-pages-artifact@v5

@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "anchor-network1057-vs-original-t1600-s1",
+    "family": "anchor",
+    "a_id": "network1057",
+    "b_id": "original",
+    "time_ms": 1600,
+    "b_time_ms": 25,
+    "block": 2,
+    "first_seed": 50000034,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.015625",
+    "cell_name": "anchor-network1057-vs-original-t1600",
+    "shard": 1
+  },
+  "started_utc": "2026-10-23T20:16:57.781257+00:00",
+  "csv_sha256": "5f7e564260b7d62142baa83e5c550a115d0607e03cd0f9d355fe5664dadc65c6",
+  "completed_utc": "2026-10-23T20:20:01.335035+00:00",
+  "elapsed_seconds": 183.55206070747226
+}

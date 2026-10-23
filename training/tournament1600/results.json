@@ -1,0 +1,6747 @@
+{
+  "games": 1792,
+  "new_games": 480,
+  "cells": {
+    "rr-structured139-vs-original-t25": {
+      "config": {
+        "name": "rr-structured139-vs-original-t25",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "original",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 0,
+        "first_seed": 50000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 10,
+        "losses": 10,
+        "score": 0.53125,
+        "win_rate": 0.375,
+        "moves": 2409,
+        "milliseconds": 54012.73100000001,
+        "nodes": 195629437,
+        "depth_sum": 21416,
+        "ms_per_move": 22.421224989622253,
+        "nodes_per_move": 81207.73640514737,
+        "nodes_per_second": 3621913.452219255,
+        "mean_completed_depth": 8.889995848899959
+      },
+      "b": {
+        "games": 32,
+        "wins": 10,
+        "draws": 10,
+        "losses": 12,
+        "score": 0.46875,
+        "win_rate": 0.3125,
+        "moves": 2408,
+        "milliseconds": 54166.185999999994,
+        "nodes": 199666112,
+        "depth_sum": 21512,
+        "ms_per_move": 22.494263289036542,
+        "nodes_per_move": 82917.82059800664,
+        "nodes_per_second": 3686176.316715377,
+        "mean_completed_depth": 8.933554817275747
+      },
+      "score": {
+        "estimate": 0.53125,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.65625
+        ]
+      },
+      "deal_scores": [
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.75,
+        0.75,
+        0.25,
+        0.25,
+        0.5,
+        0.5,
+        0.25,
+        0.5,
+        0.5,
+        0.25
+      ]
+    },
+    "rr-structured139-vs-original-t100": {
+      "config": {
+        "name": "rr-structured139-vs-original-t100",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "original",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 0,
+        "first_seed": 50000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 9,
+        "draws": 12,
+        "losses": 11,
+        "score": 0.46875,
+        "win_rate": 0.28125,
+        "moves": 2174,
+        "milliseconds": 189465.01700000002,
+        "nodes": 674876140,
+        "depth_sum": 22237,
+        "ms_per_move": 87.15042180312788,
+        "nodes_per_move": 310430.607175713,
+        "nodes_per_second": 3562009.2336096005,
+        "mean_completed_depth": 10.228610855565778
+      },
+      "b": {
+        "games": 32,
+        "wins": 11,
+        "draws": 12,
+        "losses": 9,
+        "score": 0.53125,
+        "win_rate": 0.34375,
+        "moves": 2174,
+        "milliseconds": 189830.43300000002,
+        "nodes": 687942769,
+        "depth_sum": 21676,
+        "ms_per_move": 87.31850643974242,
+        "nodes_per_move": 316441.016099356,
+        "nodes_per_second": 3623985.670411445,
+        "mean_completed_depth": 9.970561177552899
+      },
+      "score": {
+        "estimate": 0.46875,
+        "paired_bootstrap_95_ci": [
+          0.390625,
+          0.546875
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.25,
+        0.25,
+        0.5,
+        0.75,
+        0.25,
+        0.25,
+        0.25,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "anchor-structured139-vs-original-t100": {
+      "config": {
+        "name": "anchor-structured139-vs-original-t100",
+        "family": "anchor",
+        "a_id": "structured139",
+        "b_id": "original",
+        "time_ms": 100,
+        "b_time_ms": 25,
+        "block": 0,
+        "first_seed": 50000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.25"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 7,
+        "losses": 13,
+        "score": 0.484375,
+        "win_rate": 0.375,
+        "moves": 2211,
+        "milliseconds": 192892.36800000002,
+        "nodes": 719154819,
+        "depth_sum": 21650,
+        "ms_per_move": 87.24213839891452,
+        "nodes_per_move": 325262.24287652643,
+        "nodes_per_second": 3728269.9489696757,
+        "mean_completed_depth": 9.79194934418815
+      },
+      "b": {
+        "games": 32,
+        "wins": 13,
+        "draws": 7,
+        "losses": 12,
+        "score": 0.515625,
+        "win_rate": 0.40625,
+        "moves": 2210,
+        "milliseconds": 48953.55599999999,
+        "nodes": 179296227,
+        "depth_sum": 17877,
+        "ms_per_move": 22.150930316742077,
+        "nodes_per_move": 81129.514479638,
+        "nodes_per_second": 3662578.1996306875,
+        "mean_completed_depth": 8.089140271493212
+      },
+      "score": {
+        "estimate": 0.484375,
+        "paired_bootstrap_95_ci": [
+          0.3125,
+          0.65625
+        ]
+      },
+      "deal_scores": [
+        0.25,
+        0.0,
+        1.0,
+        0.5,
+        1.0,
+        0.0,
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.0,
+        0.75,
+        0.75,
+        1.0,
+        0.5,
+        0.5
+      ]
+    },
+    "rr-structured139-vs-original-t400": {
+      "config": {
+        "name": "rr-structured139-vs-original-t400",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "original",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 0,
+        "first_seed": 50000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 11,
+        "losses": 9,
+        "score": 0.546875,
+        "win_rate": 0.375,
+        "moves": 2262,
+        "milliseconds": 776932.2570000001,
+        "nodes": 3080254244,
+        "depth_sum": 25917,
+        "ms_per_move": 343.47137798408494,
+        "nodes_per_move": 1361739.2767462423,
+        "nodes_per_second": 3964636.8344827257,
+        "mean_completed_depth": 11.457559681697612
+      },
+      "b": {
+        "games": 32,
+        "wins": 9,
+        "draws": 11,
+        "losses": 12,
+        "score": 0.453125,
+        "win_rate": 0.28125,
+        "moves": 2259,
+        "milliseconds": 776231.5529999998,
+        "nodes": 3143843784,
+        "depth_sum": 25704,
+        "ms_per_move": 343.617332005312,
+        "nodes_per_move": 1391697.1155378486,
+        "nodes_per_second": 4050136.549911674,
+        "mean_completed_depth": 11.378486055776893
+      },
+      "score": {
+        "estimate": 0.546875,
+        "paired_bootstrap_95_ci": [
+          0.40625,
+          0.6875
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.75,
+        0.0,
+        0.5,
+        1.0,
+        0.75,
+        0.25,
+        0.25,
+        0.75,
+        1.0,
+        0.75,
+        0.5,
+        0.25,
+        0.75,
+        0.25,
+        0.5
+      ]
+    },
+    "anchor-structured139-vs-original-t400": {
+      "config": {
+        "name": "anchor-structured139-vs-original-t400",
+        "family": "anchor",
+        "a_id": "structured139",
+        "b_id": "original",
+        "time_ms": 400,
+        "b_time_ms": 25,
+        "block": 0,
+        "first_seed": 50000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.0625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 18,
+        "draws": 9,
+        "losses": 5,
+        "score": 0.703125,
+        "win_rate": 0.5625,
+        "moves": 2147,
+        "milliseconds": 731840.5970000001,
+        "nodes": 2680685912,
+        "depth_sum": 24782,
+        "ms_per_move": 340.8666031672101,
+        "nodes_per_move": 1248572.851420587,
+        "nodes_per_second": 3662936.8785891496,
+        "mean_completed_depth": 11.542617605961807
+      },
+      "b": {
+        "games": 32,
+        "wins": 5,
+        "draws": 9,
+        "losses": 18,
+        "score": 0.296875,
+        "win_rate": 0.15625,
+        "moves": 2140,
+        "milliseconds": 47218.41499999999,
+        "nodes": 168415317,
+        "depth_sum": 19394,
+        "ms_per_move": 22.064679906542054,
+        "nodes_per_move": 78698.74626168224,
+        "nodes_per_second": 3566729.5693851653,
+        "mean_completed_depth": 9.062616822429906
+      },
+      "score": {
+        "estimate": 0.703125,
+        "paired_bootstrap_95_ci": [
+          0.546875,
+          0.84375
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        1.0,
+        0.5,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        1.0,
+        0.0,
+        1.0,
+        0.25,
+        0.75,
+        0.25,
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    "rr-expanded499-vs-original-t25": {
+      "config": {
+        "name": "rr-expanded499-vs-original-t25",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "original",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 1,
+        "first_seed": 50000016,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 18,
+        "draws": 4,
+        "losses": 10,
+        "score": 0.625,
+        "win_rate": 0.5625,
+        "moves": 2343,
+        "milliseconds": 50432.58099999999,
+        "nodes": 175004696,
+        "depth_sum": 21853,
+        "ms_per_move": 21.524789159197606,
+        "nodes_per_move": 74692.57191634657,
+        "nodes_per_second": 3470072.174176452,
+        "mean_completed_depth": 9.326931284677764
+      },
+      "b": {
+        "games": 32,
+        "wins": 10,
+        "draws": 4,
+        "losses": 18,
+        "score": 0.375,
+        "win_rate": 0.3125,
+        "moves": 2337,
+        "milliseconds": 50480.929,
+        "nodes": 184421257,
+        "depth_sum": 21951,
+        "ms_per_move": 21.600739837398372,
+        "nodes_per_move": 78913.67436884895,
+        "nodes_per_second": 3653285.719048475,
+        "mean_completed_depth": 9.392811296534019
+      },
+      "score": {
+        "estimate": 0.625,
+        "paired_bootstrap_95_ci": [
+          0.484375,
+          0.765625
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        1.0,
+        1.0,
+        0.5,
+        0.75,
+        1.0,
+        0.25,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        0.0,
+        0.5
+      ]
+    },
+    "rr-expanded499-vs-original-t100": {
+      "config": {
+        "name": "rr-expanded499-vs-original-t100",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "original",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 1,
+        "first_seed": 50000016,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 13,
+        "draws": 5,
+        "losses": 14,
+        "score": 0.484375,
+        "win_rate": 0.40625,
+        "moves": 2125,
+        "milliseconds": 180921.21599999996,
+        "nodes": 643541519,
+        "depth_sum": 22853,
+        "ms_per_move": 85.13939576470587,
+        "nodes_per_move": 302843.06776470586,
+        "nodes_per_second": 3557026.2749063116,
+        "mean_completed_depth": 10.754352941176471
+      },
+      "b": {
+        "games": 32,
+        "wins": 14,
+        "draws": 5,
+        "losses": 13,
+        "score": 0.515625,
+        "win_rate": 0.4375,
+        "moves": 2126,
+        "milliseconds": 181338.091,
+        "nodes": 679676509,
+        "depth_sum": 22950,
+        "ms_per_move": 85.29543320790216,
+        "nodes_per_move": 319697.3231420508,
+        "nodes_per_second": 3748117.7024191795,
+        "mean_completed_depth": 10.794920037629351
+      },
+      "score": {
+        "estimate": 0.484375,
+        "paired_bootstrap_95_ci": [
+          0.328125,
+          0.640625
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.5,
+        0.75,
+        0.25,
+        0.5,
+        0.5,
+        0.25,
+        1.0,
+        0.75,
+        1.0,
+        0.5
+      ]
+    },
+    "anchor-expanded499-vs-original-t100": {
+      "config": {
+        "name": "anchor-expanded499-vs-original-t100",
+        "family": "anchor",
+        "a_id": "expanded499",
+        "b_id": "original",
+        "time_ms": 100,
+        "b_time_ms": 25,
+        "block": 1,
+        "first_seed": 50000016,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.25"
+      },
+      "a": {
+        "games": 32,
+        "wins": 14,
+        "draws": 7,
+        "losses": 11,
+        "score": 0.546875,
+        "win_rate": 0.4375,
+        "moves": 2146,
+        "milliseconds": 183690.59699999998,
+        "nodes": 702746814,
+        "depth_sum": 21501,
+        "ms_per_move": 85.59673671947809,
+        "nodes_per_move": 327468.2264678472,
+        "nodes_per_second": 3825709.238671591,
+        "mean_completed_depth": 10.01910531220876
+      },
+      "b": {
+        "games": 32,
+        "wins": 11,
+        "draws": 7,
+        "losses": 14,
+        "score": 0.453125,
+        "win_rate": 0.34375,
+        "moves": 2145,
+        "milliseconds": 46879.527,
+        "nodes": 177805827,
+        "depth_sum": 18386,
+        "ms_per_move": 21.855257342657342,
+        "nodes_per_move": 82893.15944055944,
+        "nodes_per_second": 3792824.6801636885,
+        "mean_completed_depth": 8.571561771561772
+      },
+      "score": {
+        "estimate": 0.546875,
+        "paired_bootstrap_95_ci": [
+          0.390625,
+          0.703125
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.25,
+        0.5,
+        1.0,
+        1.0,
+        0.25,
+        0.75,
+        0.0,
+        0.5,
+        0.75,
+        0.0,
+        0.5,
+        0.75,
+        0.25,
+        1.0,
+        0.5
+      ]
+    },
+    "rr-expanded499-vs-original-t400": {
+      "config": {
+        "name": "rr-expanded499-vs-original-t400",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "original",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 1,
+        "first_seed": 50000016,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 11,
+        "losses": 9,
+        "score": 0.546875,
+        "win_rate": 0.375,
+        "moves": 2319,
+        "milliseconds": 798441.395,
+        "nodes": 2888252683,
+        "depth_sum": 25369,
+        "ms_per_move": 344.30418068132815,
+        "nodes_per_move": 1245473.3432514016,
+        "nodes_per_second": 3617363.404611556,
+        "mean_completed_depth": 10.939629150495904
+      },
+      "b": {
+        "games": 32,
+        "wins": 9,
+        "draws": 11,
+        "losses": 12,
+        "score": 0.453125,
+        "win_rate": 0.28125,
+        "moves": 2316,
+        "milliseconds": 797736.3610000001,
+        "nodes": 3035848935,
+        "depth_sum": 25685,
+        "ms_per_move": 344.4457517271158,
+        "nodes_per_move": 1310815.6023316062,
+        "nodes_per_second": 3805579.240733643,
+        "mean_completed_depth": 11.090241796200345
+      },
+      "score": {
+        "estimate": 0.546875,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.65625
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        1.0,
+        0.75,
+        0.5,
+        0.75,
+        0.25,
+        0.5,
+        0.5,
+        0.75,
+        0.75,
+        0.5,
+        0.25,
+        0.75,
+        0.0,
+        0.5,
+        0.5
+      ]
+    },
+    "anchor-expanded499-vs-original-t400": {
+      "config": {
+        "name": "anchor-expanded499-vs-original-t400",
+        "family": "anchor",
+        "a_id": "expanded499",
+        "b_id": "original",
+        "time_ms": 400,
+        "b_time_ms": 25,
+        "block": 1,
+        "first_seed": 50000016,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.0625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 20,
+        "draws": 8,
+        "losses": 4,
+        "score": 0.75,
+        "win_rate": 0.625,
+        "moves": 2259,
+        "milliseconds": 763267.4320000004,
+        "nodes": 2839042464,
+        "depth_sum": 26577,
+        "ms_per_move": 337.8784559539621,
+        "nodes_per_move": 1256769.572377158,
+        "nodes_per_second": 3719590.7292425893,
+        "mean_completed_depth": 11.764940239043824
+      },
+      "b": {
+        "games": 32,
+        "wins": 4,
+        "draws": 8,
+        "losses": 20,
+        "score": 0.25,
+        "win_rate": 0.125,
+        "moves": 2249,
+        "milliseconds": 49210.24200000001,
+        "nodes": 184470282,
+        "depth_sum": 20691,
+        "ms_per_move": 21.880943530457987,
+        "nodes_per_move": 82023.24677634504,
+        "nodes_per_second": 3748615.6235525105,
+        "mean_completed_depth": 9.200088928412628
+      },
+      "score": {
+        "estimate": 0.75,
+        "paired_bootstrap_95_ci": [
+          0.65625,
+          0.84375
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.5,
+        1.0,
+        0.75,
+        1.0,
+        0.75,
+        0.5,
+        0.75,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    "rr-network1057-vs-original-t25": {
+      "config": {
+        "name": "rr-network1057-vs-original-t25",
+        "family": "rr",
+        "a_id": "network1057",
+        "b_id": "original",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 2,
+        "first_seed": 50000032,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 10,
+        "draws": 14,
+        "losses": 8,
+        "score": 0.53125,
+        "win_rate": 0.3125,
+        "moves": 2458,
+        "milliseconds": 54407.322,
+        "nodes": 128142716,
+        "depth_sum": 23442,
+        "ms_per_move": 22.13479332790887,
+        "nodes_per_move": 52132.91944670464,
+        "nodes_per_second": 2355247.6264132243,
+        "mean_completed_depth": 9.537021969080554
+      },
+      "b": {
+        "games": 32,
+        "wins": 8,
+        "draws": 14,
+        "losses": 10,
+        "score": 0.46875,
+        "win_rate": 0.25,
+        "moves": 2459,
+        "milliseconds": 54567.322,
+        "nodes": 203273269,
+        "depth_sum": 24485,
+        "ms_per_move": 22.190858885725905,
+        "nodes_per_move": 82665.01382675885,
+        "nodes_per_second": 3725183.1599872173,
+        "mean_completed_depth": 9.957299715331436
+      },
+      "score": {
+        "estimate": 0.53125,
+        "paired_bootstrap_95_ci": [
+          0.40625,
+          0.65625
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.25,
+        0.5,
+        0.5,
+        0.75,
+        0.25,
+        0.5,
+        0.75,
+        0.75,
+        0.25,
+        0.25,
+        1.0,
+        0.25,
+        0.25,
+        0.75,
+        0.75
+      ]
+    },
+    "rr-network1057-vs-original-t100": {
+      "config": {
+        "name": "rr-network1057-vs-original-t100",
+        "family": "rr",
+        "a_id": "network1057",
+        "b_id": "original",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 2,
+        "first_seed": 50000032,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 9,
+        "draws": 10,
+        "losses": 13,
+        "score": 0.4375,
+        "win_rate": 0.28125,
+        "moves": 2181,
+        "milliseconds": 187722.787,
+        "nodes": 421728297,
+        "depth_sum": 20518,
+        "ms_per_move": 86.07188766620817,
+        "nodes_per_move": 193364.6478679505,
+        "nodes_per_second": 2246548.241370399,
+        "mean_completed_depth": 9.407611187528657
+      },
+      "b": {
+        "games": 32,
+        "wins": 13,
+        "draws": 10,
+        "losses": 9,
+        "score": 0.5625,
+        "win_rate": 0.40625,
+        "moves": 2183,
+        "milliseconds": 189223.42900000003,
+        "nodes": 678433850,
+        "depth_sum": 21015,
+        "ms_per_move": 86.68045304626662,
+        "nodes_per_move": 310780.5084745763,
+        "nodes_per_second": 3585358.607997744,
+        "mean_completed_depth": 9.626660558863948
+      },
+      "score": {
+        "estimate": 0.4375,
+        "paired_bootstrap_95_ci": [
+          0.296875,
+          0.578125
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.0,
+        0.25,
+        0.25,
+        0.75,
+        0.25,
+        0.5,
+        0.5,
+        0.75,
+        0.0,
+        0.5,
+        1.0,
+        0.0,
+        0.5,
+        0.75,
+        0.25
+      ]
+    },
+    "anchor-network1057-vs-original-t100": {
+      "config": {
+        "name": "anchor-network1057-vs-original-t100",
+        "family": "anchor",
+        "a_id": "network1057",
+        "b_id": "original",
+        "time_ms": 100,
+        "b_time_ms": 25,
+        "block": 2,
+        "first_seed": 50000032,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.25"
+      },
+      "a": {
+        "games": 32,
+        "wins": 18,
+        "draws": 13,
+        "losses": 1,
+        "score": 0.765625,
+        "win_rate": 0.5625,
+        "moves": 2417,
+        "milliseconds": 209839.91599999997,
+        "nodes": 501013993,
+        "depth_sum": 25598,
+        "ms_per_move": 86.81833512618948,
+        "nodes_per_move": 207287.54364915183,
+        "nodes_per_second": 2387600.998658425,
+        "mean_completed_depth": 10.590815059991725
+      },
+      "b": {
+        "games": 32,
+        "wins": 1,
+        "draws": 13,
+        "losses": 18,
+        "score": 0.234375,
+        "win_rate": 0.03125,
+        "moves": 2409,
+        "milliseconds": 53629.714000000014,
+        "nodes": 194282352,
+        "depth_sum": 23353,
+        "ms_per_move": 22.262230801162314,
+        "nodes_per_move": 80648.54794520549,
+        "nodes_per_second": 3622662.4665572513,
+        "mean_completed_depth": 9.69406392694064
+      },
+      "score": {
+        "estimate": 0.765625,
+        "paired_bootstrap_95_ci": [
+          0.6875,
+          0.84375
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.5,
+        1.0,
+        0.75,
+        0.75,
+        1.0,
+        0.75,
+        0.75,
+        0.75,
+        0.5,
+        1.0,
+        1.0,
+        0.5
+      ]
+    },
+    "rr-network1057-vs-original-t400": {
+      "config": {
+        "name": "rr-network1057-vs-original-t400",
+        "family": "rr",
+        "a_id": "network1057",
+        "b_id": "original",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 2,
+        "first_seed": 50000032,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 13,
+        "draws": 8,
+        "losses": 11,
+        "score": 0.53125,
+        "win_rate": 0.40625,
+        "moves": 2100,
+        "milliseconds": 721772.472,
+        "nodes": 1638295702,
+        "depth_sum": 22579,
+        "ms_per_move": 343.7011771428571,
+        "nodes_per_move": 780140.8104761905,
+        "nodes_per_second": 2269822.9228116088,
+        "mean_completed_depth": 10.751904761904761
+      },
+      "b": {
+        "games": 32,
+        "wins": 11,
+        "draws": 8,
+        "losses": 13,
+        "score": 0.46875,
+        "win_rate": 0.34375,
+        "moves": 2099,
+        "milliseconds": 715837.1730000002,
+        "nodes": 2581179052,
+        "depth_sum": 23363,
+        "ms_per_move": 341.0372429728443,
+        "nodes_per_move": 1229718.4621248213,
+        "nodes_per_second": 3605818.682456156,
+        "mean_completed_depth": 11.130538351595998
+      },
+      "score": {
+        "estimate": 0.53125,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.640625
+        ]
+      },
+      "deal_scores": [
+        0.25,
+        0.75,
+        0.25,
+        0.75,
+        1.0,
+        0.75,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.25,
+        0.5,
+        0.25
+      ]
+    },
+    "anchor-network1057-vs-original-t400": {
+      "config": {
+        "name": "anchor-network1057-vs-original-t400",
+        "family": "anchor",
+        "a_id": "network1057",
+        "b_id": "original",
+        "time_ms": 400,
+        "b_time_ms": 25,
+        "block": 2,
+        "first_seed": 50000032,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.0625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 18,
+        "draws": 9,
+        "losses": 5,
+        "score": 0.703125,
+        "win_rate": 0.5625,
+        "moves": 2096,
+        "milliseconds": 705874.7100000001,
+        "nodes": 1620140763,
+        "depth_sum": 23873,
+        "ms_per_move": 336.77228530534353,
+        "nodes_per_move": 772967.921278626,
+        "nodes_per_second": 2295224.2657907377,
+        "mean_completed_depth": 11.389790076335878
+      },
+      "b": {
+        "games": 32,
+        "wins": 5,
+        "draws": 9,
+        "losses": 18,
+        "score": 0.296875,
+        "win_rate": 0.15625,
+        "moves": 2091,
+        "milliseconds": 46163.36800000001,
+        "nodes": 159667158,
+        "depth_sum": 18933,
+        "ms_per_move": 22.077172644667627,
+        "nodes_per_move": 76359.23385939741,
+        "nodes_per_second": 3458741.5285643796,
+        "mean_completed_depth": 9.0545193687231
+      },
+      "score": {
+        "estimate": 0.703125,
+        "paired_bootstrap_95_ci": [
+          0.546875,
+          0.84375
+        ]
+      },
+      "deal_scores": [
+        1.0,
+        1.0,
+        0.5,
+        0.0,
+        0.75,
+        1.0,
+        0.75,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        0.25,
+        1.0,
+        0.75,
+        0.75,
+        1.0
+      ]
+    },
+    "rr-expanded1948-vs-original-t25": {
+      "config": {
+        "name": "rr-expanded1948-vs-original-t25",
+        "family": "rr",
+        "a_id": "expanded1948",
+        "b_id": "original",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 3,
+        "first_seed": 50000048,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 10,
+        "draws": 16,
+        "losses": 6,
+        "score": 0.5625,
+        "win_rate": 0.3125,
+        "moves": 2268,
+        "milliseconds": 50141.990000000005,
+        "nodes": 167847581,
+        "depth_sum": 19616,
+        "ms_per_move": 22.108461199294535,
+        "nodes_per_move": 74006.86992945326,
+        "nodes_per_second": 3347445.54414374,
+        "mean_completed_depth": 8.649029982363317
+      },
+      "b": {
+        "games": 32,
+        "wins": 6,
+        "draws": 16,
+        "losses": 10,
+        "score": 0.4375,
+        "win_rate": 0.1875,
+        "moves": 2265,
+        "milliseconds": 50462.115999999995,
+        "nodes": 184766997,
+        "depth_sum": 19824,
+        "ms_per_move": 22.279079911699778,
+        "nodes_per_move": 81574.83311258278,
+        "nodes_per_second": 3661499.1927805804,
+        "mean_completed_depth": 8.752317880794703
+      },
+      "score": {
+        "estimate": 0.5625,
+        "paired_bootstrap_95_ci": [
+          0.46875,
+          0.65625
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.5,
+        0.5,
+        0.25,
+        0.5,
+        0.5,
+        0.25,
+        0.75,
+        0.75,
+        0.75,
+        0.5,
+        0.5,
+        0.25,
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "rr-expanded1948-vs-original-t100": {
+      "config": {
+        "name": "rr-expanded1948-vs-original-t100",
+        "family": "rr",
+        "a_id": "expanded1948",
+        "b_id": "original",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 3,
+        "first_seed": 50000048,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 14,
+        "draws": 11,
+        "losses": 7,
+        "score": 0.609375,
+        "win_rate": 0.4375,
+        "moves": 2325,
+        "milliseconds": 199624.94799999997,
+        "nodes": 636689633,
+        "depth_sum": 23843,
+        "ms_per_move": 85.86019268817203,
+        "nodes_per_move": 273845.0034408602,
+        "nodes_per_second": 3189429.173952747,
+        "mean_completed_depth": 10.255053763440861
+      },
+      "b": {
+        "games": 32,
+        "wins": 7,
+        "draws": 11,
+        "losses": 14,
+        "score": 0.390625,
+        "win_rate": 0.21875,
+        "moves": 2322,
+        "milliseconds": 199700.59699999995,
+        "nodes": 700834515,
+        "depth_sum": 24137,
+        "ms_per_move": 86.00370241171402,
+        "nodes_per_move": 301823.649870801,
+        "nodes_per_second": 3509426.2387207593,
+        "mean_completed_depth": 10.394918173987941
+      },
+      "score": {
+        "estimate": 0.609375,
+        "paired_bootstrap_95_ci": [
+          0.5,
+          0.71875
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.75,
+        0.25,
+        0.75,
+        0.25,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.75,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "anchor-expanded1948-vs-original-t100": {
+      "config": {
+        "name": "anchor-expanded1948-vs-original-t100",
+        "family": "anchor",
+        "a_id": "expanded1948",
+        "b_id": "original",
+        "time_ms": 100,
+        "b_time_ms": 25,
+        "block": 3,
+        "first_seed": 50000048,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.25"
+      },
+      "a": {
+        "games": 32,
+        "wins": 14,
+        "draws": 10,
+        "losses": 8,
+        "score": 0.59375,
+        "win_rate": 0.4375,
+        "moves": 2366,
+        "milliseconds": 202726.146,
+        "nodes": 756776072,
+        "depth_sum": 26621,
+        "ms_per_move": 85.68307100591716,
+        "nodes_per_move": 319854.6373626374,
+        "nodes_per_second": 3732996.887337857,
+        "mean_completed_depth": 11.251479289940828
+      },
+      "b": {
+        "games": 32,
+        "wins": 8,
+        "draws": 10,
+        "losses": 14,
+        "score": 0.40625,
+        "win_rate": 0.25,
+        "moves": 2362,
+        "milliseconds": 51088.35900000001,
+        "nodes": 200083840,
+        "depth_sum": 23020,
+        "ms_per_move": 21.629279847586794,
+        "nodes_per_move": 84709.50042337003,
+        "nodes_per_second": 3916427.2236655704,
+        "mean_completed_depth": 9.74597798475868
+      },
+      "score": {
+        "estimate": 0.59375,
+        "paired_bootstrap_95_ci": [
+          0.453125,
+          0.71875
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.75,
+        0.5,
+        1.0,
+        0.0,
+        0.25,
+        0.0,
+        0.75,
+        0.5,
+        0.75,
+        0.75,
+        0.5,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "rr-expanded1948-vs-original-t400": {
+      "config": {
+        "name": "rr-expanded1948-vs-original-t400",
+        "family": "rr",
+        "a_id": "expanded1948",
+        "b_id": "original",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 3,
+        "first_seed": 50000048,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 10,
+        "draws": 14,
+        "losses": 8,
+        "score": 0.53125,
+        "win_rate": 0.3125,
+        "moves": 2538,
+        "milliseconds": 870723.9589999996,
+        "nodes": 3201131029,
+        "depth_sum": 30528,
+        "ms_per_move": 343.0748459416862,
+        "nodes_per_move": 1261280.9412923562,
+        "nodes_per_second": 3676401.683808498,
+        "mean_completed_depth": 12.02836879432624
+      },
+      "b": {
+        "games": 32,
+        "wins": 8,
+        "draws": 14,
+        "losses": 10,
+        "score": 0.46875,
+        "win_rate": 0.25,
+        "moves": 2534,
+        "milliseconds": 881095.4309999999,
+        "nodes": 3575640327,
+        "depth_sum": 30737,
+        "ms_per_move": 347.7093255722178,
+        "nodes_per_move": 1411065.638121547,
+        "nodes_per_second": 4058175.99455921,
+        "mean_completed_depth": 12.129834254143647
+      },
+      "score": {
+        "estimate": 0.53125,
+        "paired_bootstrap_95_ci": [
+          0.40625,
+          0.65625
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.75,
+        0.75,
+        1.0,
+        0.25,
+        0.75,
+        0.25,
+        0.5,
+        0.5,
+        0.5,
+        0.75,
+        0.5,
+        0.75,
+        0.25,
+        0.5,
+        0.0
+      ]
+    },
+    "anchor-expanded1948-vs-original-t400": {
+      "config": {
+        "name": "anchor-expanded1948-vs-original-t400",
+        "family": "anchor",
+        "a_id": "expanded1948",
+        "b_id": "original",
+        "time_ms": 400,
+        "b_time_ms": 25,
+        "block": 3,
+        "first_seed": 50000048,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.0625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 16,
+        "draws": 8,
+        "losses": 8,
+        "score": 0.625,
+        "win_rate": 0.5,
+        "moves": 2154,
+        "milliseconds": 738058.5800000002,
+        "nodes": 2470693912,
+        "depth_sum": 23794,
+        "ms_per_move": 342.6455803156918,
+        "nodes_per_move": 1147025.957288765,
+        "nodes_per_second": 3347558.01091019,
+        "mean_completed_depth": 11.046425255338905
+      },
+      "b": {
+        "games": 32,
+        "wins": 8,
+        "draws": 8,
+        "losses": 16,
+        "score": 0.375,
+        "win_rate": 0.25,
+        "moves": 2150,
+        "milliseconds": 47399.453,
+        "nodes": 169582778,
+        "depth_sum": 17847,
+        "ms_per_move": 22.046257209302325,
+        "nodes_per_move": 78875.71069767443,
+        "nodes_per_second": 3577737.0257838205,
+        "mean_completed_depth": 8.300930232558139
+      },
+      "score": {
+        "estimate": 0.625,
+        "paired_bootstrap_95_ci": [
+          0.546875,
+          0.71875
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.75,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        0.75,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.75
+      ]
+    },
+    "rr-structured139-vs-expanded499-t25": {
+      "config": {
+        "name": "rr-structured139-vs-expanded499-t25",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "expanded499",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 4,
+        "first_seed": 50000064,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 6,
+        "losses": 14,
+        "score": 0.46875,
+        "win_rate": 0.375,
+        "moves": 2135,
+        "milliseconds": 47007.48399999999,
+        "nodes": 156770875,
+        "depth_sum": 17833,
+        "ms_per_move": 22.0175569086651,
+        "nodes_per_move": 73428.981264637,
+        "nodes_per_second": 3335019.483280578,
+        "mean_completed_depth": 8.352693208430914
+      },
+      "b": {
+        "games": 32,
+        "wins": 14,
+        "draws": 6,
+        "losses": 12,
+        "score": 0.53125,
+        "win_rate": 0.4375,
+        "moves": 2135,
+        "milliseconds": 47215.06199999999,
+        "nodes": 150484207,
+        "depth_sum": 17446,
+        "ms_per_move": 22.114783138173298,
+        "nodes_per_move": 70484.40608899297,
+        "nodes_per_second": 3187207.654201535,
+        "mean_completed_depth": 8.17142857142857
+      },
+      "score": {
+        "estimate": 0.46875,
+        "paired_bootstrap_95_ci": [
+          0.328125,
+          0.59375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        0.0,
+        0.5,
+        0.0,
+        0.75,
+        0.5,
+        0.25,
+        0.5,
+        0.0,
+        0.5,
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "rr-structured139-vs-expanded499-t100": {
+      "config": {
+        "name": "rr-structured139-vs-expanded499-t100",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "expanded499",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 4,
+        "first_seed": 50000064,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 14,
+        "draws": 7,
+        "losses": 11,
+        "score": 0.546875,
+        "win_rate": 0.4375,
+        "moves": 2156,
+        "milliseconds": 185201.91999999998,
+        "nodes": 646086946,
+        "depth_sum": 21942,
+        "ms_per_move": 85.90070500927644,
+        "nodes_per_move": 299669.2699443414,
+        "nodes_per_second": 3488554.254729109,
+        "mean_completed_depth": 10.177179962894249
+      },
+      "b": {
+        "games": 32,
+        "wins": 11,
+        "draws": 7,
+        "losses": 14,
+        "score": 0.453125,
+        "win_rate": 0.34375,
+        "moves": 2156,
+        "milliseconds": 185895.77599999995,
+        "nodes": 630023909,
+        "depth_sum": 21935,
+        "ms_per_move": 86.22253061224488,
+        "nodes_per_move": 292218.88172541745,
+        "nodes_per_second": 3389124.393014719,
+        "mean_completed_depth": 10.173933209647496
+      },
+      "score": {
+        "estimate": 0.546875,
+        "paired_bootstrap_95_ci": [
+          0.5,
+          0.59375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.75
+      ]
+    },
+    "rr-structured139-vs-expanded499-t400": {
+      "config": {
+        "name": "rr-structured139-vs-expanded499-t400",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "expanded499",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 4,
+        "first_seed": 50000064,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 11,
+        "draws": 10,
+        "losses": 11,
+        "score": 0.5,
+        "win_rate": 0.34375,
+        "moves": 2234,
+        "milliseconds": 756126.2890000001,
+        "nodes": 2740462400,
+        "depth_sum": 27002,
+        "ms_per_move": 338.46297627573864,
+        "nodes_per_move": 1226706.5353625782,
+        "nodes_per_second": 3624344.8215831043,
+        "mean_completed_depth": 12.086839749328558
+      },
+      "b": {
+        "games": 32,
+        "wins": 11,
+        "draws": 10,
+        "losses": 11,
+        "score": 0.5,
+        "win_rate": 0.34375,
+        "moves": 2237,
+        "milliseconds": 757577.7790000002,
+        "nodes": 2664390300,
+        "depth_sum": 27107,
+        "ms_per_move": 338.65792534644623,
+        "nodes_per_move": 1191055.1184622261,
+        "nodes_per_second": 3516985.8116970975,
+        "mean_completed_depth": 12.11756817165847
+      },
+      "score": {
+        "estimate": 0.5,
+        "paired_bootstrap_95_ci": [
+          0.359375,
+          0.640625
+        ]
+      },
+      "deal_scores": [
+        0.25,
+        0.5,
+        0.5,
+        0.0,
+        0.5,
+        0.75,
+        0.5,
+        0.25,
+        0.0,
+        0.75,
+        0.5,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "rr-structured139-vs-network1057-t25": {
+      "config": {
+        "name": "rr-structured139-vs-network1057-t25",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "network1057",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 5,
+        "first_seed": 50000080,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 8,
+        "losses": 12,
+        "score": 0.5,
+        "win_rate": 0.375,
+        "moves": 2067,
+        "milliseconds": 45666.881,
+        "nodes": 177657947,
+        "depth_sum": 16688,
+        "ms_per_move": 22.093314465408806,
+        "nodes_per_move": 85949.65989356555,
+        "nodes_per_second": 3890301.748437779,
+        "mean_completed_depth": 8.073536526366714
+      },
+      "b": {
+        "games": 32,
+        "wins": 12,
+        "draws": 8,
+        "losses": 12,
+        "score": 0.5,
+        "win_rate": 0.375,
+        "moves": 2067,
+        "milliseconds": 45303.66199999999,
+        "nodes": 112480840,
+        "depth_sum": 15817,
+        "ms_per_move": 21.917591678761486,
+        "nodes_per_move": 54417.4358974359,
+        "nodes_per_second": 2482820.0422296994,
+        "mean_completed_depth": 7.652152878567973
+      },
+      "score": {
+        "estimate": 0.5,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.59375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.25,
+        0.75,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        0.25,
+        0.5,
+        0.5,
+        0.5,
+        0.25
+      ]
+    },
+    "rr-structured139-vs-network1057-t100": {
+      "config": {
+        "name": "rr-structured139-vs-network1057-t100",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "network1057",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 5,
+        "first_seed": 50000080,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5"
+      },
+      "a": {
+        "games": 32,
+        "wins": 10,
+        "draws": 9,
+        "losses": 13,
+        "score": 0.453125,
+        "win_rate": 0.3125,
+        "moves": 2226,
+        "milliseconds": 187153.983,
+        "nodes": 729084445,
+        "depth_sum": 27210,
+        "ms_per_move": 84.07636253369273,
+        "nodes_per_move": 327531.197214735,
+        "nodes_per_second": 3895639.479924934,
+        "mean_completed_depth": 12.223719676549866
+      },
+      "b": {
+        "games": 32,
+        "wins": 13,
+        "draws": 9,
+        "losses": 10,
+        "score": 0.546875,
+        "win_rate": 0.40625,
+        "moves": 2225,
+        "milliseconds": 185719.99099999998,
+        "nodes": 465730694,
+        "depth_sum": 26292,
+        "ms_per_move": 83.46965887640448,
+        "nodes_per_move": 209317.16584269662,
+        "nodes_per_second": 2507703.621415748,
+        "mean_completed_depth": 11.816629213483147
+      },
+      "score": {
+        "estimate": 0.453125,
+        "paired_bootstrap_95_ci": [
+          0.3125,
+          0.59375
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.25,
+        0.5,
+        0.25,
+        0.75,
+        0.25,
+        1.0,
+        0.5,
+        0.75,
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.5,
+        0.0,
+        0.25
+      ]
+    },
+    "rr-structured139-vs-network1057-t400": {
+      "config": {
+        "name": "rr-structured139-vs-network1057-t400",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "network1057",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 5,
+        "first_seed": 50000080,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5"
+      },
+      "a": {
+        "games": 32,
+        "wins": 13,
+        "draws": 9,
+        "losses": 10,
+        "score": 0.546875,
+        "win_rate": 0.40625,
+        "moves": 2325,
+        "milliseconds": 797665.2950000002,
+        "nodes": 2953494830,
+        "depth_sum": 25925,
+        "ms_per_move": 343.081847311828,
+        "nodes_per_move": 1270320.3569892473,
+        "nodes_per_second": 3702674.352906377,
+        "mean_completed_depth": 11.150537634408602
+      },
+      "b": {
+        "games": 32,
+        "wins": 10,
+        "draws": 9,
+        "losses": 13,
+        "score": 0.453125,
+        "win_rate": 0.3125,
+        "moves": 2324,
+        "milliseconds": 801066.271,
+        "nodes": 1890465480,
+        "depth_sum": 25174,
+        "ms_per_move": 344.69288769363163,
+        "nodes_per_move": 813453.3046471601,
+        "nodes_per_second": 2359936.435271533,
+        "mean_completed_depth": 10.832185886402755
+      },
+      "score": {
+        "estimate": 0.546875,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.671875
+        ]
+      },
+      "deal_scores": [
+        1.0,
+        0.25,
+        1.0,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.5,
+        0.25,
+        0.5,
+        0.75,
+        0.75
+      ]
+    },
+    "rr-structured139-vs-expanded1948-t25": {
+      "config": {
+        "name": "rr-structured139-vs-expanded1948-t25",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "expanded1948",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 6,
+        "first_seed": 50000096,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 10,
+        "losses": 10,
+        "score": 0.53125,
+        "win_rate": 0.375,
+        "moves": 2524,
+        "milliseconds": 55494.73100000001,
+        "nodes": 184479709,
+        "depth_sum": 26129,
+        "ms_per_move": 21.98681893819335,
+        "nodes_per_move": 73090.2175118859,
+        "nodes_per_second": 3324274.317141928,
+        "mean_completed_depth": 10.352218700475436
+      },
+      "b": {
+        "games": 32,
+        "wins": 10,
+        "draws": 10,
+        "losses": 12,
+        "score": 0.46875,
+        "win_rate": 0.3125,
+        "moves": 2522,
+        "milliseconds": 55353.92699999999,
+        "nodes": 169544288,
+        "depth_sum": 25920,
+        "ms_per_move": 21.948424662965895,
+        "nodes_per_move": 67226.12529738303,
+        "nodes_per_second": 3062913.458696436,
+        "mean_completed_depth": 10.27755749405234
+      },
+      "score": {
+        "estimate": 0.53125,
+        "paired_bootstrap_95_ci": [
+          0.390625,
+          0.671875
+        ]
+      },
+      "deal_scores": [
+        0.25,
+        1.0,
+        0.5,
+        0.75,
+        0.5,
+        0.75,
+        0.25,
+        0.5,
+        1.0,
+        0.25,
+        0.5,
+        0.25,
+        0.25,
+        0.5,
+        0.25,
+        1.0
+      ]
+    },
+    "rr-structured139-vs-expanded1948-t100": {
+      "config": {
+        "name": "rr-structured139-vs-expanded1948-t100",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "expanded1948",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 6,
+        "first_seed": 50000096,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 10,
+        "draws": 11,
+        "losses": 11,
+        "score": 0.484375,
+        "win_rate": 0.3125,
+        "moves": 2387,
+        "milliseconds": 204416.392,
+        "nodes": 724560395,
+        "depth_sum": 25262,
+        "ms_per_move": 85.63736573104315,
+        "nodes_per_move": 303544.36321742774,
+        "nodes_per_second": 3544531.766317449,
+        "mean_completed_depth": 10.583158776707164
+      },
+      "b": {
+        "games": 32,
+        "wins": 11,
+        "draws": 11,
+        "losses": 10,
+        "score": 0.515625,
+        "win_rate": 0.34375,
+        "moves": 2389,
+        "milliseconds": 204696.422,
+        "nodes": 667348154,
+        "depth_sum": 24943,
+        "ms_per_move": 85.68288907492675,
+        "nodes_per_move": 279342.04855588113,
+        "nodes_per_second": 3260184.753009508,
+        "mean_completed_depth": 10.440770196735036
+      },
+      "score": {
+        "estimate": 0.484375,
+        "paired_bootstrap_95_ci": [
+          0.34375,
+          0.625
+        ]
+      },
+      "deal_scores": [
+        0.0,
+        0.0,
+        0.75,
+        0.75,
+        0.5,
+        0.25,
+        0.25,
+        0.5,
+        1.0,
+        0.75,
+        0.5,
+        0.25,
+        0.25,
+        0.5,
+        0.75,
+        0.75
+      ]
+    },
+    "rr-structured139-vs-expanded1948-t400": {
+      "config": {
+        "name": "rr-structured139-vs-expanded1948-t400",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "expanded1948",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 6,
+        "first_seed": 50000096,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 13,
+        "draws": 9,
+        "losses": 10,
+        "score": 0.546875,
+        "win_rate": 0.40625,
+        "moves": 2389,
+        "milliseconds": 821357.0929999999,
+        "nodes": 3155369750,
+        "depth_sum": 27475,
+        "ms_per_move": 343.8079083298451,
+        "nodes_per_move": 1320791.0213478443,
+        "nodes_per_second": 3841653.9856921895,
+        "mean_completed_depth": 11.500627877773127
+      },
+      "b": {
+        "games": 32,
+        "wins": 10,
+        "draws": 9,
+        "losses": 13,
+        "score": 0.453125,
+        "win_rate": 0.3125,
+        "moves": 2390,
+        "milliseconds": 820369.583,
+        "nodes": 2898761095,
+        "depth_sum": 27591,
+        "ms_per_move": 343.2508715481172,
+        "nodes_per_move": 1212870.7510460252,
+        "nodes_per_second": 3533481.9270109385,
+        "mean_completed_depth": 11.544351464435147
+      },
+      "score": {
+        "estimate": 0.546875,
+        "paired_bootstrap_95_ci": [
+          0.390625,
+          0.703125
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        1.0,
+        0.75,
+        0.5,
+        1.0,
+        0.25,
+        0.75,
+        0.5,
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.25,
+        1.0,
+        0.0,
+        0.75
+      ]
+    },
+    "rr-expanded499-vs-network1057-t25": {
+      "config": {
+        "name": "rr-expanded499-vs-network1057-t25",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "network1057",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 7,
+        "first_seed": 50000112,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 7,
+        "losses": 13,
+        "score": 0.484375,
+        "win_rate": 0.375,
+        "moves": 1953,
+        "milliseconds": 43168.84599999999,
+        "nodes": 131749535,
+        "depth_sum": 15441,
+        "ms_per_move": 22.10386379928315,
+        "nodes_per_move": 67460.07936507936,
+        "nodes_per_second": 3051958.6972512547,
+        "mean_completed_depth": 7.906298003072196
+      },
+      "b": {
+        "games": 32,
+        "wins": 13,
+        "draws": 7,
+        "losses": 12,
+        "score": 0.515625,
+        "win_rate": 0.40625,
+        "moves": 1952,
+        "milliseconds": 42527.55100000001,
+        "nodes": 87095305,
+        "depth_sum": 14631,
+        "ms_per_move": 21.786655225409838,
+        "nodes_per_move": 44618.49641393442,
+        "nodes_per_second": 2047973.6771111034,
+        "mean_completed_depth": 7.495389344262295
+      },
+      "score": {
+        "estimate": 0.484375,
+        "paired_bootstrap_95_ci": [
+          0.375,
+          0.59375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        1.0,
+        0.0,
+        0.25,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.25,
+        0.5,
+        0.75,
+        0.25,
+        0.5
+      ]
+    },
+    "rr-expanded499-vs-network1057-t100": {
+      "config": {
+        "name": "rr-expanded499-vs-network1057-t100",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "network1057",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 7,
+        "first_seed": 50000112,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 10,
+        "losses": 10,
+        "score": 0.53125,
+        "win_rate": 0.375,
+        "moves": 2410,
+        "milliseconds": 208903.084,
+        "nodes": 724775393,
+        "depth_sum": 25049,
+        "ms_per_move": 86.68177759336099,
+        "nodes_per_move": 300736.677593361,
+        "nodes_per_second": 3469433.6681022863,
+        "mean_completed_depth": 10.393775933609959
+      },
+      "b": {
+        "games": 32,
+        "wins": 10,
+        "draws": 10,
+        "losses": 12,
+        "score": 0.46875,
+        "win_rate": 0.3125,
+        "moves": 2406,
+        "milliseconds": 208612.07700000005,
+        "nodes": 483032431,
+        "depth_sum": 24298,
+        "ms_per_move": 86.70493640897757,
+        "nodes_per_move": 200761.6088944306,
+        "nodes_per_second": 2315457.6568450537,
+        "mean_completed_depth": 10.098919368246051
+      },
+      "score": {
+        "estimate": 0.53125,
+        "paired_bootstrap_95_ci": [
+          0.40625,
+          0.65625
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.75,
+        0.5,
+        0.25,
+        0.5,
+        0.75,
+        0.5,
+        1.0,
+        0.5,
+        0.25,
+        0.5,
+        0.5,
+        0.0,
+        1.0
+      ]
+    },
+    "rr-expanded499-vs-network1057-t400": {
+      "config": {
+        "name": "rr-expanded499-vs-network1057-t400",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "network1057",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 7,
+        "first_seed": 50000112,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 6,
+        "losses": 14,
+        "score": 0.46875,
+        "win_rate": 0.375,
+        "moves": 2181,
+        "milliseconds": 748305.657,
+        "nodes": 2537397321,
+        "depth_sum": 25959,
+        "ms_per_move": 343.10208940852823,
+        "nodes_per_move": 1163410.0508940853,
+        "nodes_per_second": 3390856.7939638067,
+        "mean_completed_depth": 11.902338376891334
+      },
+      "b": {
+        "games": 32,
+        "wins": 14,
+        "draws": 6,
+        "losses": 12,
+        "score": 0.53125,
+        "win_rate": 0.4375,
+        "moves": 2183,
+        "milliseconds": 745593.299,
+        "nodes": 1663618093,
+        "depth_sum": 25342,
+        "ms_per_move": 341.54525836005496,
+        "nodes_per_move": 762078.8332569858,
+        "nodes_per_second": 2231267.4956055367,
+        "mean_completed_depth": 11.60879523591388
+      },
+      "score": {
+        "estimate": 0.46875,
+        "paired_bootstrap_95_ci": [
+          0.34375,
+          0.59375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.25,
+        0.0,
+        0.5,
+        0.5,
+        0.5,
+        0.75,
+        1.0,
+        0.25,
+        0.5,
+        0.0,
+        0.5,
+        0.5,
+        0.75
+      ]
+    },
+    "rr-expanded499-vs-expanded1948-t25": {
+      "config": {
+        "name": "rr-expanded499-vs-expanded1948-t25",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "expanded1948",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 8,
+        "first_seed": 50000128,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 15,
+        "draws": 3,
+        "losses": 14,
+        "score": 0.515625,
+        "win_rate": 0.46875,
+        "moves": 2113,
+        "milliseconds": 45600.23699999999,
+        "nodes": 144374709,
+        "depth_sum": 16574,
+        "ms_per_move": 21.580803123521054,
+        "nodes_per_move": 68326.88547089446,
+        "nodes_per_second": 3166095.5841084784,
+        "mean_completed_depth": 7.843823946994794
+      },
+      "b": {
+        "games": 32,
+        "wins": 14,
+        "draws": 3,
+        "losses": 15,
+        "score": 0.484375,
+        "win_rate": 0.4375,
+        "moves": 2113,
+        "milliseconds": 45764.823000000004,
+        "nodes": 137780346,
+        "depth_sum": 16578,
+        "ms_per_move": 21.65869522006626,
+        "nodes_per_move": 65206.03218173213,
+        "nodes_per_second": 3010616.82244461,
+        "mean_completed_depth": 7.845716990061524
+      },
+      "score": {
+        "estimate": 0.515625,
+        "paired_bootstrap_95_ci": [
+          0.375,
+          0.671875
+        ]
+      },
+      "deal_scores": [
+        0.25,
+        0.75,
+        0.5,
+        1.0,
+        0.5,
+        0.25,
+        0.0,
+        0.5,
+        0.0,
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "rr-expanded499-vs-expanded1948-t100": {
+      "config": {
+        "name": "rr-expanded499-vs-expanded1948-t100",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "expanded1948",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 8,
+        "first_seed": 50000128,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 6,
+        "draws": 14,
+        "losses": 12,
+        "score": 0.40625,
+        "win_rate": 0.1875,
+        "moves": 2222,
+        "milliseconds": 192183.91000000003,
+        "nodes": 681562347,
+        "depth_sum": 24594,
+        "ms_per_move": 86.4914086408641,
+        "nodes_per_move": 306733.7295229523,
+        "nodes_per_second": 3546406.9130449053,
+        "mean_completed_depth": 11.068406840684068
+      },
+      "b": {
+        "games": 32,
+        "wins": 12,
+        "draws": 14,
+        "losses": 6,
+        "score": 0.59375,
+        "win_rate": 0.375,
+        "moves": 2223,
+        "milliseconds": 191657.813,
+        "nodes": 647062941,
+        "depth_sum": 23700,
+        "ms_per_move": 86.21584030589294,
+        "nodes_per_move": 291076.4466936572,
+        "nodes_per_second": 3376136.5157599915,
+        "mean_completed_depth": 10.661268556005398
+      },
+      "score": {
+        "estimate": 0.40625,
+        "paired_bootstrap_95_ci": [
+          0.28125,
+          0.53125
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.5,
+        0.5,
+        0.0,
+        0.25,
+        0.5,
+        0.25,
+        0.5,
+        0.5,
+        0.0,
+        1.0,
+        0.5,
+        0.25,
+        0.5,
+        0.5,
+        0.0
+      ]
+    },
+    "rr-expanded499-vs-expanded1948-t400": {
+      "config": {
+        "name": "rr-expanded499-vs-expanded1948-t400",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "expanded1948",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 8,
+        "first_seed": 50000128,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 15,
+        "draws": 7,
+        "losses": 10,
+        "score": 0.578125,
+        "win_rate": 0.46875,
+        "moves": 2167,
+        "milliseconds": 728984.6070000004,
+        "nodes": 2614873776,
+        "depth_sum": 23427,
+        "ms_per_move": 336.4026797415784,
+        "nodes_per_move": 1206679.1767420396,
+        "nodes_per_second": 3587008.2178566474,
+        "mean_completed_depth": 10.81079833871712
+      },
+      "b": {
+        "games": 32,
+        "wins": 10,
+        "draws": 7,
+        "losses": 15,
+        "score": 0.421875,
+        "win_rate": 0.3125,
+        "moves": 2164,
+        "milliseconds": 731447.5819999999,
+        "nodes": 2500091070,
+        "depth_sum": 23296,
+        "ms_per_move": 338.0072005545286,
+        "nodes_per_move": 1155310.106284658,
+        "nodes_per_second": 3418004.4223592775,
+        "mean_completed_depth": 10.76524953789279
+      },
+      "score": {
+        "estimate": 0.578125,
+        "paired_bootstrap_95_ci": [
+          0.453125,
+          0.703125
+        ]
+      },
+      "deal_scores": [
+        0.25,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.75,
+        1.0,
+        0.5,
+        0.25,
+        0.5,
+        1.0,
+        0.5,
+        0.75,
+        0.25,
+        0.25
+      ]
+    },
+    "rr-network1057-vs-expanded1948-t25": {
+      "config": {
+        "name": "rr-network1057-vs-expanded1948-t25",
+        "family": "rr",
+        "a_id": "network1057",
+        "b_id": "expanded1948",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 9,
+        "first_seed": 50000144,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 13,
+        "draws": 6,
+        "losses": 13,
+        "score": 0.5,
+        "win_rate": 0.40625,
+        "moves": 2299,
+        "milliseconds": 50477.964000000014,
+        "nodes": 110327756,
+        "depth_sum": 18371,
+        "ms_per_move": 21.956487168334064,
+        "nodes_per_move": 47989.454545454544,
+        "nodes_per_second": 2185661.76718221,
+        "mean_completed_depth": 7.990865593736407
+      },
+      "b": {
+        "games": 32,
+        "wins": 13,
+        "draws": 6,
+        "losses": 13,
+        "score": 0.5,
+        "win_rate": 0.40625,
+        "moves": 2299,
+        "milliseconds": 50580.588999999985,
+        "nodes": 160328855,
+        "depth_sum": 19113,
+        "ms_per_move": 22.001126141800775,
+        "nodes_per_move": 69738.51892127012,
+        "nodes_per_second": 3169770.4231953495,
+        "mean_completed_depth": 8.313614615050021
+      },
+      "score": {
+        "estimate": 0.5,
+        "paired_bootstrap_95_ci": [
+          0.40625,
+          0.578125
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.75,
+        0.5,
+        0.25,
+        0.75,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.75,
+        0.5,
+        0.0
+      ]
+    },
+    "rr-network1057-vs-expanded1948-t100": {
+      "config": {
+        "name": "rr-network1057-vs-expanded1948-t100",
+        "family": "rr",
+        "a_id": "network1057",
+        "b_id": "expanded1948",
+        "time_ms": 100,
+        "b_time_ms": 100,
+        "block": 9,
+        "first_seed": 50000144,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 10,
+        "draws": 8,
+        "losses": 14,
+        "score": 0.4375,
+        "win_rate": 0.3125,
+        "moves": 2224,
+        "milliseconds": 191432.943,
+        "nodes": 451102718,
+        "depth_sum": 20924,
+        "ms_per_move": 86.07596357913668,
+        "nodes_per_move": 202833.9559352518,
+        "nodes_per_second": 2356452.922525461,
+        "mean_completed_depth": 9.408273381294965
+      },
+      "b": {
+        "games": 32,
+        "wins": 14,
+        "draws": 8,
+        "losses": 10,
+        "score": 0.5625,
+        "win_rate": 0.4375,
+        "moves": 2227,
+        "milliseconds": 192196.77299999993,
+        "nodes": 653586842,
+        "depth_sum": 21459,
+        "ms_per_move": 86.30299640772336,
+        "nodes_per_move": 293483.0902559497,
+        "nodes_per_second": 3400612.985317918,
+        "mean_completed_depth": 9.635832959137854
+      },
+      "score": {
+        "estimate": 0.4375,
+        "paired_bootstrap_95_ci": [
+          0.328125,
+          0.5625
+        ]
+      },
+      "deal_scores": [
+        1.0,
+        0.5,
+        0.25,
+        0.5,
+        0.5,
+        0.5,
+        0.25,
+        0.5,
+        0.75,
+        0.25,
+        0.25,
+        0.5,
+        0.0,
+        0.75,
+        0.25,
+        0.25
+      ]
+    },
+    "rr-network1057-vs-expanded1948-t400": {
+      "config": {
+        "name": "rr-network1057-vs-expanded1948-t400",
+        "family": "rr",
+        "a_id": "network1057",
+        "b_id": "expanded1948",
+        "time_ms": 400,
+        "b_time_ms": 400,
+        "block": 9,
+        "first_seed": 50000144,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 8,
+        "losses": 12,
+        "score": 0.5,
+        "win_rate": 0.375,
+        "moves": 2373,
+        "milliseconds": 811266.166,
+        "nodes": 2367055466,
+        "depth_sum": 24889,
+        "ms_per_move": 341.8736477033291,
+        "nodes_per_move": 997494.9287821323,
+        "nodes_per_second": 2917729.7972019706,
+        "mean_completed_depth": 10.488411293721029
+      },
+      "b": {
+        "games": 32,
+        "wins": 12,
+        "draws": 8,
+        "losses": 12,
+        "score": 0.5,
+        "win_rate": 0.375,
+        "moves": 2372,
+        "milliseconds": 806851.0449999999,
+        "nodes": 3396515485,
+        "depth_sum": 25283,
+        "ms_per_move": 340.1564270657673,
+        "nodes_per_move": 1431920.5248735244,
+        "nodes_per_second": 4209594.207069535,
+        "mean_completed_depth": 10.65893760539629
+      },
+      "score": {
+        "estimate": 0.5,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.59375
+        ]
+      },
+      "deal_scores": [
+        1.0,
+        0.75,
+        0.25,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.25,
+        0.5,
+        0.5,
+        0.25
+      ]
+    },
+    "anchor-original-vs-original-t25": {
+      "config": {
+        "name": "anchor-original-vs-original-t25",
+        "family": "anchor",
+        "a_id": "original",
+        "b_id": "original",
+        "time_ms": 25,
+        "b_time_ms": 25,
+        "block": 10,
+        "first_seed": 51000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 10,
+        "draws": 12,
+        "losses": 10,
+        "score": 0.5,
+        "win_rate": 0.3125,
+        "moves": 1972,
+        "milliseconds": 43449.168000000005,
+        "nodes": 165631328,
+        "depth_sum": 17339,
+        "ms_per_move": 22.03304665314402,
+        "nodes_per_move": 83991.54563894523,
+        "nodes_per_second": 3812071.3381669354,
+        "mean_completed_depth": 8.79259634888438
+      },
+      "b": {
+        "games": 32,
+        "wins": 10,
+        "draws": 12,
+        "losses": 10,
+        "score": 0.5,
+        "win_rate": 0.3125,
+        "moves": 1972,
+        "milliseconds": 43439.64600000001,
+        "nodes": 166192637,
+        "depth_sum": 17393,
+        "ms_per_move": 22.028218052738342,
+        "nodes_per_move": 84276.18509127789,
+        "nodes_per_second": 3825828.5300022927,
+        "mean_completed_depth": 8.81997971602434
+      },
+      "score": {
+        "estimate": 0.5,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.578125
+        ]
+      },
+      "deal_scores": [
+        0.25,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.75,
+        0.25,
+        0.75,
+        0.5,
+        0.5,
+        0.25,
+        0.5,
+        0.5,
+        0.5,
+        0.75
+      ]
+    },
+    "anchor-original-vs-original-t100": {
+      "config": {
+        "name": "anchor-original-vs-original-t100",
+        "family": "anchor",
+        "a_id": "original",
+        "b_id": "original",
+        "time_ms": 100,
+        "b_time_ms": 25,
+        "block": 10,
+        "first_seed": 51000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.25"
+      },
+      "a": {
+        "games": 32,
+        "wins": 13,
+        "draws": 10,
+        "losses": 9,
+        "score": 0.5625,
+        "win_rate": 0.40625,
+        "moves": 2234,
+        "milliseconds": 192805.37799999997,
+        "nodes": 660707785,
+        "depth_sum": 22720,
+        "ms_per_move": 86.30500358102057,
+        "nodes_per_move": 295751.02282900625,
+        "nodes_per_second": 3426812.01039942,
+        "mean_completed_depth": 10.17009847806625
+      },
+      "b": {
+        "games": 32,
+        "wins": 9,
+        "draws": 10,
+        "losses": 13,
+        "score": 0.4375,
+        "win_rate": 0.28125,
+        "moves": 2233,
+        "milliseconds": 48570.005,
+        "nodes": 160546964,
+        "depth_sum": 19401,
+        "ms_per_move": 21.751009852216747,
+        "nodes_per_move": 71897.43125839677,
+        "nodes_per_second": 3305475.550187817,
+        "mean_completed_depth": 8.688311688311689
+      },
+      "score": {
+        "estimate": 0.5625,
+        "paired_bootstrap_95_ci": [
+          0.4375,
+          0.6875
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.25,
+        0.25,
+        0.5,
+        0.5,
+        0.25,
+        0.75,
+        0.75,
+        0.75,
+        0.5,
+        0.75,
+        0.75,
+        0.5,
+        0.0,
+        0.75,
+        1.0
+      ]
+    },
+    "anchor-original-vs-original-t400": {
+      "config": {
+        "name": "anchor-original-vs-original-t400",
+        "family": "anchor",
+        "a_id": "original",
+        "b_id": "original",
+        "time_ms": 400,
+        "b_time_ms": 25,
+        "block": 10,
+        "first_seed": 51000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.0625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 16,
+        "draws": 9,
+        "losses": 7,
+        "score": 0.640625,
+        "win_rate": 0.5,
+        "moves": 2006,
+        "milliseconds": 689452.551,
+        "nodes": 2384479265,
+        "depth_sum": 21138,
+        "ms_per_move": 343.6951899302094,
+        "nodes_per_move": 1188673.611665005,
+        "nodes_per_second": 3458511.048427465,
+        "mean_completed_depth": 10.53738783649053
+      },
+      "b": {
+        "games": 32,
+        "wins": 7,
+        "draws": 9,
+        "losses": 16,
+        "score": 0.359375,
+        "win_rate": 0.21875,
+        "moves": 2001,
+        "milliseconds": 43914.974,
+        "nodes": 148341196,
+        "depth_sum": 15761,
+        "ms_per_move": 21.94651374312844,
+        "nodes_per_move": 74133.53123438281,
+        "nodes_per_second": 3377918.3382870727,
+        "mean_completed_depth": 7.87656171914043
+      },
+      "score": {
+        "estimate": 0.640625,
+        "paired_bootstrap_95_ci": [
+          0.515625,
+          0.765625
+        ]
+      },
+      "deal_scores": [
+        1.0,
+        0.5,
+        1.0,
+        0.0,
+        0.5,
+        1.0,
+        0.75,
+        0.75,
+        0.75,
+        0.5,
+        0.75,
+        0.75,
+        0.25,
+        0.75,
+        0.5,
+        0.5
+      ]
+    },
+    "rr-structured139-vs-original-t1600": {
+      "config": {
+        "name": "rr-structured139-vs-original-t1600",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "original",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 0,
+        "first_seed": 50000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 13,
+        "draws": 8,
+        "losses": 11,
+        "score": 0.53125,
+        "win_rate": 0.40625,
+        "moves": 2309,
+        "milliseconds": 3181008.4169999985,
+        "nodes": 12548402550,
+        "depth_sum": 30759,
+        "ms_per_move": 1377.656308791684,
+        "nodes_per_move": 5434561.520138588,
+        "nodes_per_second": 3944787.5972093055,
+        "mean_completed_depth": 13.321351234300563
+      },
+      "b": {
+        "games": 32,
+        "wins": 11,
+        "draws": 8,
+        "losses": 13,
+        "score": 0.46875,
+        "win_rate": 0.34375,
+        "moves": 2309,
+        "milliseconds": 3181439.582,
+        "nodes": 12771095833,
+        "depth_sum": 30835,
+        "ms_per_move": 1377.8430411433521,
+        "nodes_per_move": 5531007.290168905,
+        "nodes_per_second": 4014250.6258036494,
+        "mean_completed_depth": 13.354265915980944
+      },
+      "score": {
+        "estimate": 0.53125,
+        "paired_bootstrap_95_ci": [
+          0.453125,
+          0.609375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.75,
+        0.75,
+        0.5,
+        0.5,
+        0.75,
+        0.75,
+        0.25,
+        0.25,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "csv_shards": [
+        "rr-structured139-vs-original-t1600-s0.csv",
+        "rr-structured139-vs-original-t1600-s1.csv",
+        "rr-structured139-vs-original-t1600-s2.csv",
+        "rr-structured139-vs-original-t1600-s3.csv",
+        "rr-structured139-vs-original-t1600-s4.csv",
+        "rr-structured139-vs-original-t1600-s5.csv",
+        "rr-structured139-vs-original-t1600-s6.csv",
+        "rr-structured139-vs-original-t1600-s7.csv"
+      ]
+    },
+    "anchor-structured139-vs-original-t1600": {
+      "config": {
+        "name": "anchor-structured139-vs-original-t1600",
+        "family": "anchor",
+        "a_id": "structured139",
+        "b_id": "original",
+        "time_ms": 1600,
+        "b_time_ms": 25,
+        "block": 0,
+        "first_seed": 50000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.015625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 21,
+        "draws": 9,
+        "losses": 2,
+        "score": 0.796875,
+        "win_rate": 0.65625,
+        "moves": 2143,
+        "milliseconds": 2888672.0780000007,
+        "nodes": 10951001232,
+        "depth_sum": 28629,
+        "ms_per_move": 1347.9571059262719,
+        "nodes_per_move": 5110126.566495567,
+        "nodes_per_second": 3791015.7111298107,
+        "mean_completed_depth": 13.359309379374709
+      },
+      "b": {
+        "games": 32,
+        "wins": 2,
+        "draws": 9,
+        "losses": 21,
+        "score": 0.203125,
+        "win_rate": 0.0625,
+        "moves": 2131,
+        "milliseconds": 47119.36099999999,
+        "nodes": 167692799,
+        "depth_sum": 19566,
+        "ms_per_move": 22.111384795870478,
+        "nodes_per_move": 78692.06898169873,
+        "nodes_per_second": 3558893.7422135253,
+        "mean_completed_depth": 9.18160488033787
+      },
+      "score": {
+        "estimate": 0.796875,
+        "paired_bootstrap_95_ci": [
+          0.703125,
+          0.890625
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        0.75,
+        0.5,
+        0.75,
+        0.75,
+        1.0,
+        1.0,
+        0.75,
+        0.75,
+        1.0,
+        1.0
+      ],
+      "csv_shards": [
+        "anchor-structured139-vs-original-t1600-s0.csv",
+        "anchor-structured139-vs-original-t1600-s1.csv",
+        "anchor-structured139-vs-original-t1600-s2.csv",
+        "anchor-structured139-vs-original-t1600-s3.csv",
+        "anchor-structured139-vs-original-t1600-s4.csv",
+        "anchor-structured139-vs-original-t1600-s5.csv",
+        "anchor-structured139-vs-original-t1600-s6.csv",
+        "anchor-structured139-vs-original-t1600-s7.csv"
+      ]
+    },
+    "rr-expanded499-vs-original-t1600": {
+      "config": {
+        "name": "rr-expanded499-vs-original-t1600",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "original",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 1,
+        "first_seed": 50000016,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 15,
+        "draws": 6,
+        "losses": 11,
+        "score": 0.5625,
+        "win_rate": 0.46875,
+        "moves": 2160,
+        "milliseconds": 2921384.1819999996,
+        "nodes": 10713750275,
+        "depth_sum": 25853,
+        "ms_per_move": 1352.4926768518517,
+        "nodes_per_move": 4960069.571759259,
+        "nodes_per_second": 3667354.105979068,
+        "mean_completed_depth": 11.968981481481482
+      },
+      "b": {
+        "games": 32,
+        "wins": 11,
+        "draws": 6,
+        "losses": 15,
+        "score": 0.4375,
+        "win_rate": 0.34375,
+        "moves": 2157,
+        "milliseconds": 2900207.988,
+        "nodes": 11218270665,
+        "depth_sum": 26177,
+        "ms_per_move": 1344.5563226703755,
+        "nodes_per_move": 5200867.253129346,
+        "nodes_per_second": 3868091.775285463,
+        "mean_completed_depth": 12.135836810384793
+      },
+      "score": {
+        "estimate": 0.5625,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.703125
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.0,
+        0.5,
+        0.5,
+        0.5,
+        0.25,
+        0.25,
+        0.75,
+        1.0,
+        1.0,
+        0.25,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        0.75
+      ],
+      "csv_shards": [
+        "rr-expanded499-vs-original-t1600-s0.csv",
+        "rr-expanded499-vs-original-t1600-s1.csv",
+        "rr-expanded499-vs-original-t1600-s2.csv",
+        "rr-expanded499-vs-original-t1600-s3.csv",
+        "rr-expanded499-vs-original-t1600-s4.csv",
+        "rr-expanded499-vs-original-t1600-s5.csv",
+        "rr-expanded499-vs-original-t1600-s6.csv",
+        "rr-expanded499-vs-original-t1600-s7.csv"
+      ]
+    },
+    "anchor-expanded499-vs-original-t1600": {
+      "config": {
+        "name": "anchor-expanded499-vs-original-t1600",
+        "family": "anchor",
+        "a_id": "expanded499",
+        "b_id": "original",
+        "time_ms": 1600,
+        "b_time_ms": 25,
+        "block": 1,
+        "first_seed": 50000016,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.015625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 21,
+        "draws": 6,
+        "losses": 5,
+        "score": 0.75,
+        "win_rate": 0.65625,
+        "moves": 1933,
+        "milliseconds": 2632894.1969999997,
+        "nodes": 9111935315,
+        "depth_sum": 22139,
+        "ms_per_move": 1362.07666683911,
+        "nodes_per_move": 4713882.728918779,
+        "nodes_per_second": 3460805.726786294,
+        "mean_completed_depth": 11.453181583031558
+      },
+      "b": {
+        "games": 32,
+        "wins": 5,
+        "draws": 6,
+        "losses": 21,
+        "score": 0.25,
+        "win_rate": 0.15625,
+        "moves": 1925,
+        "milliseconds": 42325.562999999995,
+        "nodes": 146779207,
+        "depth_sum": 14313,
+        "ms_per_move": 21.987305454545453,
+        "nodes_per_move": 76248.9387012987,
+        "nodes_per_second": 3467861.8923509656,
+        "mean_completed_depth": 7.435324675324675
+      },
+      "score": {
+        "estimate": 0.75,
+        "paired_bootstrap_95_ci": [
+          0.625,
+          0.859375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.75,
+        0.75,
+        0.75,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "csv_shards": [
+        "anchor-expanded499-vs-original-t1600-s0.csv",
+        "anchor-expanded499-vs-original-t1600-s1.csv",
+        "anchor-expanded499-vs-original-t1600-s2.csv",
+        "anchor-expanded499-vs-original-t1600-s3.csv",
+        "anchor-expanded499-vs-original-t1600-s4.csv",
+        "anchor-expanded499-vs-original-t1600-s5.csv",
+        "anchor-expanded499-vs-original-t1600-s6.csv",
+        "anchor-expanded499-vs-original-t1600-s7.csv"
+      ]
+    },
+    "rr-network1057-vs-original-t1600": {
+      "config": {
+        "name": "rr-network1057-vs-original-t1600",
+        "family": "rr",
+        "a_id": "network1057",
+        "b_id": "original",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 2,
+        "first_seed": 50000032,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 10,
+        "draws": 10,
+        "losses": 12,
+        "score": 0.46875,
+        "win_rate": 0.3125,
+        "moves": 2582,
+        "milliseconds": 3590200.9459999995,
+        "nodes": 9315600903,
+        "depth_sum": 33171,
+        "ms_per_move": 1390.4728683191322,
+        "nodes_per_move": 3607901.201781565,
+        "nodes_per_second": 2594729.666421296,
+        "mean_completed_depth": 12.847017815646785
+      },
+      "b": {
+        "games": 32,
+        "wins": 12,
+        "draws": 10,
+        "losses": 10,
+        "score": 0.53125,
+        "win_rate": 0.375,
+        "moves": 2582,
+        "milliseconds": 3600483.5429999996,
+        "nodes": 14874674469,
+        "depth_sum": 34152,
+        "ms_per_move": 1394.4552838884583,
+        "nodes_per_move": 5760911.878001549,
+        "nodes_per_second": 4131299.1133980034,
+        "mean_completed_depth": 13.226955848179706
+      },
+      "score": {
+        "estimate": 0.46875,
+        "paired_bootstrap_95_ci": [
+          0.3125,
+          0.625
+        ]
+      },
+      "deal_scores": [
+        0.25,
+        0.75,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        1.0,
+        0.25,
+        0.25,
+        0.25,
+        1.0,
+        1.0,
+        0.25,
+        0.0,
+        0.25,
+        0.0
+      ],
+      "csv_shards": [
+        "rr-network1057-vs-original-t1600-s0.csv",
+        "rr-network1057-vs-original-t1600-s1.csv",
+        "rr-network1057-vs-original-t1600-s2.csv",
+        "rr-network1057-vs-original-t1600-s3.csv",
+        "rr-network1057-vs-original-t1600-s4.csv",
+        "rr-network1057-vs-original-t1600-s5.csv",
+        "rr-network1057-vs-original-t1600-s6.csv",
+        "rr-network1057-vs-original-t1600-s7.csv"
+      ]
+    },
+    "anchor-network1057-vs-original-t1600": {
+      "config": {
+        "name": "anchor-network1057-vs-original-t1600",
+        "family": "anchor",
+        "a_id": "network1057",
+        "b_id": "original",
+        "time_ms": 1600,
+        "b_time_ms": 25,
+        "block": 2,
+        "first_seed": 50000032,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.015625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 18,
+        "draws": 9,
+        "losses": 5,
+        "score": 0.703125,
+        "win_rate": 0.5625,
+        "moves": 1968,
+        "milliseconds": 2645521.48,
+        "nodes": 6240872704,
+        "depth_sum": 24676,
+        "ms_per_move": 1344.269044715447,
+        "nodes_per_move": 3171175.1544715445,
+        "nodes_per_second": 2359033.0871174783,
+        "mean_completed_depth": 12.538617886178862
+      },
+      "b": {
+        "games": 32,
+        "wins": 5,
+        "draws": 9,
+        "losses": 18,
+        "score": 0.296875,
+        "win_rate": 0.15625,
+        "moves": 1961,
+        "milliseconds": 43420.971000000005,
+        "nodes": 153616149,
+        "depth_sum": 17391,
+        "ms_per_move": 22.142259561448242,
+        "nodes_per_move": 78335.6190719021,
+        "nodes_per_second": 3537833.112944434,
+        "mean_completed_depth": 8.868434472208056
+      },
+      "score": {
+        "estimate": 0.703125,
+        "paired_bootstrap_95_ci": [
+          0.59375,
+          0.8125
+        ]
+      },
+      "deal_scores": [
+        1.0,
+        1.0,
+        0.75,
+        0.25,
+        0.75,
+        1.0,
+        0.5,
+        0.75,
+        0.5,
+        1.0,
+        0.75,
+        0.5,
+        0.75,
+        0.5,
+        0.5,
+        0.75
+      ],
+      "csv_shards": [
+        "anchor-network1057-vs-original-t1600-s0.csv",
+        "anchor-network1057-vs-original-t1600-s1.csv",
+        "anchor-network1057-vs-original-t1600-s2.csv",
+        "anchor-network1057-vs-original-t1600-s3.csv",
+        "anchor-network1057-vs-original-t1600-s4.csv",
+        "anchor-network1057-vs-original-t1600-s5.csv",
+        "anchor-network1057-vs-original-t1600-s6.csv",
+        "anchor-network1057-vs-original-t1600-s7.csv"
+      ]
+    },
+    "rr-expanded1948-vs-original-t1600": {
+      "config": {
+        "name": "rr-expanded1948-vs-original-t1600",
+        "family": "rr",
+        "a_id": "expanded1948",
+        "b_id": "original",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 3,
+        "first_seed": 50000048,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+      },
+      "a": {
+        "games": 32,
+        "wins": 11,
+        "draws": 9,
+        "losses": 12,
+        "score": 0.484375,
+        "win_rate": 0.34375,
+        "moves": 2465,
+        "milliseconds": 3436118.2649999997,
+        "nodes": 12480519245,
+        "depth_sum": 31246,
+        "ms_per_move": 1393.962784989858,
+        "nodes_per_move": 5063090.971602434,
+        "nodes_per_second": 3632156.486616156,
+        "mean_completed_depth": 12.675862068965516
+      },
+      "b": {
+        "games": 32,
+        "wins": 12,
+        "draws": 9,
+        "losses": 11,
+        "score": 0.515625,
+        "win_rate": 0.375,
+        "moves": 2467,
+        "milliseconds": 3412838.963,
+        "nodes": 13554896893,
+        "depth_sum": 31440,
+        "ms_per_move": 1383.3964179164977,
+        "nodes_per_move": 5494485.972030806,
+        "nodes_per_second": 3971736.4458019403,
+        "mean_completed_depth": 12.744223753546818
+      },
+      "score": {
+        "estimate": 0.484375,
+        "paired_bootstrap_95_ci": [
+          0.328125,
+          0.640625
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.0,
+        0.25,
+        0.0,
+        1.0,
+        0.5,
+        0.5,
+        0.75,
+        1.0,
+        0.5,
+        0.0,
+        0.75,
+        0.5,
+        0.75,
+        0.25,
+        0.5
+      ],
+      "csv_shards": [
+        "rr-expanded1948-vs-original-t1600-s0.csv",
+        "rr-expanded1948-vs-original-t1600-s1.csv",
+        "rr-expanded1948-vs-original-t1600-s2.csv",
+        "rr-expanded1948-vs-original-t1600-s3.csv",
+        "rr-expanded1948-vs-original-t1600-s4.csv",
+        "rr-expanded1948-vs-original-t1600-s5.csv",
+        "rr-expanded1948-vs-original-t1600-s6.csv",
+        "rr-expanded1948-vs-original-t1600-s7.csv"
+      ]
+    },
+    "anchor-expanded1948-vs-original-t1600": {
+      "config": {
+        "name": "anchor-expanded1948-vs-original-t1600",
+        "family": "anchor",
+        "a_id": "expanded1948",
+        "b_id": "original",
+        "time_ms": 1600,
+        "b_time_ms": 25,
+        "block": 3,
+        "first_seed": 50000048,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.015625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 22,
+        "draws": 6,
+        "losses": 4,
+        "score": 0.78125,
+        "win_rate": 0.6875,
+        "moves": 2271,
+        "milliseconds": 3099883.2639999995,
+        "nodes": 11070645111,
+        "depth_sum": 29050,
+        "ms_per_move": 1364.9860255394096,
+        "nodes_per_move": 4874788.688243065,
+        "nodes_per_second": 3571310.326284597,
+        "mean_completed_depth": 12.791721708498459
+      },
+      "b": {
+        "games": 32,
+        "wins": 4,
+        "draws": 6,
+        "losses": 22,
+        "score": 0.21875,
+        "win_rate": 0.125,
+        "moves": 2261,
+        "milliseconds": 50913.01,
+        "nodes": 185876837,
+        "depth_sum": 19197,
+        "ms_per_move": 22.517916850950908,
+        "nodes_per_move": 82210.01194161875,
+        "nodes_per_second": 3650871.1034763018,
+        "mean_completed_depth": 8.49049093321539
+      },
+      "score": {
+        "estimate": 0.78125,
+        "paired_bootstrap_95_ci": [
+          0.6875,
+          0.875
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.75,
+        0.5,
+        0.5,
+        0.75,
+        1.0,
+        1.0,
+        0.75,
+        0.5,
+        0.75,
+        1.0,
+        0.75,
+        1.0,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "csv_shards": [
+        "anchor-expanded1948-vs-original-t1600-s0.csv",
+        "anchor-expanded1948-vs-original-t1600-s1.csv",
+        "anchor-expanded1948-vs-original-t1600-s2.csv",
+        "anchor-expanded1948-vs-original-t1600-s3.csv",
+        "anchor-expanded1948-vs-original-t1600-s4.csv",
+        "anchor-expanded1948-vs-original-t1600-s5.csv",
+        "anchor-expanded1948-vs-original-t1600-s6.csv",
+        "anchor-expanded1948-vs-original-t1600-s7.csv"
+      ]
+    },
+    "rr-structured139-vs-expanded499-t1600": {
+      "config": {
+        "name": "rr-structured139-vs-expanded499-t1600",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "expanded499",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 4,
+        "first_seed": 50000064,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 4,
+        "draws": 13,
+        "losses": 15,
+        "score": 0.328125,
+        "win_rate": 0.125,
+        "moves": 2353,
+        "milliseconds": 3244130.2049999996,
+        "nodes": 12793981855,
+        "depth_sum": 30954,
+        "ms_per_move": 1378.7208691032722,
+        "nodes_per_move": 5437306.355716107,
+        "nodes_per_second": 3943732.540476131,
+        "mean_completed_depth": 13.15512112197195
+      },
+      "b": {
+        "games": 32,
+        "wins": 15,
+        "draws": 13,
+        "losses": 4,
+        "score": 0.671875,
+        "win_rate": 0.46875,
+        "moves": 2357,
+        "milliseconds": 3257304.9309999994,
+        "nodes": 12431035066,
+        "depth_sum": 30433,
+        "ms_per_move": 1381.9706962240134,
+        "nodes_per_move": 5274092.094187527,
+        "nodes_per_second": 3816355.9535654667,
+        "mean_completed_depth": 12.911752227407721
+      },
+      "score": {
+        "estimate": 0.328125,
+        "paired_bootstrap_95_ci": [
+          0.21875,
+          0.4375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.25,
+        0.0,
+        0.5,
+        0.5,
+        0.75,
+        0.5,
+        0.25,
+        0.5,
+        0.0,
+        0.25,
+        0.0,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "csv_shards": [
+        "rr-structured139-vs-expanded499-t1600-s0.csv",
+        "rr-structured139-vs-expanded499-t1600-s1.csv",
+        "rr-structured139-vs-expanded499-t1600-s2.csv",
+        "rr-structured139-vs-expanded499-t1600-s3.csv",
+        "rr-structured139-vs-expanded499-t1600-s4.csv",
+        "rr-structured139-vs-expanded499-t1600-s5.csv",
+        "rr-structured139-vs-expanded499-t1600-s6.csv",
+        "rr-structured139-vs-expanded499-t1600-s7.csv"
+      ]
+    },
+    "rr-structured139-vs-network1057-t1600": {
+      "config": {
+        "name": "rr-structured139-vs-network1057-t1600",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "network1057",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 5,
+        "first_seed": 50000080,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5"
+      },
+      "a": {
+        "games": 32,
+        "wins": 11,
+        "draws": 12,
+        "losses": 9,
+        "score": 0.53125,
+        "win_rate": 0.34375,
+        "moves": 2402,
+        "milliseconds": 3252450.7110000006,
+        "nodes": 12724943493,
+        "depth_sum": 32666,
+        "ms_per_move": 1354.0594134054957,
+        "nodes_per_move": 5297645.084512906,
+        "nodes_per_second": 3912417.012182048,
+        "mean_completed_depth": 13.599500416319733
+      },
+      "b": {
+        "games": 32,
+        "wins": 9,
+        "draws": 12,
+        "losses": 11,
+        "score": 0.46875,
+        "win_rate": 0.28125,
+        "moves": 2400,
+        "milliseconds": 3253647.7649999997,
+        "nodes": 8142349342,
+        "depth_sum": 31651,
+        "ms_per_move": 1355.6865687499999,
+        "nodes_per_move": 3392645.5591666666,
+        "nodes_per_second": 2502529.446975955,
+        "mean_completed_depth": 13.187916666666666
+      },
+      "score": {
+        "estimate": 0.53125,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.640625
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.75,
+        1.0,
+        0.25,
+        0.75,
+        0.5,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "csv_shards": [
+        "rr-structured139-vs-network1057-t1600-s0.csv",
+        "rr-structured139-vs-network1057-t1600-s1.csv",
+        "rr-structured139-vs-network1057-t1600-s2.csv",
+        "rr-structured139-vs-network1057-t1600-s3.csv",
+        "rr-structured139-vs-network1057-t1600-s4.csv",
+        "rr-structured139-vs-network1057-t1600-s5.csv",
+        "rr-structured139-vs-network1057-t1600-s6.csv",
+        "rr-structured139-vs-network1057-t1600-s7.csv"
+      ]
+    },
+    "rr-structured139-vs-expanded1948-t1600": {
+      "config": {
+        "name": "rr-structured139-vs-expanded1948-t1600",
+        "family": "rr",
+        "a_id": "structured139",
+        "b_id": "expanded1948",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 6,
+        "first_seed": 50000096,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 13,
+        "draws": 4,
+        "losses": 15,
+        "score": 0.46875,
+        "win_rate": 0.40625,
+        "moves": 2123,
+        "milliseconds": 2847745.484999999,
+        "nodes": 10670751392,
+        "depth_sum": 27318,
+        "ms_per_move": 1341.3779957607155,
+        "nodes_per_move": 5026260.665096561,
+        "nodes_per_second": 3747087.458554957,
+        "mean_completed_depth": 12.867640131888837
+      },
+      "b": {
+        "games": 32,
+        "wins": 15,
+        "draws": 4,
+        "losses": 13,
+        "score": 0.53125,
+        "win_rate": 0.46875,
+        "moves": 2125,
+        "milliseconds": 2825389.685,
+        "nodes": 9711648622,
+        "depth_sum": 27259,
+        "ms_per_move": 1329.5951458823529,
+        "nodes_per_move": 4570187.58682353,
+        "nodes_per_second": 3437277.5810569297,
+        "mean_completed_depth": 12.827764705882354
+      },
+      "score": {
+        "estimate": 0.46875,
+        "paired_bootstrap_95_ci": [
+          0.3125,
+          0.625
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        1.0,
+        0.75,
+        0.5,
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        0.0,
+        0.75,
+        0.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "csv_shards": [
+        "rr-structured139-vs-expanded1948-t1600-s0.csv",
+        "rr-structured139-vs-expanded1948-t1600-s1.csv",
+        "rr-structured139-vs-expanded1948-t1600-s2.csv",
+        "rr-structured139-vs-expanded1948-t1600-s3.csv",
+        "rr-structured139-vs-expanded1948-t1600-s4.csv",
+        "rr-structured139-vs-expanded1948-t1600-s5.csv",
+        "rr-structured139-vs-expanded1948-t1600-s6.csv",
+        "rr-structured139-vs-expanded1948-t1600-s7.csv"
+      ]
+    },
+    "rr-expanded499-vs-network1057-t1600": {
+      "config": {
+        "name": "rr-expanded499-vs-network1057-t1600",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "network1057",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 7,
+        "first_seed": 50000112,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5"
+      },
+      "a": {
+        "games": 32,
+        "wins": 12,
+        "draws": 5,
+        "losses": 15,
+        "score": 0.453125,
+        "win_rate": 0.375,
+        "moves": 2302,
+        "milliseconds": 3097676.0020000003,
+        "nodes": 11084929093,
+        "depth_sum": 28221,
+        "ms_per_move": 1345.6455264986969,
+        "nodes_per_move": 4815347.129887055,
+        "nodes_per_second": 3578466.2714380287,
+        "mean_completed_depth": 12.259339704604692
+      },
+      "b": {
+        "games": 32,
+        "wins": 15,
+        "draws": 5,
+        "losses": 12,
+        "score": 0.546875,
+        "win_rate": 0.46875,
+        "moves": 2304,
+        "milliseconds": 3082239.0840000003,
+        "nodes": 7241038244,
+        "depth_sum": 27679,
+        "ms_per_move": 1337.7773802083334,
+        "nodes_per_move": 3142811.737847222,
+        "nodes_per_second": 2349278.5753021096,
+        "mean_completed_depth": 12.01345486111111
+      },
+      "score": {
+        "estimate": 0.453125,
+        "paired_bootstrap_95_ci": [
+          0.3125,
+          0.59375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.5,
+        1.0,
+        0.0,
+        0.0,
+        0.25,
+        0.5,
+        0.5,
+        0.75,
+        0.0,
+        0.5,
+        1.0,
+        0.5,
+        0.25,
+        0.5
+      ],
+      "csv_shards": [
+        "rr-expanded499-vs-network1057-t1600-s0.csv",
+        "rr-expanded499-vs-network1057-t1600-s1.csv",
+        "rr-expanded499-vs-network1057-t1600-s2.csv",
+        "rr-expanded499-vs-network1057-t1600-s3.csv",
+        "rr-expanded499-vs-network1057-t1600-s4.csv",
+        "rr-expanded499-vs-network1057-t1600-s5.csv",
+        "rr-expanded499-vs-network1057-t1600-s6.csv",
+        "rr-expanded499-vs-network1057-t1600-s7.csv"
+      ]
+    },
+    "rr-expanded499-vs-expanded1948-t1600": {
+      "config": {
+        "name": "rr-expanded499-vs-expanded1948-t1600",
+        "family": "rr",
+        "a_id": "expanded499",
+        "b_id": "expanded1948",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 8,
+        "first_seed": 50000128,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 11,
+        "draws": 10,
+        "losses": 11,
+        "score": 0.5,
+        "win_rate": 0.34375,
+        "moves": 2293,
+        "milliseconds": 3116591.042,
+        "nodes": 11669648109,
+        "depth_sum": 30966,
+        "ms_per_move": 1359.1762067160923,
+        "nodes_per_move": 5089249.066288705,
+        "nodes_per_second": 3744362.9760006224,
+        "mean_completed_depth": 13.504579153946795
+      },
+      "b": {
+        "games": 32,
+        "wins": 11,
+        "draws": 10,
+        "losses": 11,
+        "score": 0.5,
+        "win_rate": 0.34375,
+        "moves": 2293,
+        "milliseconds": 3109515.029,
+        "nodes": 11105759279,
+        "depth_sum": 30377,
+        "ms_per_move": 1356.090287396424,
+        "nodes_per_move": 4843331.56519843,
+        "nodes_per_second": 3571540.634287122,
+        "mean_completed_depth": 13.247710423026602
+      },
+      "score": {
+        "estimate": 0.5,
+        "paired_bootstrap_95_ci": [
+          0.375,
+          0.609375
+        ]
+      },
+      "deal_scores": [
+        0.5,
+        0.5,
+        0.75,
+        0.25,
+        0.5,
+        0.75,
+        0.5,
+        0.0,
+        0.0,
+        0.75,
+        0.5,
+        0.75,
+        0.75,
+        0.5,
+        0.75,
+        0.25
+      ],
+      "csv_shards": [
+        "rr-expanded499-vs-expanded1948-t1600-s0.csv",
+        "rr-expanded499-vs-expanded1948-t1600-s1.csv",
+        "rr-expanded499-vs-expanded1948-t1600-s2.csv",
+        "rr-expanded499-vs-expanded1948-t1600-s3.csv",
+        "rr-expanded499-vs-expanded1948-t1600-s4.csv",
+        "rr-expanded499-vs-expanded1948-t1600-s5.csv",
+        "rr-expanded499-vs-expanded1948-t1600-s6.csv",
+        "rr-expanded499-vs-expanded1948-t1600-s7.csv"
+      ]
+    },
+    "rr-network1057-vs-expanded1948-t1600": {
+      "config": {
+        "name": "rr-network1057-vs-expanded1948-t1600",
+        "family": "rr",
+        "a_id": "network1057",
+        "b_id": "expanded1948",
+        "time_ms": 1600,
+        "b_time_ms": 1600,
+        "block": 9,
+        "first_seed": 50000144,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+      },
+      "a": {
+        "games": 32,
+        "wins": 15,
+        "draws": 7,
+        "losses": 10,
+        "score": 0.578125,
+        "win_rate": 0.46875,
+        "moves": 2312,
+        "milliseconds": 3114445.5959999994,
+        "nodes": 7717306572,
+        "depth_sum": 28746,
+        "ms_per_move": 1347.0785449826988,
+        "nodes_per_move": 3337935.368512111,
+        "nodes_per_second": 2477907.0091677406,
+        "mean_completed_depth": 12.433391003460208
+      },
+      "b": {
+        "games": 32,
+        "wins": 10,
+        "draws": 7,
+        "losses": 15,
+        "score": 0.421875,
+        "win_rate": 0.3125,
+        "moves": 2309,
+        "milliseconds": 3115525.518,
+        "nodes": 11096625971,
+        "depth_sum": 29389,
+        "ms_per_move": 1349.2964564746644,
+        "nodes_per_move": 4805814.62581204,
+        "nodes_per_second": 3561718.8518884084,
+        "mean_completed_depth": 12.72802078822001
+      },
+      "score": {
+        "estimate": 0.578125,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.734375
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.5,
+        0.5,
+        0.75,
+        0.25,
+        1.0,
+        0.75,
+        0.5,
+        0.75,
+        0.0,
+        0.5,
+        0.25,
+        0.0,
+        1.0,
+        1.0,
+        0.75
+      ],
+      "csv_shards": [
+        "rr-network1057-vs-expanded1948-t1600-s0.csv",
+        "rr-network1057-vs-expanded1948-t1600-s1.csv",
+        "rr-network1057-vs-expanded1948-t1600-s2.csv",
+        "rr-network1057-vs-expanded1948-t1600-s3.csv",
+        "rr-network1057-vs-expanded1948-t1600-s4.csv",
+        "rr-network1057-vs-expanded1948-t1600-s5.csv",
+        "rr-network1057-vs-expanded1948-t1600-s6.csv",
+        "rr-network1057-vs-expanded1948-t1600-s7.csv"
+      ]
+    },
+    "anchor-original-vs-original-t1600": {
+      "config": {
+        "name": "anchor-original-vs-original-t1600",
+        "family": "anchor",
+        "a_id": "original",
+        "b_id": "original",
+        "time_ms": 1600,
+        "b_time_ms": 25,
+        "block": 10,
+        "first_seed": 51000000,
+        "games": 32,
+        "threads": 2,
+        "a": "fmd=0,tb=1,depth=64,idstop=0.65",
+        "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.015625"
+      },
+      "a": {
+        "games": 32,
+        "wins": 19,
+        "draws": 11,
+        "losses": 2,
+        "score": 0.765625,
+        "win_rate": 0.59375,
+        "moves": 2285,
+        "milliseconds": 3053884.874,
+        "nodes": 12446491050,
+        "depth_sum": 32292,
+        "ms_per_move": 1336.492286214442,
+        "nodes_per_move": 5447042.035010941,
+        "nodes_per_second": 4075625.494584378,
+        "mean_completed_depth": 14.132166301969365
+      },
+      "b": {
+        "games": 32,
+        "wins": 2,
+        "draws": 11,
+        "losses": 19,
+        "score": 0.234375,
+        "win_rate": 0.0625,
+        "moves": 2276,
+        "milliseconds": 49886.594,
+        "nodes": 190353517,
+        "depth_sum": 21142,
+        "ms_per_move": 21.918538664323375,
+        "nodes_per_move": 83635.11291739895,
+        "nodes_per_second": 3815724.8618737133,
+        "mean_completed_depth": 9.289103690685414
+      },
+      "score": {
+        "estimate": 0.765625,
+        "paired_bootstrap_95_ci": [
+          0.671875,
+          0.859375
+        ]
+      },
+      "deal_scores": [
+        0.75,
+        0.75,
+        1.0,
+        0.75,
+        0.5,
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        0.5,
+        0.75,
+        0.75,
+        0.5,
+        1.0,
+        0.5
+      ],
+      "csv_shards": [
+        "anchor-original-vs-original-t1600-s0.csv",
+        "anchor-original-vs-original-t1600-s1.csv",
+        "anchor-original-vs-original-t1600-s2.csv",
+        "anchor-original-vs-original-t1600-s3.csv",
+        "anchor-original-vs-original-t1600-s4.csv",
+        "anchor-original-vs-original-t1600-s5.csv",
+        "anchor-original-vs-original-t1600-s6.csv",
+        "anchor-original-vs-original-t1600-s7.csv"
+      ]
+    }
+  },
+  "new_cells": 15,
+  "new_shards": 120,
+  "models": [
+    {
+      "id": "original",
+      "label": "Original",
+      "trainable_parameters": 0,
+      "description": "Original handwritten evaluator with the unchanged production search"
+    },
+    {
+      "id": "structured139",
+      "label": "Structured 139",
+      "trainable_parameters": 139,
+      "stored_parameters": 169,
+      "path": "training/ranking/value.cse",
+      "sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+      "spec_key": "structured",
+      "description": "Previously verified 139-parameter structured champion"
+    },
+    {
+      "id": "expanded499",
+      "label": "Expanded 499",
+      "trainable_parameters": 499,
+      "stored_parameters": 529,
+      "path": "training/scaling-joint/data4x-capacity500-89.cxe",
+      "sha256": "a9ba34e95d15afe1b72b2996e47a5a453bec28f24a12617c011dca0b29208308",
+      "spec_key": "expanded",
+      "description": "User-selected retained 499-parameter research baseline"
+    },
+    {
+      "id": "network1057",
+      "label": "Neural 1,057",
+      "trainable_parameters": 1057,
+      "stored_parameters": 1057,
+      "path": "training/strong-teacher.nn",
+      "sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+      "spec_key": "model",
+      "model_scale": 0.5,
+      "description": "Previously verified residual 64-to-16-to-1 ReLU network, scale 0.5"
+    },
+    {
+      "id": "expanded1948",
+      "label": "Expanded 1,948",
+      "trainable_parameters": 1948,
+      "stored_parameters": 1978,
+      "path": "training/scaling-joint/data4x-capacity2000-89.cxe",
+      "sha256": "c01f8c0927efe3a88344d21e4207ed4d6951b6eed565e18802f05e32b7bfae67",
+      "spec_key": "expanded",
+      "description": "Selected before this tournament by lowest existing common validation loss among seeds 53, 71, and 89: 0.5174792042161678 at seed 89"
+    }
+  ],
+  "time_budgets_ms": [
+    25,
+    100,
+    400,
+    1600
+  ],
+  "numpy_version": "1.26.4",
+  "bootstrap_replicates": 20000,
+  "plan_sha256": "a9780fcf58ccfa799b8c46a86fe5bd41fdd6fbdff9e05a4262817044e3704d79",
+  "completion_sha256": "a227a1628442fac18c181915c805d89501f98e58d52c524f6717afab77cf0106",
+  "base_results_sha256": "e07f8f6de8157fa4232d83383fdce6b035c67ca3e875f585ea9c7f4c55b875ed",
+  "hashes_verified": true,
+  "prior_results_reproduced_exactly": true,
+  "league": {
+    "25": {
+      "ranking": [
+        "expanded499",
+        "network1057",
+        "structured139",
+        "expanded1948",
+        "original"
+      ],
+      "models": {
+        "original": {
+          "games": 128,
+          "wins": 34,
+          "draws": 44,
+          "losses": 50,
+          "moves": 9469,
+          "milliseconds": 209676.55299999996,
+          "nodes": 772127635,
+          "depth_sum": 87772,
+          "score": 0.4375,
+          "win_rate": 0.265625,
+          "ms_per_move": 22.14347375646847,
+          "nodes_per_move": 81542.67979723308,
+          "nodes_per_second": 3682470.0900152633,
+          "mean_completed_depth": 9.26940542823952,
+          "score_interval": {
+            "estimate": 0.4375,
+            "paired_bootstrap_95_ci": [
+              0.37890625,
+              0.49609375
+            ]
+          }
+        },
+        "structured139": {
+          "games": 128,
+          "wins": 48,
+          "draws": 34,
+          "losses": 46,
+          "moves": 9135,
+          "milliseconds": 202181.827,
+          "nodes": 714537968,
+          "depth_sum": 82066,
+          "score": 0.5078125,
+          "win_rate": 0.375,
+          "ms_per_move": 22.13265758073344,
+          "nodes_per_move": 78219.81039956212,
+          "nodes_per_second": 3534135.478951825,
+          "mean_completed_depth": 8.983689107827038,
+          "score_interval": {
+            "estimate": 0.5078125,
+            "paired_bootstrap_95_ci": [
+              0.44921875,
+              0.56640625
+            ]
+          }
+        },
+        "expanded499": {
+          "games": 128,
+          "wins": 59,
+          "draws": 20,
+          "losses": 49,
+          "moves": 8544,
+          "milliseconds": 186416.72599999997,
+          "nodes": 601613147,
+          "depth_sum": 71314,
+          "score": 0.5390625,
+          "win_rate": 0.4609375,
+          "ms_per_move": 21.818437031835202,
+          "nodes_per_move": 70413.52375936329,
+          "nodes_per_second": 3227248.7555649923,
+          "mean_completed_depth": 8.346676029962547,
+          "score_interval": {
+            "estimate": 0.5390625,
+            "paired_bootstrap_95_ci": [
+              0.47265625,
+              0.60546875
+            ]
+          }
+        },
+        "network1057": {
+          "games": 128,
+          "wins": 48,
+          "draws": 35,
+          "losses": 45,
+          "moves": 8776,
+          "milliseconds": 192716.499,
+          "nodes": 438046617,
+          "depth_sum": 72261,
+          "score": 0.51171875,
+          "win_rate": 0.375,
+          "ms_per_move": 21.959491681859618,
+          "nodes_per_move": 49914.154170464906,
+          "nodes_per_second": 2273010.4545952757,
+          "mean_completed_depth": 8.233933454876937,
+          "score_interval": {
+            "estimate": 0.51171875,
+            "paired_bootstrap_95_ci": [
+              0.4609375,
+              0.5625
+            ]
+          }
+        },
+        "expanded1948": {
+          "games": 128,
+          "wins": 47,
+          "draws": 35,
+          "losses": 46,
+          "moves": 9202,
+          "milliseconds": 201841.32899999997,
+          "nodes": 635501070,
+          "depth_sum": 81227,
+          "score": 0.50390625,
+          "win_rate": 0.3671875,
+          "ms_per_move": 21.934506520321666,
+          "nodes_per_move": 69061.18995870464,
+          "nodes_per_second": 3148518.0619277437,
+          "mean_completed_depth": 8.827102803738319,
+          "score_interval": {
+            "estimate": 0.50390625,
+            "paired_bootstrap_95_ci": [
+              0.4453125,
+              0.5625
+            ]
+          }
+        }
+      }
+    },
+    "100": {
+      "ranking": [
+        "expanded1948",
+        "original",
+        "structured139",
+        "network1057",
+        "expanded499"
+      ],
+      "models": {
+        "original": {
+          "games": 128,
+          "wins": 45,
+          "draws": 38,
+          "losses": 45,
+          "moves": 8805,
+          "milliseconds": 760092.5499999999,
+          "nodes": 2746887643,
+          "depth_sum": 89778,
+          "score": 0.5,
+          "win_rate": 0.3515625,
+          "ms_per_move": 86.32510505394661,
+          "nodes_per_move": 311969.06791595684,
+          "nodes_per_second": 3613885.760359051,
+          "mean_completed_depth": 10.19625212947189,
+          "score_interval": {
+            "estimate": 0.5,
+            "paired_bootstrap_95_ci": [
+              0.4375,
+              0.5625
+            ]
+          }
+        },
+        "structured139": {
+          "games": 128,
+          "wins": 43,
+          "draws": 39,
+          "losses": 46,
+          "moves": 8943,
+          "milliseconds": 766237.312,
+          "nodes": 2774607926,
+          "depth_sum": 96651,
+          "score": 0.48828125,
+          "win_rate": 0.3359375,
+          "ms_per_move": 85.68011987028962,
+          "nodes_per_move": 310254.7160907973,
+          "nodes_per_second": 3621081.72304718,
+          "mean_completed_depth": 10.807447165380745,
+          "score_interval": {
+            "estimate": 0.48828125,
+            "paired_bootstrap_95_ci": [
+              0.43359375,
+              0.54296875
+            ]
+          }
+        },
+        "expanded499": {
+          "games": 128,
+          "wins": 42,
+          "draws": 36,
+          "losses": 50,
+          "moves": 8913,
+          "milliseconds": 767903.9859999999,
+          "nodes": 2679903168,
+          "depth_sum": 94431,
+          "score": 0.46875,
+          "win_rate": 0.328125,
+          "ms_per_move": 86.1555016268372,
+          "nodes_per_move": 300673.5294513632,
+          "nodes_per_second": 3489893.5503116404,
+          "mean_completed_depth": 10.594749242679233,
+          "score_interval": {
+            "estimate": 0.46875,
+            "paired_bootstrap_95_ci": [
+              0.41015625,
+              0.52734375
+            ]
+          }
+        },
+        "network1057": {
+          "games": 128,
+          "wins": 42,
+          "draws": 37,
+          "losses": 49,
+          "moves": 9036,
+          "milliseconds": 773487.798,
+          "nodes": 1821594140,
+          "depth_sum": 92032,
+          "score": 0.47265625,
+          "win_rate": 0.328125,
+          "ms_per_move": 85.60068592297476,
+          "nodes_per_move": 201592.97698096503,
+          "nodes_per_second": 2355039.2710913843,
+          "mean_completed_depth": 10.185037627268702,
+          "score_interval": {
+            "estimate": 0.47265625,
+            "paired_bootstrap_95_ci": [
+              0.40625,
+              0.5390625
+            ]
+          }
+        },
+        "expanded1948": {
+          "games": 128,
+          "wins": 51,
+          "draws": 44,
+          "losses": 33,
+          "moves": 9164,
+          "milliseconds": 788175.9559999999,
+          "nodes": 2604687570,
+          "depth_sum": 93945,
+          "score": 0.5703125,
+          "win_rate": 0.3984375,
+          "ms_per_move": 86.00785202968135,
+          "nodes_per_move": 284230.4201222174,
+          "nodes_per_second": 3304703.156917921,
+          "mean_completed_depth": 10.251527717154081,
+          "score_interval": {
+            "estimate": 0.5703125,
+            "paired_bootstrap_95_ci": [
+              0.5078125,
+              0.6328125
+            ]
+          }
+        }
+      }
+    },
+    "400": {
+      "ranking": [
+        "structured139",
+        "expanded499",
+        "network1057",
+        "expanded1948",
+        "original"
+      ],
+      "models": {
+        "original": {
+          "games": 128,
+          "wins": 37,
+          "draws": 44,
+          "losses": 47,
+          "moves": 9208,
+          "milliseconds": 3170900.518,
+          "nodes": 12336512098,
+          "depth_sum": 105489,
+          "score": 0.4609375,
+          "win_rate": 0.2890625,
+          "ms_per_move": 344.36365312771505,
+          "nodes_per_move": 1339760.2191572546,
+          "nodes_per_second": 3890538.989782334,
+          "mean_completed_depth": 11.45623370981755,
+          "score_interval": {
+            "estimate": 0.4609375,
+            "paired_bootstrap_95_ci": [
+              0.3984375,
+              0.5234375
+            ]
+          }
+        },
+        "structured139": {
+          "games": 128,
+          "wins": 49,
+          "draws": 39,
+          "losses": 40,
+          "moves": 9210,
+          "milliseconds": 3152080.934,
+          "nodes": 11929581224,
+          "depth_sum": 106319,
+          "score": 0.53515625,
+          "win_rate": 0.3828125,
+          "ms_per_move": 342.2454868621064,
+          "nodes_per_move": 1295285.6920738327,
+          "nodes_per_second": 3784668.437704525,
+          "mean_completed_depth": 11.54386536373507,
+          "score_interval": {
+            "estimate": 0.53515625,
+            "paired_bootstrap_95_ci": [
+              0.46484375,
+              0.60546875
+            ]
+          }
+        },
+        "expanded499": {
+          "games": 128,
+          "wins": 50,
+          "draws": 34,
+          "losses": 44,
+          "moves": 8904,
+          "milliseconds": 3033309.4380000005,
+          "nodes": 10704914080,
+          "depth_sum": 101862,
+          "score": 0.5234375,
+          "win_rate": 0.390625,
+          "ms_per_move": 340.6681758760108,
+          "nodes_per_move": 1202258.9937106918,
+          "nodes_per_second": 3529120.3547826097,
+          "mean_completed_depth": 11.440026954177897,
+          "score_interval": {
+            "estimate": 0.5234375,
+            "paired_bootstrap_95_ci": [
+              0.4609375,
+              0.5859375
+            ]
+          }
+        },
+        "network1057": {
+          "games": 128,
+          "wins": 49,
+          "draws": 31,
+          "losses": 48,
+          "moves": 8980,
+          "milliseconds": 3079698.2079999996,
+          "nodes": 7559434741,
+          "depth_sum": 97984,
+          "score": 0.50390625,
+          "win_rate": 0.3828125,
+          "ms_per_move": 342.95080267260573,
+          "nodes_per_move": 841807.8776169264,
+          "nodes_per_second": 2454602.4416818446,
+          "mean_completed_depth": 10.911358574610245,
+          "score_interval": {
+            "estimate": 0.50390625,
+            "paired_bootstrap_95_ci": [
+              0.44921875,
+              0.5625
+            ]
+          }
+        },
+        "expanded1948": {
+          "games": 128,
+          "wins": 42,
+          "draws": 38,
+          "losses": 48,
+          "moves": 9464,
+          "milliseconds": 3229392.1689999993,
+          "nodes": 11996498679,
+          "depth_sum": 106698,
+          "score": 0.4765625,
+          "win_rate": 0.328125,
+          "ms_per_move": 341.2290964708368,
+          "nodes_per_move": 1267592.8443575655,
+          "nodes_per_second": 3714785.3376738657,
+          "mean_completed_depth": 11.274091293322062,
+          "score_interval": {
+            "estimate": 0.4765625,
+            "paired_bootstrap_95_ci": [
+              0.4140625,
+              0.5390625
+            ]
+          }
+        }
+      }
+    },
+    "1600": {
+      "ranking": [
+        "expanded499",
+        "network1057",
+        "original",
+        "expanded1948",
+        "structured139"
+      ],
+      "models": {
+        "original": {
+          "games": 128,
+          "wins": 46,
+          "draws": 33,
+          "losses": 49,
+          "moves": 9515,
+          "milliseconds": 13094970.076,
+          "nodes": 52418937860,
+          "depth_sum": 122604,
+          "score": 0.48828125,
+          "win_rate": 0.359375,
+          "ms_per_move": 1376.2448844981607,
+          "nodes_per_move": 5509084.378349974,
+          "nodes_per_second": 4002982.638049062,
+          "mean_completed_depth": 12.88533893851813,
+          "score_interval": {
+            "estimate": 0.48828125,
+            "paired_bootstrap_95_ci": [
+              0.421875,
+              0.5546875
+            ]
+          }
+        },
+        "structured139": {
+          "games": 128,
+          "wins": 41,
+          "draws": 37,
+          "losses": 50,
+          "moves": 9187,
+          "milliseconds": 12525334.817999998,
+          "nodes": 48738079290,
+          "depth_sum": 121697,
+          "score": 0.46484375,
+          "win_rate": 0.3203125,
+          "ms_per_move": 1363.375946228366,
+          "nodes_per_move": 5305113.670403832,
+          "nodes_per_second": 3891159.797178366,
+          "mean_completed_depth": 13.246652879068249,
+          "score_interval": {
+            "estimate": 0.46484375,
+            "paired_bootstrap_95_ci": [
+              0.40625,
+              0.5234375
+            ]
+          }
+        },
+        "expanded499": {
+          "games": 128,
+          "wins": 53,
+          "draws": 34,
+          "losses": 41,
+          "moves": 9112,
+          "milliseconds": 12392956.156999998,
+          "nodes": 45899362543,
+          "depth_sum": 115473,
+          "score": 0.546875,
+          "win_rate": 0.4140625,
+          "ms_per_move": 1360.0698152985071,
+          "nodes_per_move": 5037243.474868306,
+          "nodes_per_second": 3703665.369386008,
+          "mean_completed_depth": 12.672629499561019,
+          "score_interval": {
+            "estimate": 0.546875,
+            "paired_bootstrap_95_ci": [
+              0.48046875,
+              0.61328125
+            ]
+          }
+        },
+        "network1057": {
+          "games": 128,
+          "wins": 49,
+          "draws": 34,
+          "losses": 45,
+          "moves": 9598,
+          "milliseconds": 13040533.390999999,
+          "nodes": 32416295061,
+          "depth_sum": 121247,
+          "score": 0.515625,
+          "win_rate": 0.3828125,
+          "ms_per_move": 1358.6719515524067,
+          "nodes_per_move": 3377401.027401542,
+          "nodes_per_second": 2485810.51779464,
+          "mean_completed_depth": 12.632527609918734,
+          "score_interval": {
+            "estimate": 0.515625,
+            "paired_bootstrap_95_ci": [
+              0.44140625,
+              0.5859375
+            ]
+          }
+        },
+        "expanded1948": {
+          "games": 128,
+          "wins": 47,
+          "draws": 30,
+          "losses": 51,
+          "moves": 9192,
+          "milliseconds": 12486548.496999998,
+          "nodes": 44394553117,
+          "depth_sum": 118271,
+          "score": 0.484375,
+          "win_rate": 0.3671875,
+          "ms_per_move": 1358.4147625108787,
+          "nodes_per_move": 4829694.638489991,
+          "nodes_per_second": 3555390.2767979624,
+          "mean_completed_depth": 12.866731940818102,
+          "score_interval": {
+            "estimate": 0.484375,
+            "paired_bootstrap_95_ci": [
+              0.4140625,
+              0.55859375
+            ]
+          }
+        }
+      }
+    }
+  },
+  "league_changes": {
+    "original": {
+      "25->100": {
+        "estimate": 0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.02734375,
+          0.1484375
+        ]
+      },
+      "100->400": {
+        "estimate": -0.0390625,
+        "paired_bootstrap_95_ci": [
+          -0.12109375,
+          0.04296875
+        ]
+      },
+      "400->1600": {
+        "estimate": 0.02734375,
+        "paired_bootstrap_95_ci": [
+          -0.0625,
+          0.12109375
+        ]
+      },
+      "25->400": {
+        "estimate": 0.0234375,
+        "paired_bootstrap_95_ci": [
+          -0.06640625,
+          0.11328125
+        ]
+      },
+      "100->1600": {
+        "estimate": -0.01171875,
+        "paired_bootstrap_95_ci": [
+          -0.10546875,
+          0.08203125
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.05078125,
+        "paired_bootstrap_95_ci": [
+          -0.03515625,
+          0.140625
+        ]
+      }
+    },
+    "structured139": {
+      "25->100": {
+        "estimate": -0.01953125,
+        "paired_bootstrap_95_ci": [
+          -0.09765625,
+          0.05859375
+        ]
+      },
+      "100->400": {
+        "estimate": 0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.046875,
+          0.140625
+        ]
+      },
+      "400->1600": {
+        "estimate": -0.0703125,
+        "paired_bootstrap_95_ci": [
+          -0.1640625,
+          0.0234375
+        ]
+      },
+      "25->400": {
+        "estimate": 0.02734375,
+        "paired_bootstrap_95_ci": [
+          -0.07421875,
+          0.125
+        ]
+      },
+      "100->1600": {
+        "estimate": -0.0234375,
+        "paired_bootstrap_95_ci": [
+          -0.1015625,
+          0.05859375
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.04296875,
+        "paired_bootstrap_95_ci": [
+          -0.12109375,
+          0.0390625
+        ]
+      }
+    },
+    "expanded499": {
+      "25->100": {
+        "estimate": -0.0703125,
+        "paired_bootstrap_95_ci": [
+          -0.16796875,
+          0.02734375
+        ]
+      },
+      "100->400": {
+        "estimate": 0.0546875,
+        "paired_bootstrap_95_ci": [
+          -0.03125,
+          0.13671875
+        ]
+      },
+      "400->1600": {
+        "estimate": 0.0234375,
+        "paired_bootstrap_95_ci": [
+          -0.06640625,
+          0.11328125
+        ]
+      },
+      "25->400": {
+        "estimate": -0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.10546875,
+          0.07421875
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.078125,
+        "paired_bootstrap_95_ci": [
+          0.0,
+          0.15625
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.0078125,
+        "paired_bootstrap_95_ci": [
+          -0.08984375,
+          0.10546875
+        ]
+      }
+    },
+    "network1057": {
+      "25->100": {
+        "estimate": -0.0390625,
+        "paired_bootstrap_95_ci": [
+          -0.10546875,
+          0.03125
+        ]
+      },
+      "100->400": {
+        "estimate": 0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.046875,
+          0.109375
+        ]
+      },
+      "400->1600": {
+        "estimate": 0.01171875,
+        "paired_bootstrap_95_ci": [
+          -0.078125,
+          0.09765625
+        ]
+      },
+      "25->400": {
+        "estimate": -0.0078125,
+        "paired_bootstrap_95_ci": [
+          -0.0859375,
+          0.0703125
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.04296875,
+        "paired_bootstrap_95_ci": [
+          -0.04296875,
+          0.125
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.00390625,
+        "paired_bootstrap_95_ci": [
+          -0.08203125,
+          0.08984375
+        ]
+      }
+    },
+    "expanded1948": {
+      "25->100": {
+        "estimate": 0.06640625,
+        "paired_bootstrap_95_ci": [
+          -0.015625,
+          0.15234375
+        ]
+      },
+      "100->400": {
+        "estimate": -0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.17578125,
+          -0.0078125
+        ]
+      },
+      "400->1600": {
+        "estimate": 0.0078125,
+        "paired_bootstrap_95_ci": [
+          -0.08984375,
+          0.109375
+        ]
+      },
+      "25->400": {
+        "estimate": -0.02734375,
+        "paired_bootstrap_95_ci": [
+          -0.11328125,
+          0.05859375
+        ]
+      },
+      "100->1600": {
+        "estimate": -0.0859375,
+        "paired_bootstrap_95_ci": [
+          -0.1796875,
+          0.0078125
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.01953125,
+        "paired_bootstrap_95_ci": [
+          -0.1015625,
+          0.06640625
+        ]
+      }
+    }
+  },
+  "league_differences": {
+    "structured139-vs-original": {
+      "25": {
+        "estimate": 0.0703125,
+        "paired_bootstrap_95_ci": [
+          -0.0234375,
+          0.1640625
+        ]
+      },
+      "100": {
+        "estimate": -0.01171875,
+        "paired_bootstrap_95_ci": [
+          -0.1015625,
+          0.078125
+        ]
+      },
+      "400": {
+        "estimate": 0.07421875,
+        "paired_bootstrap_95_ci": [
+          -0.03125,
+          0.17578125
+        ]
+      },
+      "1600": {
+        "estimate": -0.0234375,
+        "paired_bootstrap_95_ci": [
+          -0.1171875,
+          0.0703125
+        ]
+      }
+    },
+    "expanded499-vs-original": {
+      "25": {
+        "estimate": 0.1015625,
+        "paired_bootstrap_95_ci": [
+          0.0,
+          0.203125
+        ]
+      },
+      "100": {
+        "estimate": -0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.1328125,
+          0.0703125
+        ]
+      },
+      "400": {
+        "estimate": 0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.03515625,
+          0.15625
+        ]
+      },
+      "1600": {
+        "estimate": 0.05859375,
+        "paired_bootstrap_95_ci": [
+          -0.046875,
+          0.1640625
+        ]
+      }
+    },
+    "network1057-vs-original": {
+      "25": {
+        "estimate": 0.07421875,
+        "paired_bootstrap_95_ci": [
+          -0.01171875,
+          0.1640625
+        ]
+      },
+      "100": {
+        "estimate": -0.02734375,
+        "paired_bootstrap_95_ci": [
+          -0.1328125,
+          0.078125
+        ]
+      },
+      "400": {
+        "estimate": 0.04296875,
+        "paired_bootstrap_95_ci": [
+          -0.046875,
+          0.13671875
+        ]
+      },
+      "1600": {
+        "estimate": 0.02734375,
+        "paired_bootstrap_95_ci": [
+          -0.0859375,
+          0.140625
+        ]
+      }
+    },
+    "expanded1948-vs-original": {
+      "25": {
+        "estimate": 0.06640625,
+        "paired_bootstrap_95_ci": [
+          -0.0234375,
+          0.15625
+        ]
+      },
+      "100": {
+        "estimate": 0.0703125,
+        "paired_bootstrap_95_ci": [
+          -0.0234375,
+          0.16796875
+        ]
+      },
+      "400": {
+        "estimate": 0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.0859375,
+          0.11328125
+        ]
+      },
+      "1600": {
+        "estimate": -0.00390625,
+        "paired_bootstrap_95_ci": [
+          -0.1171875,
+          0.109375
+        ]
+      }
+    },
+    "structured139-vs-expanded499": {
+      "25": {
+        "estimate": -0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.12890625,
+          0.06640625
+        ]
+      },
+      "100": {
+        "estimate": 0.01953125,
+        "paired_bootstrap_95_ci": [
+          -0.0625,
+          0.10546875
+        ]
+      },
+      "400": {
+        "estimate": 0.01171875,
+        "paired_bootstrap_95_ci": [
+          -0.09375,
+          0.1171875
+        ]
+      },
+      "1600": {
+        "estimate": -0.08203125,
+        "paired_bootstrap_95_ci": [
+          -0.17578125,
+          0.015625
+        ]
+      }
+    },
+    "structured139-vs-network1057": {
+      "25": {
+        "estimate": -0.00390625,
+        "paired_bootstrap_95_ci": [
+          -0.0859375,
+          0.08203125
+        ]
+      },
+      "100": {
+        "estimate": 0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.08203125,
+          0.1171875
+        ]
+      },
+      "400": {
+        "estimate": 0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.0703125,
+          0.1328125
+        ]
+      },
+      "1600": {
+        "estimate": -0.05078125,
+        "paired_bootstrap_95_ci": [
+          -0.1484375,
+          0.0546875
+        ]
+      }
+    },
+    "structured139-vs-expanded1948": {
+      "25": {
+        "estimate": 0.00390625,
+        "paired_bootstrap_95_ci": [
+          -0.09375,
+          0.1015625
+        ]
+      },
+      "100": {
+        "estimate": -0.08203125,
+        "paired_bootstrap_95_ci": [
+          -0.1796875,
+          0.01171875
+        ]
+      },
+      "400": {
+        "estimate": 0.05859375,
+        "paired_bootstrap_95_ci": [
+          -0.0546875,
+          0.16796875
+        ]
+      },
+      "1600": {
+        "estimate": -0.01953125,
+        "paired_bootstrap_95_ci": [
+          -0.12890625,
+          0.0859375
+        ]
+      }
+    },
+    "expanded499-vs-network1057": {
+      "25": {
+        "estimate": 0.02734375,
+        "paired_bootstrap_95_ci": [
+          -0.0625,
+          0.1171875
+        ]
+      },
+      "100": {
+        "estimate": -0.00390625,
+        "paired_bootstrap_95_ci": [
+          -0.1015625,
+          0.09375
+        ]
+      },
+      "400": {
+        "estimate": 0.01953125,
+        "paired_bootstrap_95_ci": [
+          -0.07421875,
+          0.11328125
+        ]
+      },
+      "1600": {
+        "estimate": 0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.078125,
+          0.140625
+        ]
+      }
+    },
+    "expanded499-vs-expanded1948": {
+      "25": {
+        "estimate": 0.03515625,
+        "paired_bootstrap_95_ci": [
+          -0.06640625,
+          0.13671875
+        ]
+      },
+      "100": {
+        "estimate": -0.1015625,
+        "paired_bootstrap_95_ci": [
+          -0.19921875,
+          -0.00390625
+        ]
+      },
+      "400": {
+        "estimate": 0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.0546875,
+          0.1484375
+        ]
+      },
+      "1600": {
+        "estimate": 0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.046875,
+          0.16796875
+        ]
+      }
+    },
+    "network1057-vs-expanded1948": {
+      "25": {
+        "estimate": 0.0078125,
+        "paired_bootstrap_95_ci": [
+          -0.078125,
+          0.09375
+        ]
+      },
+      "100": {
+        "estimate": -0.09765625,
+        "paired_bootstrap_95_ci": [
+          -0.1953125,
+          0.00390625
+        ]
+      },
+      "400": {
+        "estimate": 0.02734375,
+        "paired_bootstrap_95_ci": [
+          -0.06640625,
+          0.12109375
+        ]
+      },
+      "1600": {
+        "estimate": 0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.0859375,
+          0.14453125
+        ]
+      }
+    }
+  },
+  "direct_changes": {
+    "structured139-vs-original": {
+      "25->100": {
+        "estimate": -0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.234375,
+          0.109375
+        ]
+      },
+      "100->400": {
+        "estimate": 0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.046875,
+          0.203125
+        ]
+      },
+      "400->1600": {
+        "estimate": -0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.171875,
+          0.15625
+        ]
+      },
+      "25->400": {
+        "estimate": 0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.171875,
+          0.203125
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.0625,
+          0.203125
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.0,
+        "paired_bootstrap_95_ci": [
+          -0.125,
+          0.109375
+        ]
+      }
+    },
+    "expanded499-vs-original": {
+      "25->100": {
+        "estimate": -0.140625,
+        "paired_bootstrap_95_ci": [
+          -0.390625,
+          0.109375
+        ]
+      },
+      "100->400": {
+        "estimate": 0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.15625,
+          0.265625
+        ]
+      },
+      "400->1600": {
+        "estimate": 0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.171875,
+          0.171875
+        ]
+      },
+      "25->400": {
+        "estimate": -0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.25,
+          0.078125
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.109375,
+          0.265625
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.28125,
+          0.140625
+        ]
+      }
+    },
+    "network1057-vs-original": {
+      "25->100": {
+        "estimate": -0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.1875,
+          0.0
+        ]
+      },
+      "100->400": {
+        "estimate": 0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.09375,
+          0.28125
+        ]
+      },
+      "400->1600": {
+        "estimate": -0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.203125,
+          0.078125
+        ]
+      },
+      "25->400": {
+        "estimate": 0.0,
+        "paired_bootstrap_95_ci": [
+          -0.171875,
+          0.15625
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.171875,
+          0.234375
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.265625,
+          0.140625
+        ]
+      }
+    },
+    "expanded1948-vs-original": {
+      "25->100": {
+        "estimate": 0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.09375,
+          0.1875
+        ]
+      },
+      "100->400": {
+        "estimate": -0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.203125,
+          0.046875
+        ]
+      },
+      "400->1600": {
+        "estimate": -0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.296875,
+          0.203125
+        ]
+      },
+      "25->400": {
+        "estimate": -0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.21875,
+          0.15625
+        ]
+      },
+      "100->1600": {
+        "estimate": -0.125,
+        "paired_bootstrap_95_ci": [
+          -0.34375,
+          0.09375
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.21875,
+          0.078125
+        ]
+      }
+    },
+    "structured139-vs-expanded499": {
+      "25->100": {
+        "estimate": 0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.046875,
+          0.21875
+        ]
+      },
+      "100->400": {
+        "estimate": -0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.1875,
+          0.109375
+        ]
+      },
+      "400->1600": {
+        "estimate": -0.171875,
+        "paired_bootstrap_95_ci": [
+          -0.359375,
+          -0.015625
+        ]
+      },
+      "25->400": {
+        "estimate": 0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.171875,
+          0.265625
+        ]
+      },
+      "100->1600": {
+        "estimate": -0.21875,
+        "paired_bootstrap_95_ci": [
+          -0.328125,
+          -0.109375
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.140625,
+        "paired_bootstrap_95_ci": [
+          -0.3125,
+          0.0625
+        ]
+      }
+    },
+    "structured139-vs-network1057": {
+      "25->100": {
+        "estimate": -0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.1875,
+          0.09375
+        ]
+      },
+      "100->400": {
+        "estimate": 0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.109375,
+          0.296875
+        ]
+      },
+      "400->1600": {
+        "estimate": -0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.21875,
+          0.203125
+        ]
+      },
+      "25->400": {
+        "estimate": 0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.15625,
+          0.21875
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.078125,
+          0.25
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.078125,
+          0.140625
+        ]
+      }
+    },
+    "structured139-vs-expanded1948": {
+      "25->100": {
+        "estimate": -0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.21875,
+          0.109375
+        ]
+      },
+      "100->400": {
+        "estimate": 0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.1875,
+          0.296875
+        ]
+      },
+      "400->1600": {
+        "estimate": -0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.26601562499999964,
+          0.109375
+        ]
+      },
+      "25->400": {
+        "estimate": 0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.1875,
+          0.203125
+        ]
+      },
+      "100->1600": {
+        "estimate": -0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.21875,
+          0.203125
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.25,
+          0.125
+        ]
+      }
+    },
+    "expanded499-vs-network1057": {
+      "25->100": {
+        "estimate": 0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.109375,
+          0.21875
+        ]
+      },
+      "100->400": {
+        "estimate": -0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.203125,
+          0.078125
+        ]
+      },
+      "400->1600": {
+        "estimate": -0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.171875,
+          0.1875
+        ]
+      },
+      "25->400": {
+        "estimate": -0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.15625,
+          0.125
+        ]
+      },
+      "100->1600": {
+        "estimate": -0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.21875,
+          0.0625
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.21875,
+          0.171875
+        ]
+      }
+    },
+    "expanded499-vs-expanded1948": {
+      "25->100": {
+        "estimate": -0.109375,
+        "paired_bootstrap_95_ci": [
+          -0.328125,
+          0.109375
+        ]
+      },
+      "100->400": {
+        "estimate": 0.171875,
+        "paired_bootstrap_95_ci": [
+          0.0,
+          0.328125
+        ]
+      },
+      "400->1600": {
+        "estimate": -0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.265625,
+          0.09375
+        ]
+      },
+      "25->400": {
+        "estimate": 0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.125,
+          0.25
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.078125,
+          0.265625
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.1875,
+          0.140625
+        ]
+      }
+    },
+    "network1057-vs-expanded1948": {
+      "25->100": {
+        "estimate": -0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.1875,
+          0.078125
+        ]
+      },
+      "100->400": {
+        "estimate": 0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.015625,
+          0.140625
+        ]
+      },
+      "400->1600": {
+        "estimate": 0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.078125,
+          0.234375
+        ]
+      },
+      "25->400": {
+        "estimate": 0.0,
+        "paired_bootstrap_95_ci": [
+          -0.109375,
+          0.109375
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.140625,
+        "paired_bootstrap_95_ci": [
+          0.0,
+          0.296875
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.078125,
+        "paired_bootstrap_95_ci": [
+          -0.078125,
+          0.234375
+        ]
+      }
+    }
+  },
+  "anchor": {
+    "original": {
+      "budgets": {
+        "25": {
+          "source_cell": "anchor-original-vs-original-t25",
+          "games": 32,
+          "wins": 10,
+          "draws": 12,
+          "losses": 10,
+          "score": 0.5,
+          "win_rate": 0.3125,
+          "moves": 1972,
+          "milliseconds": 43449.168000000005,
+          "nodes": 165631328,
+          "depth_sum": 17339,
+          "ms_per_move": 22.03304665314402,
+          "nodes_per_move": 83991.54563894523,
+          "nodes_per_second": 3812071.3381669354,
+          "mean_completed_depth": 8.79259634888438,
+          "score_interval": {
+            "estimate": 0.5,
+            "paired_bootstrap_95_ci": [
+              0.421875,
+              0.578125
+            ]
+          }
+        },
+        "100": {
+          "source_cell": "anchor-original-vs-original-t100",
+          "games": 32,
+          "wins": 13,
+          "draws": 10,
+          "losses": 9,
+          "score": 0.5625,
+          "win_rate": 0.40625,
+          "moves": 2234,
+          "milliseconds": 192805.37799999997,
+          "nodes": 660707785,
+          "depth_sum": 22720,
+          "ms_per_move": 86.30500358102057,
+          "nodes_per_move": 295751.02282900625,
+          "nodes_per_second": 3426812.01039942,
+          "mean_completed_depth": 10.17009847806625,
+          "score_interval": {
+            "estimate": 0.5625,
+            "paired_bootstrap_95_ci": [
+              0.4375,
+              0.6875
+            ]
+          }
+        },
+        "400": {
+          "source_cell": "anchor-original-vs-original-t400",
+          "games": 32,
+          "wins": 16,
+          "draws": 9,
+          "losses": 7,
+          "score": 0.640625,
+          "win_rate": 0.5,
+          "moves": 2006,
+          "milliseconds": 689452.551,
+          "nodes": 2384479265,
+          "depth_sum": 21138,
+          "ms_per_move": 343.6951899302094,
+          "nodes_per_move": 1188673.611665005,
+          "nodes_per_second": 3458511.048427465,
+          "mean_completed_depth": 10.53738783649053,
+          "score_interval": {
+            "estimate": 0.640625,
+            "paired_bootstrap_95_ci": [
+              0.515625,
+              0.765625
+            ]
+          }
+        },
+        "1600": {
+          "source_cell": "anchor-original-vs-original-t1600",
+          "games": 32,
+          "wins": 19,
+          "draws": 11,
+          "losses": 2,
+          "score": 0.765625,
+          "win_rate": 0.59375,
+          "moves": 2285,
+          "milliseconds": 3053884.874,
+          "nodes": 12446491050,
+          "depth_sum": 32292,
+          "ms_per_move": 1336.492286214442,
+          "nodes_per_move": 5447042.035010941,
+          "nodes_per_second": 4075625.494584378,
+          "mean_completed_depth": 14.132166301969365,
+          "score_interval": {
+            "estimate": 0.765625,
+            "paired_bootstrap_95_ci": [
+              0.671875,
+              0.859375
+            ]
+          }
+        }
+      },
+      "gains": {
+        "25->100": {
+          "estimate": 0.0625,
+          "paired_bootstrap_95_ci": [
+            -0.078125,
+            0.203125
+          ]
+        },
+        "100->400": {
+          "estimate": 0.078125,
+          "paired_bootstrap_95_ci": [
+            -0.09375,
+            0.265625
+          ]
+        },
+        "400->1600": {
+          "estimate": 0.125,
+          "paired_bootstrap_95_ci": [
+            -0.015625,
+            0.265625
+          ]
+        },
+        "25->400": {
+          "estimate": 0.140625,
+          "paired_bootstrap_95_ci": [
+            -0.015625,
+            0.296875
+          ]
+        },
+        "100->1600": {
+          "estimate": 0.203125,
+          "paired_bootstrap_95_ci": [
+            0.0625,
+            0.34375
+          ]
+        },
+        "25->1600": {
+          "estimate": 0.265625,
+          "paired_bootstrap_95_ci": [
+            0.15625,
+            0.375
+          ]
+        }
+      }
+    },
+    "structured139": {
+      "budgets": {
+        "25": {
+          "source_cell": "rr-structured139-vs-original-t25",
+          "games": 32,
+          "wins": 12,
+          "draws": 10,
+          "losses": 10,
+          "score": 0.53125,
+          "win_rate": 0.375,
+          "moves": 2409,
+          "milliseconds": 54012.73100000001,
+          "nodes": 195629437,
+          "depth_sum": 21416,
+          "ms_per_move": 22.421224989622253,
+          "nodes_per_move": 81207.73640514737,
+          "nodes_per_second": 3621913.452219255,
+          "mean_completed_depth": 8.889995848899959,
+          "score_interval": {
+            "estimate": 0.53125,
+            "paired_bootstrap_95_ci": [
+              0.421875,
+              0.65625
+            ]
+          }
+        },
+        "100": {
+          "source_cell": "anchor-structured139-vs-original-t100",
+          "games": 32,
+          "wins": 12,
+          "draws": 7,
+          "losses": 13,
+          "score": 0.484375,
+          "win_rate": 0.375,
+          "moves": 2211,
+          "milliseconds": 192892.36800000002,
+          "nodes": 719154819,
+          "depth_sum": 21650,
+          "ms_per_move": 87.24213839891452,
+          "nodes_per_move": 325262.24287652643,
+          "nodes_per_second": 3728269.9489696757,
+          "mean_completed_depth": 9.79194934418815,
+          "score_interval": {
+            "estimate": 0.484375,
+            "paired_bootstrap_95_ci": [
+              0.3125,
+              0.65625
+            ]
+          }
+        },
+        "400": {
+          "source_cell": "anchor-structured139-vs-original-t400",
+          "games": 32,
+          "wins": 18,
+          "draws": 9,
+          "losses": 5,
+          "score": 0.703125,
+          "win_rate": 0.5625,
+          "moves": 2147,
+          "milliseconds": 731840.5970000001,
+          "nodes": 2680685912,
+          "depth_sum": 24782,
+          "ms_per_move": 340.8666031672101,
+          "nodes_per_move": 1248572.851420587,
+          "nodes_per_second": 3662936.8785891496,
+          "mean_completed_depth": 11.542617605961807,
+          "score_interval": {
+            "estimate": 0.703125,
+            "paired_bootstrap_95_ci": [
+              0.546875,
+              0.84375
+            ]
+          }
+        },
+        "1600": {
+          "source_cell": "anchor-structured139-vs-original-t1600",
+          "games": 32,
+          "wins": 21,
+          "draws": 9,
+          "losses": 2,
+          "score": 0.796875,
+          "win_rate": 0.65625,
+          "moves": 2143,
+          "milliseconds": 2888672.0780000007,
+          "nodes": 10951001232,
+          "depth_sum": 28629,
+          "ms_per_move": 1347.9571059262719,
+          "nodes_per_move": 5110126.566495567,
+          "nodes_per_second": 3791015.7111298107,
+          "mean_completed_depth": 13.359309379374709,
+          "score_interval": {
+            "estimate": 0.796875,
+            "paired_bootstrap_95_ci": [
+              0.703125,
+              0.890625
+            ]
+          }
+        }
+      },
+      "gains": {
+        "25->100": {
+          "estimate": -0.046875,
+          "paired_bootstrap_95_ci": [
+            -0.3125,
+            0.203125
+          ]
+        },
+        "100->400": {
+          "estimate": 0.21875,
+          "paired_bootstrap_95_ci": [
+            -0.015625,
+            0.4375
+          ]
+        },
+        "400->1600": {
+          "estimate": 0.09375,
+          "paired_bootstrap_95_ci": [
+            -0.09375,
+            0.28125
+          ]
+        },
+        "25->400": {
+          "estimate": 0.171875,
+          "paired_bootstrap_95_ci": [
+            0.015625,
+            0.328125
+          ]
+        },
+        "100->1600": {
+          "estimate": 0.3125,
+          "paired_bootstrap_95_ci": [
+            0.109375,
+            0.5
+          ]
+        },
+        "25->1600": {
+          "estimate": 0.265625,
+          "paired_bootstrap_95_ci": [
+            0.09375,
+            0.421875
+          ]
+        }
+      }
+    },
+    "expanded499": {
+      "budgets": {
+        "25": {
+          "source_cell": "rr-expanded499-vs-original-t25",
+          "games": 32,
+          "wins": 18,
+          "draws": 4,
+          "losses": 10,
+          "score": 0.625,
+          "win_rate": 0.5625,
+          "moves": 2343,
+          "milliseconds": 50432.58099999999,
+          "nodes": 175004696,
+          "depth_sum": 21853,
+          "ms_per_move": 21.524789159197606,
+          "nodes_per_move": 74692.57191634657,
+          "nodes_per_second": 3470072.174176452,
+          "mean_completed_depth": 9.326931284677764,
+          "score_interval": {
+            "estimate": 0.625,
+            "paired_bootstrap_95_ci": [
+              0.484375,
+              0.765625
+            ]
+          }
+        },
+        "100": {
+          "source_cell": "anchor-expanded499-vs-original-t100",
+          "games": 32,
+          "wins": 14,
+          "draws": 7,
+          "losses": 11,
+          "score": 0.546875,
+          "win_rate": 0.4375,
+          "moves": 2146,
+          "milliseconds": 183690.59699999998,
+          "nodes": 702746814,
+          "depth_sum": 21501,
+          "ms_per_move": 85.59673671947809,
+          "nodes_per_move": 327468.2264678472,
+          "nodes_per_second": 3825709.238671591,
+          "mean_completed_depth": 10.01910531220876,
+          "score_interval": {
+            "estimate": 0.546875,
+            "paired_bootstrap_95_ci": [
+              0.390625,
+              0.703125
+            ]
+          }
+        },
+        "400": {
+          "source_cell": "anchor-expanded499-vs-original-t400",
+          "games": 32,
+          "wins": 20,
+          "draws": 8,
+          "losses": 4,
+          "score": 0.75,
+          "win_rate": 0.625,
+          "moves": 2259,
+          "milliseconds": 763267.4320000004,
+          "nodes": 2839042464,
+          "depth_sum": 26577,
+          "ms_per_move": 337.8784559539621,
+          "nodes_per_move": 1256769.572377158,
+          "nodes_per_second": 3719590.7292425893,
+          "mean_completed_depth": 11.764940239043824,
+          "score_interval": {
+            "estimate": 0.75,
+            "paired_bootstrap_95_ci": [
+              0.65625,
+              0.84375
+            ]
+          }
+        },
+        "1600": {
+          "source_cell": "anchor-expanded499-vs-original-t1600",
+          "games": 32,
+          "wins": 21,
+          "draws": 6,
+          "losses": 5,
+          "score": 0.75,
+          "win_rate": 0.65625,
+          "moves": 1933,
+          "milliseconds": 2632894.1969999997,
+          "nodes": 9111935315,
+          "depth_sum": 22139,
+          "ms_per_move": 1362.07666683911,
+          "nodes_per_move": 4713882.728918779,
+          "nodes_per_second": 3460805.726786294,
+          "mean_completed_depth": 11.453181583031558,
+          "score_interval": {
+            "estimate": 0.75,
+            "paired_bootstrap_95_ci": [
+              0.625,
+              0.859375
+            ]
+          }
+        }
+      },
+      "gains": {
+        "25->100": {
+          "estimate": -0.078125,
+          "paired_bootstrap_95_ci": [
+            -0.3125,
+            0.171875
+          ]
+        },
+        "100->400": {
+          "estimate": 0.203125,
+          "paired_bootstrap_95_ci": [
+            0.046875,
+            0.359375
+          ]
+        },
+        "400->1600": {
+          "estimate": 0.0,
+          "paired_bootstrap_95_ci": [
+            -0.15625,
+            0.15625
+          ]
+        },
+        "25->400": {
+          "estimate": 0.125,
+          "paired_bootstrap_95_ci": [
+            -0.046875,
+            0.3125
+          ]
+        },
+        "100->1600": {
+          "estimate": 0.203125,
+          "paired_bootstrap_95_ci": [
+            0.0,
+            0.40625
+          ]
+        },
+        "25->1600": {
+          "estimate": 0.125,
+          "paired_bootstrap_95_ci": [
+            -0.0625,
+            0.3125
+          ]
+        }
+      }
+    },
+    "network1057": {
+      "budgets": {
+        "25": {
+          "source_cell": "rr-network1057-vs-original-t25",
+          "games": 32,
+          "wins": 10,
+          "draws": 14,
+          "losses": 8,
+          "score": 0.53125,
+          "win_rate": 0.3125,
+          "moves": 2458,
+          "milliseconds": 54407.322,
+          "nodes": 128142716,
+          "depth_sum": 23442,
+          "ms_per_move": 22.13479332790887,
+          "nodes_per_move": 52132.91944670464,
+          "nodes_per_second": 2355247.6264132243,
+          "mean_completed_depth": 9.537021969080554,
+          "score_interval": {
+            "estimate": 0.53125,
+            "paired_bootstrap_95_ci": [
+              0.40625,
+              0.65625
+            ]
+          }
+        },
+        "100": {
+          "source_cell": "anchor-network1057-vs-original-t100",
+          "games": 32,
+          "wins": 18,
+          "draws": 13,
+          "losses": 1,
+          "score": 0.765625,
+          "win_rate": 0.5625,
+          "moves": 2417,
+          "milliseconds": 209839.91599999997,
+          "nodes": 501013993,
+          "depth_sum": 25598,
+          "ms_per_move": 86.81833512618948,
+          "nodes_per_move": 207287.54364915183,
+          "nodes_per_second": 2387600.998658425,
+          "mean_completed_depth": 10.590815059991725,
+          "score_interval": {
+            "estimate": 0.765625,
+            "paired_bootstrap_95_ci": [
+              0.6875,
+              0.84375
+            ]
+          }
+        },
+        "400": {
+          "source_cell": "anchor-network1057-vs-original-t400",
+          "games": 32,
+          "wins": 18,
+          "draws": 9,
+          "losses": 5,
+          "score": 0.703125,
+          "win_rate": 0.5625,
+          "moves": 2096,
+          "milliseconds": 705874.7100000001,
+          "nodes": 1620140763,
+          "depth_sum": 23873,
+          "ms_per_move": 336.77228530534353,
+          "nodes_per_move": 772967.921278626,
+          "nodes_per_second": 2295224.2657907377,
+          "mean_completed_depth": 11.389790076335878,
+          "score_interval": {
+            "estimate": 0.703125,
+            "paired_bootstrap_95_ci": [
+              0.546875,
+              0.84375
+            ]
+          }
+        },
+        "1600": {
+          "source_cell": "anchor-network1057-vs-original-t1600",
+          "games": 32,
+          "wins": 18,
+          "draws": 9,
+          "losses": 5,
+          "score": 0.703125,
+          "win_rate": 0.5625,
+          "moves": 1968,
+          "milliseconds": 2645521.48,
+          "nodes": 6240872704,
+          "depth_sum": 24676,
+          "ms_per_move": 1344.269044715447,
+          "nodes_per_move": 3171175.1544715445,
+          "nodes_per_second": 2359033.0871174783,
+          "mean_completed_depth": 12.538617886178862,
+          "score_interval": {
+            "estimate": 0.703125,
+            "paired_bootstrap_95_ci": [
+              0.59375,
+              0.8125
+            ]
+          }
+        }
+      },
+      "gains": {
+        "25->100": {
+          "estimate": 0.234375,
+          "paired_bootstrap_95_ci": [
+            0.078125,
+            0.390625
+          ]
+        },
+        "100->400": {
+          "estimate": -0.0625,
+          "paired_bootstrap_95_ci": [
+            -0.234375,
+            0.109375
+          ]
+        },
+        "400->1600": {
+          "estimate": 0.0,
+          "paired_bootstrap_95_ci": [
+            -0.09375,
+            0.09375
+          ]
+        },
+        "25->400": {
+          "estimate": 0.171875,
+          "paired_bootstrap_95_ci": [
+            -0.046875,
+            0.390625
+          ]
+        },
+        "100->1600": {
+          "estimate": -0.0625,
+          "paired_bootstrap_95_ci": [
+            -0.21875,
+            0.078125
+          ]
+        },
+        "25->1600": {
+          "estimate": 0.171875,
+          "paired_bootstrap_95_ci": [
+            -0.015625,
+            0.359375
+          ]
+        }
+      }
+    },
+    "expanded1948": {
+      "budgets": {
+        "25": {
+          "source_cell": "rr-expanded1948-vs-original-t25",
+          "games": 32,
+          "wins": 10,
+          "draws": 16,
+          "losses": 6,
+          "score": 0.5625,
+          "win_rate": 0.3125,
+          "moves": 2268,
+          "milliseconds": 50141.990000000005,
+          "nodes": 167847581,
+          "depth_sum": 19616,
+          "ms_per_move": 22.108461199294535,
+          "nodes_per_move": 74006.86992945326,
+          "nodes_per_second": 3347445.54414374,
+          "mean_completed_depth": 8.649029982363317,
+          "score_interval": {
+            "estimate": 0.5625,
+            "paired_bootstrap_95_ci": [
+              0.46875,
+              0.65625
+            ]
+          }
+        },
+        "100": {
+          "source_cell": "anchor-expanded1948-vs-original-t100",
+          "games": 32,
+          "wins": 14,
+          "draws": 10,
+          "losses": 8,
+          "score": 0.59375,
+          "win_rate": 0.4375,
+          "moves": 2366,
+          "milliseconds": 202726.146,
+          "nodes": 756776072,
+          "depth_sum": 26621,
+          "ms_per_move": 85.68307100591716,
+          "nodes_per_move": 319854.6373626374,
+          "nodes_per_second": 3732996.887337857,
+          "mean_completed_depth": 11.251479289940828,
+          "score_interval": {
+            "estimate": 0.59375,
+            "paired_bootstrap_95_ci": [
+              0.453125,
+              0.71875
+            ]
+          }
+        },
+        "400": {
+          "source_cell": "anchor-expanded1948-vs-original-t400",
+          "games": 32,
+          "wins": 16,
+          "draws": 8,
+          "losses": 8,
+          "score": 0.625,
+          "win_rate": 0.5,
+          "moves": 2154,
+          "milliseconds": 738058.5800000002,
+          "nodes": 2470693912,
+          "depth_sum": 23794,
+          "ms_per_move": 342.6455803156918,
+          "nodes_per_move": 1147025.957288765,
+          "nodes_per_second": 3347558.01091019,
+          "mean_completed_depth": 11.046425255338905,
+          "score_interval": {
+            "estimate": 0.625,
+            "paired_bootstrap_95_ci": [
+              0.546875,
+              0.71875
+            ]
+          }
+        },
+        "1600": {
+          "source_cell": "anchor-expanded1948-vs-original-t1600",
+          "games": 32,
+          "wins": 22,
+          "draws": 6,
+          "losses": 4,
+          "score": 0.78125,
+          "win_rate": 0.6875,
+          "moves": 2271,
+          "milliseconds": 3099883.2639999995,
+          "nodes": 11070645111,
+          "depth_sum": 29050,
+          "ms_per_move": 1364.9860255394096,
+          "nodes_per_move": 4874788.688243065,
+          "nodes_per_second": 3571310.326284597,
+          "mean_completed_depth": 12.791721708498459,
+          "score_interval": {
+            "estimate": 0.78125,
+            "paired_bootstrap_95_ci": [
+              0.6875,
+              0.875
+            ]
+          }
+        }
+      },
+      "gains": {
+        "25->100": {
+          "estimate": 0.03125,
+          "paired_bootstrap_95_ci": [
+            -0.109375,
+            0.171875
+          ]
+        },
+        "100->400": {
+          "estimate": 0.03125,
+          "paired_bootstrap_95_ci": [
+            -0.09375,
+            0.171875
+          ]
+        },
+        "400->1600": {
+          "estimate": 0.15625,
+          "paired_bootstrap_95_ci": [
+            0.0,
+            0.296875
+          ]
+        },
+        "25->400": {
+          "estimate": 0.0625,
+          "paired_bootstrap_95_ci": [
+            -0.03125,
+            0.171875
+          ]
+        },
+        "100->1600": {
+          "estimate": 0.1875,
+          "paired_bootstrap_95_ci": [
+            0.015625,
+            0.375
+          ]
+        },
+        "25->1600": {
+          "estimate": 0.21875,
+          "paired_bootstrap_95_ci": [
+            0.078125,
+            0.359375
+          ]
+        }
+      }
+    }
+  },
+  "anchor_gain_differences": {
+    "original-minus-structured139": {
+      "400->1600": {
+        "estimate": 0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.203125,
+          0.265625
+        ]
+      },
+      "100->1600": {
+        "estimate": -0.109375,
+        "paired_bootstrap_95_ci": [
+          -0.359375,
+          0.125
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.0,
+        "paired_bootstrap_95_ci": [
+          -0.203125,
+          0.203125
+        ]
+      }
+    },
+    "original-minus-expanded499": {
+      "400->1600": {
+        "estimate": 0.125,
+        "paired_bootstrap_95_ci": [
+          -0.09375,
+          0.34375
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.0,
+        "paired_bootstrap_95_ci": [
+          -0.25,
+          0.25
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.140625,
+        "paired_bootstrap_95_ci": [
+          -0.078125,
+          0.359375
+        ]
+      }
+    },
+    "original-minus-network1057": {
+      "400->1600": {
+        "estimate": 0.125,
+        "paired_bootstrap_95_ci": [
+          -0.046875,
+          0.296875
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.265625,
+        "paired_bootstrap_95_ci": [
+          0.0625,
+          0.46875
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.125,
+          0.3125
+        ]
+      }
+    },
+    "original-minus-expanded1948": {
+      "400->1600": {
+        "estimate": -0.03125,
+        "paired_bootstrap_95_ci": [
+          -0.234375,
+          0.1875
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.21875,
+          0.25
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.140625,
+          0.234375
+        ]
+      }
+    },
+    "structured139-minus-expanded499": {
+      "400->1600": {
+        "estimate": 0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.15625,
+          0.34375
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.109375,
+        "paired_bootstrap_95_ci": [
+          -0.171875,
+          0.390625
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.140625,
+        "paired_bootstrap_95_ci": [
+          -0.109375,
+          0.390625
+        ]
+      }
+    },
+    "structured139-minus-network1057": {
+      "400->1600": {
+        "estimate": 0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.125,
+          0.3125
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.375,
+        "paired_bootstrap_95_ci": [
+          0.14023437500000036,
+          0.625
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.15625,
+          0.34375
+        ]
+      }
+    },
+    "structured139-minus-expanded1948": {
+      "400->1600": {
+        "estimate": -0.0625,
+        "paired_bootstrap_95_ci": [
+          -0.3125,
+          0.1875
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.125,
+        "paired_bootstrap_95_ci": [
+          -0.140625,
+          0.390625
+        ]
+      },
+      "25->1600": {
+        "estimate": 0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.171875,
+          0.265625
+        ]
+      }
+    },
+    "expanded499-minus-network1057": {
+      "400->1600": {
+        "estimate": 0.0,
+        "paired_bootstrap_95_ci": [
+          -0.1875,
+          0.1875
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.265625,
+        "paired_bootstrap_95_ci": [
+          0.015625,
+          0.53125
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.3125,
+          0.21875
+        ]
+      }
+    },
+    "expanded499-minus-expanded1948": {
+      "400->1600": {
+        "estimate": -0.15625,
+        "paired_bootstrap_95_ci": [
+          -0.375,
+          0.0625
+        ]
+      },
+      "100->1600": {
+        "estimate": 0.015625,
+        "paired_bootstrap_95_ci": [
+          -0.265625,
+          0.296875
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.09375,
+        "paired_bootstrap_95_ci": [
+          -0.328125,
+          0.140625
+        ]
+      }
+    },
+    "network1057-minus-expanded1948": {
+      "400->1600": {
+        "estimate": -0.15625,
+        "paired_bootstrap_95_ci": [
+          -0.328125,
+          0.03125
+        ]
+      },
+      "100->1600": {
+        "estimate": -0.25,
+        "paired_bootstrap_95_ci": [
+          -0.484375,
+          -0.015625
+        ]
+      },
+      "25->1600": {
+        "estimate": -0.046875,
+        "paired_bootstrap_95_ci": [
+          -0.28125,
+          0.1875
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Only 16 independent deals per head-to-head cell; modest differences will remain uncertain.",
+    "One frozen checkpoint per learned version; intervals cover deal variation, not training-seed variation.",
+    "Training datasets, objectives, and feature families differ across versions; this is not a controlled parameter-count scaling experiment.",
+    "Production automatic flip depth changes between 25 and 100 ms; these are practical budget comparisons rather than a fixed-search-policy intervention.",
+    "Wall-clock budgets run concurrently on one host. Record observed move times, nodes, and depths; some scheduling noise remains.",
+    "All time contrasts share deals, but each model pair uses a different deal block. Anchor model comparisons also use different blocks.",
+    "A small exploratory tournament does not replace the earlier independent, larger confirmation studies or establish a universal strongest engine.",
+    "The 1600 ms extension was requested after viewing the earlier results; it is an exploratory continuation on matched deals, not an independent confirmation set.",
+    "At 1600 ms the production flip threshold rises to 7 and five-piece successor tablebase prebuilding becomes active. Changes cannot be attributed to raw compute alone.",
+    "The fixed 25 ms opponent may approach score saturation at high candidate budgets. This is not evidence of an evaluator capacity ceiling.",
+    "Four-game sharding changes process scheduling relative to the earlier 32-game batches; each game already resets all player and search state. Total active search workers remain twelve."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "config": {
+    "name": "rr-expanded1948-vs-original-t25",
+    "family": "rr",
+    "a_id": "expanded1948",
+    "b_id": "original",
+    "time_ms": 25,
+    "b_time_ms": 25,
+    "block": 3,
+    "first_seed": 50000048,
+    "games": 32,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+  },
+  "started_utc": "2026-10-23T18:10:42.474981+00:00",
+  "csv_sha256": "8e4f08440170ca5a8ef9a875dfc433134c7855a61e32abc076fd32eda130529f",
+  "completed_utc": "2026-10-23T18:11:33.478080+00:00",
+  "elapsed_seconds": 51.00346537493169
+}

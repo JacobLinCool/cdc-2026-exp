@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "anchor-structured139-vs-original-t1600-s5",
+    "family": "anchor",
+    "a_id": "structured139",
+    "b_id": "original",
+    "time_ms": 1600,
+    "b_time_ms": 25,
+    "block": 0,
+    "first_seed": 50000010,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.015625",
+    "cell_name": "anchor-structured139-vs-original-t1600",
+    "shard": 5
+  },
+  "started_utc": "2026-10-23T20:00:51.192543+00:00",
+  "csv_sha256": "46b240432707ea64ac2cc56fbaba4e1c3a51b9749bb891b51f87037e83c2b454",
+  "completed_utc": "2026-10-23T20:03:40.455005+00:00",
+  "elapsed_seconds": 169.2608550414443
+}

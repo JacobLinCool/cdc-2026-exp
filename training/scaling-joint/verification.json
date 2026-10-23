@@ -1,0 +1,56 @@
+{
+  "tiers": [
+    {
+      "tier": 0,
+      "positions": 4845,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    },
+    {
+      "tier": 1,
+      "positions": 4845,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    },
+    {
+      "tier": 2,
+      "positions": 4845,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    }
+  ],
+  "candidates": [
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/data4x-capacity2000-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/data4x-capacity2000-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/data4x-capacity2000-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/data4x-capacity500-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/data4x-capacity500-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/data4x-capacity500-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    }
+  ],
+  "max_gradient_error": 1.0332163252681388e-12,
+  "root_label_sign": true
+}

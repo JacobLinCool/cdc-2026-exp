@@ -1,0 +1,20 @@
+{
+  "config": {
+    "name": "rr-structured139-vs-original-t400",
+    "family": "rr",
+    "a_id": "structured139",
+    "b_id": "original",
+    "time_ms": 400,
+    "b_time_ms": 400,
+    "block": 0,
+    "first_seed": 50000000,
+    "games": 32,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+  },
+  "started_utc": "2026-10-23T18:23:14.753667+00:00",
+  "csv_sha256": "90129a6f51321c62637740910693a4a28033ad925e0e16f7b6f77440115b6736",
+  "completed_utc": "2026-10-23T18:36:34.004784+00:00",
+  "elapsed_seconds": 799.2446757918224
+}

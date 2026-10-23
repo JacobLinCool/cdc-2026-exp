@@ -1,0 +1,38 @@
+{
+  "train": {
+    "positions": 38974,
+    "contributing_games": 2048,
+    "quiet": 9314,
+    "phase_counts": [
+      11067,
+      13755,
+      14152
+    ],
+    "paired_teacher_positions": 2262,
+    "low_completed_depth_mean": 8.835101679929267,
+    "high_completed_depth_mean": 10.27763041556145,
+    "low_search_mean_ms": 146.7642059326172,
+    "high_search_mean_ms": 583.8280639648438,
+    "paired_labels_changed_percent": 80.63660477453581,
+    "searched_best_flip_percent": 21.46815825935239,
+    "label_search_seconds": 7134.8193359375
+  },
+  "validation": {
+    "positions": 4845,
+    "contributing_games": 256,
+    "quiet": 1129,
+    "phase_counts": [
+      1384,
+      1668,
+      1793
+    ],
+    "paired_teacher_positions": 1104,
+    "low_completed_depth_mean": 8.931159420289855,
+    "high_completed_depth_mean": 10.42481884057971,
+    "low_search_mean_ms": 145.73313903808594,
+    "high_search_mean_ms": 581.0883178710938,
+    "paired_labels_changed_percent": 81.61231884057972,
+    "searched_best_flip_percent": 20.784313725490197,
+    "label_search_seconds": 1369.729248046875
+  }
+}

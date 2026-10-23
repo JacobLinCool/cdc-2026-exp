@@ -1,0 +1,13 @@
+{
+  "python": "3.11.1 (main, Feb 19 2023, 02:00:08) [Clang 15.0.7 ]",
+  "numpy": "1.26.4",
+  "hashes": {
+    "training/improve499/report.py": "1dc04e31662a5feca68a483714e9c5d54b30e53c01498ce8c5bad0eab1afeaa5",
+    "training/improve499/README.md": "484223739600f4f8a32d36e369b62591b1ef6e0c95526f5129a7d0247e9104a0",
+    "training/improve499/results.png": "76d51afe9c6695fa0ad2fa501973f15b43ce3a918a12b255aadf59ad8d0e4cf5",
+    "training/improve499/results.svg": "8db2699643afeaff0c7fe9c355e735f6ac0f31d2c29e6431f9f3f0b3927bd98b",
+    "training/improve499/diagnose.py": "ab50b53c089a27724788064ca1ff6ff2748c95728f6503b17792f1d70c02203d",
+    "training/improve499/fit-diagnostics.json": "70e3c318b482a381290975e1be2336be5dd12fc3e9c1fc1a651be965419f653b"
+  },
+  "results_sha256": "7f3be5b93f426e50878b6efa606f0d8276bed740a20f5fd796e338a7cfe7a26a"
+}

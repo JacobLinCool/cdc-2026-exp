@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling-joint/dev-nodes-data4x-capacity500-53.csv"
+  ],
+  "games": 40,
+  "independent_deals": 20,
+  "first_seed": 17000000,
+  "last_seed": 17000019,
+  "wins": 15,
+  "draws": 13,
+  "losses": 12,
+  "score": 0.5375,
+  "paired_bootstrap_95_ci": [
+    0.4125,
+    0.6625
+  ],
+  "elo": 26.106692605036596,
+  "a_ms_per_move": 2.564127272727273,
+  "a_nodes_per_move": 7634.151762523191,
+  "a_nodes_per_second": 2977290.4971301625,
+  "a_mean_completed_depth": 6.950278293135436,
+  "b_ms_per_move": 2.4422778603268944,
+  "b_nodes_per_move": 7629.465081723625,
+  "b_nodes_per_second": 3123913.624104358,
+  "b_mean_completed_depth": 6.924591381872214
+}

@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "rr-expanded499-vs-expanded1948-t1600-s0",
+    "family": "rr",
+    "a_id": "expanded499",
+    "b_id": "expanded1948",
+    "time_ms": 1600,
+    "b_time_ms": 1600,
+    "block": 8,
+    "first_seed": 50000128,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity500-89.cxe",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+    "cell_name": "rr-expanded499-vs-expanded1948-t1600",
+    "shard": 0
+  },
+  "started_utc": "2026-10-23T19:10:19.331899+00:00",
+  "csv_sha256": "d04d2bc2a72493c9c2ccc8700f2a7822eb77420d6b3b745cdd0db8c1ffa8301f",
+  "completed_utc": "2026-10-23T19:18:33.321452+00:00",
+  "elapsed_seconds": 493.9828961668536
+}

@@ -5,6 +5,12 @@ export const EMPTY = 15;
 export const PIECE_CHARS = "帥仕相俥傌炮兵將士象車馬包卒";
 export const COLOR_NAMES = ["紅", "黑"] as const;
 
+export const ENGINE_NAMES = { light: "Light", lightning: "Lightning" } as const;
+export type EngineModel = keyof typeof ENGINE_NAMES;
+/** Search slots: human mode uses slot 0; AI mode uses A = 0, B = 1. */
+export type EngineModels = readonly [EngineModel, EngineModel];
+export const isEngineModel = (value: unknown): value is EngineModel => value === "light" || value === "lightning";
+
 export interface Move {
   from: number;
   to: number;
@@ -30,6 +36,7 @@ export interface Snapshot {
 }
 
 export interface Analysis {
+  model: EngineModel;
   move: Move;
   score: number;
   depth: number;
@@ -41,11 +48,11 @@ export interface Analysis {
 }
 
 export type Request =
-  | { type: "new"; seed: number }
+  | { type: "new"; seed: number; models: EngineModels }
   /** 以種子開局並依序走完 moves（編碼 from | to << 5）；用於回放與從回放接手 */
-  | { type: "load"; seed: number; moves: number[] }
+  | { type: "load"; seed: number; moves: number[]; models: EngineModels }
   | { type: "play"; from: number; to: number }
-  | { type: "think"; slot: number; timeMs: number; variety: number }
+  | { type: "think"; slot: 0 | 1; timeMs: number; variety: number }
   /** 只思考、不落子（給玩家的建議著法） */
   | { type: "suggest"; timeMs: number }
   | { type: "undo"; n: number };

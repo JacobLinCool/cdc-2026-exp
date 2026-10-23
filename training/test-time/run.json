@@ -1,0 +1,829 @@
+{
+  "started_utc": "2026-10-23T15:39:24.089283+00:00",
+  "manifest": {
+    "sources": {
+      "engine/Cargo.lock": "025655174d9cc11f7e3fbef505dd92f0ccb6811d808e6019660d889003d2b963",
+      "engine/Cargo.toml": "004c5986a28587cc5e10ec5148dc1ec3a9da34faa6e52beebeac9e83065d23ea",
+      "engine/src/bin/arena.rs": "0d638cfbc4921bed1e8e009eac195ba033497be974de34093d977c857ae56e8d",
+      "engine/src/bin/bench.rs": "8ce71ff4caf2447fecd1dfded423f9932b597a47068fdccdde4b25c898ed4455",
+      "engine/src/bin/eval_bench.rs": "43879d2158d8d2be11f33410279980971271865c34d504c5ed38647c1675a996",
+      "engine/src/bin/match.rs": "24ae4f9312adba0cb57c1c6f59de99150684b2a989a7845f474a755cb4f68d05",
+      "engine/src/bin/neural_data.rs": "c2cd47c2eb71720d28429e4d05f0f4ffbc74db9662000b2d5272e4190893671c",
+      "engine/src/bin/ranking_data.rs": "8baac5305ef6c0f2b8880d18b25ae0580f64f60ae2cd23665114fe5fb5380ab2",
+      "engine/src/bin/records.rs": "fe2cfe677d7a60d0204b770eb2dadac237974cf6463b3ea8a2b5c69c3fd37ae5",
+      "engine/src/bin/scaling_data.rs": "16d355c4899975f812ab54d573f864f76aeb9574bf0ce34b205e590b2c1c86db",
+      "engine/src/bin/scaling_predict.rs": "c438b251d9692d4421c19f4f9d19c71289bbc0937ac5bc280a6f595d21226be8",
+      "engine/src/bin/spsa.rs": "ca79687c8b020e585073836c231ade174a316ef15fc44f130f1f6ee888e505ab",
+      "engine/src/bin/structured_data.rs": "8c997e136d26e9b62ea76f08bbf916b50cd388919e4fc920eef58c6f8eb6bfc9",
+      "engine/src/bin/structured_predict.rs": "5b0fcf9165da588ec7cd9a3ff7788e96678c657b068d5e2e2f1cb7ea6fbf391d",
+      "engine/src/board.rs": "2e7a86da1ff3b10771465079e0e61f87f0237454836734e7df4df5915fa1debe",
+      "engine/src/eval.rs": "58c26c362c6bafdd9029b160082749c1868f8f193b2ea95b8bbd253499be7a9e",
+      "engine/src/expanded.rs": "19dafa26c1e5bfc63c259e6d50f844b48ad516fc219fcaa81604f14a2840754b",
+      "engine/src/game.rs": "8dfc1f6b2ef8293562eeb9a1a0bb61c4c0aec578f0896737d44a8aca7389167e",
+      "engine/src/lib.rs": "9462716f79f936b211d7d3e7069ebbaf074a25e54805dd3b566b30c1a4dc7e6f",
+      "engine/src/moe.rs": "9e72e01b186a892b52cd3a6b4ad9646e4e9a78551c1f75f103707268334f99a9",
+      "engine/src/neural.rs": "c614d8e7a3c20bc0dce0177e2360cc58fab57f87958f4b28c13250cd60b91ac1",
+      "engine/src/search.rs": "b1412771f6893618a3c9eac135cab5e309f5248155587b0bfc2a28fe5d871d20",
+      "engine/src/structured.rs": "b125f93dc73d03756c7e1df7656c098b5b0098120f670d011fa121c37e2e26c3",
+      "engine/src/tb.rs": "b3a2b6cb2ebb70f6553de3b9f9772998a1467d4f54ad42a0c663da10dd6fd004",
+      "engine/src/wasm.rs": "e46497f46bdc95344691c0fb5a7e3cd1cf8c78b888679961580f5f4dea1f6579",
+      "engine/tests/node_budget.rs": "0be6a1d2fd319cf5bde5a9c6769a7490b56841dd4a0dcd0d2fb37aaeec17b18c",
+      "engine/tests/rules.rs": "c22e13be77f20ae446e50d9d593e5d4c3f8963dbb15d2c83ca3520d5d5273379",
+      "engine/tests/structured.rs": "d7f430ca63af91f2df3fd2c0bcecd80e8363f6822f4fcfec0e5edf5978eb16fa",
+      "training/test-time/experiment-plan.json": "1778cf6f43478115859ff2658c98b9611eb85fbe19085b87d7467a0300b1d18c",
+      "training/test-time/run.py": "35124b2321aac44e62e8b46ad94a0acae9053097d984fc72e9b71c7c20cc03d5"
+    },
+    "models": {
+      "training/ranking/value.cse": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+      "training/scaling-joint/data4x-capacity2000-53.cxe": "44fa3eaf1fcbd8a567473b32261e20da440038708b64ef5198d06b24cadad8f2",
+      "training/scaling-joint/data4x-capacity2000-71.cxe": "320eb6844aa6c2bfd46a2bf38b3668836c00a8e125d90e750cfe96f8205bf52d",
+      "training/scaling-joint/data4x-capacity2000-89.cxe": "c01f8c0927efe3a88344d21e4207ed4d6951b6eed565e18802f05e32b7bfae67",
+      "training/scaling-joint/data4x-capacity500-53.cxe": "2d7cf0207d4e4b022b47e79d974ba6e7694b1cef75e3dc7a749bc4e36323f336",
+      "training/scaling-joint/data4x-capacity500-71.cxe": "042f37005923c125e7aaa510a421d15320b3903019ab68b24a11f9d10f6b6c04",
+      "training/scaling-joint/data4x-capacity500-89.cxe": "a9ba34e95d15afe1b72b2996e47a5a453bec28f24a12617c011dca0b29208308",
+      "training/scaling/data4x-53.cxe": "a5de9a511c890ed8440201ac5550f3c691592683cbcbc31e9ba99940ed78e662",
+      "training/scaling/data4x-71.cxe": "a5410245c09779c3bb306327c68e22e3dfa0de97a3987307d3305c8009cbfca1",
+      "training/scaling/data4x-89.cxe": "7e173e667064171ac9ea451c3fab2f3590bb20b2daac99f8ed28fe54902f38cc"
+    },
+    "metadata": {
+      "training/ranking/value.cse": "e9966e8adbc701c90e9db584ebfa7aac5bbfde4979cbe831e8a8e08681e25788",
+      "training/scaling-joint/data4x-capacity2000-53.cxe": "59cb9d7804a83442e6ea2f4b6e08de3855c446145bef351d8654d4ef62f3e29b",
+      "training/scaling-joint/data4x-capacity2000-71.cxe": "18fa5383f177e2a1b41aeee72135c165484d5a332aa2e105e33182d64ee88276",
+      "training/scaling-joint/data4x-capacity2000-89.cxe": "006d3c73dcf2459827af4959e3760d8c9d3b30298463232f2e5fb6b94fc1d058",
+      "training/scaling-joint/data4x-capacity500-53.cxe": "08b5a4419b2db21604480f281aa676282d526b90bfc4e847833817abc0320bb0",
+      "training/scaling-joint/data4x-capacity500-71.cxe": "6582e2b6589ae9d2440d8cb127ce5e3c894549de6153dccdbdedc0c05571baa7",
+      "training/scaling-joint/data4x-capacity500-89.cxe": "e8ee197b0032904ee402f7e944a7d4d2164b425cf3b0b4bf6d24bb23909fbef7",
+      "training/scaling/data4x-53.cxe": "69cba49c0b1c196c21c90f46f93e9b0f01fedb3e654d05464dc330a39e4845fc",
+      "training/scaling/data4x-71.cxe": "6e73980e86cf7d3ef71028ec966d41af22872258cbb8dd90fd528b11faaad4e2",
+      "training/scaling/data4x-89.cxe": "ace485e60068a5cebedbf9c335fcdc471b49e009cf913275dec021f2b02f059b"
+    },
+    "arena_sha256": "80e451ebde9cedeb9ce3847659de3b9906acb55feed69023f4e2f2026406f2aa",
+    "jobs": [
+      {
+        "name": "anchor-p139-t10-s53",
+        "family": "anchor",
+        "parameters": 139,
+        "training_seed": 53,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 30000000,
+        "models": [
+          "training/scaling/data4x-53.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling/data4x-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p139-t40-s53",
+        "family": "anchor",
+        "parameters": 139,
+        "training_seed": 53,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 30000000,
+        "models": [
+          "training/scaling/data4x-53.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling/data4x-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=1.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p139-t160-s53",
+        "family": "anchor",
+        "parameters": 139,
+        "training_seed": 53,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 30000000,
+        "models": [
+          "training/scaling/data4x-53.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling/data4x-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=0.25",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p499-t10-s53",
+        "family": "anchor",
+        "parameters": 499,
+        "training_seed": 53,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 30000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity500-53.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity500-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p499-t40-s53",
+        "family": "anchor",
+        "parameters": 499,
+        "training_seed": 53,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 30000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity500-53.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity500-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=1.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p499-t160-s53",
+        "family": "anchor",
+        "parameters": 499,
+        "training_seed": 53,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 30000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity500-53.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity500-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=0.25",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p1948-t10-s53",
+        "family": "anchor",
+        "parameters": 1948,
+        "training_seed": 53,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 30000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-53.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p1948-t40-s53",
+        "family": "anchor",
+        "parameters": 1948,
+        "training_seed": 53,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 30000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-53.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=1.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p1948-t160-s53",
+        "family": "anchor",
+        "parameters": 1948,
+        "training_seed": 53,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 30000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-53.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=0.25",
+        "threads": 2
+      },
+      {
+        "name": "direct-b10-s53",
+        "family": "direct",
+        "parameters": 1948,
+        "training_seed": 53,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 31000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-53.cxe",
+          "training/scaling/data4x-53.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "expanded=training/scaling/data4x-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "threads": 2
+      },
+      {
+        "name": "direct-b40-s53",
+        "family": "direct",
+        "parameters": 1948,
+        "training_seed": 53,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 31000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-53.cxe",
+          "training/scaling/data4x-53.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "expanded=training/scaling/data4x-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "threads": 2
+      },
+      {
+        "name": "direct-b160-s53",
+        "family": "direct",
+        "parameters": 1948,
+        "training_seed": 53,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 31000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-53.cxe",
+          "training/scaling/data4x-53.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "expanded=training/scaling/data4x-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "threads": 2
+      },
+      {
+        "name": "node-b16384-s53",
+        "family": "node",
+        "parameters": 1948,
+        "training_seed": 53,
+        "budget": 16384,
+        "time_ms": 40,
+        "games": 32,
+        "first_seed": 32000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-53.cxe",
+          "training/scaling/data4x-53.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=16384",
+        "b": "expanded=training/scaling/data4x-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=16384",
+        "threads": 2
+      },
+      {
+        "name": "node-b65536-s53",
+        "family": "node",
+        "parameters": 1948,
+        "training_seed": 53,
+        "budget": 65536,
+        "time_ms": 40,
+        "games": 32,
+        "first_seed": 32000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-53.cxe",
+          "training/scaling/data4x-53.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=65536",
+        "b": "expanded=training/scaling/data4x-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=65536",
+        "threads": 2
+      },
+      {
+        "name": "node-b262144-s53",
+        "family": "node",
+        "parameters": 1948,
+        "training_seed": 53,
+        "budget": 262144,
+        "time_ms": 40,
+        "games": 32,
+        "first_seed": 32000000,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-53.cxe",
+          "training/scaling/data4x-53.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=262144",
+        "b": "expanded=training/scaling/data4x-53.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=262144",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p139-t10-s71",
+        "family": "anchor",
+        "parameters": 139,
+        "training_seed": 71,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 30000032,
+        "models": [
+          "training/scaling/data4x-71.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p139-t40-s71",
+        "family": "anchor",
+        "parameters": 139,
+        "training_seed": 71,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 30000032,
+        "models": [
+          "training/scaling/data4x-71.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=1.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p139-t160-s71",
+        "family": "anchor",
+        "parameters": 139,
+        "training_seed": 71,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 30000032,
+        "models": [
+          "training/scaling/data4x-71.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=0.25",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p499-t10-s71",
+        "family": "anchor",
+        "parameters": 499,
+        "training_seed": 71,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 30000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity500-71.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity500-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p499-t40-s71",
+        "family": "anchor",
+        "parameters": 499,
+        "training_seed": 71,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 30000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity500-71.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity500-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=1.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p499-t160-s71",
+        "family": "anchor",
+        "parameters": 499,
+        "training_seed": 71,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 30000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity500-71.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity500-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=0.25",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p1948-t10-s71",
+        "family": "anchor",
+        "parameters": 1948,
+        "training_seed": 71,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 30000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-71.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p1948-t40-s71",
+        "family": "anchor",
+        "parameters": 1948,
+        "training_seed": 71,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 30000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-71.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=1.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p1948-t160-s71",
+        "family": "anchor",
+        "parameters": 1948,
+        "training_seed": 71,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 30000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-71.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=0.25",
+        "threads": 2
+      },
+      {
+        "name": "direct-b10-s71",
+        "family": "direct",
+        "parameters": 1948,
+        "training_seed": 71,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 31000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-71.cxe",
+          "training/scaling/data4x-71.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "threads": 2
+      },
+      {
+        "name": "direct-b40-s71",
+        "family": "direct",
+        "parameters": 1948,
+        "training_seed": 71,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 31000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-71.cxe",
+          "training/scaling/data4x-71.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "threads": 2
+      },
+      {
+        "name": "direct-b160-s71",
+        "family": "direct",
+        "parameters": 1948,
+        "training_seed": 71,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 31000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-71.cxe",
+          "training/scaling/data4x-71.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "threads": 2
+      },
+      {
+        "name": "node-b16384-s71",
+        "family": "node",
+        "parameters": 1948,
+        "training_seed": 71,
+        "budget": 16384,
+        "time_ms": 40,
+        "games": 32,
+        "first_seed": 32000016,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-71.cxe",
+          "training/scaling/data4x-71.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=16384",
+        "b": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=16384",
+        "threads": 2
+      },
+      {
+        "name": "node-b65536-s71",
+        "family": "node",
+        "parameters": 1948,
+        "training_seed": 71,
+        "budget": 65536,
+        "time_ms": 40,
+        "games": 32,
+        "first_seed": 32000016,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-71.cxe",
+          "training/scaling/data4x-71.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=65536",
+        "b": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=65536",
+        "threads": 2
+      },
+      {
+        "name": "node-b262144-s71",
+        "family": "node",
+        "parameters": 1948,
+        "training_seed": 71,
+        "budget": 262144,
+        "time_ms": 40,
+        "games": 32,
+        "first_seed": 32000016,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-71.cxe",
+          "training/scaling/data4x-71.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=262144",
+        "b": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=262144",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p139-t10-s89",
+        "family": "anchor",
+        "parameters": 139,
+        "training_seed": 89,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 30000064,
+        "models": [
+          "training/scaling/data4x-89.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p139-t40-s89",
+        "family": "anchor",
+        "parameters": 139,
+        "training_seed": 89,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 30000064,
+        "models": [
+          "training/scaling/data4x-89.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=1.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p139-t160-s89",
+        "family": "anchor",
+        "parameters": 139,
+        "training_seed": 89,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 30000064,
+        "models": [
+          "training/scaling/data4x-89.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=0.25",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p499-t10-s89",
+        "family": "anchor",
+        "parameters": 499,
+        "training_seed": 89,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 30000064,
+        "models": [
+          "training/scaling-joint/data4x-capacity500-89.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity500-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p499-t40-s89",
+        "family": "anchor",
+        "parameters": 499,
+        "training_seed": 89,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 30000064,
+        "models": [
+          "training/scaling-joint/data4x-capacity500-89.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity500-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=1.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p499-t160-s89",
+        "family": "anchor",
+        "parameters": 499,
+        "training_seed": 89,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 30000064,
+        "models": [
+          "training/scaling-joint/data4x-capacity500-89.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity500-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=0.25",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p1948-t10-s89",
+        "family": "anchor",
+        "parameters": 1948,
+        "training_seed": 89,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 30000064,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-89.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p1948-t40-s89",
+        "family": "anchor",
+        "parameters": 1948,
+        "training_seed": 89,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 30000064,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-89.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=1.0",
+        "threads": 2
+      },
+      {
+        "name": "anchor-p1948-t160-s89",
+        "family": "anchor",
+        "parameters": 1948,
+        "training_seed": 89,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 30000064,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-89.cxe",
+          "training/ranking/value.cse"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=0.25",
+        "threads": 2
+      },
+      {
+        "name": "direct-b10-s89",
+        "family": "direct",
+        "parameters": 1948,
+        "training_seed": 89,
+        "budget": 10,
+        "time_ms": 10,
+        "games": 64,
+        "first_seed": 31000064,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-89.cxe",
+          "training/scaling/data4x-89.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "threads": 2
+      },
+      {
+        "name": "direct-b40-s89",
+        "family": "direct",
+        "parameters": 1948,
+        "training_seed": 89,
+        "budget": 40,
+        "time_ms": 40,
+        "games": 64,
+        "first_seed": 31000064,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-89.cxe",
+          "training/scaling/data4x-89.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "threads": 2
+      },
+      {
+        "name": "direct-b160-s89",
+        "family": "direct",
+        "parameters": 1948,
+        "training_seed": 89,
+        "budget": 160,
+        "time_ms": 160,
+        "games": 64,
+        "first_seed": 31000064,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-89.cxe",
+          "training/scaling/data4x-89.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "b": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+        "threads": 2
+      },
+      {
+        "name": "node-b16384-s89",
+        "family": "node",
+        "parameters": 1948,
+        "training_seed": 89,
+        "budget": 16384,
+        "time_ms": 40,
+        "games": 32,
+        "first_seed": 32000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-89.cxe",
+          "training/scaling/data4x-89.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=16384",
+        "b": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=16384",
+        "threads": 2
+      },
+      {
+        "name": "node-b65536-s89",
+        "family": "node",
+        "parameters": 1948,
+        "training_seed": 89,
+        "budget": 65536,
+        "time_ms": 40,
+        "games": 32,
+        "first_seed": 32000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-89.cxe",
+          "training/scaling/data4x-89.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=65536",
+        "b": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=65536",
+        "threads": 2
+      },
+      {
+        "name": "node-b262144-s89",
+        "family": "node",
+        "parameters": 1948,
+        "training_seed": 89,
+        "budget": 262144,
+        "time_ms": 40,
+        "games": 32,
+        "first_seed": 32000032,
+        "models": [
+          "training/scaling-joint/data4x-capacity2000-89.cxe",
+          "training/scaling/data4x-89.cxe"
+        ],
+        "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=262144",
+        "b": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=262144",
+        "threads": 2
+      }
+    ]
+  }
+}

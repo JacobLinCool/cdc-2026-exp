@@ -1,0 +1,10 @@
+{
+  "roots": 18,
+  "workers": [
+    1,
+    2
+  ],
+  "node_limit": 65536,
+  "all_nontiming_labels_and_pairs_identical": true,
+  "public_state_feature_and_baseline_assertions": true
+}

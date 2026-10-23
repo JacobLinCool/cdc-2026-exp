@@ -5,6 +5,7 @@
 ## Play
 
 - [Play in the browser](https://jacoblincool.github.io/banqi/): human vs computer, or computer vs computer.
+- Engines: Light uses the original evaluator; Lightning uses the 499-parameter learned structured evaluator. Both run locally with the same search and tablebases. Each computer can select its own version; changing versions starts a new game and clears the session score. Selections persist in the browser and are recorded in shared replays.
 - Replays: a whole game is encoded in the `?r=` query string (deal seed + moves). Opening such a link replays the game move by move, and any position can be taken over to continue against the engine.
 
 ## For AI agents (WebMCP)
@@ -15,7 +16,7 @@ The page registers WebMCP tools via `document.modelContext.registerTool` (falls 
 - `get_rules`: the full rules
 - `make_move` `{ move }`: play for the human side ("flip c2", "c2-c3", "c3xd3") and wait for the computer's reply
 - `suggest_move` `{ thinkTimeMs? }`: the engine's best move for you, without playing it
-- `new_game` `{ mode?: "human" | "ai", first?: "you" | "engine" | "random", thinkTimeMs? }`
+- `new_game` `{ mode?: "human" | "ai", first?: "you" | "engine" | "random", thinkTimeMs?, model?: "light" | "lightning", modelA?: "light" | "lightning", modelB?: "light" | "lightning" }`: `model` selects the computer in human mode; `modelA` / `modelB` select the two engines in AI mode. Omitted options retain the current settings.
 - `undo`, `get_share_link`, `open_replay` `{ link }`, `replay_goto` `{ ply }`
 
 Pieces: red 帥仕相俥傌炮兵, black 將士象車馬包卒 (king → pawn). Squares: a1 is bottom-left, h4 top-right.

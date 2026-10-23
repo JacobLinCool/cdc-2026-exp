@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-capacity500-53.csv"
+  ],
+  "games": 40,
+  "independent_deals": 20,
+  "first_seed": 17000000,
+  "last_seed": 17000019,
+  "wins": 12,
+  "draws": 11,
+  "losses": 17,
+  "score": 0.4375,
+  "paired_bootstrap_95_ci": [
+    0.3625,
+    0.525
+  ],
+  "elo": -43.65778777002721,
+  "a_ms_per_move": 2.9027039618488626,
+  "a_nodes_per_move": 7707.998165810712,
+  "a_nodes_per_second": 2655454.4545772905,
+  "a_mean_completed_depth": 6.624358033749083,
+  "b_ms_per_move": 2.7986871794871795,
+  "b_nodes_per_move": 7700.8824175824175,
+  "b_nodes_per_second": 2751605.27908428,
+  "b_mean_completed_depth": 6.5216117216117215
+}

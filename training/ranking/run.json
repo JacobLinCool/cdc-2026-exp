@@ -1,0 +1,39 @@
+{
+  "base_commit": "5c88c0f0575f30e00539e3f335ea70e5b1f9b44e",
+  "python": "3.14.7",
+  "rust": "rustc 1.98.0 (88d9e12ae 2026-08-18)",
+  "data_sha256": "f32fa19954560ac81a4198ebe420c3ef19587136d9a8b71b29c26afd72ae48cf",
+  "data_report": "verification.json",
+  "plan": "experiment-plan.json",
+  "development_arena_sha256": "f7a77ff2fa007c0ec40da9e6e7663fdb9d6b83fd8ed15b28e1854cac7fbbaece",
+  "tests": {
+    "rust_passed": 19,
+    "wasm_library_check_passed": true
+  },
+  "models": {
+    "value": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+    "rank": "dec1f0785a787ee7fb18b405571387e66de9ca7b3123416247364caa131be17c",
+    "rank-half": "f1136823323683b540144a6a89382826f52f89dda4848b1e69a21240a829cdf3",
+    "control": "fca61177f43cdb9a607c3a0d89dc0f3183edd94633bb5d12e4a40b06b4f9b0c2"
+  },
+  "holdout_commands": [
+    "SEED=12000000 ARENA_CSV=training/ranking/holdout-baseline.csv engine/target/release/arena 800 25 'structured=training/ranking/value.cse' '' 4",
+    "SEED=12000000 ARENA_CSV=training/ranking/holdout-previous.csv engine/target/release/arena 800 25 'structured=training/ranking/value.cse' 'model=training/strong-teacher.nn,model_scale=0.5' 4"
+  ],
+  "selected_candidate": "value",
+  "selected_training_reproduced_bit_exact": true,
+  "completed_at_utc": "2026-10-23T13:29:03.130492+00:00",
+  "holdout_reports": {
+    "baseline": {
+      "report": "holdout-baseline.json",
+      "report_sha256": "1e345dbc7f8b80bdd1cc4a93025be9064ee61ee039b215c0ca574239c2c7ddaa",
+      "csv_sha256": "2a5842f310bdbbee08cfaf02f37662b024620535a467f83c75dc6a31e15b8000"
+    },
+    "previous": {
+      "report": "holdout-previous.json",
+      "report_sha256": "b1d639e1becae56158e466923129237048c21d072d69da224a7e9f277b042e0d",
+      "csv_sha256": "40e2c81fded0aa49f1fd471a7e5eec3578d754a952e20adaa3c3038bc5c84662"
+    }
+  },
+  "final_source_and_binary_hashes_verified": true
+}

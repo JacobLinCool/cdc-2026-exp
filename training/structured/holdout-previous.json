@@ -1,0 +1,30 @@
+{
+  "purpose": "holdout",
+  "model": "training/structured/interactions.cse",
+  "model_sha256": "fca61177f43cdb9a607c3a0d89dc0f3183edd94633bb5d12e4a40b06b4f9b0c2",
+  "model_scale": 1.0,
+  "opponent": {
+    "kind": "learned",
+    "model": "training/strong-teacher.nn",
+    "model_sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+    "model_scale": 0.5
+  },
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "8b177e054182b98485266b3e4f17d5ebf3f8a2667f8127032fb307fec0f4998d",
+  "first_seed": 8000000,
+  "last_seed": 8000399,
+  "games": 800,
+  "independent_deals": 400,
+  "wins": 242,
+  "draws": 225,
+  "losses": 333,
+  "score": 0.443125,
+  "paired_bootstrap_95_ci": [
+    0.41875,
+    0.4675
+  ],
+  "elo": -39.69258754152332,
+  "exceeds_50_percent_at_95_confidence": false,
+  "model_ms_per_move": 21.844779042558805,
+  "opponent_ms_per_move": 21.931584733844314
+}

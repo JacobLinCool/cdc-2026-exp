@@ -1,0 +1,90 @@
+{
+  "validation_target_entropy": 0.5089783902615336,
+  "initial_excess_cross_entropy": 0.009630861624326692,
+  "fits": {
+    "coverage-89": {
+      "excess_cross_entropy": 0.00889500897320683,
+      "relative_reduction": 0.07640569243162666
+    },
+    "teacher640-71": {
+      "excess_cross_entropy": 0.008827158994265671,
+      "relative_reduction": 0.08345075045320346
+    },
+    "teacher640-89": {
+      "excess_cross_entropy": 0.00883839120943597,
+      "relative_reduction": 0.08228447731914383
+    },
+    "bound4x-53": {
+      "excess_cross_entropy": 0.008888866222812264,
+      "relative_reduction": 0.07704351183285765
+    },
+    "coverage-71": {
+      "excess_cross_entropy": 0.008884446804714452,
+      "relative_reduction": 0.0775023926962945
+    },
+    "capacity500-53": {
+      "excess_cross_entropy": 0.008843220597476331,
+      "relative_reduction": 0.08178302810008715
+    },
+    "small-53": {
+      "excess_cross_entropy": 0.009032118348435536,
+      "relative_reduction": 0.062169232540812774
+    },
+    "data4x-71": {
+      "excess_cross_entropy": 0.008834667607177993,
+      "relative_reduction": 0.08267110962715782
+    },
+    "data4x-89": {
+      "excess_cross_entropy": 0.0088230767198344,
+      "relative_reduction": 0.0838746247222471
+    },
+    "capacity2000-53": {
+      "excess_cross_entropy": 0.00883978116893358,
+      "relative_reduction": 0.08214015383575997
+    },
+    "data4x-53": {
+      "excess_cross_entropy": 0.008832742308867658,
+      "relative_reduction": 0.08287101887572094
+    },
+    "capacity2000-89": {
+      "excess_cross_entropy": 0.008813181502238865,
+      "relative_reduction": 0.08490207356135619
+    },
+    "capacity2000-71": {
+      "excess_cross_entropy": 0.008814177967416903,
+      "relative_reduction": 0.08479860772237859
+    },
+    "bound4x-89": {
+      "excess_cross_entropy": 0.008887731766031637,
+      "relative_reduction": 0.07716130573592458
+    },
+    "teacher640-53": {
+      "excess_cross_entropy": 0.008854444726138166,
+      "relative_reduction": 0.08061759461140695
+    },
+    "small-89": {
+      "excess_cross_entropy": 0.009041659911097177,
+      "relative_reduction": 0.06117850470836836
+    },
+    "capacity500-89": {
+      "excess_cross_entropy": 0.008842317125278387,
+      "relative_reduction": 0.08187683821108095
+    },
+    "capacity500-71": {
+      "excess_cross_entropy": 0.008847487310145619,
+      "relative_reduction": 0.08134000307951059
+    },
+    "small-71": {
+      "excess_cross_entropy": 0.00903296064032355,
+      "relative_reduction": 0.0620817749569672
+    },
+    "coverage-53": {
+      "excess_cross_entropy": 0.00889402186671262,
+      "relative_reduction": 0.07650818653160592
+    },
+    "bound4x-71": {
+      "excess_cross_entropy": 0.008896281487377311,
+      "relative_reduction": 0.0762735636335899
+    }
+  }
+}

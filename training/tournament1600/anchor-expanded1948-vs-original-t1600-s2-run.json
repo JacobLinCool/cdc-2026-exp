@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "anchor-expanded1948-vs-original-t1600-s2",
+    "family": "anchor",
+    "a_id": "expanded1948",
+    "b_id": "original",
+    "time_ms": 1600,
+    "b_time_ms": 25,
+    "block": 3,
+    "first_seed": 50000052,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.015625",
+    "cell_name": "anchor-expanded1948-vs-original-t1600",
+    "shard": 2
+  },
+  "started_utc": "2026-10-23T19:38:22.038582+00:00",
+  "csv_sha256": "f2ae7c93228bf8d1f8094d6840114b568f99595faa7f0e8ad565a71fe8932f47",
+  "completed_utc": "2026-10-23T19:42:01.167862+00:00",
+  "elapsed_seconds": 219.1261412911117
+}

@@ -1,0 +1,8 @@
+{
+  "rust_tests_passed": 22,
+  "wasm_library_check": "passed",
+  "pilot": "verification-pilot.json",
+  "all_candidates": "verification-full.json",
+  "selected_training_reproduction": "reproduction.json",
+  "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)"
+}

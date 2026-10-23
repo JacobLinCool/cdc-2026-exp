@@ -1,0 +1,32 @@
+{
+  "fully_revealed": {
+    "pairs": 3251,
+    "fraction": 0.6057387739891932,
+    "validation_pairs": 575,
+    "validation_preference_accuracy": {
+      "initial": 0.6956521739130435,
+      "value": 0.7078260869565217,
+      "rank": 0.72
+    }
+  },
+  "one_to_seven_hidden": {
+    "pairs": 1635,
+    "fraction": 0.30463946338736725,
+    "validation_pairs": 293,
+    "validation_preference_accuracy": {
+      "initial": 0.6860068259385665,
+      "value": 0.7030716723549488,
+      "rank": 0.689419795221843
+    }
+  },
+  "eight_or_more_hidden": {
+    "pairs": 481,
+    "fraction": 0.08962176262343954,
+    "validation_pairs": 89,
+    "validation_preference_accuracy": {
+      "initial": 0.7640449438202247,
+      "value": 0.7752808988764045,
+      "rank": 0.7752808988764045
+    }
+  }
+}

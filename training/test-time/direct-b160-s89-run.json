@@ -1,0 +1,21 @@
+{
+  "config": {
+    "name": "direct-b160-s89",
+    "family": "direct",
+    "parameters": 1948,
+    "training_seed": 89,
+    "budget": 160,
+    "time_ms": 160,
+    "games": 64,
+    "first_seed": 31000064,
+    "models": [
+      "training/scaling-joint/data4x-capacity2000-89.cxe",
+      "training/scaling/data4x-89.cxe"
+    ],
+    "a": "expanded=training/scaling-joint/data4x-capacity2000-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+    "b": "expanded=training/scaling/data4x-89.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+    "threads": 2
+  },
+  "csv_sha256": "1f7d2176bf8abe97d1a9b188006436deeaca0bb13ab9f3e153692aba03d5fd3e",
+  "elapsed_seconds": 652.6429345002398
+}

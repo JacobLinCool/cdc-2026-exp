@@ -1,0 +1,17 @@
+{
+  "hashes": {
+    "training/improve499/validation-labels.bin": "b7f9b0290ae702d1109718eefd52f12176b3cfb7d3800eb6958a4cd07e7226e5",
+    "training/improve499/validation-pairs.bin": "b67f67e6488a8bad9937aa856f91724faf325a5da1de9559784382231ab80b37"
+  },
+  "input_sha256": "4919ccde726dbccc049942b33fb5ddf0cf20bef84fe1ae4c66260c5a6657883d",
+  "roots": 1104,
+  "valid_roots": 1100,
+  "pairs": 1891,
+  "pair_parent_games": 196,
+  "invalid_depth": 0,
+  "invalid_terminal_score": 4,
+  "mean_depth": 10.631340579710145,
+  "mean_nodes": 2091469.5914855073,
+  "mean_time_ms": 514.0313917519389,
+  "elapsed_seconds": 47.534542333334684
+}

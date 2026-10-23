@@ -1,0 +1,44 @@
+{
+  "verified_games": 2592,
+  "verified_batches": 45,
+  "verified_models_including_anchor": 10,
+  "family_games": {
+    "anchor": 1728,
+    "direct": 576,
+    "node": 288
+  },
+  "unique_deals_by_family": {
+    "anchor": 96,
+    "direct": 96,
+    "node": 48
+  },
+  "frozen_inputs_unchanged": true,
+  "training_validation_deals_disjoint": true,
+  "complete_seat_pairs": true,
+  "csv_hashes_verified": true,
+  "executed_checks": [
+    {
+      "command": "python3 -m unittest discover -s training/test-time -p test_*.py -v",
+      "tests": 4,
+      "result": "passed"
+    },
+    {
+      "command": "cargo test --manifest-path engine/Cargo.toml --test node_budget",
+      "tests": 1,
+      "result": "passed"
+    }
+  ],
+  "artifacts": {
+    "training/test-time/analyze.py": "898a34969cefe98febc93e2dabbf414da78c1103308d0a3dedb319f92cf74078",
+    "training/test-time/diagnostics.py": "d1eab3e464d860d2233ed2bba98129888e226f52b4b582f5a5b2b3448f5887a8",
+    "training/test-time/plot.py": "0680871c2669908331ec996adca2963173957eae1c40039f788b7e8c69cc1145",
+    "training/test-time/run.py": "35124b2321aac44e62e8b46ad94a0acae9053097d984fc72e9b71c7c20cc03d5",
+    "training/test-time/test_analysis.py": "c6df4ca894dbf104f403bdf5e91754bcdd0c524c6d9c7ab32fa9889b742f2162",
+    "training/test-time/test-time-scaling.png": "c008cbc1021ad731d0c528148705077ccec3deada01745058b8b3da430ced441",
+    "training/test-time/test-time-scaling.svg": "07f207b89ead59ae5f8314019fb017b87ab55b8673e1c4fee0e062c404b8e29e",
+    "training/test-time/results.json": "eafc8949b9dcdc8bce57842fd093bdc89d8f9be02597b6b8913810cec95ab5de",
+    "training/test-time/README.md": "18ae3adcd2c233ed1c941f10d5b3e555355de36fbc3601d610cf5ab8445ce8af",
+    "training/test-time/model-diagnostics.json": "ed6084b6186ebc712f975b2ffe94e91830d1d5a1225e380ccba7bdf1933a6115",
+    "training/test-time/environment.json": "7d4d7d3d6091ee9f954287f064063b77055af1cebb979e64ce3de60018911ed6"
+  }
+}

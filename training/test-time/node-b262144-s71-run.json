@@ -1,0 +1,21 @@
+{
+  "config": {
+    "name": "node-b262144-s71",
+    "family": "node",
+    "parameters": 1948,
+    "training_seed": 71,
+    "budget": 262144,
+    "time_ms": 40,
+    "games": 32,
+    "first_seed": 32000016,
+    "models": [
+      "training/scaling-joint/data4x-capacity2000-71.cxe",
+      "training/scaling/data4x-71.cxe"
+    ],
+    "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=262144",
+    "b": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65,nodes=262144",
+    "threads": 2
+  },
+  "csv_sha256": "79306e78a4e8f74bb5f8362769c3557454b7cf8ac422bba7602d62e4482cd308",
+  "elapsed_seconds": 197.2414028327912
+}

@@ -1,0 +1,1090 @@
+{
+  "games": 2592,
+  "batches": 45,
+  "hashes_verified": true,
+  "plan_sha256": "1778cf6f43478115859ff2658c98b9611eb85fbe19085b87d7467a0300b1d18c",
+  "analysis_sha256": "898a34969cefe98febc93e2dabbf414da78c1103308d0a3dedb319f92cf74078",
+  "bootstrap_replicates": 20000,
+  "training_seeds": [
+    53,
+    71,
+    89
+  ],
+  "anchor_time_ms": 40,
+  "time_budgets_ms": [
+    10,
+    40,
+    160
+  ],
+  "node_budgets": [
+    16384,
+    65536,
+    262144
+  ],
+  "anchor": {
+    "139": {
+      "budgets": {
+        "10": {
+          "files": [
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p139-t10-s53.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p139-t10-s71.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p139-t10-s89.csv"
+          ],
+          "games": 192,
+          "independent_deals": 96,
+          "first_seed": 30000000,
+          "last_seed": 30000095,
+          "wins": 46,
+          "draws": 52,
+          "losses": 94,
+          "score": 0.375,
+          "paired_bootstrap_95_ci": [
+            0.328125,
+            0.421875
+          ],
+          "elo": {
+            "estimate": -88.73949984654256,
+            "paired_bootstrap_95_ci": [
+              -124.49966433826691,
+              -54.735183963203085
+            ]
+          },
+          "a_ms_per_move": 8.65010140783106,
+          "a_nodes_per_move": 31321.950579263823,
+          "a_nodes_per_second": 3620992.2985304673,
+          "a_mean_completed_depth": 7.0778706555213375,
+          "b_ms_per_move": 34.733729155991504,
+          "b_nodes_per_move": 128443.72996120343,
+          "b_nodes_per_second": 3697953.922089794,
+          "b_mean_completed_depth": 8.52880462630847,
+          "training_seed_scores": {
+            "53": 0.296875,
+            "71": 0.421875,
+            "89": 0.40625
+          },
+          "inference": "Deal uncertainty conditional on the three fixed training seeds"
+        },
+        "40": {
+          "files": [
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p139-t40-s53.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p139-t40-s71.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p139-t40-s89.csv"
+          ],
+          "games": 192,
+          "independent_deals": 96,
+          "first_seed": 30000000,
+          "last_seed": 30000095,
+          "wins": 59,
+          "draws": 61,
+          "losses": 72,
+          "score": 0.4661458333333333,
+          "paired_bootstrap_95_ci": [
+            0.4192708333333333,
+            0.5130208333333334
+          ],
+          "elo": {
+            "estimate": -23.560332030344476,
+            "paired_bootstrap_95_ci": [
+              -56.59159480652441,
+              9.049847850037619
+            ]
+          },
+          "a_ms_per_move": 34.9351989151381,
+          "a_nodes_per_move": 138765.62129755193,
+          "a_nodes_per_second": 3972086.19405977,
+          "a_mean_completed_depth": 8.587395617728927,
+          "b_ms_per_move": 34.908861156671186,
+          "b_nodes_per_move": 139220.8364116095,
+          "b_nodes_per_second": 3988123.1240052637,
+          "b_mean_completed_depth": 8.574983954931184,
+          "training_seed_scores": {
+            "53": 0.421875,
+            "71": 0.5,
+            "89": 0.4765625
+          },
+          "inference": "Deal uncertainty conditional on the three fixed training seeds"
+        },
+        "160": {
+          "files": [
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p139-t160-s53.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p139-t160-s71.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p139-t160-s89.csv"
+          ],
+          "games": 192,
+          "independent_deals": 96,
+          "first_seed": 30000000,
+          "last_seed": 30000095,
+          "wins": 85,
+          "draws": 50,
+          "losses": 57,
+          "score": 0.5729166666666666,
+          "paired_bootstrap_95_ci": [
+            0.5208333333333334,
+            0.625
+          ],
+          "elo": {
+            "estimate": 51.03153310980332,
+            "paired_bootstrap_95_ci": [
+              14.48486906177792,
+              88.73949984654256
+            ]
+          },
+          "a_ms_per_move": 136.76898503684956,
+          "a_nodes_per_move": 530863.9312886175,
+          "a_nodes_per_second": 3881464.2891850616,
+          "a_mean_completed_depth": 9.463932107496463,
+          "b_ms_per_move": 34.72499798762764,
+          "b_nodes_per_move": 134326.04844600134,
+          "b_nodes_per_second": 3868280.9569596266,
+          "b_mean_completed_depth": 8.372437951852127,
+          "training_seed_scores": {
+            "53": 0.546875,
+            "71": 0.625,
+            "89": 0.546875
+          },
+          "inference": "Deal uncertainty conditional on the three fixed training seeds"
+        }
+      },
+      "gains": {
+        "10->40": {
+          "score_gain": {
+            "estimate": 0.09114583333333331,
+            "paired_bootstrap_95_ci": [
+              0.02083333333333337,
+              0.15885416666666669
+            ]
+          },
+          "elo_gain": {
+            "estimate": 65.17916781619809,
+            "paired_bootstrap_95_ci": [
+              15.280791037775558,
+              114.76093646292368
+            ]
+          },
+          "elo_gain_per_doubling": {
+            "estimate": 32.589583908099044,
+            "paired_bootstrap_95_ci": [
+              7.640395518887779,
+              57.38046823146184
+            ]
+          }
+        },
+        "40->160": {
+          "score_gain": {
+            "estimate": 0.10677083333333331,
+            "paired_bootstrap_95_ci": [
+              0.04427083333333337,
+              0.16927083333333331
+            ]
+          },
+          "elo_gain": {
+            "estimate": 74.5918651401478,
+            "paired_bootstrap_95_ci": [
+              30.985248567350105,
+              118.85040145114637
+            ]
+          },
+          "elo_gain_per_doubling": {
+            "estimate": 37.2959325700739,
+            "paired_bootstrap_95_ci": [
+              15.492624283675053,
+              59.425200725573184
+            ]
+          }
+        },
+        "10->160": {
+          "score_gain": {
+            "estimate": 0.19791666666666663,
+            "paired_bootstrap_95_ci": [
+              0.13020833333333331,
+              0.26562500000000006
+            ]
+          },
+          "elo_gain": {
+            "estimate": 139.7710329563459,
+            "paired_bootstrap_95_ci": [
+              90.9971499958471,
+              190.09484433804442
+            ]
+          },
+          "elo_gain_per_doubling": {
+            "estimate": 34.94275823908647,
+            "paired_bootstrap_95_ci": [
+              22.749287498961774,
+              47.523711084511106
+            ]
+          }
+        }
+      }
+    },
+    "499": {
+      "budgets": {
+        "10": {
+          "files": [
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p499-t10-s53.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p499-t10-s71.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p499-t10-s89.csv"
+          ],
+          "games": 192,
+          "independent_deals": 96,
+          "first_seed": 30000000,
+          "last_seed": 30000095,
+          "wins": 55,
+          "draws": 46,
+          "losses": 91,
+          "score": 0.40625,
+          "paired_bootstrap_95_ci": [
+            0.3541666666666667,
+            0.4583333333333333
+          ],
+          "elo": {
+            "estimate": -65.92409945839687,
+            "paired_bootstrap_95_ci": [
+              -104.36510898239948,
+              -29.020266859444714
+            ]
+          },
+          "a_ms_per_move": 8.611421948624411,
+          "a_nodes_per_move": 31407.935324517402,
+          "a_nodes_per_second": 3647241.47903756,
+          "a_mean_completed_depth": 7.07265541875665,
+          "b_ms_per_move": 34.50294473544371,
+          "b_nodes_per_move": 131994.56706900478,
+          "b_nodes_per_second": 3825602.947258331,
+          "b_mean_completed_depth": 8.466560388673802,
+          "training_seed_scores": {
+            "53": 0.34375,
+            "71": 0.453125,
+            "89": 0.421875
+          },
+          "inference": "Deal uncertainty conditional on the three fixed training seeds"
+        },
+        "40": {
+          "files": [
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p499-t40-s53.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p499-t40-s71.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p499-t40-s89.csv"
+          ],
+          "games": 192,
+          "independent_deals": 96,
+          "first_seed": 30000000,
+          "last_seed": 30000095,
+          "wins": 75,
+          "draws": 43,
+          "losses": 74,
+          "score": 0.5026041666666666,
+          "paired_bootstrap_95_ci": [
+            0.4453125,
+            0.5598958333333334
+          ],
+          "elo": {
+            "estimate": 1.8095767040184718,
+            "paired_bootstrap_95_ci": [
+              -38.15339721863354,
+              41.82070212077276
+            ]
+          },
+          "a_ms_per_move": 34.696649964311206,
+          "a_nodes_per_move": 127363.48758029978,
+          "a_nodes_per_second": 3670771.8961716825,
+          "a_mean_completed_depth": 8.322341184867952,
+          "b_ms_per_move": 34.683023693976594,
+          "b_nodes_per_move": 131467.8193691122,
+          "b_nodes_per_second": 3790552.419221287,
+          "b_mean_completed_depth": 8.337567799029403,
+          "training_seed_scores": {
+            "53": 0.5,
+            "71": 0.515625,
+            "89": 0.4921875
+          },
+          "inference": "Deal uncertainty conditional on the three fixed training seeds"
+        },
+        "160": {
+          "files": [
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p499-t160-s53.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p499-t160-s71.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p499-t160-s89.csv"
+          ],
+          "games": 192,
+          "independent_deals": 96,
+          "first_seed": 30000000,
+          "last_seed": 30000095,
+          "wins": 92,
+          "draws": 51,
+          "losses": 49,
+          "score": 0.6119791666666666,
+          "paired_bootstrap_95_ci": [
+            0.5572916666666666,
+            0.6666666666666666
+          ],
+          "elo": {
+            "estimate": 79.15263754378488,
+            "paired_bootstrap_95_ci": [
+              39.98594078836673,
+              120.41199826559246
+            ]
+          },
+          "a_ms_per_move": 138.23128747655463,
+          "a_nodes_per_move": 580437.225003607,
+          "a_nodes_per_second": 4199029.290688295,
+          "a_mean_completed_depth": 9.886091473091906,
+          "b_ms_per_move": 34.957415739268676,
+          "b_nodes_per_move": 149642.12321144674,
+          "b_nodes_per_second": 4280697.530033646,
+          "b_mean_completed_depth": 8.64359011417835,
+          "training_seed_scores": {
+            "53": 0.640625,
+            "71": 0.6484375,
+            "89": 0.546875
+          },
+          "inference": "Deal uncertainty conditional on the three fixed training seeds"
+        }
+      },
+      "gains": {
+        "10->40": {
+          "score_gain": {
+            "estimate": 0.09635416666666663,
+            "paired_bootstrap_95_ci": [
+              0.015625,
+              0.17708333333333331
+            ]
+          },
+          "elo_gain": {
+            "estimate": 67.73367616241534,
+            "paired_bootstrap_95_ci": [
+              10.989769189499405,
+              125.27882721947772
+            ]
+          },
+          "elo_gain_per_doubling": {
+            "estimate": 33.86683808120767,
+            "paired_bootstrap_95_ci": [
+              5.494884594749703,
+              62.63941360973886
+            ]
+          }
+        },
+        "40->160": {
+          "score_gain": {
+            "estimate": 0.109375,
+            "paired_bootstrap_95_ci": [
+              0.02864583333333326,
+              0.19010416666666669
+            ]
+          },
+          "elo_gain": {
+            "estimate": 77.34306083976641,
+            "paired_bootstrap_95_ci": [
+              20.13997776948794,
+              135.3607111443134
+            ]
+          },
+          "elo_gain_per_doubling": {
+            "estimate": 38.671530419883204,
+            "paired_bootstrap_95_ci": [
+              10.06998888474397,
+              67.6803555721567
+            ]
+          }
+        },
+        "10->160": {
+          "score_gain": {
+            "estimate": 0.20572916666666663,
+            "paired_bootstrap_95_ci": [
+              0.13281250000000006,
+              0.2760416666666667
+            ]
+          },
+          "elo_gain": {
+            "estimate": 145.07673700218174,
+            "paired_bootstrap_95_ci": [
+              93.06957594985259,
+              197.66537542827422
+            ]
+          },
+          "elo_gain_per_doubling": {
+            "estimate": 36.269184250545436,
+            "paired_bootstrap_95_ci": [
+              23.267393987463148,
+              49.416343857068554
+            ]
+          }
+        }
+      }
+    },
+    "1948": {
+      "budgets": {
+        "10": {
+          "files": [
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p1948-t10-s53.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p1948-t10-s71.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p1948-t10-s89.csv"
+          ],
+          "games": 192,
+          "independent_deals": 96,
+          "first_seed": 30000000,
+          "last_seed": 30000095,
+          "wins": 62,
+          "draws": 41,
+          "losses": 89,
+          "score": 0.4296875,
+          "paired_bootstrap_95_ci": [
+            0.3776041666666667,
+            0.4817708333333333
+          ],
+          "elo": {
+            "estimate": -49.18406825048482,
+            "paired_bootstrap_95_ci": [
+              -86.81195948526509,
+              -12.672539202677175
+            ]
+          },
+          "a_ms_per_move": 8.602756706269147,
+          "a_nodes_per_move": 29307.45699768363,
+          "a_nodes_per_second": 3406751.8120472007,
+          "a_mean_completed_depth": 6.676305761040125,
+          "b_ms_per_move": 34.66072838584441,
+          "b_nodes_per_move": 131094.09653576228,
+          "b_nodes_per_second": 3782208.356282024,
+          "b_mean_completed_depth": 8.163431387188293,
+          "training_seed_scores": {
+            "53": 0.359375,
+            "71": 0.4609375,
+            "89": 0.46875
+          },
+          "inference": "Deal uncertainty conditional on the three fixed training seeds"
+        },
+        "40": {
+          "files": [
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p1948-t40-s53.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p1948-t40-s71.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p1948-t40-s89.csv"
+          ],
+          "games": 192,
+          "independent_deals": 96,
+          "first_seed": 30000000,
+          "last_seed": 30000095,
+          "wins": 80,
+          "draws": 54,
+          "losses": 58,
+          "score": 0.5572916666666666,
+          "paired_bootstrap_95_ci": [
+            0.5052083333333334,
+            0.609375
+          ],
+          "elo": {
+            "estimate": 39.98594078836673,
+            "paired_bootstrap_95_ci": [
+              3.6192515909588456,
+              77.24983934178465
+            ]
+          },
+          "a_ms_per_move": 34.986791256372655,
+          "a_nodes_per_move": 126333.9360290523,
+          "a_nodes_per_second": 3610903.7580301473,
+          "a_mean_completed_depth": 8.50708848383267,
+          "b_ms_per_move": 35.037389727463314,
+          "b_nodes_per_move": 137292.84095038436,
+          "b_nodes_per_second": 3918466.587217548,
+          "b_mean_completed_depth": 8.6125786163522,
+          "training_seed_scores": {
+            "53": 0.5859375,
+            "71": 0.5625,
+            "89": 0.5234375
+          },
+          "inference": "Deal uncertainty conditional on the three fixed training seeds"
+        },
+        "160": {
+          "files": [
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p1948-t160-s53.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p1948-t160-s71.csv",
+            "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/anchor-p1948-t160-s89.csv"
+          ],
+          "games": 192,
+          "independent_deals": 96,
+          "first_seed": 30000000,
+          "last_seed": 30000095,
+          "wins": 87,
+          "draws": 51,
+          "losses": 54,
+          "score": 0.5859375,
+          "paired_bootstrap_95_ci": [
+            0.5364583333333334,
+            0.6328125
+          ],
+          "elo": {
+            "estimate": 60.31415751636439,
+            "paired_bootstrap_95_ci": [
+              25.378887224103792,
+              94.5548643771729
+            ]
+          },
+          "a_ms_per_move": 138.22213043160204,
+          "a_nodes_per_move": 474150.81302121433,
+          "a_nodes_per_second": 3430353.8191797985,
+          "a_mean_completed_depth": 9.56356986100951,
+          "b_ms_per_move": 34.97364253261029,
+          "b_nodes_per_move": 129622.0273340173,
+          "b_nodes_per_second": 3706277.583558948,
+          "b_mean_completed_depth": 8.419903268357027,
+          "training_seed_scores": {
+            "53": 0.609375,
+            "71": 0.546875,
+            "89": 0.6015625
+          },
+          "inference": "Deal uncertainty conditional on the three fixed training seeds"
+        }
+      },
+      "gains": {
+        "10->40": {
+          "score_gain": {
+            "estimate": 0.12760416666666663,
+            "paired_bootstrap_95_ci": [
+              0.052083333333333315,
+              0.20052083333333331
+            ]
+          },
+          "elo_gain": {
+            "estimate": 89.17000903885156,
+            "paired_bootstrap_95_ci": [
+              36.232871233021584,
+              141.37427254642404
+            ]
+          },
+          "elo_gain_per_doubling": {
+            "estimate": 44.58500451942578,
+            "paired_bootstrap_95_ci": [
+              18.116435616510792,
+              70.68713627321202
+            ]
+          }
+        },
+        "40->160": {
+          "score_gain": {
+            "estimate": 0.02864583333333337,
+            "paired_bootstrap_95_ci": [
+              -0.0390625,
+              0.09635416666666669
+            ]
+          },
+          "elo_gain": {
+            "estimate": 20.328216727997656,
+            "paired_bootstrap_95_ci": [
+              -27.86214395167918,
+              68.69996690064556
+            ]
+          },
+          "elo_gain_per_doubling": {
+            "estimate": 10.164108363998828,
+            "paired_bootstrap_95_ci": [
+              -13.93107197583959,
+              34.34998345032278
+            ]
+          }
+        },
+        "10->160": {
+          "score_gain": {
+            "estimate": 0.15625,
+            "paired_bootstrap_95_ci": [
+              0.08593749999999994,
+              0.2265625
+            ]
+          },
+          "elo_gain": {
+            "estimate": 109.4982257668492,
+            "paired_bootstrap_95_ci": [
+              59.87342809166273,
+              160.30771947636077
+            ]
+          },
+          "elo_gain_per_doubling": {
+            "estimate": 27.3745564417123,
+            "paired_bootstrap_95_ci": [
+              14.968357022915683,
+              40.07692986909019
+            ]
+          }
+        }
+      }
+    }
+  },
+  "direct": {
+    "budgets": {
+      "10": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/direct-b10-s53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/direct-b10-s71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/direct-b10-s89.csv"
+        ],
+        "games": 192,
+        "independent_deals": 96,
+        "first_seed": 31000000,
+        "last_seed": 31000095,
+        "wins": 56,
+        "draws": 57,
+        "losses": 79,
+        "score": 0.4401041666666667,
+        "paired_bootstrap_95_ci": [
+          0.3932291666666667,
+          0.4895833333333333
+        ],
+        "elo": {
+          "estimate": -41.820702120772694,
+          "paired_bootstrap_95_ci": [
+            -75.35158949313978,
+            -7.239288837118507
+          ]
+        },
+        "a_ms_per_move": 8.659110786533265,
+        "a_nodes_per_move": 29865.518220988826,
+        "a_nodes_per_second": 3449028.307552777,
+        "a_mean_completed_depth": 7.049733440444022,
+        "b_ms_per_move": 8.646756640396966,
+        "b_nodes_per_move": 32459.18031231757,
+        "b_nodes_per_second": 3753913.9427922424,
+        "b_mean_completed_depth": 7.0418855808523055,
+        "training_seed_scores": {
+          "53": 0.5234375,
+          "71": 0.4140625,
+          "89": 0.3828125
+        },
+        "inference": "Deal uncertainty conditional on the three fixed training seeds"
+      },
+      "40": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/direct-b40-s53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/direct-b40-s71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/direct-b40-s89.csv"
+        ],
+        "games": 192,
+        "independent_deals": 96,
+        "first_seed": 31000000,
+        "last_seed": 31000095,
+        "wins": 74,
+        "draws": 51,
+        "losses": 67,
+        "score": 0.5182291666666666,
+        "paired_bootstrap_95_ci": [
+          0.4635416666666667,
+          0.5755208333333334
+        ],
+        "elo": {
+          "estimate": 12.672539202677122,
+          "paired_bootstrap_95_ci": [
+            -25.378887224103735,
+            52.88186771246117
+          ]
+        },
+        "a_ms_per_move": 34.585692200659096,
+        "a_nodes_per_move": 125492.15364335409,
+        "a_nodes_per_second": 3628441.290556636,
+        "a_mean_completed_depth": 8.422995239838887,
+        "b_ms_per_move": 34.60370822650356,
+        "b_nodes_per_move": 136020.50355285328,
+        "b_nodes_per_second": 3930807.145364638,
+        "b_mean_completed_depth": 8.438136400263717,
+        "training_seed_scores": {
+          "53": 0.5546875,
+          "71": 0.5625,
+          "89": 0.4375
+        },
+        "inference": "Deal uncertainty conditional on the three fixed training seeds"
+      },
+      "160": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/direct-b160-s53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/direct-b160-s71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/direct-b160-s89.csv"
+        ],
+        "games": 192,
+        "independent_deals": 96,
+        "first_seed": 31000000,
+        "last_seed": 31000095,
+        "wins": 78,
+        "draws": 39,
+        "losses": 75,
+        "score": 0.5078125,
+        "paired_bootstrap_95_ci": [
+          0.453125,
+          0.5625
+        ],
+        "elo": {
+          "estimate": 5.429122875709566,
+          "paired_bootstrap_95_ci": [
+            -32.66801858052781,
+            43.65778777002723
+          ]
+        },
+        "a_ms_per_move": 136.07129364504922,
+        "a_nodes_per_move": 472743.41784887086,
+        "a_nodes_per_second": 3474233.2874563,
+        "a_mean_completed_depth": 9.255718008106543,
+        "b_ms_per_move": 135.6543241599073,
+        "b_nodes_per_move": 511266.14904403244,
+        "b_nodes_per_second": 3768889.434304796,
+        "b_mean_completed_depth": 9.400926998841252,
+        "training_seed_scores": {
+          "53": 0.5078125,
+          "71": 0.4609375,
+          "89": 0.5546875
+        },
+        "inference": "Deal uncertainty conditional on the three fixed training seeds"
+      }
+    },
+    "changes": {
+      "10->40": {
+        "score_gain": {
+          "estimate": 0.07812499999999994,
+          "paired_bootstrap_95_ci": [
+            0.005208333333333315,
+            0.15104166666666669
+          ]
+        },
+        "elo_gain": {
+          "estimate": 54.493241323449816,
+          "paired_bootstrap_95_ci": [
+            3.633346812733137,
+            105.9100402467636
+          ]
+        },
+        "elo_gain_per_doubling": {
+          "estimate": 27.246620661724908,
+          "paired_bootstrap_95_ci": [
+            1.8166734063665686,
+            52.9550201233818
+          ]
+        }
+      },
+      "40->160": {
+        "score_gain": {
+          "estimate": -0.01041666666666663,
+          "paired_bootstrap_95_ci": [
+            -0.08593750000000006,
+            0.06510416666666669
+          ]
+        },
+        "elo_gain": {
+          "estimate": -7.243416326967556,
+          "paired_bootstrap_95_ci": [
+            -60.08237534958434,
+            45.43995371173156
+          ]
+        },
+        "elo_gain_per_doubling": {
+          "estimate": -3.621708163483778,
+          "paired_bootstrap_95_ci": [
+            -30.04118767479217,
+            22.71997685586578
+          ]
+        }
+      },
+      "10->160": {
+        "score_gain": {
+          "estimate": 0.06770833333333331,
+          "paired_bootstrap_95_ci": [
+            -0.01041666666666663,
+            0.14583333333333331
+          ]
+        },
+        "elo_gain": {
+          "estimate": 47.24982499648226,
+          "paired_bootstrap_95_ci": [
+            -7.245580224659357,
+            102.06313796319016
+          ]
+        },
+        "elo_gain_per_doubling": {
+          "estimate": 11.812456249120565,
+          "paired_bootstrap_95_ci": [
+            -1.8113950561648393,
+            25.51578449079754
+          ]
+        }
+      }
+    }
+  },
+  "node": {
+    "budgets": {
+      "16384": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/node-b16384-s53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/node-b16384-s71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/node-b16384-s89.csv"
+        ],
+        "games": 96,
+        "independent_deals": 48,
+        "first_seed": 32000000,
+        "last_seed": 32000047,
+        "wins": 29,
+        "draws": 35,
+        "losses": 32,
+        "score": 0.484375,
+        "paired_bootstrap_95_ci": [
+          0.4114583333333333,
+          0.5625
+        ],
+        "elo": {
+          "estimate": -10.86089841744591,
+          "paired_bootstrap_95_ci": [
+            -62.18054087719135,
+            43.65778777002723
+          ]
+        },
+        "a_ms_per_move": 5.177564930506809,
+        "a_nodes_per_move": 15659.88754738172,
+        "a_nodes_per_second": 3024566.1343833394,
+        "a_mean_completed_depth": 6.0423978660676685,
+        "b_ms_per_move": 4.71653904494382,
+        "b_nodes_per_move": 15658.954073033708,
+        "b_nodes_per_second": 3320009.4229730316,
+        "b_mean_completed_depth": 5.998876404494382,
+        "training_seed_scores": {
+          "53": 0.515625,
+          "71": 0.40625,
+          "89": 0.53125
+        },
+        "inference": "Deal uncertainty conditional on the three fixed training seeds"
+      },
+      "65536": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/node-b65536-s53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/node-b65536-s71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/node-b65536-s89.csv"
+        ],
+        "games": 96,
+        "independent_deals": 48,
+        "first_seed": 32000000,
+        "last_seed": 32000047,
+        "wins": 33,
+        "draws": 32,
+        "losses": 31,
+        "score": 0.5104166666666666,
+        "paired_bootstrap_95_ci": [
+          0.4375,
+          0.5833333333333334
+        ],
+        "elo": {
+          "estimate": 7.239288837118451,
+          "paired_bootstrap_95_ci": [
+            -43.65778777002721,
+            58.45121427129523
+          ]
+        },
+        "a_ms_per_move": 19.272797068123026,
+        "a_nodes_per_move": 61617.971543547,
+        "a_nodes_per_second": 3197147.3225057917,
+        "a_mean_completed_depth": 7.831129634952573,
+        "b_ms_per_move": 17.66441440275981,
+        "b_nodes_per_move": 61670.727324996406,
+        "b_nodes_per_second": 3491240.972888478,
+        "b_mean_completed_depth": 7.734080781946242,
+        "training_seed_scores": {
+          "53": 0.484375,
+          "71": 0.46875,
+          "89": 0.578125
+        },
+        "inference": "Deal uncertainty conditional on the three fixed training seeds"
+      },
+      "262144": {
+        "files": [
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/node-b262144-s53.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/node-b262144-s71.csv",
+          "/Users/jacoblincool/Documents/GitHub/cdc/training/test-time/node-b262144-s89.csv"
+        ],
+        "games": 96,
+        "independent_deals": 48,
+        "first_seed": 32000000,
+        "last_seed": 32000047,
+        "wins": 35,
+        "draws": 26,
+        "losses": 35,
+        "score": 0.5,
+        "paired_bootstrap_95_ci": [
+          0.421875,
+          0.578125
+        ],
+        "elo": {
+          "estimate": 0.0,
+          "paired_bootstrap_95_ci": [
+            -54.735183963203085,
+            54.735183963203085
+          ]
+        },
+        "a_ms_per_move": 81.66597638828159,
+        "a_nodes_per_move": 243745.88514793763,
+        "a_nodes_per_second": 2984668.719186626,
+        "a_mean_completed_depth": 8.677598017781664,
+        "b_ms_per_move": 74.56148360775171,
+        "b_nodes_per_move": 243687.25499052892,
+        "b_nodes_per_second": 3268272.614752454,
+        "b_mean_completed_depth": 8.705668075185779,
+        "training_seed_scores": {
+          "53": 0.546875,
+          "71": 0.421875,
+          "89": 0.53125
+        },
+        "inference": "Deal uncertainty conditional on the three fixed training seeds"
+      }
+    },
+    "changes": {
+      "16384->65536": {
+        "score_gain": {
+          "estimate": 0.02604166666666663,
+          "paired_bootstrap_95_ci": [
+            -0.06770833333333331,
+            0.11979166666666663
+          ]
+        },
+        "elo_gain": {
+          "estimate": 18.10018725456436,
+          "paired_bootstrap_95_ci": [
+            -47.15288764230573,
+            83.6623278343009
+          ]
+        },
+        "elo_gain_per_doubling": {
+          "estimate": 9.05009362728218,
+          "paired_bootstrap_95_ci": [
+            -23.576443821152864,
+            41.83116391715045
+          ]
+        }
+      },
+      "65536->262144": {
+        "score_gain": {
+          "estimate": -0.01041666666666663,
+          "paired_bootstrap_95_ci": [
+            -0.11458333333333331,
+            0.08854166666666669
+          ]
+        },
+        "elo_gain": {
+          "estimate": -7.239288837118451,
+          "paired_bootstrap_95_ci": [
+            -80.05179996924804,
+            62.76497028000673
+          ]
+        },
+        "elo_gain_per_doubling": {
+          "estimate": -3.6196444185592256,
+          "paired_bootstrap_95_ci": [
+            -40.02589998462402,
+            31.382485140003364
+          ]
+        }
+      },
+      "16384->262144": {
+        "score_gain": {
+          "estimate": 0.015625,
+          "paired_bootstrap_95_ci": [
+            -0.09375000000000006,
+            0.12500000000000006
+          ]
+        },
+        "elo_gain": {
+          "estimate": 10.86089841744591,
+          "paired_bootstrap_95_ci": [
+            -65.596082380649,
+            88.2994038671781
+          ]
+        },
+        "elo_gain_per_doubling": {
+          "estimate": 2.7152246043614774,
+          "paired_bootstrap_95_ci": [
+            -16.39902059516225,
+            22.074850966794525
+          ]
+        }
+      }
+    }
+  },
+  "primary_interaction": {
+    "estimate": 0.06770833333333331,
+    "paired_bootstrap_95_ci": [
+      -0.01041666666666663,
+      0.14583333333333331
+    ],
+    "definition": "Large-versus-small direct score at 160 ms minus its score at 10 ms",
+    "positive_interaction_supported": false,
+    "negative_interaction_supported": false
+  },
+  "anchored_capacity_gap": {
+    "10": {
+      "estimate": 39.55543159605774,
+      "paired_bootstrap_95_ci": [
+        -5.534228029424845,
+        82.8995397652393
+      ]
+    },
+    "40": {
+      "estimate": 63.54627281871121,
+      "paired_bootstrap_95_ci": [
+        10.868783032076832,
+        116.98558191832339
+      ]
+    },
+    "160": {
+      "estimate": 9.28262440656107,
+      "paired_bootstrap_95_ci": [
+        -38.05350199290132,
+        58.68600952252826
+      ]
+    }
+  },
+  "anchored_interaction": {
+    "estimate": -30.272807189496667,
+    "paired_bootstrap_95_ci": [
+      -96.39981157036787,
+      35.65129822273074
+    ]
+  },
+  "supported_crossover": false,
+  "csv_sha256": {
+    "anchor-p139-t10-s53": "f3e79d8f497b21e53c5ccfd25a358dbc930823ee8fa8948b5a7ff10d0f81f91c",
+    "anchor-p139-t40-s53": "aab84b41ad270478b2a3df18d51b9692ec0b4bab896e91ec940f229d1dc41724",
+    "anchor-p139-t160-s53": "886397516f5a1f7fea73b9b1de1d30876d99e141b2cd320839756d6050aff4ff",
+    "anchor-p499-t10-s53": "43ae725919b589a2005490500ce6020da2abd5e711eb55e653e38b4cbe45e801",
+    "anchor-p499-t40-s53": "f667c405e16d58b695141b4556fceb471e54f5d11280df844d1228e196b2c62b",
+    "anchor-p499-t160-s53": "416f9eb8c99203fd0c2185d1331d6e34f14d34139d7af16bf94998e5270101b2",
+    "anchor-p1948-t10-s53": "4a32243b6754a659f584d70083528fb68535d497bc97bda909f7e471fa5adbb6",
+    "anchor-p1948-t40-s53": "e8ae4157383591259f17ca798536fc82c44cc9483bee985c3924c9f7158e2421",
+    "anchor-p1948-t160-s53": "2b9b62d0c947b45db558dbe6f7c5331d9038096e82d38310ff2f0f9e2931694b",
+    "direct-b10-s53": "e5a8b0ec6164c0fadc62fc083661c818e5f5cd7f1d86127bab3468e46ffc14ba",
+    "direct-b40-s53": "fba5aa705f9a7dabf8c8ef83bb126fe86c37972151c056a63aeadc2847890ffe",
+    "direct-b160-s53": "6a5ff43cd113166377a3e445dcc3066a32d72025d4ddf1b6eb46b9ef99e583d6",
+    "node-b16384-s53": "fcf56ec3f89784c5e4684b89cc7c29dcc1721a1d4b91ffeb320b8f0266fa1955",
+    "node-b65536-s53": "58b016a4a87debd1373ce2eaeedb22f8167aae1506d15ba6e0cbf8a9f8a6a29d",
+    "node-b262144-s53": "8773cd8ada0557bb3c77b5b18ab02255c3dca1c6c1701fd4cbfb4b73b32568df",
+    "anchor-p139-t10-s71": "c647b1879e9d203afcb21f7a40b6f188a0a29deca2892cd3f2c28e214f5965e6",
+    "anchor-p139-t40-s71": "15f108f63a6bdf9a6aa3360e8e149b8bb21036a936847d81dc5dc918678b5663",
+    "anchor-p139-t160-s71": "07b4286f6e39127e7abc38217f35d6636c04d5c1427422dc20d56a44d0e475e8",
+    "anchor-p499-t10-s71": "1a4e2a9dd80492c720c3305b83fb6c0019ca124f9be8da146cfb5246a6546b7a",
+    "anchor-p499-t40-s71": "9c5b84f9c5ae42e614b3ce5a09a05dcb806bfbd2f9519924fcf20d39f5864abb",
+    "anchor-p499-t160-s71": "ea5eadee847eb8a327ab83cfc898c737edb1223aba18efee63ab62ced64fe83b",
+    "anchor-p1948-t10-s71": "8608ebb56ac1c595e14eb7440dd25753ac18afe4365d3e74f28d9424d68c9150",
+    "anchor-p1948-t40-s71": "15e47be401b1afc3f19342ef652b160e22d947bd699387d82dd8d4031288a5fe",
+    "anchor-p1948-t160-s71": "7eba84c2e549a35ee6f2214902ba61677835b01edd82ea2ab4f9c925c1da158f",
+    "direct-b10-s71": "19d0e8b1bec1e477cb43c022eff930f836d308bac424308eb910d6c85a04cb0b",
+    "direct-b40-s71": "374946bbe982dbff0857ee1ddf5e0da9fd825b10c15fab8674cf0acbf0095718",
+    "direct-b160-s71": "817ab612bedefabfa1a177aa8a71b4170d0601e1db99d0095a15fbc102448e55",
+    "node-b16384-s71": "cefec293fe281a354f5dbd3b93bb145e0b62a90bee34179e691918469a885557",
+    "node-b65536-s71": "87ae618bea4f7b7ed50cedecb9bd94443af88f5b0577dfb346a44b05a78001dd",
+    "node-b262144-s71": "79306e78a4e8f74bb5f8362769c3557454b7cf8ac422bba7602d62e4482cd308",
+    "anchor-p139-t10-s89": "9870fb86872dda08e60d066ffa9d7aa6a896ef9558e8c5f8114e5612d2ce9afb",
+    "anchor-p139-t40-s89": "7a84a90abaed4ecd16b883c84a1fa11a29bf33a4199d78613bb08a54a3bcbd65",
+    "anchor-p139-t160-s89": "6e5b81875468c3b36fd81b6780fae26606d297fc88bbd2228efba304554fd79a",
+    "anchor-p499-t10-s89": "2c767e76663b4e97f0c3d17a3461dcb514351d3c015118367f658d805df9dd4a",
+    "anchor-p499-t40-s89": "1e94d7a342cf94c965081662dca851a475d2dceedb0e7f3e565be7e4effbc54d",
+    "anchor-p499-t160-s89": "5543d8e8c0c2da0b77dfb39b30e2c5f4d476caee6d4a20b089b2be6041b4c04a",
+    "anchor-p1948-t10-s89": "4b6311a4b33679fd41ebd32ab57e831a9ad6e4172eefa99d2815b443761ae9da",
+    "anchor-p1948-t40-s89": "9e480c736943b7d5b9c4c30781849876345bc8a21d00e9c1bc89820d92f56848",
+    "anchor-p1948-t160-s89": "81f5640448ba6201e57a31eb5b48966671d85fc298cd5a589ab0551543beb4ee",
+    "direct-b10-s89": "ccc10d490a4ba3f679eaf63f43114180cdff4eb5bda52a544191a340cc28b346",
+    "direct-b40-s89": "2d2c358695d6041fa3f6d9fabec0064b5ecdfc8c787ff1a0e88f51f1b3a5f09a",
+    "direct-b160-s89": "1f7d2176bf8abe97d1a9b188006436deeaca0bb13ab9f3e153692aba03d5fd3e",
+    "node-b16384-s89": "4ece2b705a17df3d5aca688ca5fc3197628c9d0fa5a481c9325a679f1e2c618d",
+    "node-b65536-s89": "bbd6a180b332cf3cd9ed0e27a278907d0c86669d7d7c2f36698f6ff8569a701b",
+    "node-b262144-s89": "255e4babbc6df8617d9207e93eb8e3ce71b957e0bdd28e1869d64056046cf429"
+  },
+  "limitations": "Three budgets span 16x compute and permit two local slopes, but cannot identify an asymptotic ceiling or establish a scaling law. This is one sparse composition expansion family and one fixed training dataset. Capacity also changes the per-coefficient strength of the existing mean-normalized regularizer; the study concerns these trained models, not parameter count in isolation. Selective alpha-beta/chance search need not improve monotonically with budget. Fully exact exhaustive solving, if feasible, would remove reliance on the evaluator; this implementation's selective search is not an exhaustive solver."
+}

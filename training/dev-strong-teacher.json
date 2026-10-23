@@ -1,0 +1,24 @@
+{
+  "purpose": "development",
+  "model": "training/strong-teacher.nn",
+  "model_sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+  "model_scale": 0.5,
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "a00adc2d7a5dc9aca562cb17851a0a08ef0647e328108e53bf418996b18dc952",
+  "first_seed": 3000000,
+  "last_seed": 3000059,
+  "games": 120,
+  "independent_deals": 60,
+  "wins": 53,
+  "draws": 32,
+  "losses": 35,
+  "score": 0.575,
+  "paired_bootstrap_95_ci": [
+    0.49583333333333335,
+    0.6541666666666667
+  ],
+  "elo": 52.51156585572756,
+  "exceeds_50_percent_at_95_confidence": false,
+  "model_ms_per_move": 21.794256809815952,
+  "baseline_ms_per_move": 21.96673525798526
+}

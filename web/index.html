@@ -89,6 +89,7 @@
           <div class="who">
             <span class="avatar" data-role="avatar" aria-hidden="true">機</span>
             <b data-role="name">電腦</b>
+            <small class="muted" data-role="model" hidden></small>
             <span class="tag" data-role="color">未定</span>
             <span class="thinking" data-role="thinking" hidden><i></i><i></i><i></i> 思考中</span>
           </div>
@@ -104,6 +105,7 @@
           <div class="who">
             <span class="avatar me" data-role="avatar" aria-hidden="true">人</span>
             <b data-role="name">你</b>
+            <small class="muted" data-role="model" hidden></small>
             <span class="tag" data-role="color">未定</span>
             <span class="thinking" data-role="thinking" hidden><i></i><i></i><i></i> 思考中</span>
           </div>
@@ -153,6 +155,14 @@
             </div>
           </div>
           <div class="field" data-mode="human">
+            <span class="label" id="label-model">電腦版本 <small>（切換後開新局）</small></span>
+            <div class="seg" role="radiogroup" aria-labelledby="label-model">
+              <label><input type="radio" name="model" value="light" /><span>Light</span></label>
+              <label><input type="radio" name="model" value="lightning" /><span>Lightning</span></label>
+            </div>
+            <small class="muted">Light 經典評估 · Lightning 學習評估</small>
+          </div>
+          <div class="field" data-mode="human">
             <span class="label">電腦思考時間</span>
             <div class="seg">
               <label><input type="radio" name="time" value="500" /><span>快 0.5s</span></label>
@@ -162,12 +172,27 @@
             </div>
           </div>
           <div class="field" data-mode="ai">
+            <span class="label" id="label-model-a">電腦 A 版本 <small>（切換後開新局）</small></span>
+            <div class="seg" role="radiogroup" aria-labelledby="label-model-a">
+              <label><input type="radio" name="modelA" value="light" /><span>Light</span></label>
+              <label><input type="radio" name="modelA" value="lightning" /><span>Lightning</span></label>
+            </div>
+            <small class="muted">Light 經典評估 · Lightning 學習評估</small>
+          </div>
+          <div class="field" data-mode="ai">
             <span class="label">電腦 A 思考時間</span>
             <div class="seg">
               <label><input type="radio" name="timeA" value="500" /><span>0.5s</span></label>
               <label><input type="radio" name="timeA" value="2000" /><span>2s</span></label>
               <label><input type="radio" name="timeA" value="5000" /><span>5s</span></label>
               <label><input type="radio" name="timeA" value="10000" /><span>10s</span></label>
+            </div>
+          </div>
+          <div class="field" data-mode="ai">
+            <span class="label" id="label-model-b">電腦 B 版本 <small>（切換後開新局）</small></span>
+            <div class="seg" role="radiogroup" aria-labelledby="label-model-b">
+              <label><input type="radio" name="modelB" value="light" /><span>Light</span></label>
+              <label><input type="radio" name="modelB" value="lightning" /><span>Lightning</span></label>
             </div>
           </div>
           <div class="field" data-mode="ai">
@@ -205,7 +230,7 @@
             <button class="btn" id="btn-pause" data-mode="ai">暫停</button>
           </div>
           <div class="field score" data-mode="ai">
-            <span class="label">戰績 <small>（本次瀏覽）</small><button class="link" id="btn-reset-score" type="button">清除</button></span>
+            <span class="label">戰績 <small>（切換版本會重設）</small><button class="link" id="btn-reset-score" type="button">清除</button></span>
             <dl class="stats" id="score"></dl>
           </div>
         </section>
@@ -244,7 +269,7 @@
             <li>吃光對方或使對方無子可動即獲勝；連續多步沒有吃子也沒有翻子則判和。</li>
             <li>支援 <a href="https://github.com/webmachinelearning/webmcp" rel="noopener">WebMCP</a>：瀏覽器裡的 AI 助理可以讀取棋局、請引擎建議著法並代你下棋。</li>
             <li>「分享這局」會產生連結，打開就能回放整盤棋：可逐步播放、拖動進度、點棋譜跳到任一步，也能從任一步接手與電腦對弈。</li>
-            <li>「電腦對戰」模式下兩個電腦各用獨立的搜尋表對弈，可分別設定思考時間來比較強弱，並可暫停或連續對局累計戰績。</li>
+            <li>可選 Light（經典評估）或 Lightning（學習評估）。「電腦對戰」中 A、B 可各自選擇版本與思考時間，使用獨立的搜尋表；支援暫停與連續對局。切換版本會開新局並重設戰績。</li>
             <li>操作：點蓋棋翻開；點自己的棋子選取，再點標示的位置移動或吃子。可用「悔棋」退回你上一步。</li>
           </ul>
         </details>

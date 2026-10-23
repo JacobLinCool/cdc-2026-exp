@@ -1,0 +1,131 @@
+{
+  "tiers": [
+    {
+      "tier": 0,
+      "positions": 4845,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    },
+    {
+      "tier": 1,
+      "positions": 4845,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    },
+    {
+      "tier": 2,
+      "positions": 4845,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    }
+  ],
+  "candidates": [
+    {
+      "path": "training/scaling/bound4x-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/bound4x-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/bound4x-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/capacity2000-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/capacity2000-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/capacity2000-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/capacity500-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/capacity500-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/capacity500-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/coverage-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/coverage-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/coverage-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/data4x-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/data4x-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/data4x-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/small-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/small-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/small-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/teacher640-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/teacher640-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "training/scaling/teacher640-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    }
+  ],
+  "max_gradient_error": 1.0332163252681388e-12,
+  "root_label_sign": true
+}

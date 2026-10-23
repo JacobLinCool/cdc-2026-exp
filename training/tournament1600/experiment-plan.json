@@ -1,0 +1,163 @@
+{
+  "purpose": "Extend the frozen five-version tournament to 1,600 ms per move at the user request, preserving the 25/100/400/1600 fourfold progression.",
+  "models": [
+    {
+      "id": "original",
+      "label": "Original",
+      "trainable_parameters": 0,
+      "description": "Original handwritten evaluator with the unchanged production search"
+    },
+    {
+      "id": "structured139",
+      "label": "Structured 139",
+      "trainable_parameters": 139,
+      "stored_parameters": 169,
+      "path": "training/ranking/value.cse",
+      "sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+      "spec_key": "structured",
+      "description": "Previously verified 139-parameter structured champion"
+    },
+    {
+      "id": "expanded499",
+      "label": "Expanded 499",
+      "trainable_parameters": 499,
+      "stored_parameters": 529,
+      "path": "training/scaling-joint/data4x-capacity500-89.cxe",
+      "sha256": "a9ba34e95d15afe1b72b2996e47a5a453bec28f24a12617c011dca0b29208308",
+      "spec_key": "expanded",
+      "description": "User-selected retained 499-parameter research baseline"
+    },
+    {
+      "id": "network1057",
+      "label": "Neural 1,057",
+      "trainable_parameters": 1057,
+      "stored_parameters": 1057,
+      "path": "training/strong-teacher.nn",
+      "sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+      "spec_key": "model",
+      "model_scale": 0.5,
+      "description": "Previously verified residual 64-to-16-to-1 ReLU network, scale 0.5"
+    },
+    {
+      "id": "expanded1948",
+      "label": "Expanded 1,948",
+      "trainable_parameters": 1948,
+      "stored_parameters": 1978,
+      "path": "training/scaling-joint/data4x-capacity2000-89.cxe",
+      "sha256": "c01f8c0927efe3a88344d21e4207ed4d6951b6eed565e18802f05e32b7bfae67",
+      "spec_key": "expanded",
+      "description": "Selected before this tournament by lowest existing common validation loss among seeds 53, 71, and 89: 0.5174792042161678 at seed 89"
+    }
+  ],
+  "time_budgets_ms": [
+    1600
+  ],
+  "games_per_cell": 32,
+  "round_robin": {
+    "first_seed": 50000000,
+    "seed_policy": "Ten disjoint blocks of 16 deals, one per unordered model pair; repeat each deal with swapped seating and reuse the block at all three time budgets. Original is always side B when present."
+  },
+  "anchor": {
+    "opponent": "original",
+    "opponent_time_ms": 25,
+    "self_control_first_seed": 51000000,
+    "seed_policy": "Reuse each learned-versus-original round-robin block and its 25 ms cell; add candidate 100/400 ms against original 25 ms. Original self-control uses its own 16-deal block at all three candidate budgets."
+  },
+  "search": {
+    "tablebases": true,
+    "tt_bits": 18,
+    "max_depth": 64,
+    "id_stop": 0.65,
+    "flip_min_depth": 0,
+    "automatic_flip_depth": "Production default: 5 below 80 ms, 6 from 80 to below 800 ms, 7 at 800 ms or above. Each player uses its own budget.",
+    "other_settings": "Unchanged arena defaults; no node cap or artificial game adjudication",
+    "five_piece_prefetch": "At 1500 ms or above, the existing engine prebuilds four-piece successor tablebases from fully revealed five-piece roots. This is active for the 1600 ms player and inactive for the fixed 25 ms opponent."
+  },
+  "execution": {
+    "parallel_batches": 6,
+    "threads_per_batch": 2,
+    "shuffle_seed": 20261026,
+    "scheduling": "Split each 32-game cell into eight four-game shards without splitting any two-game deal. Shuffle all 120 shards once with the fixed seed, then run six at a time with two workers each. Player/search state resets every game in the unchanged arena.",
+    "expected_batches": 120,
+    "expected_games": 480,
+    "stopping": "Complete all 480 added games; no outcome-dependent stopping, retraining, checkpoint selection or promotion. Earlier 1312 games are reused without rerunning or modifying them.",
+    "expected_cells": 15,
+    "games_per_shard": 4
+  },
+  "analysis": {
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20261025,
+    "unit": "Resample whole two-game deals independently within each of 11 deal blocks. Share each block's bootstrap indices across budgets and reused round-robin/anchor cells.",
+    "league_score": "Equal-weight mean score against the other four models; win=1, draw=0.5, loss=0. Reverse each side-B result as 1 minus side-A score, preserving head-to-head dependence.",
+    "contrasts": [
+      [
+        25,
+        100
+      ],
+      [
+        100,
+        400
+      ],
+      [
+        400,
+        1600
+      ],
+      [
+        25,
+        400
+      ],
+      [
+        100,
+        1600
+      ],
+      [
+        25,
+        1600
+      ]
+    ],
+    "uncertainty": "Pointwise 95% percentile bootstrap intervals; all rankings, pair comparisons, and time interactions are exploratory, without multiple-comparison correction.",
+    "claims": "A league-score change measures relative standing as both sides receive more time. Fixed-opponent changes measure time gains. Do not infer an asymptotic ceiling or isolate parameter-count causality from these version comparisons.",
+    "new_contrasts": [
+      [
+        400,
+        1600
+      ],
+      [
+        100,
+        1600
+      ],
+      [
+        25,
+        1600
+      ]
+    ],
+    "capacity_interactions": "For every unordered model pair, compare fixed-opponent score gains across each new time contrast using the same whole-deal bootstrap. Different models use independent deal blocks, while each model shares its block across time.",
+    "continuation": "Use exactly the preceding 20000 bootstrap draws and seed; reproduce all earlier league and anchor point estimates and intervals exactly before reporting the extension."
+  },
+  "limitations": [
+    "Only 16 independent deals per head-to-head cell; modest differences will remain uncertain.",
+    "One frozen checkpoint per learned version; intervals cover deal variation, not training-seed variation.",
+    "Training datasets, objectives, and feature families differ across versions; this is not a controlled parameter-count scaling experiment.",
+    "Production automatic flip depth changes between 25 and 100 ms; these are practical budget comparisons rather than a fixed-search-policy intervention.",
+    "Wall-clock budgets run concurrently on one host. Record observed move times, nodes, and depths; some scheduling noise remains.",
+    "All time contrasts share deals, but each model pair uses a different deal block. Anchor model comparisons also use different blocks.",
+    "A small exploratory tournament does not replace the earlier independent, larger confirmation studies or establish a universal strongest engine.",
+    "The 1600 ms extension was requested after viewing the earlier results; it is an exploratory continuation on matched deals, not an independent confirmation set.",
+    "At 1600 ms the production flip threshold rises to 7 and five-piece successor tablebase prebuilding becomes active. Changes cannot be attributed to raw compute alone.",
+    "The fixed 25 ms opponent may approach score saturation at high candidate budgets. This is not evidence of an evaluator capacity ceiling.",
+    "Four-game sharding changes process scheduling relative to the earlier 32-game batches; each game already resets all player and search state. Total active search workers remain twelve."
+  ],
+  "base_artifacts": {
+    "experiment-plan.json": "32d799a2f41bf89cd00266dcec973b2e865e0cfc66a44cc3c0fbea1545ed082c",
+    "run.json": "4351c74b905b21d7c0e0be859743e666288e39f215ed53d8613aa689ead32076",
+    "completion.json": "3c106f33ee1d71ffe40180d3ccb62c7165d8dafb59708720c35a51d28a3e66fc",
+    "results.json": "e07f8f6de8157fa4232d83383fdce6b035c67ca3e875f585ea9c7f4c55b875ed",
+    "verification.json": "0c4b2e21c58e65cb56f515971a986d12dd99ebf5eff5c6a1ba0b056e24c93a86"
+  },
+  "analysis_budgets_ms": [
+    25,
+    100,
+    400,
+    1600
+  ]
+}

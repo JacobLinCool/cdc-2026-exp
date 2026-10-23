@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "rr-expanded1948-vs-original-t1600-s3",
+    "family": "rr",
+    "a_id": "expanded1948",
+    "b_id": "original",
+    "time_ms": 1600,
+    "b_time_ms": 1600,
+    "block": 3,
+    "first_seed": 50000054,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65",
+    "cell_name": "rr-expanded1948-vs-original-t1600",
+    "shard": 3
+  },
+  "started_utc": "2026-10-23T20:51:12.837502+00:00",
+  "csv_sha256": "7a8bd83d3f03cc69f062f097264c8be5dd46ac759167cc3d4714409ba4c07dfa",
+  "completed_utc": "2026-10-23T21:02:33.907007+00:00",
+  "elapsed_seconds": 681.0617282502353
+}

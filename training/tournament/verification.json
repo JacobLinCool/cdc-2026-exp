@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-23T18:45:09.431255+00:00",
+  "games": 1312,
+  "batches": 41,
+  "frozen_inputs_verified": true,
+  "all_csv_and_run_record_hashes_verified": true,
+  "independent_wdl_and_league_aggregation_verified": true,
+  "league_zero_sum_verified": true,
+  "prior_study_files_unchanged": 389,
+  "report_hashes_verified": true,
+  "results_sha256": "e07f8f6de8157fa4232d83383fdce6b035c67ca3e875f585ea9c7f4c55b875ed",
+  "completion_sha256": "3c106f33ee1d71ffe40180d3ccb62c7165d8dafb59708720c35a51d28a3e66fc",
+  "statistical_protocol_tests": 5
+}

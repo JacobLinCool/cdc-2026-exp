@@ -1,0 +1,16 @@
+{
+  "job": {
+    "name": "dev-deep-close-53",
+    "condition": "deep-close",
+    "training_seed": 53,
+    "model": "training/improve499/deep-close-53.cxe",
+    "opponent": "training/scaling-joint/data4x-capacity500-89.cxe",
+    "games": 64,
+    "time_ms": 40,
+    "first_seed": 40000000,
+    "threads": 2
+  },
+  "started_utc": "2026-10-23T17:11:18.139121+00:00",
+  "csv_sha256": "229da597338918b32d62058a980400a64dd86d843b2d46e4558bda63bf4d0fee",
+  "elapsed_seconds": 153.82424358278513
+}

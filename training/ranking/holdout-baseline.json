@@ -1,0 +1,27 @@
+{
+  "purpose": "holdout",
+  "model": "training/ranking/value.cse",
+  "model_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+  "model_scale": 1.0,
+  "opponent": {
+    "kind": "baseline"
+  },
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "2a5842f310bdbbee08cfaf02f37662b024620535a467f83c75dc6a31e15b8000",
+  "first_seed": 12000000,
+  "last_seed": 12000399,
+  "games": 800,
+  "independent_deals": 400,
+  "wins": 307,
+  "draws": 242,
+  "losses": 251,
+  "score": 0.535,
+  "paired_bootstrap_95_ci": [
+    0.509375,
+    0.560625
+  ],
+  "elo": 24.360331652509824,
+  "exceeds_50_percent_at_95_confidence": true,
+  "model_ms_per_move": 21.900270248004805,
+  "opponent_ms_per_move": 21.912000137350848
+}

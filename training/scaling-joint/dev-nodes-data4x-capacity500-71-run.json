@@ -1,0 +1,14 @@
+{
+  "config": {
+    "model_sha256": "042f37005923c125e7aaa510a421d15320b3903019ab68b24a11f9d10f6b6c04",
+    "opponent": "structured=training/ranking/value.cse",
+    "games": 40,
+    "first_seed": 17000020,
+    "nodes": 8192,
+    "time_ms": 25,
+    "threads": 2,
+    "arena_sha256": "80e451ebde9cedeb9ce3847659de3b9906acb55feed69023f4e2f2026406f2aa",
+    "opponent_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d"
+  },
+  "csv_sha256": "4ba4b2982b37f6fd495ae515cb60b9d6277dae1b48967b0d5f41d83b1d6028d1"
+}

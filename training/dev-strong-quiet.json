@@ -1,0 +1,24 @@
+{
+  "purpose": "development",
+  "model": "training/strong-quiet.nn",
+  "model_sha256": "e6f16fef58d10221fffb3d93dc7eafeeac34ee29c77b3e0beef050fc3b553f4e",
+  "model_scale": 0.5,
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "00a4023bebfeddccb55660f9ef9725fb5a8a4cf96a93cb34d45fd56298afd5bb",
+  "first_seed": 3000000,
+  "last_seed": 3000059,
+  "games": 120,
+  "independent_deals": 60,
+  "wins": 38,
+  "draws": 37,
+  "losses": 45,
+  "score": 0.4708333333333333,
+  "paired_bootstrap_95_ci": [
+    0.4166666666666667,
+    0.5291666666666667
+  ],
+  "elo": -20.290110989014863,
+  "exceeds_50_percent_at_95_confidence": false,
+  "model_ms_per_move": 21.547480009519276,
+  "baseline_ms_per_move": 21.58556308716851
+}

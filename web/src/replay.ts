@@ -2,9 +2,11 @@
 //
 // 二進位格式（base64url，不補 =）：
 //   byte 0      版本（1）
-//   byte 1      bit0 模式（0 人機、1 電腦對戰）、bit1 先手座位、bit2–3 A（或人機的電腦）思考時間、bit4–5 B 思考時間
+//   byte 1      bit0 模式（0 人機、1 電腦對戰）、bit1 先手座位、bit2–3 A（或人機的電腦）思考時間、bit4–5 B 思考時間、bit6–7 A/B 模型（0 Light、1 Lightning）
 //   byte 2–5    種子（u32 little-endian）
 //   其後        每步 10 bits：from（5）| to（5），翻子 from == to；位元組尾端補零（不足 10 bits，不會多解出一步）
+
+import type { EngineModels } from "./shared";
 
 export const THINK_TIMES = [500, 2000, 5000, 10000] as const;
 
@@ -14,6 +16,7 @@ export interface GameRecord {
   /** 人機模式為電腦的思考時間；電腦對戰為 A 的 */
   timeA: number;
   timeB: number;
+  models: EngineModels;
   seed: number;
   /** 著法，編碼 from | to << 5（與引擎 legal_moves 相同） */
   moves: number[];
@@ -29,7 +32,8 @@ const timeIndex = (ms: number) => {
 export function encodeRecord(r: GameRecord): string {
   const head = [
     VERSION,
-    (r.mode === "ai" ? 1 : 0) | (r.firstSeat << 1) | (timeIndex(r.timeA) << 2) | (timeIndex(r.timeB) << 4),
+    (r.mode === "ai" ? 1 : 0) | (r.firstSeat << 1) | (timeIndex(r.timeA) << 2) | (timeIndex(r.timeB) << 4)
+      | (r.models[0] === "lightning" ? 64 : 0) | (r.models[1] === "lightning" ? 128 : 0),
     r.seed & 255,
     (r.seed >>> 8) & 255,
     (r.seed >>> 16) & 255,
@@ -83,6 +87,7 @@ export function decodeRecord(code: string): GameRecord | null {
     firstSeat: ((flags >> 1) & 1) as 0 | 1,
     timeA: THINK_TIMES[(flags >> 2) & 3],
     timeB: THINK_TIMES[(flags >> 4) & 3],
+    models: [flags & 64 ? "lightning" : "light", flags & 128 ? "lightning" : "light"],
     seed,
     moves,
   };

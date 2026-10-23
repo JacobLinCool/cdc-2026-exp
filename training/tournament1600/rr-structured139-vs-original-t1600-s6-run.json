@@ -1,0 +1,22 @@
+{
+  "config": {
+    "name": "rr-structured139-vs-original-t1600-s6",
+    "family": "rr",
+    "a_id": "structured139",
+    "b_id": "original",
+    "time_ms": 1600,
+    "b_time_ms": 1600,
+    "block": 0,
+    "first_seed": 50000012,
+    "games": 4,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,structured=training/ranking/value.cse",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65",
+    "cell_name": "rr-structured139-vs-original-t1600",
+    "shard": 6
+  },
+  "started_utc": "2026-10-23T20:34:05.649872+00:00",
+  "csv_sha256": "c7db5fb49924d66179e4197a6f9a4cb14a5d3aef4f1f1a4727bef7947a31d235",
+  "completed_utc": "2026-10-23T20:40:27.302858+00:00",
+  "elapsed_seconds": 381.6511820005253
+}

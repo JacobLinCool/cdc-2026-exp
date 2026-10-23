@@ -1,12 +1,20 @@
 /// <reference lib="webworker" />
-import { CdcGame, initSync } from "./pkg/cdc_engine.js";
+import { CdcGame, EngineModel as WasmModel, initSync } from "./pkg/cdc_engine.js";
 import wasmBase64 from "./pkg/cdc_engine_bg.wasm?b64";
-import type { Analysis, HistoryEntry, Request, Response, Snapshot } from "./shared";
+import type { Analysis, EngineModel, HistoryEntry, Request, Response, Snapshot } from "./shared";
 
 const bytes = Uint8Array.from(atob(wasmBase64), (c) => c.charCodeAt(0));
 initSync({ module: bytes });
 
 let game: CdcGame | null = null;
+
+function wasmModel(model: EngineModel): WasmModel {
+  switch (model) {
+    case "light": return WasmModel.Light;
+    case "lightning": return WasmModel.Lightning;
+    default: throw new Error(`未知的引擎版本：${model}`);
+  }
+}
 
 function snapshot(g: CdcGame): Snapshot {
   return {
@@ -27,11 +35,17 @@ function snapshot(g: CdcGame): Snapshot {
 
 function handle(req: Request): { state: Snapshot; analysis?: Analysis } {
   if (req.type === "new" || req.type === "load") {
+    const next = new CdcGame(req.seed, wasmModel(req.models[0]), wasmModel(req.models[1]));
+    try {
+      if (req.type === "load")
+        for (const [i, m] of req.moves.entries())
+          if (next.play(m & 31, (m >> 5) & 31) === 255) throw new Error(`第 ${i + 1} 步不合法`);
+    } catch (err) {
+      next.free();
+      throw err;
+    }
     game?.free();
-    game = new CdcGame(req.seed);
-    if (req.type === "load")
-      for (const [i, m] of req.moves.entries())
-        if (game.play(m & 31, (m >> 5) & 31) === 255) throw new Error(`第 ${i + 1} 步不合法`);
+    game = next;
     return { state: snapshot(game) };
   }
   if (!game) throw new Error("尚未開局");

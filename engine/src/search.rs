@@ -34,6 +34,8 @@ struct TTEntry {
 #[derive(Clone, Debug)]
 pub struct SearchConfig {
     pub time_ms: f64,
+    /// An explicit node budget replaces the wall-clock stopping rule when present.
+    pub node_limit: Option<u64>,
     pub max_depth: i32,
     /// 翻子節點額外減少的深度
     pub flip_reduction: i32,
@@ -58,6 +60,7 @@ impl Default for SearchConfig {
     fn default() -> Self {
         SearchConfig {
             time_ms: 1000.0,
+            node_limit: None,
             max_depth: 64,
             flip_reduction: 1,
             interior_flips: 4,
@@ -91,7 +94,15 @@ pub struct SearchResult {
     pub pv: Vec<Move>,
 }
 
+#[derive(Clone)]
+pub enum LearnedEval {
+    Residual(crate::neural::ValueNet),
+    Structured(crate::structured::StructuredEval),
+    Expanded(crate::expanded::ExpandedEval),
+}
+
 pub struct Searcher {
+    evaluator: Option<LearnedEval>,
     pub params: Params,
     pub cfg: SearchConfig,
     tt: Vec<TTEntry>,
@@ -128,6 +139,7 @@ impl Searcher {
     pub fn new(params: Params, cfg: SearchConfig, tt_bits: u32) -> Searcher {
         let n = 1usize << tt_bits;
         Searcher {
+            evaluator: None,
             params,
             cfg,
             tt: vec![TTEntry::default(); n],
@@ -147,6 +159,21 @@ impl Searcher {
         }
     }
 
+    /// Replace the evaluator and invalidate scores cached under the previous model.
+    pub fn set_evaluator(&mut self, model: Option<LearnedEval>) {
+        self.evaluator = model;
+        self.clear();
+    }
+
+    fn evaluate(&self, pos: &Pos) -> i32 {
+        match &self.evaluator {
+            Some(LearnedEval::Expanded(model)) => model.evaluate(pos),
+            Some(LearnedEval::Structured(model)) => model.evaluate(pos),
+            Some(LearnedEval::Residual(model)) => model.evaluate(pos, evaluate(pos, &self.params)),
+            None => evaluate(pos, &self.params),
+        }
+    }
+
     pub fn clear(&mut self) {
         for e in self.tt.iter_mut() {
             *e = TTEntry::default();
@@ -158,7 +185,8 @@ impl Searcher {
 
     #[inline(always)]
     fn check_time(&mut self) {
-        if self.nodes & 1023 == 0 && now_ms() > self.deadline {
+        if self.cfg.node_limit.is_some_and(|limit| self.nodes >= limit)
+            || (self.cfg.node_limit.is_none() && self.nodes & 1023 == 0 && now_ms() > self.deadline) {
             self.stop = true;
         }
     }
@@ -248,6 +276,9 @@ impl Searcher {
     }
 
     pub fn qsearch(&mut self, pos: &Pos, mut alpha: i32, beta: i32, ply: usize, qd: i32) -> i32 {
+        if self.stop {
+            return 0;
+        }
         self.nodes += 1;
         self.check_time();
         if self.stop {
@@ -256,7 +287,7 @@ impl Searcher {
         if pos.alive_color(pos.side) == 0 {
             return -MATE + ply as i32;
         }
-        let stand = evaluate(pos, &self.params);
+        let stand = self.evaluate(pos);
         if stand >= beta {
             return stand;
         }
@@ -356,13 +387,16 @@ impl Searcher {
     }
 
     pub fn negamax(&mut self, pos: &Pos, depth: i32, mut alpha: i32, beta: i32, ply: usize) -> i32 {
+        if self.stop {
+            return 0;
+        }
         self.nodes += 1;
         self.check_time();
         if self.stop {
             return 0;
         }
         if ply >= MAXPLY - 2 {
-            return evaluate(pos, &self.params);
+            return self.evaluate(pos);
         }
         if pos.nocap >= DRAW_PLIES || (ply > 0 && self.is_repetition(pos)) {
             return self.draw_score(pos);
@@ -412,7 +446,7 @@ impl Searcher {
             && beta - alpha == 1
             && !self.null_parent
         {
-            let stand = evaluate(pos, &self.params);
+            let stand = self.evaluate(pos);
             if stand >= beta {
                 let mut np = pos.clone();
                 np.side ^= 1;
@@ -530,7 +564,7 @@ impl Searcher {
         }
         if best == -INF {
             // 只剩被略過的翻子
-            return evaluate(pos, &self.params);
+            return self.evaluate(pos);
         }
         let flag = if best >= beta {
             2
@@ -573,6 +607,7 @@ impl Searcher {
     }
 
     pub fn think(&mut self, pos: &Pos, game_history: &[u64]) -> SearchResult {
+        assert!(self.cfg.node_limit != Some(0), "node budget must be positive");
         self.start = now_ms();
         self.root_side = pos.side;
         if self.use_tb && pos.hidden_n == 0 {
@@ -688,7 +723,7 @@ impl Searcher {
                 break;
             }
             let el = now_ms() - self.start;
-            if el > self.cfg.time_ms * self.cfg.id_stop {
+            if self.cfg.node_limit.is_none() && el > self.cfg.time_ms * self.cfg.id_stop {
                 break;
             }
         }

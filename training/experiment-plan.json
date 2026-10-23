@@ -1,0 +1,12 @@
+{
+  "architecture": "64-16-1 ReLU residual, 1057 float32 parameters",
+  "baseline": "default evaluator and search, tablebases enabled",
+  "development_seeds": [[3000000, 3000059], [3100000, 3100199]],
+  "holdout_first_seed": 4000000,
+  "holdout_games": 800,
+  "holdout_time_ms": 25,
+  "holdout_threads": 6,
+  "selection_rule": "Freeze model hash and correction scale after development comparisons; run the fixed 800-game holdout once without optional stopping.",
+  "success_rule": "Deal-paired bootstrap 95% score interval must be wholly above 0.5.",
+  "scope": "Evidence applies to 25 ms per move against the default engine; does not establish superiority at longer search budgets."
+}

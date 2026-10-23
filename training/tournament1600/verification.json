@@ -1,0 +1,22 @@
+{
+  "verified_utc": "2026-10-23T21:08:41.988382+00:00",
+  "raw_csv_files": 161,
+  "total_games": 1792,
+  "new_games": 480,
+  "logical_cells": 56,
+  "independent_deal_blocks": 11,
+  "unique_deals": 176,
+  "paired_seeds_and_seating_verified": true,
+  "all_cell_wdl_and_search_metrics_recomputed": true,
+  "league_and_anchor_point_estimates_recomputed": true,
+  "time_gain_point_estimates_recomputed": true,
+  "gain_interaction_point_estimates_recomputed": true,
+  "earlier_cells_and_intervals_unchanged": true,
+  "earlier_derived_intervals_unchanged": true,
+  "frozen_inputs_verified": 184,
+  "arena_hash_verified": true,
+  "rendered_artifact_hashes_verified": 13,
+  "results_sha256": "8a567aee288fc348a16059f44397bb6a81480c4eab47c58deee9945a8ed136d4",
+  "report_artifacts_sha256": "ef2dd1382904ccacf657681efe9d1fc55c34c759d1d4a07b06bbf7bfea53b9b3",
+  "verification_script_sha256": "bb58b6914c876e8a5e9ff6029fb3c26aa7fdbce5c972eb4abaf0de1ac913af1a"
+}

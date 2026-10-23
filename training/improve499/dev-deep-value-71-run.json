@@ -1,0 +1,16 @@
+{
+  "job": {
+    "name": "dev-deep-value-71",
+    "condition": "deep-value",
+    "training_seed": 71,
+    "model": "training/improve499/deep-value-71.cxe",
+    "opponent": "training/scaling-joint/data4x-capacity500-89.cxe",
+    "games": 64,
+    "time_ms": 40,
+    "first_seed": 40000032,
+    "threads": 2
+  },
+  "started_utc": "2026-10-23T17:13:51.962649+00:00",
+  "csv_sha256": "55681b6334d70d2823e1fcafb5fed7c860fe715ad7accf16c3e1c7b408d7c55b",
+  "elapsed_seconds": 170.19311758317053
+}

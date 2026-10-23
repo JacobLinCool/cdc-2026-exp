@@ -1,0 +1,7 @@
+*.csv
+*.npz
+__pycache__/
+*.shadow.md
+!dev-*.csv
+!holdout*.csv
+*.log

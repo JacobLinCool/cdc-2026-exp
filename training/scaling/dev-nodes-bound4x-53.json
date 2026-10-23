@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-bound4x-53.csv"
+  ],
+  "games": 40,
+  "independent_deals": 20,
+  "first_seed": 17000000,
+  "last_seed": 17000019,
+  "wins": 15,
+  "draws": 15,
+  "losses": 10,
+  "score": 0.5625,
+  "paired_bootstrap_95_ci": [
+    0.45,
+    0.675
+  ],
+  "elo": 43.65778777002723,
+  "a_ms_per_move": 2.78092398250925,
+  "a_nodes_per_move": 7722.879919273461,
+  "a_nodes_per_second": 2777091.343685362,
+  "a_mean_completed_depth": 6.739656912209889,
+  "b_ms_per_move": 2.6252946127946126,
+  "b_nodes_per_move": 7721.90202020202,
+  "b_nodes_per_second": 2941346.8425862095,
+  "b_mean_completed_depth": 6.775757575757575
+}

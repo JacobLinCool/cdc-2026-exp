@@ -1,0 +1,16 @@
+{
+  "job": {
+    "name": "dev-continue-old-89",
+    "condition": "continue-old",
+    "training_seed": 89,
+    "model": "training/improve499/continue-old-89.cxe",
+    "opponent": "training/scaling-joint/data4x-capacity500-89.cxe",
+    "games": 64,
+    "time_ms": 40,
+    "first_seed": 40000064,
+    "threads": 2
+  },
+  "started_utc": "2026-10-23T17:11:21.123518+00:00",
+  "csv_sha256": "b413a741759d295dbc52e7c87faa34d61cf4ce523d85864f2d878a1ba95ff366",
+  "elapsed_seconds": 157.15036937501281
+}

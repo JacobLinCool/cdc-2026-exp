@@ -1,0 +1,12 @@
+{
+  "platform": "macOS-26.4-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "python": "3.14.7",
+  "numpy": "2.4.6",
+  "cpu_model": null,
+  "cpu_model_note": "The read-only sysctl probe was not permitted by the filesystem sandbox. No hardware model is inferred.",
+  "concurrent_game_workers_max": 12,
+  "search_threads_per_game": 1,
+  "new_gpu_allocations": 0,
+  "model_diagnostics_script_sha256": "d1eab3e464d860d2233ed2bba98129888e226f52b4b582f5a5b2b3448f5887a8"
+}

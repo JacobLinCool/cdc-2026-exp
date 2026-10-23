@@ -1,0 +1,33 @@
+{
+  "model": "training/strong-teacher.nn",
+  "model_sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+  "model_scale": 0.5,
+  "selection": "Highest score on the common 120-game development set: 53 wins, 32 draws, 35 losses (57.5%).",
+  "arena_sha256": "480ae48a2033ed3b7953735fe8eded1fe4d17a8566b864a515e1fc48a4835217",
+  "protocol": {
+    "architecture": "64-16-1 ReLU residual, 1057 float32 parameters",
+    "baseline": "default evaluator and search, tablebases enabled",
+    "development_seeds": [
+      [
+        3000000,
+        3000059
+      ],
+      [
+        3100000,
+        3100199
+      ]
+    ],
+    "holdout_first_seed": 4000000,
+    "holdout_games": 800,
+    "holdout_time_ms": 25,
+    "holdout_threads": 6,
+    "selection_rule": "Freeze model hash and correction scale after development comparisons; run the fixed 800-game holdout once without optional stopping.",
+    "success_rule": "Deal-paired bootstrap 95% score interval must be wholly above 0.5.",
+    "scope": "Evidence applies to 25 ms per move against the default engine; does not establish superiority at longer search budgets."
+  },
+  "source_sha256": {
+    "engine/src/neural.rs": "c614d8e7a3c20bc0dce0177e2360cc58fab57f87958f4b28c13250cd60b91ac1",
+    "engine/src/search.rs": "52d93ab5b69581fb7f614f8f941a55a5853070ddc19468fa0b4b7f46a9db3934",
+    "engine/src/bin/arena.rs": "a42b5202c8d1ee822c59b8a34ee4ab960d4b0dc994f4a497e4818b419667cb32"
+  }
+}

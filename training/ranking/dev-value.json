@@ -1,0 +1,30 @@
+{
+  "purpose": "development",
+  "model": "training/ranking/value.cse",
+  "model_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+  "model_scale": 1.0,
+  "opponent": {
+    "kind": "learned",
+    "model": "training/strong-teacher.nn",
+    "model_sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+    "model_scale": 0.5
+  },
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "6e7a6e059a2772170aa9f883662c845822d09cf0b9ac2c531bae839ff474c0f8",
+  "first_seed": 11000000,
+  "last_seed": 11000079,
+  "games": 160,
+  "independent_deals": 80,
+  "wins": 52,
+  "draws": 47,
+  "losses": 61,
+  "score": 0.471875,
+  "paired_bootstrap_95_ci": [
+    0.409375,
+    0.534375
+  ],
+  "elo": -19.56390292820164,
+  "exceeds_50_percent_at_95_confidence": false,
+  "model_ms_per_move": 21.96908756776624,
+  "opponent_ms_per_move": 21.950548938516683
+}

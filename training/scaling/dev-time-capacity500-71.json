@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-time-capacity500-71.csv"
+  ],
+  "games": 80,
+  "independent_deals": 40,
+  "first_seed": 16000040,
+  "last_seed": 16000079,
+  "wins": 30,
+  "draws": 23,
+  "losses": 27,
+  "score": 0.51875,
+  "paired_bootstrap_95_ci": [
+    0.45,
+    0.5875
+  ],
+  "elo": 13.034946881436854,
+  "a_ms_per_move": 21.96212766768293,
+  "a_nodes_per_move": 77662.61833079268,
+  "a_nodes_per_second": 3536206.4871825934,
+  "a_mean_completed_depth": 8.21169969512195,
+  "b_ms_per_move": 21.908982282339494,
+  "b_nodes_per_move": 80525.13793103448,
+  "b_nodes_per_second": 3675439.4564436064,
+  "b_mean_completed_depth": 8.312821489807583
+}

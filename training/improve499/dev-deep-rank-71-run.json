@@ -1,0 +1,16 @@
+{
+  "job": {
+    "name": "dev-deep-rank-71",
+    "condition": "deep-rank",
+    "training_seed": 71,
+    "model": "training/improve499/deep-rank-71.cxe",
+    "opponent": "training/scaling-joint/data4x-capacity500-89.cxe",
+    "games": 64,
+    "time_ms": 40,
+    "first_seed": 40000032,
+    "threads": 2
+  },
+  "started_utc": "2026-10-23T17:08:30.628134+00:00",
+  "csv_sha256": "68e388e4d1a0ae70a27547ddbe4012379bbdb620d509e5cb6c6437cb02a48d30",
+  "elapsed_seconds": 170.49615033343434
+}

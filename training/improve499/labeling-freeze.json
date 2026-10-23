@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-10-23T16:58:49.814948+00:00",
+  "hashes": {
+    "engine/Cargo.lock": "025655174d9cc11f7e3fbef505dd92f0ccb6811d808e6019660d889003d2b963",
+    "engine/Cargo.toml": "004c5986a28587cc5e10ec5148dc1ec3a9da34faa6e52beebeac9e83065d23ea",
+    "engine/src/bin/arena.rs": "0d638cfbc4921bed1e8e009eac195ba033497be974de34093d977c857ae56e8d",
+    "engine/src/bin/bench.rs": "8ce71ff4caf2447fecd1dfded423f9932b597a47068fdccdde4b25c898ed4455",
+    "engine/src/bin/eval_bench.rs": "43879d2158d8d2be11f33410279980971271865c34d504c5ed38647c1675a996",
+    "engine/src/bin/match.rs": "24ae4f9312adba0cb57c1c6f59de99150684b2a989a7845f474a755cb4f68d05",
+    "engine/src/bin/neural_data.rs": "c2cd47c2eb71720d28429e4d05f0f4ffbc74db9662000b2d5272e4190893671c",
+    "engine/src/bin/ranking_data.rs": "8baac5305ef6c0f2b8880d18b25ae0580f64f60ae2cd23665114fe5fb5380ab2",
+    "engine/src/bin/records.rs": "fe2cfe677d7a60d0204b770eb2dadac237974cf6463b3ea8a2b5c69c3fd37ae5",
+    "engine/src/bin/scaling_data.rs": "16d355c4899975f812ab54d573f864f76aeb9574bf0ce34b205e590b2c1c86db",
+    "engine/src/bin/scaling_predict.rs": "c438b251d9692d4421c19f4f9d19c71289bbc0937ac5bc280a6f595d21226be8",
+    "engine/src/bin/spsa.rs": "ca79687c8b020e585073836c231ade174a316ef15fc44f130f1f6ee888e505ab",
+    "engine/src/bin/structured_data.rs": "8c997e136d26e9b62ea76f08bbf916b50cd388919e4fc920eef58c6f8eb6bfc9",
+    "engine/src/bin/structured_predict.rs": "5b0fcf9165da588ec7cd9a3ff7788e96678c657b068d5e2e2f1cb7ea6fbf391d",
+    "engine/src/board.rs": "2e7a86da1ff3b10771465079e0e61f87f0237454836734e7df4df5915fa1debe",
+    "engine/src/eval.rs": "58c26c362c6bafdd9029b160082749c1868f8f193b2ea95b8bbd253499be7a9e",
+    "engine/src/expanded.rs": "19dafa26c1e5bfc63c259e6d50f844b48ad516fc219fcaa81604f14a2840754b",
+    "engine/src/game.rs": "8dfc1f6b2ef8293562eeb9a1a0bb61c4c0aec578f0896737d44a8aca7389167e",
+    "engine/src/lib.rs": "9462716f79f936b211d7d3e7069ebbaf074a25e54805dd3b566b30c1a4dc7e6f",
+    "engine/src/moe.rs": "9e72e01b186a892b52cd3a6b4ad9646e4e9a78551c1f75f103707268334f99a9",
+    "engine/src/neural.rs": "c614d8e7a3c20bc0dce0177e2360cc58fab57f87958f4b28c13250cd60b91ac1",
+    "engine/src/search.rs": "b1412771f6893618a3c9eac135cab5e309f5248155587b0bfc2a28fe5d871d20",
+    "engine/src/structured.rs": "b125f93dc73d03756c7e1df7656c098b5b0098120f670d011fa121c37e2e26c3",
+    "engine/src/tb.rs": "b3a2b6cb2ebb70f6553de3b9f9772998a1467d4f54ad42a0c663da10dd6fd004",
+    "engine/src/wasm.rs": "e46497f46bdc95344691c0fb5a7e3cd1cf8c78b888679961580f5f4dea1f6579",
+    "training/improve499/common.py": "d55ba2f36820ce8ca8c8bea6bf1056d079dfbae3ecbf7eddeb8c46b1941d3f2b",
+    "training/improve499/dataset.py": "71b6b0f338395a02b9d420f4927205ab1d3944e6b5d53d3ff298fe79e935167b",
+    "training/improve499/experiment-plan.json": "9b9160456ffdec6a0e52efe6cd984a3ae899903f79b15a8206f8ac049919ea79",
+    "training/improve499/labeler/Cargo.lock": "ba69b760479b2778df04c8ad25c571a290a46d60015ee48314db097e173a340f",
+    "training/improve499/labeler/Cargo.toml": "a7ca76d841dab4571ae48ff563bc331a6f0c05aa17c2b21c97a8a1836de0e517",
+    "training/improve499/labeler/src/main.rs": "9edb7105932d20b401fbd2516dbe3dd5faf128e3daa3dd1316629c27db5942f8",
+    "training/improve499/labeler/target/release/cdc-refine-labeler": "ceb76ce8bd39c960331596856dd644ff77d4ee898d9b306e167f04fae19d0de8",
+    "training/improve499/prepare.py": "4dd07b582f4bbe5245619a218b83e4717beff9b24a28b327560b5b22ef00fc0d",
+    "training/improve499/train-input.bin": "89c663415c619d8aea5eb44823e834856411a7083c895ee38a6dc4bc4edeba14",
+    "training/improve499/validation-input.bin": "4919ccde726dbccc049942b33fb5ddf0cf20bef84fe1ae4c66260c5a6657883d",
+    "training/scaling/data.py": "8e31d10897d588ff11a0bd0eba44a34c07abdd1723be4b9d041a9c698250fefc",
+    "training/scaling/train.bin": "7bb829d4a10675e5f61f6c2b6fa3169b0a0bfbe45660e5d98446092ccd4bad4f",
+    "training/scaling/validation.bin": "391aa397b7d219588a0857add4af4e0217542899e97022bd8106be70f740e557",
+    "training/scaling-joint/data4x-capacity500-89.cxe": "a9ba34e95d15afe1b72b2996e47a5a453bec28f24a12617c011dca0b29208308"
+  },
+  "input_selection": {
+    "train": {
+      "rows": 9269,
+      "games": 1967,
+      "input_sha256": "89c663415c619d8aea5eb44823e834856411a7083c895ee38a6dc4bc4edeba14",
+      "source": "training/scaling/train.bin",
+      "source_sha256": "7bb829d4a10675e5f61f6c2b6fa3169b0a0bfbe45660e5d98446092ccd4bad4f",
+      "source_row_ids_sha256": "03e9ab7dbe913af1be2298b16f04cb2445a31660b38fe00edcb63d5514eaa18d",
+      "phases": [
+        4458,
+        2187,
+        2624
+      ]
+    },
+    "validation": {
+      "rows": 1104,
+      "games": 244,
+      "input_sha256": "4919ccde726dbccc049942b33fb5ddf0cf20bef84fe1ae4c66260c5a6657883d",
+      "source": "training/scaling/validation.bin",
+      "source_sha256": "391aa397b7d219588a0857add4af4e0217542899e97022bd8106be70f740e557",
+      "source_row_ids_sha256": "e4ee00771df2d31973bf291648285d76d8a472c4b07460c98fe328c5bac512e6",
+      "phases": [
+        519,
+        285,
+        300
+      ]
+    }
+  }
+}

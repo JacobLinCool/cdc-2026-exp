@@ -1,0 +1,27 @@
+{
+  "purpose": "development",
+  "model": "training/structured/split.cse",
+  "model_sha256": "d1363c33dbb3cc199fc9b446bbe338f7e9a799e82cbe1bef4e20198ccd62974a",
+  "model_scale": 1.0,
+  "opponent": {
+    "kind": "baseline"
+  },
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "0850d0ee305b1b201a83d2766c4e01006ad0cfe84235f2cdd7b0d77360869598",
+  "first_seed": 7000000,
+  "last_seed": 7000079,
+  "games": 160,
+  "independent_deals": 80,
+  "wins": 61,
+  "draws": 35,
+  "losses": 64,
+  "score": 0.490625,
+  "paired_bootstrap_95_ci": [
+    0.43125,
+    0.55
+  ],
+  "elo": -6.515180797889649,
+  "exceeds_50_percent_at_95_confidence": false,
+  "model_ms_per_move": 21.82971461375953,
+  "opponent_ms_per_move": 21.945087543634024
+}

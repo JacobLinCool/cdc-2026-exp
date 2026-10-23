@@ -1,0 +1,43 @@
+{
+  "pairs": 5367,
+  "positions": 10734,
+  "contributing_games": 451,
+  "record_bytes": 2180,
+  "first_seed": 10000001,
+  "last_seed": 10000511,
+  "teacher_depths": {
+    "3": 6,
+    "4": 5,
+    "6": 347,
+    "7": 737,
+    "8": 912,
+    "9": 1172,
+    "10": 1017,
+    "11": 758,
+    "12": 335,
+    "13": 59,
+    "14": 7,
+    "15": 12
+  },
+  "max_objective_gradient_error": 1.8673457962206652e-13,
+  "initial_score_mismatches": 0,
+  "root_to_child_preference_sign_verified": true,
+  "native_export_parity": {
+    "value.cse": {
+      "positions": 10734,
+      "mismatches": 0
+    },
+    "rank.cse": {
+      "positions": 10734,
+      "mismatches": 0
+    },
+    "rank-half.cse": {
+      "positions": 10734,
+      "mismatches": 0
+    },
+    "control.cse": {
+      "positions": 10734,
+      "mismatches": 0
+    }
+  }
+}

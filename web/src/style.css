@@ -847,6 +847,11 @@ body[data-mode="replay"] .no-replay {
   margin: 12px 0 0;
 }
 
+.analysis-model {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+}
+
 .stats div {
   background: var(--surface-2);
   border-radius: 8px;

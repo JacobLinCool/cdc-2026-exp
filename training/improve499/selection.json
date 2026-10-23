@@ -1,0 +1,222 @@
+{
+  "advanced": true,
+  "condition": "deep-rank-half",
+  "training_seed": 89,
+  "model": "training/improve499/deep-rank-half-89.cxe",
+  "model_sha256": "5aa64f1b6fce40985b206c120ada028cb797c21677f9ffdb75a4ed1777b54657",
+  "development_score": 0.5208333333333334,
+  "common_validation_loss": 0.5175526431757526,
+  "development_reports": {
+    "continue-old": {
+      "files": [
+        "training/improve499/dev-continue-old-53.csv",
+        "training/improve499/dev-continue-old-71.csv",
+        "training/improve499/dev-continue-old-89.csv"
+      ],
+      "games": 192,
+      "independent_deals": 96,
+      "first_seed": 40000000,
+      "last_seed": 40000095,
+      "wins": 65,
+      "draws": 62,
+      "losses": 65,
+      "score": 0.5,
+      "paired_bootstrap_95_ci": [
+        0.4453125,
+        0.5546875
+      ],
+      "elo": 0.0,
+      "a_ms_per_move": 35.15131745182013,
+      "a_nodes_per_move": 124170.6914958703,
+      "a_nodes_per_second": 3532461.9529855135,
+      "a_mean_completed_depth": 9.163276231263383,
+      "b_ms_per_move": 35.13320116216836,
+      "b_nodes_per_move": 124191.07263552259,
+      "b_nodes_per_second": 3534863.5628811494,
+      "b_mean_completed_depth": 9.132426026454622,
+      "training_seed_scores": {
+        "53": 0.5078125,
+        "71": 0.5,
+        "89": 0.4921875
+      },
+      "mean_validation_loss": 0.5173370550810764,
+      "inference": "Exploratory development estimate; whole deals resampled within each fixed training-seed block."
+    },
+    "deep-value": {
+      "files": [
+        "training/improve499/dev-deep-value-53.csv",
+        "training/improve499/dev-deep-value-71.csv",
+        "training/improve499/dev-deep-value-89.csv"
+      ],
+      "games": 192,
+      "independent_deals": 96,
+      "first_seed": 40000000,
+      "last_seed": 40000095,
+      "wins": 61,
+      "draws": 58,
+      "losses": 73,
+      "score": 0.46875,
+      "paired_bootstrap_95_ci": [
+        0.421875,
+        0.515625
+      ],
+      "elo": -21.74306492903708,
+      "a_ms_per_move": 34.8950882055724,
+      "a_nodes_per_move": 124359.58683412733,
+      "a_nodes_per_second": 3563813.5115608717,
+      "a_mean_completed_depth": 9.5677060776671,
+      "b_ms_per_move": 34.83631656804734,
+      "b_nodes_per_move": 124522.98556790302,
+      "b_nodes_per_second": 3574516.4195148675,
+      "b_mean_completed_depth": 9.576417953528647,
+      "training_seed_scores": {
+        "53": 0.4921875,
+        "71": 0.4453125,
+        "89": 0.46875
+      },
+      "mean_validation_loss": 0.5171269433439042,
+      "inference": "Exploratory development estimate; whole deals resampled within each fixed training-seed block."
+    },
+    "deep-loose": {
+      "files": [
+        "training/improve499/dev-deep-loose-53.csv",
+        "training/improve499/dev-deep-loose-71.csv",
+        "training/improve499/dev-deep-loose-89.csv"
+      ],
+      "games": 192,
+      "independent_deals": 96,
+      "first_seed": 40000000,
+      "last_seed": 40000095,
+      "wins": 69,
+      "draws": 53,
+      "losses": 70,
+      "score": 0.4973958333333333,
+      "paired_bootstrap_95_ci": [
+        0.4505208333333333,
+        0.5416666666666666
+      ],
+      "elo": -1.8095767040185153,
+      "a_ms_per_move": 34.78921250979554,
+      "a_nodes_per_move": 123668.27683978058,
+      "a_nodes_per_second": 3554788.0483054775,
+      "a_mean_completed_depth": 9.250124670513642,
+      "b_ms_per_move": 34.821762186431016,
+      "b_nodes_per_move": 123958.13127137971,
+      "b_nodes_per_second": 3559789.151615148,
+      "b_mean_completed_depth": 9.200470353477765,
+      "training_seed_scores": {
+        "53": 0.53125,
+        "71": 0.4453125,
+        "89": 0.515625
+      },
+      "mean_validation_loss": 0.5168437483801215,
+      "inference": "Exploratory development estimate; whole deals resampled within each fixed training-seed block."
+    },
+    "deep-close": {
+      "files": [
+        "training/improve499/dev-deep-close-53.csv",
+        "training/improve499/dev-deep-close-71.csv",
+        "training/improve499/dev-deep-close-89.csv"
+      ],
+      "games": 192,
+      "independent_deals": 96,
+      "first_seed": 40000000,
+      "last_seed": 40000095,
+      "wins": 66,
+      "draws": 58,
+      "losses": 68,
+      "score": 0.4947916666666667,
+      "paired_bootstrap_95_ci": [
+        0.4635416666666667,
+        0.5260416666666666
+      ],
+      "elo": -3.6192515909588017,
+      "a_ms_per_move": 35.17786864345039,
+      "a_nodes_per_move": 123718.80649861577,
+      "a_nodes_per_second": 3516950.0390311577,
+      "a_mean_completed_depth": 9.095293603380446,
+      "b_ms_per_move": 35.216835555555555,
+      "b_nodes_per_move": 124024.54965391621,
+      "b_nodes_per_second": 3521740.318157319,
+      "b_mean_completed_depth": 9.067322404371584,
+      "training_seed_scores": {
+        "53": 0.484375,
+        "71": 0.46875,
+        "89": 0.53125
+      },
+      "mean_validation_loss": 0.5177563087727421,
+      "inference": "Exploratory development estimate; whole deals resampled within each fixed training-seed block."
+    },
+    "deep-rank-half": {
+      "files": [
+        "training/improve499/dev-deep-rank-half-53.csv",
+        "training/improve499/dev-deep-rank-half-71.csv",
+        "training/improve499/dev-deep-rank-half-89.csv"
+      ],
+      "games": 192,
+      "independent_deals": 96,
+      "first_seed": 40000000,
+      "last_seed": 40000095,
+      "wins": 71,
+      "draws": 58,
+      "losses": 63,
+      "score": 0.5208333333333334,
+      "paired_bootstrap_95_ci": [
+        0.46875,
+        0.5703125
+      ],
+      "elo": 14.48486906177792,
+      "a_ms_per_move": 35.04643941818182,
+      "a_nodes_per_move": 129622.8261090909,
+      "a_nodes_per_second": 3698601.8625858924,
+      "a_mean_completed_depth": 9.091127272727272,
+      "b_ms_per_move": 35.055702124563446,
+      "b_nodes_per_move": 129353.96260186263,
+      "b_nodes_per_second": 3689954.9791423124,
+      "b_mean_completed_depth": 9.073632130384167,
+      "training_seed_scores": {
+        "53": 0.5078125,
+        "71": 0.484375,
+        "89": 0.5703125
+      },
+      "mean_validation_loss": 0.5175661705699928,
+      "inference": "Exploratory development estimate; whole deals resampled within each fixed training-seed block."
+    },
+    "deep-rank": {
+      "files": [
+        "training/improve499/dev-deep-rank-53.csv",
+        "training/improve499/dev-deep-rank-71.csv",
+        "training/improve499/dev-deep-rank-89.csv"
+      ],
+      "games": 192,
+      "independent_deals": 96,
+      "first_seed": 40000000,
+      "last_seed": 40000095,
+      "wins": 65,
+      "draws": 59,
+      "losses": 68,
+      "score": 0.4921875,
+      "paired_bootstrap_95_ci": [
+        0.4661458333333333,
+        0.5182291666666666
+      ],
+      "elo": -5.429122875709548,
+      "a_ms_per_move": 34.856037271190175,
+      "a_nodes_per_move": 127695.85709034772,
+      "a_nodes_per_second": 3663521.934430944,
+      "a_mean_completed_depth": 9.62192163493347,
+      "b_ms_per_move": 34.79558121417022,
+      "b_nodes_per_move": 127409.89181243569,
+      "b_nodes_per_second": 3661668.733975596,
+      "b_mean_completed_depth": 9.605100690871675,
+      "training_seed_scores": {
+        "53": 0.5078125,
+        "71": 0.5078125,
+        "89": 0.4609375
+      },
+      "mean_validation_loss": 0.5177563087727421,
+      "inference": "Exploratory development estimate; whole deals resampled within each fixed training-seed block."
+    }
+  },
+  "selection_rule": "Choose the condition with highest aggregate development score; ties use lower mean common validation loss then lexical name. Select its fit by lowest common validation loss, then training seed. Advance only if the condition's aggregate score exceeds 50%."
+}

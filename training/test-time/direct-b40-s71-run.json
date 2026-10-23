@@ -1,0 +1,21 @@
+{
+  "config": {
+    "name": "direct-b40-s71",
+    "family": "direct",
+    "parameters": 1948,
+    "training_seed": 71,
+    "budget": 40,
+    "time_ms": 40,
+    "games": 64,
+    "first_seed": 31000032,
+    "models": [
+      "training/scaling-joint/data4x-capacity2000-71.cxe",
+      "training/scaling/data4x-71.cxe"
+    ],
+    "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+    "b": "expanded=training/scaling/data4x-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+    "threads": 2
+  },
+  "csv_sha256": "374946bbe982dbff0857ee1ddf5e0da9fd825b10c15fab8674cf0acbf0095718",
+  "elapsed_seconds": 150.85798529163003
+}

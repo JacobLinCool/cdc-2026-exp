@@ -1,0 +1,20 @@
+{
+  "config": {
+    "name": "anchor-expanded1948-vs-original-t400",
+    "family": "anchor",
+    "a_id": "expanded1948",
+    "b_id": "original",
+    "time_ms": 400,
+    "b_time_ms": 25,
+    "block": 3,
+    "first_seed": 50000048,
+    "games": 32,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,tmul=0.0625"
+  },
+  "started_utc": "2026-10-23T18:24:39.919776+00:00",
+  "csv_sha256": "c58408fb62eb901ec6c86e94b14fb91c42bc84f8abc8cd6093795c9d59d042d2",
+  "completed_utc": "2026-10-23T18:31:17.046106+00:00",
+  "elapsed_seconds": 397.12884883303195
+}

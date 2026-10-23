@@ -1,0 +1,24 @@
+{
+  "purpose": "development",
+  "model": "training/strong-mixed.nn",
+  "model_sha256": "2fef117f8634d0214d0555fa5d3c8fd1b68857acdf349e4a930bae5553b96a03",
+  "model_scale": 0.5,
+  "time_ms_per_move": 25.0,
+  "csv_sha256": "3f6cf283fc0c153e766e607c0fb9ecd67ab2a6cb489aac1d16bd34d673e7727b",
+  "first_seed": 3000000,
+  "last_seed": 3000059,
+  "games": 120,
+  "independent_deals": 60,
+  "wins": 48,
+  "draws": 38,
+  "losses": 34,
+  "score": 0.5583333333333333,
+  "paired_bootstrap_95_ci": [
+    0.49583333333333335,
+    0.6208333333333333
+  ],
+  "elo": 40.71957324001498,
+  "exceeds_50_percent_at_95_confidence": false,
+  "model_ms_per_move": 21.85267170111288,
+  "baseline_ms_per_move": 21.91335465182324
+}

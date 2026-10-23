@@ -1,0 +1,58 @@
+{
+  "started_utc": "2026-10-23T14:03:59.052790+00:00",
+  "plan_sha256": "0f54fc7cf3927dd25a61ab7f989bc8371d3c961fb45108c488f4b6ca56919272",
+  "source_hashes_at_collection": {
+    "engine/src/game.rs": "8dfc1f6b2ef8293562eeb9a1a0bb61c4c0aec578f0896737d44a8aca7389167e",
+    "engine/src/neural.rs": "c614d8e7a3c20bc0dce0177e2360cc58fab57f87958f4b28c13250cd60b91ac1",
+    "engine/src/tb.rs": "b3a2b6cb2ebb70f6553de3b9f9772998a1467d4f54ad42a0c663da10dd6fd004",
+    "engine/src/lib.rs": "f9e46e35c8128386bcbfa4bfade0635bde64fa107c335e6e092b2fc2111c04aa",
+    "engine/src/board.rs": "2e7a86da1ff3b10771465079e0e61f87f0237454836734e7df4df5915fa1debe",
+    "engine/src/eval.rs": "58c26c362c6bafdd9029b160082749c1868f8f193b2ea95b8bbd253499be7a9e",
+    "engine/src/moe.rs": "9e72e01b186a892b52cd3a6b4ad9646e4e9a78551c1f75f103707268334f99a9",
+    "engine/src/structured.rs": "b125f93dc73d03756c7e1df7656c098b5b0098120f670d011fa121c37e2e26c3",
+    "engine/src/search.rs": "5ea56768ae4508ecb82c08bac5430331fb35fedc35d544c309dceb6a15d4de37",
+    "engine/src/wasm.rs": "e46497f46bdc95344691c0fb5a7e3cd1cf8c78b888679961580f5f4dea1f6579",
+    "engine/src/bin/scaling_data.rs": "16d355c4899975f812ab54d573f864f76aeb9574bf0ce34b205e590b2c1c86db",
+    "engine/src/bin/structured_predict.rs": "5b0fcf9165da588ec7cd9a3ff7788e96678c657b068d5e2e2f1cb7ea6fbf391d",
+    "engine/src/bin/records.rs": "fe2cfe677d7a60d0204b770eb2dadac237974cf6463b3ea8a2b5c69c3fd37ae5",
+    "engine/src/bin/ranking_data.rs": "8baac5305ef6c0f2b8880d18b25ae0580f64f60ae2cd23665114fe5fb5380ab2",
+    "engine/src/bin/match.rs": "24ae4f9312adba0cb57c1c6f59de99150684b2a989a7845f474a755cb4f68d05",
+    "engine/src/bin/arena.rs": "c40f6e698f00bf1b4f90d2895560f3d697e5236ad87e1f3e4e7eadba9f2a3310",
+    "engine/src/bin/eval_bench.rs": "0790997f9d4c7660b5a4af4e5881f98f44639efda49b82501dc573e4e6a78e6b",
+    "engine/src/bin/neural_data.rs": "c2cd47c2eb71720d28429e4d05f0f4ffbc74db9662000b2d5272e4190893671c",
+    "engine/src/bin/structured_data.rs": "8c997e136d26e9b62ea76f08bbf916b50cd388919e4fc920eef58c6f8eb6bfc9",
+    "engine/src/bin/spsa.rs": "ca79687c8b020e585073836c231ade174a316ef15fc44f130f1f6ee888e505ab",
+    "engine/src/bin/bench.rs": "8ce71ff4caf2447fecd1dfded423f9932b597a47068fdccdde4b25c898ed4455"
+  },
+  "collector_sha256": "6cb4f98db2e7db52bc0ce9b5da42e16fec85fa65acfcef05da1c2e113a1dc85f",
+  "teacher_sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+  "initial_sha256": "e180260a668ca455996e52dfec127eae0e003c2f2b769dc999b17b52f21b4b3d",
+  "commands": [
+    "engine/target/release/scaling_data training/scaling/train.bin 2048 25 160 640 512 10 14000000 training/strong-teacher.nn",
+    "engine/target/release/scaling_data training/scaling/validation.bin 256 25 160 640 256 2 15000000 training/strong-teacher.nn"
+  ],
+  "compute_decision": {
+    "backend": "local NumPy float64 and native Rust",
+    "colab_cli_version": "0.7.4",
+    "gpu_allocated": false,
+    "pilot_epochs": 2,
+    "pilot_pairs": 5367,
+    "pilot_wall_seconds": 0.62,
+    "pilot_cpu_seconds": 0.29,
+    "reason": "Small graph training takes less than one second for two epochs; search labels and matches dominate the expected queue. No measured GPU speedup is claimed."
+  },
+  "plan_clarifications_before_training": "Explicit common 640ms validation labels, three disjoint seed blocks per condition, and primary endpoint; collection protocol unchanged.",
+  "training_plan_sha256": "15377aa3c1c0d59dcce1996982df226c68f86518f748da3e1287db5e151b6ca7",
+  "capacity_pretraining_refinement": "Use only feasible predator counts and omit hidden-piece coefficients when no pieces are hidden; final tiers have 139, 499, 1948 trainable coefficients. Correctness/performance pilot models are excluded from the experiment.",
+  "collection_verified_complete_utc": "2026-10-23T14:31:28.165935+00:00",
+  "corpora": {
+    "train": {
+      "bytes": 65164536,
+      "sha256": "7bb829d4a10675e5f61f6c2b6fa3169b0a0bfbe45660e5d98446092ccd4bad4f"
+    },
+    "validation": {
+      "bytes": 8100848,
+      "sha256": "391aa397b7d219588a0857add4af4e0217542899e97022bd8106be70f740e557"
+    }
+  }
+}

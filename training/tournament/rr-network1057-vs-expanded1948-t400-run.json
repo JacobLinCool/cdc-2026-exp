@@ -1,0 +1,20 @@
+{
+  "config": {
+    "name": "rr-network1057-vs-expanded1948-t400",
+    "family": "rr",
+    "a_id": "network1057",
+    "b_id": "expanded1948",
+    "time_ms": 400,
+    "b_time_ms": 400,
+    "block": 9,
+    "first_seed": 50000144,
+    "games": 32,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65,model=training/strong-teacher.nn,model_scale=0.5",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65,expanded=training/scaling-joint/data4x-capacity2000-89.cxe"
+  },
+  "started_utc": "2026-10-23T18:27:27.531507+00:00",
+  "csv_sha256": "2a1d8a6623d5bde2140f68252ea4201fbec02fc16a89e6304eb966d6d903379b",
+  "completed_utc": "2026-10-23T18:40:58.468525+00:00",
+  "elapsed_seconds": 810.9283551657572
+}

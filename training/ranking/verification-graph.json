@@ -1,0 +1,16 @@
+{
+  "initial_exact_positions": 35899,
+  "gradient_parameters_checked": 139,
+  "max_relative_gradient_error": 6.465883807303657e-08,
+  "gradient_check": "finite difference on unquantized graph; separate STE rule check",
+  "native_export_parity": {
+    "selfplay.initial.cse": {
+      "positions": 35899,
+      "mismatches": 0
+    },
+    "interactions.cse": {
+      "positions": 35899,
+      "mismatches": 0
+    }
+  }
+}

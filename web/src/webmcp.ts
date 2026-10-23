@@ -2,6 +2,17 @@
 // 規格：https://github.com/webmachinelearning/webmcp（document.modelContext.registerTool）；
 // 早期的 Chrome 預覽版是 navigator.modelContext 與 provideContext，兩者都支援。不支援的瀏覽器直接略過。
 
+import type { EngineModel } from "./shared";
+
+export interface NewGameOptions {
+  mode?: "human" | "ai";
+  first?: "you" | "engine" | "random";
+  thinkTimeMs?: number;
+  model?: EngineModel;
+  modelA?: EngineModel;
+  modelB?: EngineModel;
+}
+
 export interface Coord {
   from: number;
   to: number;
@@ -13,7 +24,7 @@ export interface GameApi {
   rules(): string;
   play(move: Coord): Promise<unknown>;
   suggest(timeMs: number): Promise<unknown>;
-  newGame(opts: { mode?: "human" | "ai"; first?: "you" | "engine" | "random"; thinkTimeMs?: number }): Promise<unknown>;
+  newGame(opts: NewGameOptions): Promise<unknown>;
   undo(): Promise<unknown>;
   shareLink(): string;
   openReplay(link: string): Promise<unknown>;
@@ -101,7 +112,7 @@ export function registerWebMcp(api: GameApi): boolean {
     {
       name: "suggest_move",
       description:
-        "Ask the built-in engine (expectiminimax search with an endgame tablebase) for the best move for you in the current position, without playing it. Returns the move, evaluation, win probability, principal variation and alternatives.",
+        "Ask the selected engine (Light or Lightning, with expectiminimax search and an endgame tablebase) for the best move for you in the current position, without playing it. Returns the model, move, evaluation, win probability, principal variation and alternatives.",
       inputSchema: {
         type: "object",
         properties: { thinkTimeMs: { type: "number", description: "Search time in ms (200–10000, default 1500)" } },
@@ -119,6 +130,9 @@ export function registerWebMcp(api: GameApi): boolean {
           mode: { type: "string", enum: ["human", "ai"] },
           first: { type: "string", enum: ["you", "engine", "random"], description: "Who flips first in human mode" },
           thinkTimeMs: { type: "number", enum: [500, 2000, 5000, 10000], description: "Computer think time per move" },
+          model: { type: "string", enum: ["light", "lightning"], description: "Human mode: computer engine. Light is the original evaluator; Lightning is the 499-parameter learned evaluator." },
+          modelA: { type: "string", enum: ["light", "lightning"], description: "AI mode: engine for computer A" },
+          modelB: { type: "string", enum: ["light", "lightning"], description: "AI mode: engine for computer B" },
         },
       },
       execute: wrap((i) =>
@@ -126,6 +140,9 @@ export function registerWebMcp(api: GameApi): boolean {
           mode: i.mode as "human" | "ai" | undefined,
           first: i.first as "you" | "engine" | "random" | undefined,
           thinkTimeMs: i.thinkTimeMs === undefined ? undefined : Number(i.thinkTimeMs),
+          model: i.model as EngineModel | undefined,
+          modelA: i.modelA as EngineModel | undefined,
+          modelB: i.modelB as EngineModel | undefined,
         }),
       ),
     },

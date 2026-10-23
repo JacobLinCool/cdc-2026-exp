@@ -1,0 +1,25 @@
+{
+  "tiers": [
+    {
+      "tier": 0,
+      "positions": 161,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    },
+    {
+      "tier": 1,
+      "positions": 161,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    },
+    {
+      "tier": 2,
+      "positions": 161,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    }
+  ],
+  "candidates": [],
+  "max_gradient_error": 8.105090686807786e-13,
+  "root_label_sign": true
+}

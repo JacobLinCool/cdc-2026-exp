@@ -1,0 +1,16 @@
+{
+  "job": {
+    "name": "holdout-primary",
+    "condition": "deep-rank-half",
+    "training_seed": 89,
+    "model": "training/improve499/deep-rank-half-89.cxe",
+    "opponent": "training/scaling-joint/data4x-capacity500-89.cxe",
+    "games": 1200,
+    "time_ms": 40,
+    "first_seed": 41000000,
+    "threads": 6
+  },
+  "started_utc": "2026-10-23T17:16:42.322001+00:00",
+  "csv_sha256": "350ca192ea763135535e4f1194dfc6dbd81325dd571d5b1628bad7686c309636",
+  "elapsed_seconds": 987.9998027505353
+}

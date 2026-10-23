@@ -1,0 +1,16 @@
+{
+  "job": {
+    "name": "dev-deep-rank-half-53",
+    "condition": "deep-rank-half",
+    "training_seed": 53,
+    "model": "training/improve499/deep-rank-half-53.cxe",
+    "opponent": "training/scaling-joint/data4x-capacity500-89.cxe",
+    "games": 64,
+    "time_ms": 40,
+    "first_seed": 40000000,
+    "threads": 2
+  },
+  "started_utc": "2026-10-23T17:08:30.628682+00:00",
+  "csv_sha256": "1ec34a54d4f94b1654b63b6a71ae35a88bcd61e9b4710449904a6802486e604d",
+  "elapsed_seconds": 167.51100466772914
+}

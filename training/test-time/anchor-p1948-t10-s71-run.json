@@ -1,0 +1,21 @@
+{
+  "config": {
+    "name": "anchor-p1948-t10-s71",
+    "family": "anchor",
+    "parameters": 1948,
+    "training_seed": 71,
+    "budget": 10,
+    "time_ms": 10,
+    "games": 64,
+    "first_seed": 30000032,
+    "models": [
+      "training/scaling-joint/data4x-capacity2000-71.cxe",
+      "training/ranking/value.cse"
+    ],
+    "a": "expanded=training/scaling-joint/data4x-capacity2000-71.cxe,fmd=5,tb=0,depth=64,idstop=0.65",
+    "b": "structured=training/ranking/value.cse,fmd=5,tb=0,depth=64,idstop=0.65,tmul=4.0",
+    "threads": 2
+  },
+  "csv_sha256": "8608ebb56ac1c595e14eb7440dd25753ac18afe4365d3e74f28d9424d68c9150",
+  "elapsed_seconds": 100.90335470810533
+}

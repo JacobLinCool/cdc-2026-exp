@@ -3,12 +3,32 @@
 use crate::board::*;
 use crate::game::*;
 use crate::moe::*;
+use crate::{expanded::ExpandedEval, search::LearnedEval};
 use wasm_bindgen::prelude::*;
+
+const LIGHTNING: &[u8] = include_bytes!("../models/lightning.cxe");
+
+#[wasm_bindgen]
+#[derive(Clone, Copy)]
+pub enum EngineModel {
+    Light,
+    Lightning,
+}
+
+impl EngineModel {
+    fn name(self) -> &'static str {
+        match self {
+            Self::Light => "light",
+            Self::Lightning => "lightning",
+        }
+    }
+}
 
 #[wasm_bindgen]
 pub struct CdcGame {
     game: Game,
     seed: u64,
+    models: [EngineModel; 2],
     /// 每個 slot 一顆獨立的大腦（各自的置換表與亂數），AI 對戰時雙方互不共享搜尋結果
     brains: Vec<Brain>,
 }
@@ -20,22 +40,33 @@ fn mv_json(m: Move) -> String {
 #[wasm_bindgen]
 impl CdcGame {
     #[wasm_bindgen(constructor)]
-    pub fn new(seed: f64) -> CdcGame {
+    pub fn new(seed: f64, model_a: EngineModel, model_b: EngineModel) -> CdcGame {
         let s = seed as u64;
         let mut rng = Rng::new(s);
         let game = Game::new(&mut rng);
-        CdcGame { game, seed: s, brains: vec![Self::make_brain(s, 0)] }
+        CdcGame {
+            game,
+            seed: s,
+            models: [model_a, model_b],
+            brains: Vec::new(),
+        }
     }
 
-    fn make_brain(seed: u64, slot: usize) -> Brain {
-        Brain::new(seed.wrapping_mul(31).wrapping_add(7 + slot as u64 * 0x9E37_79B9), 22)
+    fn make_brain(seed: u64, slot: usize, model: EngineModel) -> Brain {
+        let mut brain = Brain::new(seed.wrapping_mul(31).wrapping_add(7 + slot as u64 * 0x9E37_79B9), 22);
+        if let EngineModel::Lightning = model {
+            let evaluator = ExpandedEval::from_bytes(LIGHTNING).expect("embedded Lightning evaluator must be valid");
+            brain.searcher.set_evaluator(Some(LearnedEval::Expanded(evaluator)));
+        }
+        brain
     }
 
     /// 取得 slot 的大腦，第一次用到時才配置（置換表約 64MB）
     fn brain(&mut self, slot: u8) -> &mut Brain {
         let slot = slot as usize;
         while self.brains.len() <= slot {
-            let b = Self::make_brain(self.seed, self.brains.len());
+            let i = self.brains.len();
+            let b = Self::make_brain(self.seed, i, self.models[i]);
             self.brains.push(b);
         }
         &mut self.brains[slot]
@@ -127,7 +158,15 @@ impl CdcGame {
             .game
             .moves
             .iter()
-            .map(|(m, info)| format!("{{\"from\":{},\"to\":{},\"flip\":{},\"info\":{}}}", m.from, m.to, m.is_flip(), info))
+            .map(|(m, info)| {
+                format!(
+                    "{{\"from\":{},\"to\":{},\"flip\":{},\"info\":{}}}",
+                    m.from,
+                    m.to,
+                    m.is_flip(),
+                    info
+                )
+            })
             .collect();
         format!("[{}]", items.join(","))
     }
@@ -138,13 +177,20 @@ impl CdcGame {
     pub fn think(&mut self, slot: u8, time_ms: f64) -> String {
         self.brain(slot);
         let d = self.brains[slot as usize].decide(&self.game, time_ms);
-        let experts: Vec<String> =
-            d.experts.iter().map(|e| format!("{{\"name\":\"{}\",\"weight\":{:.4}}}", e.name, e.weight)).collect();
-        let cands: Vec<String> =
-            d.candidates.iter().map(|(m, s)| format!("{{\"move\":{},\"score\":{}}}", mv_json(*m), s)).collect();
+        let experts: Vec<String> = d
+            .experts
+            .iter()
+            .map(|e| format!("{{\"name\":\"{}\",\"weight\":{:.4}}}", e.name, e.weight))
+            .collect();
+        let cands: Vec<String> = d
+            .candidates
+            .iter()
+            .map(|(m, s)| format!("{{\"move\":{},\"score\":{}}}", mv_json(*m), s))
+            .collect();
         let pv: Vec<String> = d.pv.iter().map(|m| mv_json(*m)).collect();
         format!(
-            "{{\"move\":{},\"score\":{},\"depth\":{},\"nodes\":{},\"timeMs\":{:.0},\"pv\":[{}],\"experts\":[{}],\"candidates\":[{}]}}",
+            "{{\"model\":\"{}\",\"move\":{},\"score\":{},\"depth\":{},\"nodes\":{},\"timeMs\":{:.0},\"pv\":[{}],\"experts\":[{}],\"candidates\":[{}]}}",
+            self.models[slot as usize].name(),
             mv_json(d.mv),
             d.score,
             d.depth,
@@ -154,5 +200,59 @@ impl CdcGame {
             experts.join(","),
             cands.join(",")
         )
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn model_slots_match_original_and_learned_search() {
+        let mut different_scores = false;
+        for (model_a, model_b) in [
+            (EngineModel::Light, EngineModel::Lightning),
+            (EngineModel::Lightning, EngineModel::Light),
+        ] {
+            let mut game = CdcGame::new(731.0, model_a, model_b);
+            let mut cells = [EMPTY; NSQ];
+            let mut captured = std::array::from_fn(|i| INIT_COUNT[i % 7]);
+            for (square, piece) in [
+                (0, piece(RED, CHARIOT)),
+                (8, piece(RED, PAWN)),
+                (23, piece(BLACK, HORSE)),
+                (31, piece(BLACK, CANNON)),
+            ] {
+                cells[square] = piece;
+                captured[piece as usize] -= 1;
+            }
+            game.game.pos = Pos::from_parts(cells, captured, RED, true, 0);
+            game.game.history = vec![game.game.pos.hash];
+            let mut scores = [0; 2];
+            for slot in 0..2 {
+                let mut reference = Brain::new(731 * 31 + 7 + slot as u64 * 0x9E37_79B9, 22);
+                if let EngineModel::Lightning = game.models[slot] {
+                    reference.searcher.set_evaluator(Some(LearnedEval::Expanded(
+                        ExpandedEval::from_bytes(LIGHTNING).unwrap(),
+                    )));
+                }
+                for searcher in [&mut reference.searcher, &mut game.brain(slot as u8).searcher] {
+                    searcher.cfg.node_limit = Some(4096);
+                    searcher.cfg.max_depth = 3;
+                    searcher.cfg.flip_min_depth = 5;
+                    searcher.use_tb = false;
+                }
+                let expected = reference.searcher.think(&game.game.pos, &game.game.history);
+                let actual = game.brains[slot].searcher.think(&game.game.pos, &game.game.history);
+                assert_eq!(actual.depth, 3);
+                assert_eq!(
+                    (actual.best, actual.score, actual.depth, actual.nodes),
+                    (expected.best, expected.score, expected.depth, expected.nodes)
+                );
+                scores[slot] = actual.score;
+            }
+            different_scores |= scores[0] != scores[1];
+        }
+        assert!(different_scores, "fixture must distinguish the two evaluators");
     }
 }

@@ -1,0 +1,116 @@
+{
+  "tiers": [
+    {
+      "tier": 0,
+      "positions": 4845,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    },
+    {
+      "tier": 1,
+      "positions": 4845,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    },
+    {
+      "tier": 2,
+      "positions": 4845,
+      "initial_exact": true,
+      "perturbed_native_exact": true
+    }
+  ],
+  "candidates": [
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/continue-old-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/continue-old-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/continue-old-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-value-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-value-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-value-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-loose-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-loose-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-loose-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-close-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-close-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-close-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-rank-half-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-rank-half-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-rank-half-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-rank-53.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-rank-71.cxe",
+      "positions": 4845,
+      "native_exact": true
+    },
+    {
+      "path": "/Users/jacoblincool/Documents/GitHub/cdc/training/improve499/deep-rank-89.cxe",
+      "positions": 4845,
+      "native_exact": true
+    }
+  ],
+  "max_gradient_error": 1.0332163252681388e-12,
+  "root_label_sign": true
+}

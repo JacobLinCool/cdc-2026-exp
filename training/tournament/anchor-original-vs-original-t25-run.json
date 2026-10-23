@@ -1,0 +1,20 @@
+{
+  "config": {
+    "name": "anchor-original-vs-original-t25",
+    "family": "anchor",
+    "a_id": "original",
+    "b_id": "original",
+    "time_ms": 25,
+    "b_time_ms": 25,
+    "block": 10,
+    "first_seed": 51000000,
+    "games": 32,
+    "threads": 2,
+    "a": "fmd=0,tb=1,depth=64,idstop=0.65",
+    "b": "fmd=0,tb=1,depth=64,idstop=0.65"
+  },
+  "started_utc": "2026-10-23T18:02:10.780213+00:00",
+  "csv_sha256": "6c87b0c9c3f73d7bb3f5cb7697195e5a4e2f66dc869c7ecb4635458f30271087",
+  "completed_utc": "2026-10-23T18:02:54.416559+00:00",
+  "elapsed_seconds": 43.63666154164821
+}

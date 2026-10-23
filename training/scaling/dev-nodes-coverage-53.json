@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/dev-nodes-coverage-53.csv"
+  ],
+  "games": 40,
+  "independent_deals": 20,
+  "first_seed": 17000000,
+  "last_seed": 17000019,
+  "wins": 18,
+  "draws": 10,
+  "losses": 12,
+  "score": 0.575,
+  "paired_bootstrap_95_ci": [
+    0.4375,
+    0.7125
+  ],
+  "elo": 52.51156585572756,
+  "a_ms_per_move": 2.788395889487871,
+  "a_nodes_per_move": 7802.042115902965,
+  "a_nodes_per_second": 2798039.598794532,
+  "a_mean_completed_depth": 5.859164420485175,
+  "b_ms_per_move": 2.7598016194331985,
+  "b_nodes_per_move": 7791.480431848853,
+  "b_nodes_per_second": 2823203.0798826218,
+  "b_mean_completed_depth": 5.961538461538462
+}

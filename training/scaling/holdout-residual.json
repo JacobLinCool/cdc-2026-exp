@@ -1,0 +1,26 @@
+{
+  "files": [
+    "/Users/jacoblincool/Documents/GitHub/cdc/training/scaling/holdout-residual.csv"
+  ],
+  "games": 800,
+  "independent_deals": 400,
+  "first_seed": 18000000,
+  "last_seed": 18000399,
+  "wins": 291,
+  "draws": 212,
+  "losses": 297,
+  "score": 0.49625,
+  "paired_bootstrap_95_ci": [
+    0.47125,
+    0.5225
+  ],
+  "elo": -2.6058157511977194,
+  "a_ms_per_move": 21.890715568971164,
+  "a_nodes_per_move": 78514.60035640252,
+  "a_nodes_per_second": 3586662.122077566,
+  "a_mean_completed_depth": 8.978233989162455,
+  "b_ms_per_move": 21.845932645973125,
+  "b_nodes_per_move": 50283.17034895351,
+  "b_nodes_per_second": 2301717.7231031256,
+  "b_mean_completed_depth": 8.590238757660066
+}

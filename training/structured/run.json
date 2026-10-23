@@ -1,0 +1,59 @@
+{
+  "created_at_utc": "2026-10-23T12:32:37.435818+00:00",
+  "base_commit": "5c88c0f0575f30e00539e3f335ea70e5b1f9b44e",
+  "python": "3.14.7",
+  "numpy": "2.4.6",
+  "rust": "rustc 1.98.0 (88d9e12ae 2026-08-18)",
+  "dataset": {
+    "file": "training/structured/selfplay.bin",
+    "sha256": "b8e25d138c15f66aa8e2be9edb5bb0f866ff0ccb7b13f798e55b0bbd5888fa2f",
+    "generated_games": 512,
+    "retained_games": 512,
+    "positions": 35899,
+    "time_ms": 40,
+    "threads": 8,
+    "first_seed": 6000000,
+    "last_seed": 6000511,
+    "record_bytes": 1092,
+    "header": "CDCDAT01"
+  },
+  "training": {
+    "capacities": [
+      "base",
+      "split",
+      "interactions"
+    ],
+    "seed": 44,
+    "epochs": 60,
+    "target": "sigmoid(baseline engine search score / 600)",
+    "outcome_weight": 0,
+    "validation": "20% of whole games",
+    "trained_with_current_source_reproduces_model_bytes": true
+  },
+  "development": {
+    "first_seed": 7000000,
+    "games_per_capacity": 160,
+    "time_ms": 25,
+    "parallel_matches": 3,
+    "threads_per_match": 2,
+    "phase_cache": "Added after development; exact native/Python parity reverified."
+  },
+  "frozen_protocol": "frozen-candidate.json",
+  "holdout_commands": [
+    "SEED=8000000 ARENA_CSV=training/structured/holdout-baseline.csv engine/target/release/arena 800 25 'structured=training/structured/interactions.cse' '' 4",
+    "SEED=8000000 ARENA_CSV=training/structured/holdout-previous.csv engine/target/release/arena 800 25 'structured=training/structured/interactions.cse' 'model=training/strong-teacher.nn,model_scale=0.5' 4"
+  ],
+  "completed_at_utc": "2026-10-23T12:44:12.161838+00:00",
+  "holdout_reports": {
+    "baseline": {
+      "report": "holdout-baseline.json",
+      "report_sha256": "7e8f2c0de6d451d22849b8a5786a0eac9d0bc4c4c8ea2d1c4b7948092e97e53b",
+      "csv_sha256": "e6ae3f9a41f84bffccf0403de0c09993c99b216031bccc1057cabee6e69ec2e5"
+    },
+    "previous": {
+      "report": "holdout-previous.json",
+      "report_sha256": "59a22f513cf548498161d5ea6c119e07614dca65c885afeba94a22e8b262cd78",
+      "csv_sha256": "8b177e054182b98485266b3e4f17d5ebf3f8a2667f8127032fb307fec0f4998d"
+    }
+  }
+}

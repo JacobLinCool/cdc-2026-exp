@@ -1,0 +1,57 @@
+{
+  "frozen_at_utc": "2026-10-23T12:32:12.158363+00:00",
+  "model": "training/structured/interactions.cse",
+  "model_sha256": "fca61177f43cdb9a607c3a0d89dc0f3183edd94633bb5d12e4a40b06b4f9b0c2",
+  "model_scale": 1,
+  "arena_sha256": "dbf7f686aa787857aa56fd3ba2b345ad484d4870f957aacc364b67e5b695150d",
+  "source_sha256": {
+    "engine/src/game.rs": "8dfc1f6b2ef8293562eeb9a1a0bb61c4c0aec578f0896737d44a8aca7389167e",
+    "engine/src/neural.rs": "c614d8e7a3c20bc0dce0177e2360cc58fab57f87958f4b28c13250cd60b91ac1",
+    "engine/src/tb.rs": "b3a2b6cb2ebb70f6553de3b9f9772998a1467d4f54ad42a0c663da10dd6fd004",
+    "engine/src/lib.rs": "f9e46e35c8128386bcbfa4bfade0635bde64fa107c335e6e092b2fc2111c04aa",
+    "engine/src/board.rs": "2e7a86da1ff3b10771465079e0e61f87f0237454836734e7df4df5915fa1debe",
+    "engine/src/eval.rs": "58c26c362c6bafdd9029b160082749c1868f8f193b2ea95b8bbd253499be7a9e",
+    "engine/src/moe.rs": "9e72e01b186a892b52cd3a6b4ad9646e4e9a78551c1f75f103707268334f99a9",
+    "engine/src/structured.rs": "9eb4db7e3b3963ec4cd7f53663c67b98c6b06bf0c5b4651ec2954698950f2de0",
+    "engine/src/search.rs": "5ea56768ae4508ecb82c08bac5430331fb35fedc35d544c309dceb6a15d4de37",
+    "engine/src/wasm.rs": "e46497f46bdc95344691c0fb5a7e3cd1cf8c78b888679961580f5f4dea1f6579",
+    "engine/src/bin/structured_predict.rs": "5b0fcf9165da588ec7cd9a3ff7788e96678c657b068d5e2e2f1cb7ea6fbf391d",
+    "engine/src/bin/records.rs": "fe2cfe677d7a60d0204b770eb2dadac237974cf6463b3ea8a2b5c69c3fd37ae5",
+    "engine/src/bin/match.rs": "24ae4f9312adba0cb57c1c6f59de99150684b2a989a7845f474a755cb4f68d05",
+    "engine/src/bin/arena.rs": "c40f6e698f00bf1b4f90d2895560f3d697e5236ad87e1f3e4e7eadba9f2a3310",
+    "engine/src/bin/eval_bench.rs": "ab3fb3c3241c26aaa9dc47265d8e05121e5ebb50697efa8d024f4ec81797d26d",
+    "engine/src/bin/neural_data.rs": "c2cd47c2eb71720d28429e4d05f0f4ffbc74db9662000b2d5272e4190893671c",
+    "engine/src/bin/structured_data.rs": "8c997e136d26e9b62ea76f08bbf916b50cd388919e4fc920eef58c6f8eb6bfc9",
+    "engine/src/bin/spsa.rs": "ca79687c8b020e585073836c231ade174a316ef15fc44f130f1f6ee888e505ab",
+    "engine/src/bin/bench.rs": "8ce71ff4caf2447fecd1dfded423f9932b597a47068fdccdde4b25c898ed4455",
+    "training/structured/check.py": "12d579cae94d86532e2ce7a475ff2b5b9889039c93b824456b79ca1991bf44dd",
+    "training/structured/model.py": "73eeb12cc93482d2a3c4bded5f8151cded1e578db40f1f689e925d6f8b5c438b",
+    "training/structured/train.py": "c3cbdb388adb3c363c8b18674282c7f6d4d11fe6bcda6c4e9d2f55d82136f074",
+    "training/structured/autodiff.py": "682f8569c57e3f390ae1caca4dfd45691822742a3c0fb52719b169365194e619",
+    "engine/Cargo.toml": "004c5986a28587cc5e10ec5148dc1ec3a9da34faa6e52beebeac9e83065d23ea",
+    "training/report.py": "be6b85d7166fccc01b507d38b869478316d7f58e6fa18e7b87c162996447ffe6"
+  },
+  "protocol": {
+    "holdout_first_seed": 8000000,
+    "holdout_games": 800,
+    "holdout_time_ms": 25,
+    "threads_per_comparison": 4,
+    "opponents": [
+      {
+        "kind": "baseline"
+      },
+      {
+        "kind": "learned",
+        "model": "training/strong-teacher.nn",
+        "model_sha256": "328db35499039e68a6511f130f9604d46f6efb3662a3cb377b66f4068f1f1372",
+        "model_scale": 0.5
+      }
+    ],
+    "criterion": "Against each opponent separately, the deal-paired bootstrap 95% score interval must lie above 50%. Both comparisons finish at 800 games; no optional stopping or model changes."
+  },
+  "selection": "Lowest validation loss and strongest of three 160-game development runs. Phase mixtures cached after development; exact predictions reverified on all data.",
+  "training_reproduced_bit_exact": true,
+  "training_data_sha256": "b8e25d138c15f66aa8e2be9edb5bb0f866ff0ccb7b13f798e55b0bbd5888fa2f",
+  "development_first_seed": 7000000,
+  "development_games_per_candidate": 160
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "purpose": "Measure the interaction between evaluator capacity and inference-time search, extending the completed data/capacity study with fresh games. This protocol is frozen before any match in this suite.",
+  "models": [
+    {"parameters": 139, "prefix": "training/scaling/data4x"},
+    {"parameters": 499, "prefix": "training/scaling-joint/data4x-capacity500"},
+    {"parameters": 1948, "prefix": "training/scaling-joint/data4x-capacity2000"}
+  ],
+  "training_seeds": [53, 71, 89],
+  "selection": "Use all three existing training seeds, with equal weight and disjoint deal blocks. No selection or retraining based on this suite. Every model used the same 9269 training rows from the 2048-game corpus, teacher targets, epoch budget, and common validation protocol.",
+  "time_budgets_ms": [10, 40, 160],
+  "node_budgets": [16384, 65536, 262144],
+  "anchor": {"model": "training/ranking/value.cse", "time_ms": 40},
+  "search": {"flip_min_depth": 5, "tablebases": false, "max_depth": 64, "id_stop": 0.65, "tt_bits": 18},
+  "search_control": "Identical existing search algorithm and all other defaults. Fix fmd=5 explicitly because its default changes at 80/800 ms. Disable tablebases to remove exact-endgame substitution and generation costs. Fixed-node matches set the same positive node cap on both sides, overriding time stopping. Node counts are search visits, not equal trees or FLOPs.",
+  "anchor_games_per_training_seed": 64,
+  "anchor_first_seed": 30000000,
+  "direct_games_per_training_seed": 64,
+  "direct_first_seed": 31000000,
+  "node_games_per_training_seed": 32,
+  "node_first_seed": 32000000,
+  "pairing": "Each deal is played twice with seats reversed. Share deal blocks across capacities and budgets within a family. Time-anchor, direct-time, and direct-node families have disjoint deal seeds. The same training seed is used on both sides of direct matches.",
+  "queue": "27 fixed-anchor batches (3 capacities x 3 budgets x 3 training seeds), 9 direct-time batches (1948 versus 139 at 3 equal budgets x 3 seeds), and 9 direct-node batches (1948 versus 139 at 3 equal node caps x 3 seeds): exactly 2592 games.",
+  "primary_endpoint": "Change in large-versus-small direct-match score from 10 ms to 160 ms. Positive values indicate a growing relative advantage for the larger evaluator over this measured range. Report the paired 95% interval; do not infer an asymptotic ceiling.",
+  "secondary_endpoints": [
+    "For each capacity, score-derived Elo gain against the fixed 40 ms anchor for 10->40, 40->160, and 10->160 ms; report gain per doubling and actual elapsed time, nodes, and completed depth.",
+    "Difference between the 1948-parameter and 139-parameter anchored Elo gains, and relative Elo gaps at each budget.",
+    "Equal-node large-versus-small scores and change between the smallest and largest node budgets. These distinguish clock-cost effects from evaluation/search interactions without claiming identical work per node.",
+    "A crossover is supported only if direct-match uncertainty excludes equality in opposite directions at different budgets. A difference between isolated point estimates is descriptive."
+  ],
+  "statistics": "20000 whole-deal bootstrap replicates, resampling within each fixed training-seed block, preserving matched deals across budgets and capacities. Equal weight for the three seeds. Intervals condition on these three trained models per capacity; they do not quantify the full population of possible training runs. Primary interval is confirmatory for this declared endpoint; all other intervals are pointwise exploratory. Score is wins plus half draws. Elo=400*log10(score/(1-score)) is a descriptive opponent-relative conversion, not a universal rating.",
+  "limitations": "Three budgets span 16x compute and permit two local slopes, but cannot identify an asymptotic ceiling or establish a scaling law. This is one sparse composition expansion family and one fixed training dataset. Capacity also changes the per-coefficient strength of the existing mean-normalized regularizer; the study concerns these trained models, not parameter count in isolation. Selective alpha-beta/chance search need not improve monotonically with budget. Fully exact exhaustive solving, if feasible, would remove reliance on the evaluator; this implementation's selective search is not an exhaustive solver.",
+  "execution": {"parallel_batches": 6, "threads_per_batch": 2, "shuffle_seed": 7303, "gpu": false},
+  "stopping_rule": "Complete all 45 declared batches without outcome-dependent stopping, model tuning, or promotion. Resume only when source/model/config hashes agree; reject corrupted or incomplete completed outputs. Report all results, including null and negative interactions."
+}

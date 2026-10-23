@@ -1,0 +1,160 @@
+{
+  "interpretation": "Descriptive static-score differences on the existing validation distribution, not fresh evidence of playing strength or model selection.",
+  "positions": 4845,
+  "validation_sha256": "391aa397b7d219588a0857add4af4e0217542899e97022bd8106be70f740e557",
+  "models": {
+    "training/scaling/data4x-53.cxe": {
+      "parameters": 139,
+      "training_seed": 53,
+      "model_sha256": "a5de9a511c890ed8440201ac5550f3c691592683cbcbc31e9ba99940ed78e662",
+      "extra_coefficients": 0,
+      "nonzero_quantized_extra_coefficients": 0,
+      "mean_absolute_score_change_from_anchor": 27.61217750257998,
+      "mean_absolute_score_change_from_same_seed_small": 0.0,
+      "same_score_fraction_as_same_seed_small": 1.0,
+      "mean_absolute_extra_component": 0.0,
+      "max_absolute_extra_component": 0.0,
+      "phase_mean_absolute_change_from_small": {
+        "fully_revealed": 0.0,
+        "1_to_7_hidden": 0.0,
+        "8_plus_hidden": 0.0
+      }
+    },
+    "training/scaling-joint/data4x-capacity500-53.cxe": {
+      "parameters": 499,
+      "training_seed": 53,
+      "model_sha256": "2d7cf0207d4e4b022b47e79d974ba6e7694b1cef75e3dc7a749bc4e36323f336",
+      "extra_coefficients": 360,
+      "nonzero_quantized_extra_coefficients": 295,
+      "mean_absolute_score_change_from_anchor": 35.371517027863774,
+      "mean_absolute_score_change_from_same_seed_small": 15.366769865841073,
+      "same_score_fraction_as_same_seed_small": 0.021465428276573786,
+      "mean_absolute_extra_component": 9.349638802889578,
+      "max_absolute_extra_component": 53.0,
+      "phase_mean_absolute_change_from_small": {
+        "fully_revealed": 13.211705202312139,
+        "1_to_7_hidden": 15.354916067146283,
+        "8_plus_hidden": 17.04127161182376
+      }
+    },
+    "training/scaling-joint/data4x-capacity2000-53.cxe": {
+      "parameters": 1948,
+      "training_seed": 53,
+      "model_sha256": "44fa3eaf1fcbd8a567473b32261e20da440038708b64ef5198d06b24cadad8f2",
+      "extra_coefficients": 1809,
+      "nonzero_quantized_extra_coefficients": 1674,
+      "mean_absolute_score_change_from_anchor": 39.383694530443755,
+      "mean_absolute_score_change_from_same_seed_small": 20.46501547987616,
+      "same_score_fraction_as_same_seed_small": 0.018988648090815272,
+      "mean_absolute_extra_component": 15.636532507739938,
+      "max_absolute_extra_component": 74.0,
+      "phase_mean_absolute_change_from_small": {
+        "fully_revealed": 17.304190751445088,
+        "1_to_7_hidden": 20.68884892086331,
+        "8_plus_hidden": 22.696597880646962
+      }
+    },
+    "training/scaling/data4x-71.cxe": {
+      "parameters": 139,
+      "training_seed": 71,
+      "model_sha256": "a5410245c09779c3bb306327c68e22e3dfa0de97a3987307d3305c8009cbfca1",
+      "extra_coefficients": 0,
+      "nonzero_quantized_extra_coefficients": 0,
+      "mean_absolute_score_change_from_anchor": 27.994633642930857,
+      "mean_absolute_score_change_from_same_seed_small": 0.0,
+      "same_score_fraction_as_same_seed_small": 1.0,
+      "mean_absolute_extra_component": 0.0,
+      "max_absolute_extra_component": 0.0,
+      "phase_mean_absolute_change_from_small": {
+        "fully_revealed": 0.0,
+        "1_to_7_hidden": 0.0,
+        "8_plus_hidden": 0.0
+      }
+    },
+    "training/scaling-joint/data4x-capacity500-71.cxe": {
+      "parameters": 499,
+      "training_seed": 71,
+      "model_sha256": "042f37005923c125e7aaa510a421d15320b3903019ab68b24a11f9d10f6b6c04",
+      "extra_coefficients": 360,
+      "nonzero_quantized_extra_coefficients": 293,
+      "mean_absolute_score_change_from_anchor": 35.116615067079465,
+      "mean_absolute_score_change_from_same_seed_small": 15.502579979360165,
+      "same_score_fraction_as_same_seed_small": 0.026625386996904025,
+      "mean_absolute_extra_component": 9.319298245614036,
+      "max_absolute_extra_component": 53.0,
+      "phase_mean_absolute_change_from_small": {
+        "fully_revealed": 13.882225433526012,
+        "1_to_7_hidden": 15.257194244604317,
+        "8_plus_hidden": 16.98159509202454
+      }
+    },
+    "training/scaling-joint/data4x-capacity2000-71.cxe": {
+      "parameters": 1948,
+      "training_seed": 71,
+      "model_sha256": "320eb6844aa6c2bfd46a2bf38b3668836c00a8e125d90e750cfe96f8205bf52d",
+      "extra_coefficients": 1809,
+      "nonzero_quantized_extra_coefficients": 1674,
+      "mean_absolute_score_change_from_anchor": 38.60557275541796,
+      "mean_absolute_score_change_from_same_seed_small": 20.137461300309596,
+      "same_score_fraction_as_same_seed_small": 0.018575851393188854,
+      "mean_absolute_extra_component": 15.647265221878225,
+      "max_absolute_extra_component": 74.0,
+      "phase_mean_absolute_change_from_small": {
+        "fully_revealed": 17.933526011560694,
+        "1_to_7_hidden": 20.36570743405276,
+        "8_plus_hidden": 21.62632459564975
+      }
+    },
+    "training/scaling/data4x-89.cxe": {
+      "parameters": 139,
+      "training_seed": 89,
+      "model_sha256": "7e173e667064171ac9ea451c3fab2f3590bb20b2daac99f8ed28fe54902f38cc",
+      "extra_coefficients": 0,
+      "nonzero_quantized_extra_coefficients": 0,
+      "mean_absolute_score_change_from_anchor": 27.583694530443758,
+      "mean_absolute_score_change_from_same_seed_small": 0.0,
+      "same_score_fraction_as_same_seed_small": 1.0,
+      "mean_absolute_extra_component": 0.0,
+      "max_absolute_extra_component": 0.0,
+      "phase_mean_absolute_change_from_small": {
+        "fully_revealed": 0.0,
+        "1_to_7_hidden": 0.0,
+        "8_plus_hidden": 0.0
+      }
+    },
+    "training/scaling-joint/data4x-capacity500-89.cxe": {
+      "parameters": 499,
+      "training_seed": 89,
+      "model_sha256": "a9ba34e95d15afe1b72b2996e47a5a453bec28f24a12617c011dca0b29208308",
+      "extra_coefficients": 360,
+      "nonzero_quantized_extra_coefficients": 295,
+      "mean_absolute_score_change_from_anchor": 34.68710010319917,
+      "mean_absolute_score_change_from_same_seed_small": 15.200825593395253,
+      "same_score_fraction_as_same_seed_small": 0.027244582043343655,
+      "mean_absolute_extra_component": 9.287925696594428,
+      "max_absolute_extra_component": 54.0,
+      "phase_mean_absolute_change_from_small": {
+        "fully_revealed": 13.580924855491329,
+        "1_to_7_hidden": 15.0257793764988,
+        "8_plus_hidden": 16.614054656999443
+      }
+    },
+    "training/scaling-joint/data4x-capacity2000-89.cxe": {
+      "parameters": 1948,
+      "training_seed": 89,
+      "model_sha256": "c01f8c0927efe3a88344d21e4207ed4d6951b6eed565e18802f05e32b7bfae67",
+      "extra_coefficients": 1809,
+      "nonzero_quantized_extra_coefficients": 1677,
+      "mean_absolute_score_change_from_anchor": 38.55190918472652,
+      "mean_absolute_score_change_from_same_seed_small": 20.359339525283797,
+      "same_score_fraction_as_same_seed_small": 0.01940144478844169,
+      "mean_absolute_extra_component": 15.784932920536635,
+      "max_absolute_extra_component": 74.0,
+      "phase_mean_absolute_change_from_small": {
+        "fully_revealed": 17.84320809248555,
+        "1_to_7_hidden": 20.23381294964029,
+        "8_plus_hidden": 22.41829336307864
+      }
+    }
+  }
+}
